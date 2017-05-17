@@ -2,13 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zheng</groupId>
-    <artifactId>zheng</artifactId>
+    <groupId>com.sinotopia</groupId>
+    <artifactId>sinotopia</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>zheng</name>
-    <url>http://www.zhangshuzheng.cn</url>
+    <name>sinotopia</name>
+    <url>http://www.sinotopia.net</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,19 +19,19 @@
     </properties>
 
     <modules>
-        <module>zheng-admin</module>
-        <module>zheng-common</module>
-        <module>zheng-oss</module>
-        <module>zheng-upms</module>
-        <module>zheng-cms</module>
-        <module>zheng-pay</module>
-        <module>zheng-ucenter</module>
-        <module>zheng-wechat</module>
-        <module>zheng-shop</module>
-        <module>zheng-im</module>
-        <module>zheng-oa</module>
-        <module>zheng-eoms</module>
-        <module>zheng-api</module>
-        <module>zheng-demo</module>
+        <module>sinotopia-admin</module>
+        <module>sinotopia-common</module>
+        <module>sinotopia-oss</module>
+        <module>sinotopia-upms</module>
+        <module>sinotopia-cms</module>
+        <module>sinotopia-pay</module>
+        <module>sinotopia-ucenter</module>
+        <module>sinotopia-wechat</module>
+        <module>sinotopia-shop</module>
+        <module>sinotopia-im</module>
+        <module>sinotopia-oa</module>
+        <module>sinotopia-eoms</module>
+        <module>sinotopia-api</module>
+        <module>sinotopia-demo</module>
     </modules>
 </project>

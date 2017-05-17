@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sinotopia</groupId>
+    <artifactId>sinotopia-pay</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>sinotopia-pay</name>
+    <url>http://www.sinotopia.cn</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+    </properties>
+
+    <modules>
+        <module>sinotopia-pay-common</module>
+        <module>sinotopia-pay-dao</module>
+        <module>sinotopia-pay-rpc-api</module>
+        <module>sinotopia-pay-rpc-service</module>
+        <module>sinotopia-pay-sdk</module>
+        <module>sinotopia-pay-web</module>
+        <module>sinotopia-pay-admin</module>
+    </modules>
+</project>

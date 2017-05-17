@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-wechat</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>sinotopia-wechat-mp</artifactId>
+    <packaging>pom</packaging>
+
+    <name>sinotopia-wechat-mp</name>
+    <url>http://www.sinotopia.net</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+    </properties>
+
+    <modules>
+        <module>sinotopia-wechat-mp-dao</module>
+        <module>sinotopia-wechat-mp-service</module>
+        <module>sinotopia-wechat-mp-admin</module>
+    </modules>
+
+</project>

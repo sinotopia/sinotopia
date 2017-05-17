@@ -6,7 +6,7 @@
 target
 *.log
 *.log.*
-**/resources/zheng-admin
+**/resources/sinotopia-admin
 generatorConfig.xml
 .DS_Store
 *.cache

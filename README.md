@@ -1,14 +1,14 @@
-# zheng
+# sinotopia
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/shuzheng/zheng/pulls)
-[![GitHub stars](https://img.shields.io/github/stars/shuzheng/zheng.svg?style=social&label=Stars)](https://github.com/shuzheng/zheng)
-[![GitHub forks](https://img.shields.io/github/forks/shuzheng/zheng.svg?style=social&label=Fork)](https://github.com/shuzheng/zheng)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/shusinotopia/sinotopia/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/shusinotopia/sinotopia.svg?style=social&label=Stars)](https://github.com/shusinotopia/sinotopia)
+[![GitHub forks](https://img.shields.io/github/forks/shusinotopia/sinotopia.svg?style=social&label=Fork)](https://github.com/shusinotopia/sinotopia)
 
 交流QQ群：133107819(群内含各种工具和文档下载)
 
 ## 前言
 
-　　`zheng`项目创建于2016年10月4日，正在慢慢成长中，目的不仅仅是一个开发架构，而是努力打造一套从 **前端模板** - **基础框架** - **分布式架构** - **开源项目** - **持续集成** - **自动化部署** - **系统监测** - **无缝升级** 的全方位J2EE企业级开发解决方案。
+　　`sinotopia`项目创建于2016年10月4日，正在慢慢成长中，目的不仅仅是一个开发架构，而是努力打造一套从 **前端模板** - **基础框架** - **分布式架构** - **开源项目** - **持续集成** - **自动化部署** - **系统监测** - **无缝升级** 的全方位J2EE企业级开发解决方案。
 
 ## 项目介绍
 
@@ -16,7 +16,7 @@
 
 ### 组织结构
 
-![组织结构](project-bootstrap/zheng_project.png)
+![组织结构](project-bootstrap/sinotopia_project.png)
 
 ### 技术选型
 
@@ -66,7 +66,7 @@ jquery-confirm | 弹出窗口插件  | [https://github.com/craftpip/jquery-confi
 jQuery EasyUI | 基于jQuery的UI插件集合体  | [http://www.jeasyui.com](http://www.jeasyui.com)
 React | 界面构建框架  | [https://github.com/facebook/react](https://github.com/facebook/react)
 Editor.md | Markdown编辑器  | [https://github.com/pandao/editor.md](https://github.com/pandao/editor.md)
-zhengAdmin | 后台管理系统模板  | [https://github.com/shuzheng/zhengAdmin](https://github.com/shuzheng/zhengAdmin)
+sinotopiaAdmin | 后台管理系统模板  | [https://github.com/shusinotopia/sinotopiaAdmin](https://github.com/shusinotopia/zhengAdmin)
 autoMail | 邮箱地址自动补全插件  | [https://github.com/shuzheng/autoMail](https://github.com/shuzheng/autoMail)
 zheng.jprogress.js | 加载进度条插件  | [https://github.com/shuzheng/zheng.jprogress.js](https://github.com/shuzheng/zheng.jprogress.js)
 zheng.jtotop.js | 返回顶部插件  | [https://github.com/shuzheng/zheng.jtotop.js](https://github.com/shuzheng/zheng.jtotop.js)
