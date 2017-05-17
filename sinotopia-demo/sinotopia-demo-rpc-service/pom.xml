@@ -47,9 +47,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <configuration>
-                    <descriptor>src/main/assembly/assembly.xml</descriptor>
-                </configuration>
+
                 <executions>
                     <execution>
                         <id>make-assembly</id>
@@ -57,6 +55,12 @@
                         <goals>
                             <goal>single</goal>
                         </goals>
+                        <configuration>
+                            <descriptors>
+                                <!--描述文件路径-->
+                                <descriptor>src/main/assembly/assembly.xml</descriptor>
+                            </descriptors>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
