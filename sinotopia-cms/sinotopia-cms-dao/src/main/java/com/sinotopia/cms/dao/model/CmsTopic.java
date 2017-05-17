@@ -3,6 +3,7 @@ package com.sinotopia.cms.dao.model;
 import java.io.Serializable;
 
 public class CmsTopic implements Serializable {
+
     /**
      * 编号
      *
@@ -108,10 +109,10 @@ public class CmsTopic implements Serializable {
         }
         CmsTopic other = (CmsTopic) that;
         return (this.getTopicId() == null ? other.getTopicId() == null : this.getTopicId().equals(other.getTopicId()))
-            && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
-            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
-            && (this.getUrl() == null ? other.getUrl() == null : this.getUrl().equals(other.getUrl()))
-            && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()));
+                && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
+                && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
+                && (this.getUrl() == null ? other.getUrl() == null : this.getUrl().equals(other.getUrl()))
+                && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()));
     }
 
     @Override

@@ -316,23 +316,23 @@ public class CmsArticle implements Serializable {
         }
         CmsArticle other = (CmsArticle) that;
         return (this.getArticleId() == null ? other.getArticleId() == null : this.getArticleId().equals(other.getArticleId()))
-            && (this.getTopicId() == null ? other.getTopicId() == null : this.getTopicId().equals(other.getTopicId()))
-            && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
-            && (this.getAuthor() == null ? other.getAuthor() == null : this.getAuthor().equals(other.getAuthor()))
-            && (this.getFromurl() == null ? other.getFromurl() == null : this.getFromurl().equals(other.getFromurl()))
-            && (this.getImage() == null ? other.getImage() == null : this.getImage().equals(other.getImage()))
-            && (this.getKeywords() == null ? other.getKeywords() == null : this.getKeywords().equals(other.getKeywords()))
-            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
-            && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
-            && (this.getAllowcomments() == null ? other.getAllowcomments() == null : this.getAllowcomments().equals(other.getAllowcomments()))
-            && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()))
-            && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getReadnumber() == null ? other.getReadnumber() == null : this.getReadnumber().equals(other.getReadnumber()))
-            && (this.getTop() == null ? other.getTop() == null : this.getTop().equals(other.getTop()))
-            && (this.getSystemId() == null ? other.getSystemId() == null : this.getSystemId().equals(other.getSystemId()))
-            && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
-            && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()))
-            && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()));
+                && (this.getTopicId() == null ? other.getTopicId() == null : this.getTopicId().equals(other.getTopicId()))
+                && (this.getTitle() == null ? other.getTitle() == null : this.getTitle().equals(other.getTitle()))
+                && (this.getAuthor() == null ? other.getAuthor() == null : this.getAuthor().equals(other.getAuthor()))
+                && (this.getFromurl() == null ? other.getFromurl() == null : this.getFromurl().equals(other.getFromurl()))
+                && (this.getImage() == null ? other.getImage() == null : this.getImage().equals(other.getImage()))
+                && (this.getKeywords() == null ? other.getKeywords() == null : this.getKeywords().equals(other.getKeywords()))
+                && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
+                && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
+                && (this.getAllowcomments() == null ? other.getAllowcomments() == null : this.getAllowcomments().equals(other.getAllowcomments()))
+                && (this.getStatus() == null ? other.getStatus() == null : this.getStatus().equals(other.getStatus()))
+                && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+                && (this.getReadnumber() == null ? other.getReadnumber() == null : this.getReadnumber().equals(other.getReadnumber()))
+                && (this.getTop() == null ? other.getTop() == null : this.getTop().equals(other.getTop()))
+                && (this.getSystemId() == null ? other.getSystemId() == null : this.getSystemId().equals(other.getSystemId()))
+                && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
+                && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()))
+                && (this.getContent() == null ? other.getContent() == null : this.getContent().equals(other.getContent()));
     }
 
     @Override

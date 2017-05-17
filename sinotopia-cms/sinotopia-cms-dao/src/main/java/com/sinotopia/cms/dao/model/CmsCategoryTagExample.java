@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CmsCategoryTagExample implements Serializable {
+
     protected String orderByClause;
 
     protected boolean distinct;
@@ -67,6 +68,7 @@ public class CmsCategoryTagExample implements Serializable {
     }
 
     protected abstract static class GeneratedCriteria implements Serializable {
+
         protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {

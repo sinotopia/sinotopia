@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CmsSystemExample implements Serializable {
+
     protected String orderByClause;
 
     protected boolean distinct;

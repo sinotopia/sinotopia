@@ -76,8 +76,8 @@ public class CmsArticleTag implements Serializable {
         }
         CmsArticleTag other = (CmsArticleTag) that;
         return (this.getArticleTagId() == null ? other.getArticleTagId() == null : this.getArticleTagId().equals(other.getArticleTagId()))
-            && (this.getArticleId() == null ? other.getArticleId() == null : this.getArticleId().equals(other.getArticleId()))
-            && (this.getTagId() == null ? other.getTagId() == null : this.getTagId().equals(other.getTagId()));
+                && (this.getArticleId() == null ? other.getArticleId() == null : this.getArticleId().equals(other.getArticleId()))
+                && (this.getTagId() == null ? other.getTagId() == null : this.getTagId().equals(other.getTagId()));
     }
 
     @Override

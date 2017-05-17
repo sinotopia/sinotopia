@@ -2,10 +2,13 @@ package com.sinotopia.cms.dao.mapper;
 
 import com.sinotopia.cms.dao.model.CmsArticleCategory;
 import com.sinotopia.cms.dao.model.CmsArticleCategoryExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface CmsArticleCategoryMapper {
+
     long countByExample(CmsArticleCategoryExample example);
 
     int deleteByExample(CmsArticleCategoryExample example);

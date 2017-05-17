@@ -3,6 +3,7 @@ package com.sinotopia.cms.dao.model;
 import java.io.Serializable;
 
 public class CmsSystem implements Serializable {
+
     /**
      * 编号
      *
@@ -124,11 +125,11 @@ public class CmsSystem implements Serializable {
         }
         CmsSystem other = (CmsSystem) that;
         return (this.getSystemId() == null ? other.getSystemId() == null : this.getSystemId().equals(other.getSystemId()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getCode() == null ? other.getCode() == null : this.getCode().equals(other.getCode()))
-            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
-            && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
-            && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()));
+                && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+                && (this.getCode() == null ? other.getCode() == null : this.getCode().equals(other.getCode()))
+                && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
+                && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
+                && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()));
     }
 
     @Override

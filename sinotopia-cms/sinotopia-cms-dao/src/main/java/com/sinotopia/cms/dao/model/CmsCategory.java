@@ -204,16 +204,16 @@ public class CmsCategory implements Serializable {
         }
         CmsCategory other = (CmsCategory) that;
         return (this.getCategoryId() == null ? other.getCategoryId() == null : this.getCategoryId().equals(other.getCategoryId()))
-            && (this.getPid() == null ? other.getPid() == null : this.getPid().equals(other.getPid()))
-            && (this.getLevel() == null ? other.getLevel() == null : this.getLevel().equals(other.getLevel()))
-            && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
-            && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
-            && (this.getIcon() == null ? other.getIcon() == null : this.getIcon().equals(other.getIcon()))
-            && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
-            && (this.getAlias() == null ? other.getAlias() == null : this.getAlias().equals(other.getAlias()))
-            && (this.getSystemId() == null ? other.getSystemId() == null : this.getSystemId().equals(other.getSystemId()))
-            && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
-            && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()));
+                && (this.getPid() == null ? other.getPid() == null : this.getPid().equals(other.getPid()))
+                && (this.getLevel() == null ? other.getLevel() == null : this.getLevel().equals(other.getLevel()))
+                && (this.getName() == null ? other.getName() == null : this.getName().equals(other.getName()))
+                && (this.getDescription() == null ? other.getDescription() == null : this.getDescription().equals(other.getDescription()))
+                && (this.getIcon() == null ? other.getIcon() == null : this.getIcon().equals(other.getIcon()))
+                && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
+                && (this.getAlias() == null ? other.getAlias() == null : this.getAlias().equals(other.getAlias()))
+                && (this.getSystemId() == null ? other.getSystemId() == null : this.getSystemId().equals(other.getSystemId()))
+                && (this.getCtime() == null ? other.getCtime() == null : this.getCtime().equals(other.getCtime()))
+                && (this.getOrders() == null ? other.getOrders() == null : this.getOrders().equals(other.getOrders()));
     }
 
     @Override

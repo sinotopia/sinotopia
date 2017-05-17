@@ -3,6 +3,7 @@ package com.sinotopia.cms.dao.model;
 import java.io.Serializable;
 
 public class CmsSetting implements Serializable {
+
     private Integer settingId;
 
     private String settingKey;
@@ -61,8 +62,8 @@ public class CmsSetting implements Serializable {
         }
         CmsSetting other = (CmsSetting) that;
         return (this.getSettingId() == null ? other.getSettingId() == null : this.getSettingId().equals(other.getSettingId()))
-            && (this.getSettingKey() == null ? other.getSettingKey() == null : this.getSettingKey().equals(other.getSettingKey()))
-            && (this.getSettingValue() == null ? other.getSettingValue() == null : this.getSettingValue().equals(other.getSettingValue()));
+                && (this.getSettingKey() == null ? other.getSettingKey() == null : this.getSettingKey().equals(other.getSettingKey()))
+                && (this.getSettingValue() == null ? other.getSettingValue() == null : this.getSettingValue().equals(other.getSettingValue()));
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.sinotopia.cms.dao.model;
 import java.io.Serializable;
 
 public class CmsMenu implements Serializable {
+
     /**
      * 编号
      *
