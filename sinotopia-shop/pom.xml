@@ -2,13 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.zheng</groupId>
-    <artifactId>zheng-shop</artifactId>
+    <groupId>com.sinotopia</groupId>
+    <artifactId>sinotopia-shop</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
-    <name>zheng-shop</name>
-    <url>http://www.zhangshuzheng.cn</url>
+    <name>sinotopia-shop</name>
+    <url>http://www.sinotopia.cn</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

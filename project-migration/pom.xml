@@ -5,8 +5,7 @@
     <groupId>com.sinotopia</groupId>
     <artifactId>sinotopia-migration</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
-
+    <packaging>pom</packaging>
     <name>sinotopia-migration</name>
     <url>http://www.sinotopia.net</url>
 
@@ -21,16 +20,6 @@
 
     <build>
         <finalName>sinotopia-migration</finalName>
-        <!-- To define the plugin version in your parent POM -->
-        <!--<pluginManagement>-->
-        <!--<plugins>-->
-        <!--<plugin>-->
-        <!--<groupId>org.mybatis.maven</groupId>-->
-        <!--<artifactId>migrations-maven-plugin</artifactId>-->
-        <!--<version>${maven.migration.version}</version>-->
-        <!--</plugin>-->
-        <!--</plugins>-->
-        <!--</pluginManagement>-->
         <plugins>
             <plugin>
                 <groupId>org.mybatis.maven</groupId>

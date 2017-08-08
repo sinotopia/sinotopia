@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 
     <!-- 配置文件 -->
@@ -26,7 +27,7 @@
         <!-- 生成在XML中的<cache>元素 -->
         <plugin type="org.mybatis.generator.plugins.CachePlugin">
             <!-- 使用ehcache -->
-            <property name="cache_type" value="org.mybatis.caches.ehcache.LoggingEhcache" />
+            <property name="cache_type" value="org.mybatis.caches.ehcache.LoggingEhcache"/>
             <!-- 内置cache配置 -->
             <!--
             <property name="cache_eviction" value="LRU" />
@@ -41,7 +42,7 @@
 
         <!-- 生成的代码去掉注释 -->
         <commentGenerator type="com.zheng.common.plugin.CommentGenerator">
-            <property name="suppressAllComments" value="true" />
+            <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
         </commentGenerator>
 
@@ -49,16 +50,19 @@
         <jdbcConnection driverClass="${generator.jdbc.driver}"
                         connectionURL="${generator.jdbc.url}"
                         userId="${generator.jdbc.username}"
-                        password="${generator_jdbc_password}" />
+                        password="${generator_jdbc_password}"/>
 
         <!-- model生成 -->
-        <javaModelGenerator targetPackage="${generator_javaModelGenerator_targetPackage}" targetProject="${targetProject}/src/main/java" />
+        <javaModelGenerator targetPackage="${generator_javaModelGenerator_targetPackage}"
+                            targetProject="${targetProject}/src/main/java"/>
 
         <!-- MapperXML生成 -->
-        <sqlMapGenerator targetPackage="${generator_sqlMapGenerator_targetPackage}" targetProject="${targetProject_sqlMap}/src/main/java" />
+        <sqlMapGenerator targetPackage="${generator_sqlMapGenerator_targetPackage}"
+                         targetProject="${targetProject_sqlMap}/src/main/java"/>
 
         <!-- Mapper接口生成 -->
-        <javaClientGenerator targetPackage="${generator_javaClientGenerator_targetPackage}" targetProject="${targetProject}/src/main/java" type="XMLMAPPER" />
+        <javaClientGenerator targetPackage="${generator_javaClientGenerator_targetPackage}"
+                             targetProject="${targetProject}/src/main/java" type="XMLMAPPER"/>
 
         <!-- 需要映射的表 -->
         #foreach($table in $tables)
@@ -66,7 +70,7 @@
                 #foreach($last_insert_id_table in $last_insert_id_tables.entrySet())
                     #if($!last_insert_id_table.key == $!table.table_name)
                         <table tableName="$!table.table_name" domainObjectName="$!table.model_name">
-                            <generatedKey column="$!last_insert_id_table.value" sqlStatement="MySql" identity="true" />
+                            <generatedKey column="$!last_insert_id_table.value" sqlStatement="MySql" identity="true"/>
                         </table>
                     #else
                         <table tableName="$!table.table_name" domainObjectName="$!table.model_name"></table>

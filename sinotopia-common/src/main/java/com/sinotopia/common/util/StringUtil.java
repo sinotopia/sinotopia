@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 /**
  * String 工具类
- * Created by shuzheng on 2016/12/07.
+ * Created by sinotopia on 2016/12/07.
  */
 public class StringUtil {
 
@@ -17,6 +17,7 @@ public class StringUtil {
 
     /**
      * 下划线转驼峰
+     *
      * @param str
      * @return
      */
@@ -40,6 +41,7 @@ public class StringUtil {
 
     /**
      * 驼峰转下划线(简单写法，效率低于{@link #humpToLine2(String)})
+     *
      * @param str
      * @return
      */
@@ -49,6 +51,7 @@ public class StringUtil {
 
     /**
      * 驼峰转下划线,效率比上面高
+     *
      * @param str
      * @return
      */
@@ -64,6 +67,7 @@ public class StringUtil {
 
     /**
      * 首字母转小写
+     *
      * @param s
      * @return
      */
@@ -80,6 +84,7 @@ public class StringUtil {
 
     /**
      * 首字母转大写
+     *
      * @param s
      * @return
      */
@@ -96,6 +101,7 @@ public class StringUtil {
 
     /**
      * object转String
+     *
      * @param object
      * @return
      */
@@ -116,6 +122,7 @@ public class StringUtil {
 
     /**
      * object转Integer
+     *
      * @param object
      * @return
      */
@@ -136,6 +143,7 @@ public class StringUtil {
 
     /**
      * object转Boolean
+     *
      * @param object
      * @return
      */

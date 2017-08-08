@@ -7,7 +7,8 @@ import java.util.ResourceBundle;
 
 /**
  * 资源文件读取工具
- * @author shuzheng
+ *
+ * @author sinotopia
  * @date 2016年10月15日
  */
 public class PropertiesFileUtil {
@@ -52,7 +53,7 @@ public class PropertiesFileUtil {
         try {
             String value = resourceBundle.getString(key);
             return value;
-        }catch (MissingResourceException e) {
+        } catch (MissingResourceException e) {
             return "";
         }
     }
@@ -62,7 +63,7 @@ public class PropertiesFileUtil {
         try {
             String value = resourceBundle.getString(key);
             return Integer.parseInt(value);
-        }catch (MissingResourceException e) {
+        } catch (MissingResourceException e) {
             return null;
         }
     }
@@ -75,7 +76,7 @@ public class PropertiesFileUtil {
                 return true;
             }
             return false;
-        }catch (MissingResourceException e) {
+        } catch (MissingResourceException e) {
             return false;
         }
     }

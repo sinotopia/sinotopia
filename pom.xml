@@ -25,6 +25,7 @@
         <module>sinotopia-upms</module>
         <module>sinotopia-cms</module>
         <module>sinotopia-pay</module>
+        <module>sinotopia-platform</module>
         <module>sinotopia-ucenter</module>
         <module>sinotopia-wechat</module>
         <module>sinotopia-shop</module>
@@ -32,6 +33,6 @@
         <module>sinotopia-oa</module>
         <module>sinotopia-eoms</module>
         <module>sinotopia-api</module>
-        <module>sinotopia-demo</module>
+        <module>sinotopia-sample</module>
     </modules>
 </project>

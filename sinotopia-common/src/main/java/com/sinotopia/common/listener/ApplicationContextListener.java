@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  * spring容器初始化完成事件
- * Created by shuzheng on 2017/1/7.
+ * Created by sinotopia on 2017/1/7.
  */
 public class ApplicationContextListener implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -20,11 +20,11 @@ public class ApplicationContextListener implements ApplicationListener<ContextRe
     @Override
     public void onApplicationEvent(ContextRefreshedEvent contextRefreshedEvent) {
         // root application context
-        if(null == contextRefreshedEvent.getApplicationContext().getParent()) {
+        if (null == contextRefreshedEvent.getApplicationContext().getParent()) {
             _log.debug(">>>>> spring初始化完毕 <<<<<");
             // spring初始化完毕后，通过反射调用所有使用BaseService注解的initMapper方法
             Map<String, Object> services = contextRefreshedEvent.getApplicationContext().getBeansWithAnnotation(BaseService.class);
-            for(Object service : services.values()) {
+            for (Object service : services.values()) {
                 _log.debug(">>>>> {}.initMapper()", service.getClass().getName());
                 try {
                     Method initMapper = service.getClass().getMethod("initMapper");

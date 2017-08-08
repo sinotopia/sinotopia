@@ -14,6 +14,7 @@ public class JmsUtil {
 
     /**
      * 发送文本消息
+     *
      * @param jmsTemplate
      * @param destination
      * @param textMessage
@@ -28,6 +29,7 @@ public class JmsUtil {
 
     /**
      * 发送对象消息
+     *
      * @param jmsTemplate
      * @param destination
      * @param objectMessage
@@ -42,6 +44,7 @@ public class JmsUtil {
 
     /**
      * 延迟发送对象消息
+     *
      * @param jmsTemplate
      * @param destination
      * @param objectMessage

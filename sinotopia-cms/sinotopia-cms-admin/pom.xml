@@ -37,7 +37,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
-        <!-- zheng-upms-client -->
+        <!-- sinotopia-upms-client -->
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-upms-client</artifactId>
