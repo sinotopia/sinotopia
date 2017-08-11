@@ -1,0 +1,11 @@
+##网银互联跨行转账
+<body>
+<acctNo>$acctNo</acctNo>
+<PayeeBankNo>$withDrawalsInfo.payeeBankNo</PayeeBankNo>
+<payeeAcctNo>$withDrawalsInfo.payeeAcctNo</payeeAcctNo>
+<payeeName>$withDrawalsInfo.payeeName</payeeName>
+<payeeType>$withDrawalsInfo.payeeType</payeeType>
+<amount>$withDrawalsInfo.amount</amount>
+<note></note>
+<electronNumber>$withDrawalsInfo.elecChequeNo</electronNumber>
+</body>

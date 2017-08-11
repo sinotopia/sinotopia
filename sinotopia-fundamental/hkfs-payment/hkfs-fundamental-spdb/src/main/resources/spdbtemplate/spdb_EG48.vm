@@ -1,0 +1,5 @@
+##网银支付行名行号表查询
+<body>
+<bankName>$bankName</bankName>
+<bankNo></bankNo>
+</body>

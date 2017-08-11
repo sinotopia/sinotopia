@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/aop
+                        http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+    <!--日志切面实现类-->
+    <bean id="logAspectBean" class="com.hkfs.fundamental.logger.aspect.LogAspect">
+        <property name="from" value="client" />
+        <property name="local" value="admin" />
+    </bean>
+    <!--异常切面实现类-->
+    <bean id="exceptionHandleAspectBean" class="com.hkfs.fundamental.exception.aspect.ExceptionHandleAspect" />
+    <!--用户会话切面实现类-->
+    <bean id="accessTokenAspectBean" class="com.hkfs.fundamental.session.AccessTokenAspect" />
+    <!--参数字段检查实现类-->
+    <bean id="validateAspectBean" class="com.hkfs.fundamental.validate.aspect.ValidateAspect" />
+
+    <!--切面-->
+    <aop:config>
+        <!--对controller切面-->
+        <aop:pointcut id="pc-controller" expression="execution(* com.hakim.demo.admin.web.controller..*.*(..))" />
+        <aop:aspect id="logAspect" ref="logAspectBean" order="0">
+            <aop:around pointcut-ref="pc-controller" method="log" />
+        </aop:aspect>
+        <aop:aspect id="exceptionHandleAspect" ref="exceptionHandleAspectBean" order="1">
+            <aop:around pointcut-ref="pc-controller" method="handleException" />
+        </aop:aspect>
+        <aop:aspect id="accessTokenAspect" ref="accessTokenAspectBean" order="2">
+            <aop:around pointcut-ref="pc-controller" method="token" />
+        </aop:aspect>
+        <aop:aspect id="validateAspect" ref="validateAspectBean" order="3">
+            <aop:around pointcut-ref="pc-controller" method="validateParam" />
+        </aop:aspect>
+    </aop:config>
+
+</beans>

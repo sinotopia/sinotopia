@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.hkfs</groupId>
+		<artifactId>hkfs-lock</artifactId>
+		<version>1.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>hkfs-fundamental-lock</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.hkfs</groupId>
+			<artifactId>hkfs-fundamental-config</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hkfs</groupId>
+			<artifactId>hkfs-fundamental-redis</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hkfs</groupId>
+			<artifactId>hkfs-fundamental-test</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hkfs</groupId>
+			<artifactId>hkfs-fundamental-aspect</artifactId>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+
+
+
+	</dependencies>
+
+</project>
