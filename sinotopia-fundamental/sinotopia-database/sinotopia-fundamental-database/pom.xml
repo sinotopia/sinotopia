@@ -5,12 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.hkfs</groupId>
-        <artifactId>hkfs-database</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-database</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>hkfs-fundamental-database</artifactId>
+    <artifactId>sinotopia-fundamental-database</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.hkfs</groupId>
@@ -18,8 +17,8 @@
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-api</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-api</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
