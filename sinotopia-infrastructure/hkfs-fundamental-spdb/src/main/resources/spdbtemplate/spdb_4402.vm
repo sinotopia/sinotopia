@@ -1,0 +1,8 @@
+##账号余额查询
+<body>
+<lists name="acctList">
+<list>
+<acctNo>${acctNo}</acctNo>
+</list>
+</lists>
+</body>

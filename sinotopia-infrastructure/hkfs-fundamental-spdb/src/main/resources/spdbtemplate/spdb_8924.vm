@@ -1,0 +1,11 @@
+##账户明细查询
+<body>
+<acctNo>$acctNo</acctNo>
+<beginDate>$beginDate</beginDate>
+<endDate>$endDate</endDate>
+<queryNumber>$queryNumber</queryNumber>
+<beginNumber>$beginNumber</beginNumber>
+<transAmount></transAmount>
+<subAccount></subAccount>
+<subAcctName></subAcctName>
+</body>

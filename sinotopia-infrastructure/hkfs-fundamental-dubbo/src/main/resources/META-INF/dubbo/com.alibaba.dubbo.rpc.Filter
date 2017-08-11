@@ -1,0 +1,1 @@
+requestLogFilter=com.hkfs.fundamental.dubbo.filter.RequestLogFilter

@@ -1,0 +1,5 @@
+##网银互联交易结果信息查询
+<body>
+<businessNo>$withDrawalsInfo.acceptNo</businessNo>
+<electronNumber></electronNumber>
+</body>

@@ -1,0 +1,16 @@
+##发送主体
+<?xml version='1.0' encoding='GB2312'?>
+<packet>
+<head>
+<transCode>$transCode</transCode>
+<signFlag>1</signFlag>     
+<packetID>$packetId</packetID>     
+<masterID>$masterId</masterID>     
+<timeStamp>$timestamp</timeStamp>   
+</head>
+<body>
+<signature>
+$sign
+</signature>
+</body>
+</packet>

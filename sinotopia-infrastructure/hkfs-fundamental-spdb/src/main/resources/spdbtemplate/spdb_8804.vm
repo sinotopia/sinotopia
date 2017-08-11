@@ -1,0 +1,12 @@
+##转账信息查询
+<body>
+<elecChequeNo>$withDrawalsInfo.elecChequeNo</elecChequeNo>
+<acctNo>$acctNo</acctNo>
+<beginDate>$beginDate</beginDate>
+<endDate>$endDate</endDate>
+<acceptNo>$withDrawalsInfo.acceptNo</acceptNo>
+<serialNo></serialNo>
+<queryNumber>20</queryNumber>
+<beginNumber>1</beginNumber>
+<singleOrBatchFlag>0</singleOrBatchFlag>
+</body>
