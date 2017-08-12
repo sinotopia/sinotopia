@@ -13,36 +13,35 @@
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>hkfs-database</module><!--数据库-->
+        <module>sinotopia-database</module><!--数据库-->
         <module>sinotopia-api</module><!--全局对象-->
-        <module>hkfs-spring</module><!--spring-->
-        <module>hkfs-config</module><!--配置相关-->
-        <module>hkfs-logger</module><!--打印日志-->
-        <module>hkfs-exception</module><!--异常-->
-        <module>hkfs-common</module><!--通用-->
-        <module>hkfs-web</module><!--web相关-->
-        <module>hkfs-codegenerator</module><!--代码生成-->
-        <module>hkfs-validate</module><!--验证相关-->
-        <module>hkfs-zookeeper</module><!--zookeeper-->
-        <module>hkfs-lock</module><!--分布式锁相关-->
-        <module>hkfs-dubbo</module><!--dubbo服务-->
-        <module>hkfs-json</module><!--json相关-->
-        <module>hkfs-httpclient</module><!--HttpClient相关-->
-        <module>hkfs-cache</module><!--缓存-->
-        <module>hkfs-aspect</module><!--切面-->
-        <module>hkfs-email</module><!--邮件相关-->
-        <module>hkfs-test</module><!--测试相关-->
-        <module>hkfs-payment</module><!--支付相关-->
-        <module>hkfs-demo</module><!--范例-->
-        <module>hkfs-shiro</module><!--shiro-->
-        <module>hkfs-queue</module><!--消息队列-->
-        <module>hkfs-jsoup</module><!--HTML解析-->
-        <module>hkfs-xml</module><!--xml解析-->
-        <module>hkfs-excel</module><!--Excel-->
-        <module>hkfs-parser</module><!--文本解析框架-->
-        <module>hkfs-framework</module><!--技术框架-->
+        <module>sinotopia-spring</module><!--spring-->
+        <module>sinotopia-config</module><!--配置相关-->
+        <module>sinotopia-logger</module><!--打印日志-->
+        <module>sinotopia-exception</module><!--异常-->
+        <module>sinotopia-common</module><!--通用-->
+        <module>sinotopia-web</module><!--web相关-->
+        <module>sinotopia-codegenerator</module><!--代码生成-->
+        <module>sinotopia-validate</module><!--验证相关-->
+        <module>sinotopia-zookeeper</module><!--zookeeper-->
+        <module>sinotopia-lock</module><!--分布式锁相关-->
+        <module>sinotopia-dubbo</module><!--dubbo服务-->
+        <module>sinotopia-json</module><!--json相关-->
+        <module>sinotopia-httpclient</module><!--HttpClient相关-->
+        <module>sinotopia-cache</module><!--缓存-->
+        <module>sinotopia-aspect</module><!--切面-->
+        <module>sinotopia-email</module><!--邮件相关-->
+        <module>sinotopia-test</module><!--测试相关-->
+        <module>sinotopia-payment</module><!--支付相关-->
+        <module>sinotopia-demo</module><!--范例-->
+        <module>sinotopia-shiro</module><!--shiro-->
+        <module>sinotopia-queue</module><!--消息队列-->
+        <module>sinotopia-jsoup</module><!--HTML解析-->
+        <module>sinotopia-xml</module><!--xml解析-->
+        <module>sinotopia-excel</module><!--Excel-->
+        <module>sinotopia-parser</module><!--文本解析框架-->
+        <module>sinotopia-framework</module><!--技术框架-->
     </modules>
-
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
@@ -55,10 +54,8 @@
             <url>http://192.168.7.83:6060/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
-
     <properties>
         <java.version>1.8</java.version>
-
         <slf4j.version>1.7.1</slf4j.version>
         <logback.version>1.0.7</logback.version>
         <logback.ext.version>0.1.1</logback.ext.version>
@@ -96,7 +93,6 @@
         <scala.tools.version>2.11</scala.tools.version>
         <akka.version>2.4.17</akka.version>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -109,7 +105,6 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -118,7 +113,6 @@
                 <version>4.11</version>
                 <scope>test</scope>
             </dependency>
-
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>

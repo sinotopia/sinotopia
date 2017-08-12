@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.sinotopia</groupId>
+		<artifactId>sinotopia-fundamental</artifactId>
+		<version>1.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>sinotopia-web</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>sinotopia-fundamental-servlet</module>
+		<module>sinotopia-fundamental-tomcat</module>
+		<module>sinotopia-fundamental-session</module>
+		<module>sinotopia-fundamental-web-parent</module>
+		<module>sinotopia-fundamental-web-bootstrap</module>
+		<module>sinotopia-fundamental-jackson</module>
+	</modules>
+</project>
