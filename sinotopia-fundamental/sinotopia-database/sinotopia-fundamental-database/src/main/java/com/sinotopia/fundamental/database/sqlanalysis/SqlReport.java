@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
 import java.util.List;
 
 /**
  * Sql报告
- * Created by zhoubing on 2016/12/15.
  */
 public class SqlReport {
+
     private String templateSql;
     private String executableSql;
     private Integer queryCount;

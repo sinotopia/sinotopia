@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.FatalBeanException;
@@ -15,13 +15,13 @@ import java.util.function.Function;
 
 /**
  * 具有转换特性的ArrayList
- * Created by brucezee on 2017/2/16.
  */
 public class ArrayListEx<T> extends ArrayList<T> {
     /**
      * 将当前列表转换成另外指定对象类型的列表，并拷贝对象字段
+     *
      * @param clazz 新列表项的Class
-     * @param <R> 新列表项的类型
+     * @param <R>   新列表项的类型
      * @return 新列表
      */
     public <R> List<R> toList(Class<R> clazz) {
@@ -30,8 +30,9 @@ public class ArrayListEx<T> extends ArrayList<T> {
 
     /**
      * 将当前列表转换成另外指定对象类型的列表，并拷贝对象字段
+     *
      * @param converter 列表转换器
-     * @param <R> 新列表项的类型
+     * @param <R>       新列表项的类型
      * @return 新列表
      */
     public <R> List<R> toList(Function<T, R> converter) {
@@ -40,6 +41,7 @@ public class ArrayListEx<T> extends ArrayList<T> {
 
     /**
      * 根据类型构造对象
+     *
      * @param clazz
      * @param <R>
      * @return
@@ -56,10 +58,11 @@ public class ArrayListEx<T> extends ArrayList<T> {
 
     /**
      * 将当前列表转换成另外指定对象类型的列表，并拷贝对象字段
+     *
      * @param sourceList 原列表
-     * @param clazz 新列表项的Class
-     * @param <K> 原列表项的类型
-     * @param <R> 新列表项的类型
+     * @param clazz      新列表项的Class
+     * @param <K>        原列表项的类型
+     * @param <R>        新列表项的类型
      * @return 新列表
      */
     public static <K, R> List<R> convertList(List<K> sourceList, Class<R> clazz) {
@@ -78,10 +81,11 @@ public class ArrayListEx<T> extends ArrayList<T> {
 
     /**
      * 将当前列表转换成另外指定对象类型的列表，并拷贝对象字段
+     *
      * @param sourceList 原列表
-     * @param converter 列表转换器
-     * @param <K> 原列表项的类型
-     * @param <R> 新列表项的类型
+     * @param converter  列表转换器
+     * @param <K>        原列表项的类型
+     * @param <R>        新列表项的类型
      * @return 新列表
      */
     public static <K, R> List<R> convertList(List<K> sourceList, Function<K, R> converter) {
@@ -95,14 +99,15 @@ public class ArrayListEx<T> extends ArrayList<T> {
 
     /**
      * 重写BeanUtils.copyProperties，采用缓存减少多次反射同一个类的方法
-     * @param source 来源对象
-     * @param target 目标对象
+     *
+     * @param source          来源对象
+     * @param target          目标对象
      * @param sourceMethodMap 来源对象读取属性方法缓存
-     * @param targetPds 目标对象的属性描述器数组
+     * @param targetPds       目标对象的属性描述器数组
      */
     private static void copyProperties(Object source, Object target,
-                                      Map<String, Object> sourceMethodMap,
-                                      PropertyDescriptor[] targetPds) {
+                                       Map<String, Object> sourceMethodMap,
+                                       PropertyDescriptor[] targetPds) {
         //维护目标对象属性读取方法映射，如果有映射则返回Method，否则返回1
         for (PropertyDescriptor targetPd : targetPds) {
             Method writeMethod = targetPd.getWriteMethod();
@@ -138,8 +143,7 @@ public class ArrayListEx<T> extends ArrayList<T> {
                             writeMethod.setAccessible(true);
                         }
                         writeMethod.invoke(target, value);
-                    }
-                    catch (Throwable ex) {
+                    } catch (Throwable ex) {
                         throw new FatalBeanException(
                                 "Could not copy property '" + targetPd.getName() + "' from source to target", ex);
                     }

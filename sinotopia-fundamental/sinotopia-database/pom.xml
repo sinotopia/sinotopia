@@ -12,5 +12,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>sinotopia-fundamental-database</module>
+        <!--<module>sinotopia-fundamental-mapper</module>-->
     </modules>
 </project>

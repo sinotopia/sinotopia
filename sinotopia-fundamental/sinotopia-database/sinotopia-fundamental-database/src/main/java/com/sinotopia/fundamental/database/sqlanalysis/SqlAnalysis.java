@@ -1,12 +1,11 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
-import com.hkfs.fundamental.common.assist.file.FileLineReader;
+import com.sinotopia.fundamental.common.assist.file.FileLineReader;
 
 import java.util.*;
 
 /**
  * Sql日志分析
- * Created by zhoubing on 2016/12/13.
  */
 public class SqlAnalysis {
     private String url;
@@ -116,18 +115,22 @@ public class SqlAnalysis {
             this.url = url;
             return this;
         }
+
         public Builder setUsername(String username) {
             this.username = username;
             return this;
         }
+
         public Builder setPassword(String password) {
             this.password = password;
             return this;
         }
+
         public Builder setExtractHandler(ExtractHandler extractHandler) {
             this.extractHandler = extractHandler;
             return this;
         }
+
         public Builder setSortComparator(Comparator<SqlReport> sortComparator) {
             this.sortComparator = sortComparator;
             return this;

@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.database.page;
+package com.sinotopia.fundamental.database.page;
 
 import com.sinotopia.fundamental.api.data.PageDataObjectBase;
-import com.hkfs.fundamental.database.utils.DatabaseUtils;
+import com.sinotopia.fundamental.database.utils.DatabaseUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.ibatis.executor.parameter.ParameterHandler;
@@ -33,6 +33,7 @@ public class PageInterceptor implements Interceptor {
 
     protected static final ThreadLocal<Integer> localPage = new ThreadLocal<Integer>();//用于缓存总记录数
     protected static final Map<String, Boolean> pageMap = new HashMap<String, Boolean>(32);//用于缓存需要和不需要自动分页的方法
+
     static {
         //默认基类中的方法的分页配置
         pageMap.put("add", false);
@@ -42,7 +43,6 @@ public class PageInterceptor implements Interceptor {
         pageMap.put("query", false);
         pageMap.put("delete", false);
         pageMap.put("count", false);
-
         pageMap.put("pageQuery", true);
     }
 
@@ -62,8 +62,7 @@ public class PageInterceptor implements Interceptor {
                 PageDataObjectBase page = (PageDataObjectBase) parameterObject;
                 requestOffset = page.getRequestOffset();
                 requestCount = page.getRequestCount();
-            }
-            else if (parameterObject instanceof Map) {
+            } else if (parameterObject instanceof Map) {
                 Map paramMap = (Map) parameterObject;
                 if (paramMap.containsKey("requestOffset")) {
                     requestOffset = (Integer) paramMap.get("requestOffset");
@@ -96,8 +95,7 @@ public class PageInterceptor implements Interceptor {
             localPage.set(totalCount);
             // 将执行权交给下一个拦截器
             return invocation.proceed();
-        }
-        else if (target instanceof ResultSetHandler) {
+        } else if (target instanceof ResultSetHandler) {
             Object result = invocation.proceed();
             //结果非列表，直接返回
             if (!(result instanceof List)) {
@@ -183,6 +181,7 @@ public class PageInterceptor implements Interceptor {
 
     /**
      * 获取总记录数
+     *
      * @param sql
      * @param connection
      * @param mappedStatement
@@ -226,6 +225,7 @@ public class PageInterceptor implements Interceptor {
 
     /**
      * 修改原SQL为分页SQL
+     *
      * @param sql
      * @param requestOffset
      * @param requestCount
@@ -244,6 +244,7 @@ public class PageInterceptor implements Interceptor {
 
     /**
      * 通过原SQL构造获取数量的SQL
+     *
      * @param sql
      * @return
      */
@@ -259,6 +260,7 @@ public class PageInterceptor implements Interceptor {
      * 只拦截这两种类型的
      * <br>StatementHandler
      * <br>ResultSetHandler
+     *
      * @param target
      * @return
      */

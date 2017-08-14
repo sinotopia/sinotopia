@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 
 /**
  * 默认的sql及参数获取处理

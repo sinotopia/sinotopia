@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
 /**
- * Created by zhoubing on 2016/12/14.
  */
 public class Parameter {
+
     private String type;
     private String value;
 

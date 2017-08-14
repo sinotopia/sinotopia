@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
-import com.hkfs.fundamental.common.assist.file.BasicFileLineProcessor;
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.assist.file.BasicFileLineProcessor;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

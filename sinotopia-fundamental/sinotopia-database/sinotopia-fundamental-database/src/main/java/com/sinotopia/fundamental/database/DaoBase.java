@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 
 import java.util.List;
 
@@ -9,12 +9,14 @@ import java.util.List;
 public interface DaoBase<T, K> {
     /**
      * 添加
+     *
      * @param t
      */
     public void add(T t);
 
     /**
      * 更新
+     *
      * @param t
      * @return
      */
@@ -22,6 +24,7 @@ public interface DaoBase<T, K> {
 
     /**
      * 条件查询
+     *
      * @param t
      * @return
      */
@@ -29,6 +32,7 @@ public interface DaoBase<T, K> {
 
     /**
      * 根据id查询
+     *
      * @param id
      * @return
      */
@@ -36,6 +40,7 @@ public interface DaoBase<T, K> {
 
     /**
      * 条件查询列表
+     *
      * @param t
      * @return
      */
@@ -43,6 +48,7 @@ public interface DaoBase<T, K> {
 
     /**
      * 根据id删除记录
+     *
      * @param id
      * @return
      */
@@ -50,6 +56,7 @@ public interface DaoBase<T, K> {
 
     /**
      * 查询记录数
+     *
      * @param t
      * @return
      */

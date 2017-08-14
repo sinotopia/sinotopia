@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 /*
  *    Copyright 2010-2013 the original author or authors.
  *
@@ -15,8 +15,8 @@ package com.hkfs.fundamental.database;
  *    limitations under the License.
  */
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 import org.apache.ibatis.builder.xml.XMLConfigBuilder;
 import org.apache.ibatis.builder.xml.XMLMapperBuilder;
 import org.apache.ibatis.executor.ErrorContext;
@@ -60,7 +60,7 @@ import static org.springframework.util.StringUtils.tokenizeToStringArray;
  * {@code FactoryBean} that creates an MyBatis {@code SqlSessionFactory}.
  * This is the usual way to set up a shared MyBatis {@code SqlSessionFactory} in a Spring application context;
  * the SqlSessionFactory can then be passed to MyBatis-based DAOs via dependency injection.
- *
+ * <p>
  * Either {@code DataSourceTransactionManager} or {@code JtaTransactionManager} can be used for transaction
  * demarcation in combination with a {@code SqlSessionFactory}. JTA should be used for transactions
  * which span multiple databases or when container managed transactions (CMT) are being used.
@@ -68,10 +68,9 @@ import static org.springframework.util.StringUtils.tokenizeToStringArray;
  * @author Putthibong Boonbong
  * @author Hunter Presnall
  * @author Eduardo Macarron
- *
+ * @version $Id$
  * @see #setConfigLocation
  * @see #setDataSource
- * @version $Id$
  */
 public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionFactory>, InitializingBean, ApplicationListener<ApplicationEvent> {
 
@@ -120,8 +119,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Sets the ObjectFactory.
      *
-     * @since 1.1.2
      * @param objectFactory
+     * @since 1.1.2
      */
     public void setObjectFactory(ObjectFactory objectFactory) {
         this.objectFactory = objectFactory;
@@ -130,8 +129,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Sets the ObjectWrapperFactory.
      *
-     * @since 1.1.2
      * @param objectWrapperFactory
+     * @since 1.1.2
      */
     public void setObjectWrapperFactory(ObjectWrapperFactory objectWrapperFactory) {
         this.objectWrapperFactory = objectWrapperFactory;
@@ -140,8 +139,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Sets the DatabaseIdProvider.
      *
-     * @since 1.1.0
      * @return
+     * @since 1.1.0
      */
     public DatabaseIdProvider getDatabaseIdProvider() {
         return databaseIdProvider;
@@ -150,8 +149,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Gets the DatabaseIdProvider
      *
-     * @since 1.1.0
      * @param databaseIdProvider
+     * @since 1.1.0
      */
     public void setDatabaseIdProvider(DatabaseIdProvider databaseIdProvider) {
         this.databaseIdProvider = databaseIdProvider;
@@ -160,10 +159,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Mybatis plugin list.
      *
-     * @since 1.0.1
-     *
      * @param plugins list of plugins
-     *
+     * @since 1.0.1
      */
     public void setPlugins(Interceptor[] plugins) {
         this.plugins = plugins;
@@ -172,10 +169,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Packages to search for type aliases.
      *
-     * @since 1.0.1
-     *
      * @param typeAliasesPackage package to scan for domain objects
-     *
+     * @since 1.0.1
      */
     public void setTypeAliasesPackage(String typeAliasesPackage) {
         this.typeAliasesPackage = typeAliasesPackage;
@@ -185,10 +180,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
      * Super class which domain objects have to extend to have a type alias created.
      * No effect if there is no package to scan configured.
      *
-     * @since 1.1.2
-     *
      * @param typeAliasesSuperType super class for domain objects
-     *
+     * @since 1.1.2
      */
     public void setTypeAliasesSuperType(Class<?> typeAliasesSuperType) {
         this.typeAliasesSuperType = typeAliasesSuperType;
@@ -197,10 +190,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Packages to search for type handlers.
      *
-     * @since 1.0.1
-     *
      * @param typeHandlersPackage package to scan for type handlers
-     *
+     * @since 1.0.1
      */
     public void setTypeHandlersPackage(String typeHandlersPackage) {
         this.typeHandlersPackage = typeHandlersPackage;
@@ -209,9 +200,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Set type handlers. They must be annotated with {@code MappedTypes} and optionally with {@code MappedJdbcTypes}
      *
-     * @since 1.0.1
-     *
      * @param typeHandlers Type handler list
+     * @since 1.0.1
      */
     public void setTypeHandlers(TypeHandler<?>[] typeHandlers) {
         this.typeHandlers = typeHandlers;
@@ -220,9 +210,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * List of type aliases to register. They can be annotated with {@code Alias}
      *
-     * @since 1.0.1
-     *
      * @param typeAliases Type aliases list
+     * @since 1.0.1
      */
     public void setTypeAliases(Class<?>[] typeAliases) {
         this.typeAliases = typeAliases;
@@ -233,9 +222,8 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
      * statements are fully loaded and there is no one still pending to resolve
      * includes. Defaults to false.
      *
-     * @since 1.0.1
-     *
      * @param failFast enable failFast
+     * @since 1.0.1
      */
     public void setFailFast(boolean failFast) {
         this.failFast = failFast;
@@ -252,7 +240,7 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
     /**
      * Set locations of MyBatis mapper files that are going to be merged into the {@code SqlSessionFactory}
      * configuration at runtime.
-     *
+     * <p>
      * This is an alternative to specifying "&lt;sqlmapper&gt;" entries in an MyBatis config file.
      * This property being based on Spring's resource abstraction also allows for specifying
      * resource patterns here: e.g. "classpath*:sqlmap/*-mapper.xml".
@@ -274,16 +262,15 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
      * Set the JDBC {@code DataSource} that this instance should manage transactions for. The {@code DataSource}
      * should match the one used by the {@code SqlSessionFactory}: for example, you could specify the same
      * JNDI DataSource for both.
-     *
+     * <p>
      * A transactional JDBC {@code Connection} for this {@code DataSource} will be provided to application code
      * accessing this {@code DataSource} directly via {@code DataSourceUtils} or {@code DataSourceTransactionManager}.
-     *
+     * <p>
      * The {@code DataSource} specified here should be the target {@code DataSource} to manage transactions for, not
      * a {@code TransactionAwareDataSourceProxy}. Only data access code may work with
      * {@code TransactionAwareDataSourceProxy}, while the transaction manager needs to work on the
      * underlying target {@code DataSource}. If there's nevertheless a {@code TransactionAwareDataSourceProxy}
      * passed in, it will be unwrapped to extract its target {@code DataSource}.
-     *
      */
     public void setDataSource(DataSource dataSource) {
         if (dataSource instanceof TransactionAwareDataSourceProxy) {
@@ -299,10 +286,9 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
 
     /**
      * Sets the {@code SqlSessionFactoryBuilder} to use when creating the {@code SqlSessionFactory}.
-     *
+     * <p>
      * This is mainly meant for testing so that mock SqlSessionFactory classes can be injected. By
      * default, {@code SqlSessionFactoryBuilder} creates {@code DefaultSqlSessionFactory} instances.
-     *
      */
     public void setSqlSessionFactoryBuilder(SqlSessionFactoryBuilder sqlSessionFactoryBuilder) {
         this.sqlSessionFactoryBuilder = sqlSessionFactoryBuilder;
@@ -310,17 +296,17 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
 
     /**
      * Set the MyBatis TransactionFactory to use. Default is {@code SpringManagedTransactionFactory}
-     *
+     * <p>
      * The default {@code SpringManagedTransactionFactory} should be appropriate for all cases:
      * be it Spring transaction management, EJB CMT or plain JTA. If there is no active transaction,
      * SqlSession operations will execute SQL statements non-transactionally.
-     *
+     * <p>
      * <b>It is strongly recommended to use the default {@code TransactionFactory}.</b> If not used, any
      * attempt at getting an SqlSession through Spring's MyBatis framework will throw an exception if
      * a transaction is active.
      *
-     * @see SpringManagedTransactionFactory
      * @param transactionFactory the MyBatis TransactionFactory
+     * @see SpringManagedTransactionFactory
      */
     public void setTransactionFactory(TransactionFactory transactionFactory) {
         this.transactionFactory = transactionFactory;
@@ -380,7 +366,7 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
 
     /**
      * Build a {@code SqlSessionFactory} instance.
-     *
+     * <p>
      * The default implementation uses the standard MyBatis {@code XMLConfigBuilder} API to build a
      * {@code SqlSessionFactory} instance based on an Reader.
      *
@@ -396,11 +382,11 @@ public class FundamentalSqlSessionFactoryBean implements FactoryBean<SqlSessionF
 //            xmlConfigBuilder = new XMLConfigBuilder(this.configLocation.getInputStream(), null, this.configurationProperties);
 //            configuration = xmlConfigBuilder.getConfiguration();
 //        } else {
-            if (logger.isDebugEnabled()) {
-                logger.debug("Property 'configLocation' not specified, using default MyBatis Configuration");
-            }
-            configuration = new FundamentalConfiguration();
-            configuration.setVariables(this.configurationProperties);
+        if (logger.isDebugEnabled()) {
+            logger.debug("Property 'configLocation' not specified, using default MyBatis Configuration");
+        }
+        configuration = new FundamentalConfiguration();
+        configuration.setVariables(this.configurationProperties);
 //        }
 
         if (this.objectFactory != null) {

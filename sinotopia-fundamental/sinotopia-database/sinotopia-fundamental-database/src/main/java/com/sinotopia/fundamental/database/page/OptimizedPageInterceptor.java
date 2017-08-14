@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database.page;
+package com.sinotopia.fundamental.database.page;
 
 import org.apache.ibatis.executor.resultset.ResultSetHandler;
 import org.apache.ibatis.executor.statement.StatementHandler;
@@ -12,7 +12,6 @@ import java.util.regex.Pattern;
 
 /**
  * 对查询进行优化的分页拦截器
- * Created by brucezee on 2017/2/14.
  */
 @Intercepts({
         @Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class}),
@@ -50,7 +49,7 @@ public class OptimizedPageInterceptor extends PageInterceptor {
 //        System.out.println("10 ".matches(regex));
 //        System.out.println("0, ?".matches(regex));
 //        System.out.println("?,10".matches(regex));
-        
+
         String sql1 = " SELECT id from user";
         String sql2 = " SELECT temp.* from (SELECT id from user) unioN\t\n temp order BY id desc";
         String sql3 = "select\n" +

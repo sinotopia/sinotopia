@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
-import com.hkfs.fundamental.common.utils.NumberUtils;
-import com.hkfs.fundamental.database.utils.DatabaseUtils;
+import com.sinotopia.fundamental.common.utils.NumberUtils;
+import com.sinotopia.fundamental.database.utils.DatabaseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,13 +13,14 @@ import java.util.List;
 
 /**
  * 对sql语句进行Explain
- * Created by zhoubing on 2016/12/14.
  */
 public class SqlExplain {
+
     private static Logger logger = LoggerFactory.getLogger(SqlExplain.class);
     private static final String EXPLAIN_KEY = "EXPLAIN ";
 
     private Connection connection;
+
     public SqlExplain(String url, String username, String password) {
         this.connection = DatabaseUtils.connect(url, username, password);
     }
@@ -29,14 +30,14 @@ public class SqlExplain {
             sql = EXPLAIN_KEY + sql;
         }
 
-        Statement statement =null;
+        Statement statement = null;
         ResultSet rs = null;
         List<Explain> explainList = new LinkedList<Explain>();
         try {
             statement = connection.createStatement();
             rs = statement.executeQuery(sql);
             Explain explain = null;
-            while(rs.next()) {
+            while (rs.next()) {
                 explain = new Explain();
 
                 explain.setId(NumberUtils.parseLong(rs.getString("id")));
@@ -50,11 +51,9 @@ public class SqlExplain {
                 explain.setExtra(rs.getString("Extra"));
                 explainList.add(explain);
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
-        }
-        finally {
+        } finally {
             DatabaseUtils.close(rs);
             DatabaseUtils.close(statement);
         }

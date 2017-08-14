@@ -1,10 +1,9 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 
-import com.hkfs.fundamental.database.page.PageList;
+import com.sinotopia.fundamental.database.page.PageList;
 
 /**
  * 分页查询Dao
- * Created by brucezee on 2017/2/9.
  */
 public interface PageDaoBase<T, K> extends DaoBase<T, K> {
     /**

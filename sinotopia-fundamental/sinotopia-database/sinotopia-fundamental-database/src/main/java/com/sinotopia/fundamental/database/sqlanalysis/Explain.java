@@ -1,10 +1,9 @@
-package com.hkfs.fundamental.database.sqlanalysis;
+package com.sinotopia.fundamental.database.sqlanalysis;
 
-import com.hkfs.fundamental.common.utils.ObjectUtils;
+import com.sinotopia.fundamental.common.utils.ObjectUtils;
 
 /**
  * SQL语句的Explain结果
- * Created by zhoubing on 2016/12/15.
  */
 public class Explain {
     private Long id;

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 
 import com.sinotopia.fundamental.api.data.ResultEx;
 import org.slf4j.Logger;
@@ -13,11 +13,10 @@ import org.springframework.transaction.support.TransactionCallback;
 
 /**
  * 自定义数据库事物管理器，根据执行方法后的返回结果进行回滚
- *
- * @author brucezee 2016年1月1日 上午11:07:26
  */
 @SuppressWarnings("serial")
 public class TransactionManager extends DataSourceTransactionManager implements CallbackPreferringPlatformTransactionManager {
+    
     private final Logger logger = LoggerFactory.getLogger(TransactionManager.class);
 
     @SuppressWarnings("unchecked")

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.database;
+package com.sinotopia.fundamental.database;
 
 import org.apache.ibatis.io.ResolverUtil;
 import org.apache.ibatis.io.VFS;

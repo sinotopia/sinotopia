@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.sinotopia</groupId>
         <artifactId>sinotopia-database</artifactId>
@@ -12,8 +11,8 @@
     <artifactId>sinotopia-fundamental-database</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-config</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-config</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -22,23 +21,23 @@
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-logger</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-logger</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-spring</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-spring</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-aspect</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-aspect</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-common-tools</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-common-tools</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
