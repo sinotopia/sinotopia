@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 abel533@gmail.com
+ * Copyright (c) 2014-2016 abel533@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,50 +22,44 @@
  * THE SOFTWARE.
  */
 
-package com.github.pagehelper.model;
+package com.sinotopia.mybatis.mapper.model;
 
-import java.io.Serializable;
-import java.util.List;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class CountryCode implements Serializable {
+/**
+ * Created by liuzh on 2014/11/21.
+ */
+public class UserLogin2Key {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer logid;
 
-    private static final long serialVersionUID = 6569081236403751407L;
+    @Id
+    private String username;
 
-    private int id;
-    private String countryname;
-    private Code countrycode;
-
-    List<CountryCode> countries;
-
-    public int getId() {
-        return id;
+    public Integer getLogid() {
+        return logid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setLogid(Integer logid) {
+        this.logid = logid;
     }
 
-    public String getCountryname() {
-        return countryname;
+    public String getUsername() {
+        return username;
     }
 
-    public void setCountryname(String countryname) {
-        this.countryname = countryname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public Code getCountrycode() {
-        return countrycode;
-    }
-
-    public void setCountrycode(Code countrycode) {
-        this.countrycode = countrycode;
-    }
-
-    public List<CountryCode> getCountries() {
-        return countries;
-    }
-
-    public void setCountries(List<CountryCode> countries) {
-        this.countries = countries;
+    @Override
+    public String toString() {
+        return "UserLogin2Key{" +
+                "logid=" + logid +
+                ", username='" + username + '\'' +
+                '}';
     }
 }

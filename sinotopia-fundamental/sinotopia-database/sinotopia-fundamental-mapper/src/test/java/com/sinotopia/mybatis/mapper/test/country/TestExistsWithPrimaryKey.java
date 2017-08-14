@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 abel533@gmail.com
+ * Copyright (c) 2014-2016 abel533@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,50 +22,38 @@
  * THE SOFTWARE.
  */
 
-package com.github.pagehelper.model;
+package com.sinotopia.mybatis.mapper.test.country;
 
-import java.io.Serializable;
-import java.util.List;
+import com.sinotopia.mybatis.mapper.mapper.CountryMapper;
+import com.sinotopia.mybatis.mapper.mapper.MybatisHelper;
+import com.sinotopia.mybatis.mapper.model.Country;
+import org.apache.ibatis.session.SqlSession;
+import org.junit.Assert;
+import org.junit.Test;
 
-public class CountryCode implements Serializable {
+/**
+ * 通过主键查询
+ *
+ * @author liuzh
+ */
+public class TestExistsWithPrimaryKey {
 
-    private static final long serialVersionUID = 6569081236403751407L;
+    /**
+     * 根据PK进行查询
+     */
+    @Test
+    public void testDynamicExistsWithPrimaryKey() {
+        SqlSession sqlSession = MybatisHelper.getSqlSession();
+        try {
+            CountryMapper mapper = sqlSession.getMapper(CountryMapper.class);
+            Country country = new Country();
+            country.setId(35);
+            Assert.assertEquals(true, mapper.existsWithPrimaryKey(country));
 
-    private int id;
-    private String countryname;
-    private Code countrycode;
-
-    List<CountryCode> countries;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCountryname() {
-        return countryname;
-    }
-
-    public void setCountryname(String countryname) {
-        this.countryname = countryname;
-    }
-
-    public Code getCountrycode() {
-        return countrycode;
-    }
-
-    public void setCountrycode(Code countrycode) {
-        this.countrycode = countrycode;
-    }
-
-    public List<CountryCode> getCountries() {
-        return countries;
-    }
-
-    public void setCountries(List<CountryCode> countries) {
-        this.countries = countries;
+            country.setId(0);
+            Assert.assertEquals(false, mapper.existsWithPrimaryKey(country));
+        } finally {
+            sqlSession.close();
+        }
     }
 }

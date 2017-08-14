@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 abel533@gmail.com
+ * Copyright (c) 2014-2016 abel533@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,50 +22,28 @@
  * THE SOFTWARE.
  */
 
-package com.github.pagehelper.model;
+package com.sinotopia.mybatis.mapper.generator;
 
-import java.io.Serializable;
+import org.mybatis.generator.api.MyBatisGenerator;
+import org.mybatis.generator.config.Configuration;
+import org.mybatis.generator.config.xml.ConfigurationParser;
+import org.mybatis.generator.internal.DefaultShellCallback;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class CountryCode implements Serializable {
-
-    private static final long serialVersionUID = 6569081236403751407L;
-
-    private int id;
-    private String countryname;
-    private Code countrycode;
-
-    List<CountryCode> countries;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCountryname() {
-        return countryname;
-    }
-
-    public void setCountryname(String countryname) {
-        this.countryname = countryname;
-    }
-
-    public Code getCountrycode() {
-        return countrycode;
-    }
-
-    public void setCountrycode(Code countrycode) {
-        this.countrycode = countrycode;
-    }
-
-    public List<CountryCode> getCountries() {
-        return countries;
-    }
-
-    public void setCountries(List<CountryCode> countries) {
-        this.countries = countries;
+/**
+ * @author liuzh
+ */
+public class Generator {
+    public static void main(String[] args) throws Exception {
+        List<String> warnings = new ArrayList<String>();
+        boolean overwrite = true;
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(
+                Generator.class.getResourceAsStream("/generator/generatorConfig.xml"));
+        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        myBatisGenerator.generate(null);
     }
 }

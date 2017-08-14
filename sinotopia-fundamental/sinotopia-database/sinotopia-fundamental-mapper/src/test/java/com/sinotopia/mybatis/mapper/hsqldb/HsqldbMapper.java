@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 abel533@gmail.com
+ * Copyright (c) 2014-2016 abel533@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,50 +22,27 @@
  * THE SOFTWARE.
  */
 
-package com.github.pagehelper.model;
+package com.sinotopia.mybatis.mapper.hsqldb;
 
-import java.io.Serializable;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.SelectProvider;
+
 import java.util.List;
 
-public class CountryCode implements Serializable {
-
-    private static final long serialVersionUID = 6569081236403751407L;
-
-    private int id;
-    private String countryname;
-    private Code countrycode;
-
-    List<CountryCode> countries;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getCountryname() {
-        return countryname;
-    }
-
-    public void setCountryname(String countryname) {
-        this.countryname = countryname;
-    }
-
-    public Code getCountrycode() {
-        return countrycode;
-    }
-
-    public void setCountrycode(Code countrycode) {
-        this.countrycode = countrycode;
-    }
-
-    public List<CountryCode> getCountries() {
-        return countries;
-    }
-
-    public void setCountries(List<CountryCode> countries) {
-        this.countries = countries;
-    }
+/**
+ * 扩展例子
+ *
+ * @author liuzh
+ */
+public interface HsqldbMapper<T> {
+    /**
+     * 单表分页查询
+     *
+     * @param object
+     * @param offset
+     * @param limit
+     * @return
+     */
+    @SelectProvider(type=HsqldbProvider.class,method = "dynamicSQL")
+    List<T> selectPage(@Param("entity") T object, @Param("offset") int offset, @Param("limit") int limit);
 }

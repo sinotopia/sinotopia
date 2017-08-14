@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 abel533@gmail.com
+ * Copyright (c) 2014-2016 abel533@gmail.com
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,28 +22,35 @@
  * THE SOFTWARE.
  */
 
-package com.github.pagehelper.model;
+package com.sinotopia.mybatis.mapper.model;
 
+import com.sinotopia.mybatis.mapper.typehandler.StringType2Handler;
+import org.apache.ibatis.type.JdbcType;
+import tk.mybatis.mapper.annotation.ColumnType;
+import tk.mybatis.mapper.entity.IDynamicTableName;
+
+import javax.persistence.Column;
+import javax.persistence.Transient;
 import java.io.Serializable;
 import java.util.List;
 
-public class CountryCode implements Serializable {
+/**
+ * Description: Country
+ * Author: liuzh
+ * Update: liuzh(2014-06-06 13:38)
+ */
+public class Country extends Entity<Integer, String> implements Serializable, IDynamicTableName {
+    private static final long serialVersionUID = -1626761012846137805L;
 
-    private static final long serialVersionUID = 6569081236403751407L;
-
-    private int id;
+    @Column
+    @ColumnType(jdbcType = JdbcType.VARCHAR, typeHandler = StringType2Handler.class)
     private String countryname;
-    private Code countrycode;
+    private String countrycode;
 
-    List<CountryCode> countries;
+    List<Country> list;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    @Transient
+    private String dynamicTableName123;
 
     public String getCountryname() {
         return countryname;
@@ -53,19 +60,29 @@ public class CountryCode implements Serializable {
         this.countryname = countryname;
     }
 
-    public Code getCountrycode() {
+    public String getCountrycode() {
         return countrycode;
     }
 
-    public void setCountrycode(Code countrycode) {
+    public void setCountrycode(String countrycode) {
         this.countrycode = countrycode;
     }
 
-    public List<CountryCode> getCountries() {
-        return countries;
+    public List<Country> getList() {
+        return list;
     }
 
-    public void setCountries(List<CountryCode> countries) {
-        this.countries = countries;
+    public void setList(List<Country> list) {
+        this.list = list;
+    }
+
+    @Override
+    @Transient
+    public String getDynamicTableName() {
+        return dynamicTableName123;
+    }
+
+    public void setDynamicTableName123(String dynamicTableName) {
+        this.dynamicTableName123 = dynamicTableName;
     }
 }

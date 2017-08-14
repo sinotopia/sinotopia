@@ -62,18 +62,18 @@
 
     <mappers>
         <mapper resource="CachedCountryMapper.xml"/>
-        <mapper class="tk.mybatis.mapper.mapper.CountryMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.Country2Mapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.CountryTMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.CountryUMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.CountryJDBCMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.CountryIMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.UserInfoMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.UserInfoAbleMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.UserInfoMapMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.UserLoginMapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.UserLogin2Mapper"/>
-        <mapper class="tk.mybatis.mapper.mapper.JDBCMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.CountryMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.Country2Mapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.CountryTMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.CountryUMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.CountryJDBCMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.CountryIMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.UserInfoMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.UserInfoAbleMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.UserInfoMapMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.UserLoginMapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.UserLogin2Mapper"/>
+        <mapper class="com.sinotopia.mybatis.mapper.mapper.JDBCMapper"/>
 
     </mappers>
 
