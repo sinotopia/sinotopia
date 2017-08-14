@@ -7,7 +7,7 @@
         <groupId>com.sinotopia</groupId>
         <version>1.1-SNAPSHOT</version>
     </parent>
-    <artifactId>sinotopia-common</artifactId>
+    <artifactId>sinotopia-fundamental-common</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>sinotopia-fundamental-common-tools</module>
