@@ -1,7 +1,6 @@
 package com.hkfs.fundamental.validate;
 
 import com.sinotopia.fundamental.api.data.ResultEx;
-import com.hkfs.fundamental.exception.HkfsBizException;
 import com.hkfs.fundamental.validate.utils.ValidateUtils;
 import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;
@@ -44,7 +43,7 @@ public abstract class ValidateFilter<T> {
                 @Override
                 public void doWith(Field field) throws IllegalArgumentException, IllegalAccessException {
                     if (!paramsMap.containsKey(field.getName())) {
-                        throw new HkfsBizException(ValidateRetCode.FILTER_PARAM_ERROR.getCode(), ValidateRetCode.FILTER_PARAM_ERROR.getDescription() + "[" + ValidateFilter.this.clazz.getName()+ "->" + field.getName() + "]");
+                        throw new com.hkfs.fundamental.exception.ApplicationBizException(ValidateRetCode.FILTER_PARAM_ERROR.getCode(), ValidateRetCode.FILTER_PARAM_ERROR.getDescription() + "[" + ValidateFilter.this.clazz.getName()+ "->" + field.getName() + "]");
                     }
                 }
             });
@@ -52,16 +51,16 @@ public abstract class ValidateFilter<T> {
             ValidateUtils.validOrThrowException(param);
         } catch (InstantiationException e) {
             LOGGER.error("过滤器出现异常",e);
-            throw new HkfsBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
+            throw new com.hkfs.fundamental.exception.ApplicationBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
         } catch (IllegalAccessException e) {
             LOGGER.error("过滤器出现异常",e);
-            throw new HkfsBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
+            throw new com.hkfs.fundamental.exception.ApplicationBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
         } catch (InvocationTargetException e) {
             LOGGER.error("过滤器出现异常",e);
-            throw new HkfsBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
+            throw new com.hkfs.fundamental.exception.ApplicationBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
         } catch (NoSuchMethodException e) {
             LOGGER.error("过滤器出现异常",e);
-            throw new HkfsBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
+            throw new com.hkfs.fundamental.exception.ApplicationBizException(ValidateRetCode.FILTER_ERROR.getCode(), ValidateRetCode.FILTER_ERROR.getDescription());
         }
         return param;
     }

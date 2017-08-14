@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.config;
+package com.sinotopia.fundamental.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +12,6 @@ import java.util.Properties;
 
 /**
  * 默认本地配置文件加载器
- * Created by brucezee on 2017/2/5.
  */
 public class FilePropertiesLoader implements PropertiesLoader {
 
@@ -38,26 +37,22 @@ public class FilePropertiesLoader implements PropertiesLoader {
                 File file = new File(configPath.substring(FILE_PREFIX.length()));
                 logger.info("Load config from " + file.getName());
                 loadFromFile(properties, file);
-            }
-            else if (configPath.startsWith(CLASSPATH_PREFIX)) {
+            } else if (configPath.startsWith(CLASSPATH_PREFIX)) {
 //              classpath*:*.properties
                 ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
                 Resource[] resources = resolver.getResources(configPath);
-                for (int i=0;i<resources.length;i++) {
+                for (int i = 0; i < resources.length; i++) {
                     if (resources[i].isReadable()) {
                         logger.info("Load config from " + resources[i].getFilename());
                         PropertiesLoaderUtils.fillProperties(properties, resources[i]);
                     }
                 }
+            } else {
+                throw new RuntimeException("Unknown configPath value " + configPath);
             }
-            else{
-                throw new RuntimeException("Unknown configPath value "+configPath);
-            }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
-        }
-        finally {
+        } finally {
             closeQuietly(fis);
             closeQuietly(is);
         }
@@ -65,7 +60,7 @@ public class FilePropertiesLoader implements PropertiesLoader {
 
     private void closeQuietly(Closeable closeable) {
         try {
-            if(closeable != null) {
+            if (closeable != null) {
                 closeable.close();
             }
         } catch (IOException var2) {
@@ -73,21 +68,19 @@ public class FilePropertiesLoader implements PropertiesLoader {
         }
     }
 
-    private void loadFromFile(Properties properties, File file){
+    private void loadFromFile(Properties properties, File file) {
         if (file != null) {
-            if(file.isDirectory()) {
+            if (file.isDirectory()) {
                 File[] files = file.listFiles();
-                for(File eachFile: files){
+                for (File eachFile : files) {
                     loadFromFile(properties, eachFile);
                 }
-            }
-            else if (file.isFile() && file.getName().endsWith(".properties")
+            } else if (file.isFile() && file.getName().endsWith(".properties")
                     && !file.getName().startsWith("log4j")
-                    ){
+                    ) {
                 try {
                     properties.load(new InputStreamReader(new FileInputStream(file), charset));
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
             }

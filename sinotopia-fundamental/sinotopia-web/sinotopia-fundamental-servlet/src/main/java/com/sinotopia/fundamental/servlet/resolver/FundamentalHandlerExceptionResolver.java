@@ -1,6 +1,6 @@
 package com.hkfs.fundamental.servlet.resolver;
 
-import com.sinotopia.fundamental.api.enums.BizRetCode;
+import com.sinotopia.fundamental.api.enums.ResultCode;
 import com.hkfs.fundamental.common.utils.StrUtils;
 import com.hkfs.fundamental.servlet.utils.ActionUtils;
 import org.slf4j.Logger;
@@ -57,11 +57,11 @@ public class FundamentalHandlerExceptionResolver implements HandlerExceptionReso
             return new ModelAndView(redirectUrl);
         }
 
-        ActionUtils.print(response, processResultJson(BizRetCode.COMMON_ERROR), StrUtils.UTF_8);
+        ActionUtils.print(response, processResultJson(ResultCode.COMMON_ERROR), StrUtils.UTF_8);
         return null;
     }
 
-    private String processResultJson(BizRetCode bizRetCode) {
+    private String processResultJson(ResultCode bizRetCode) {
         return processResultJson(""+bizRetCode.getCode(), bizRetCode.getDescription());
     }
 

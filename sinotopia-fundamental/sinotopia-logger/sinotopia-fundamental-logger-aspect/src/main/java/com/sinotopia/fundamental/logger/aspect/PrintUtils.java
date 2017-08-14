@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.logger.aspect;
+package com.sinotopia.fundamental.logger.aspect;
 
 import com.sinotopia.fundamental.api.data.Result;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

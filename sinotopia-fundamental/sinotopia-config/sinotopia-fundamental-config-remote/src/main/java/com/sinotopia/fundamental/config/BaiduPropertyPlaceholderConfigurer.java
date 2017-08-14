@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.config;
+package com.sinotopia.fundamental.config;
 
 import com.baidu.disconf.client.addons.properties.PropertiesReloadedEvent;
 import com.baidu.disconf.client.addons.properties.ReloadingPropertyPlaceholderConfigurer;

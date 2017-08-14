@@ -1,11 +1,10 @@
 package com.hkfs.fundamental.session;
 
-import com.sinotopia.fundamental.api.enums.BizRetCode;
+import com.sinotopia.fundamental.api.enums.ResultCode;
 import com.sinotopia.fundamental.api.params.BaseParameter;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;
 import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.exception.HkfsBizException;
 import com.hkfs.fundamental.servlet.utils.ActionUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
@@ -55,13 +54,13 @@ public class AccessTokenAspect {
 			//防止前端注入，强制覆盖
 			String accessToken = SessionHandler.getAccessToken(request);
 			if (StrUtils.isEmpty(accessToken)) {
-				throw new HkfsBizException(BizRetCode.NOT_LOGIN_ERROR.getCode(), BizRetCode.NOT_LOGIN_ERROR.getDescription());
+				throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.NOT_LOGIN_ERROR.getCode(), ResultCode.NOT_LOGIN_ERROR.getDescription());
 			}
 
 			//获取会话
 			SessionIdentity sessionIdentity = getSessionProcessor().process(sessionParameter, accessToken);
 			if (sessionIdentity == null) {
-				throw new HkfsBizException(BizRetCode.NOT_LOGIN_ERROR.getCode(), BizRetCode.NOT_LOGIN_ERROR.getDescription());
+				throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.NOT_LOGIN_ERROR.getCode(), ResultCode.NOT_LOGIN_ERROR.getDescription());
 			}
 
 			//设置会话对象

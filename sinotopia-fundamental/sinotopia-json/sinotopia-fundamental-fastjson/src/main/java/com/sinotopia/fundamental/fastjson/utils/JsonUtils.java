@@ -1,4 +1,4 @@
-package com.hakim.fundamental.fastjson.utils;
+package com.sinotopia.fundamental.fastjson.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
 
 /**
  * JSON工具方法
- * Created by zhoubing on 2016/8/19.
  */
 public class JsonUtils {
     /**

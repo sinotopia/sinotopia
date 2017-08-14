@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.logger.aspect;
+package com.sinotopia.fundamental.logger.aspect;
 
 import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -10,15 +10,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by dingjidai on 2015/12/23.
  */
 public class LogAspect {
+
     private final Logger logger = LoggerFactory.getLogger(LogAspect.class);
     private static final String HTTP_SERVLET_RESPONSE = "javax.servlet.http.HttpServletResponse";
     private static final String HTTP_SERVLET_REQUEST = "javax.servlet.http.HttpServletRequest";
     public static final String FORMAT_KV = "kv";
     public static final String FORMAT_JSON = "json";
-
 
     private String from = "client";
 
@@ -51,33 +50,31 @@ public class LogAspect {
     private void logAfterSafe(ProceedingJoinPoint pjp, Object result) {
         try {
             logAfter(pjp, result);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
     }
 
     private void logAfter(ProceedingJoinPoint pjp, Object result) {
-        MethodSignature methodSignature= (MethodSignature) pjp.getSignature();
-        String methodName = pjp.getTarget().getClass().getSimpleName()+ "." +methodSignature.getMethod().getName();
+        MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
+        String methodName = pjp.getTarget().getClass().getSimpleName() + "." + methodSignature.getMethod().getName();
         log(getOutMark(), methodName, result);
     }
 
     private void logBeforeSafe(ProceedingJoinPoint pjp) {
         try {
             logBefore(pjp);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
     }
 
     private void logBefore(ProceedingJoinPoint pjp) {
         Object[] args = pjp.getArgs();
-        MethodSignature methodSignature= (MethodSignature) pjp.getSignature();
+        MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
         String[] paramNames = methodSignature.getParameterNames();
         Map<String, Object> paramMap = new HashMap<String, Object>();
-        if(paramNames != null && paramNames.length > 0) {
+        if (paramNames != null && paramNames.length > 0) {
             for (int i = 0; i < paramNames.length; i++) {
                 if (i < args.length && paramNames[i] != null && args[i] != null) {
                     String paramName = paramNames[i];
@@ -91,19 +88,17 @@ public class LogAspect {
                 }
             }
         }
-        String methodName = pjp.getTarget().getClass().getSimpleName()+ "." +methodSignature.getMethod().getName();
+        String methodName = pjp.getTarget().getClass().getSimpleName() + "." + methodSignature.getMethod().getName();
         log(getInMark(), methodName, paramMap);
     }
 
     private void log(String mark, String methodName, Object data) {
         if (FORMAT_JSON.equals(format)) {
-            logger.info(mark +" "+methodName+" "+ JSON.toJSONString(data));
-        }
-        else if (FORMAT_KV.equals(format)) {
-            logger.info(mark +" "+methodName+" "+ PrintUtils.printObjectData(data));
-        }
-        else {
-            logger.info(mark +" "+methodName+" "+ PrintUtils.printObjectData(data));
+            logger.info(mark + " " + methodName + " " + JSON.toJSONString(data));
+        } else if (FORMAT_KV.equals(format)) {
+            logger.info(mark + " " + methodName + " " + PrintUtils.printObjectData(data));
+        } else {
+            logger.info(mark + " " + methodName + " " + PrintUtils.printObjectData(data));
         }
     }
 

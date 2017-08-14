@@ -1,10 +1,9 @@
 package com.hkfs.fundamental.session;
 
-import com.sinotopia.fundamental.api.enums.BizRetCode;
+import com.sinotopia.fundamental.api.enums.ResultCode;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;
 import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.exception.HkfsBizException;
 import com.hkfs.fundamental.session.annotation.UserRole;
 import com.hkfs.fundamental.session.annotation.UserType;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -24,7 +23,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
         //获取会话
         SessionIdentity sessionIdentity = sessionParameter.getSessionIdentity();
         if (sessionIdentity == null) {
-            throw new HkfsBizException(BizRetCode.NOT_LOGIN_ERROR.getCode(), BizRetCode.NOT_LOGIN_ERROR.getDescription());
+            throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.NOT_LOGIN_ERROR.getCode(), ResultCode.NOT_LOGIN_ERROR.getDescription());
         }
 
         Class<?> targetClass = pjp.getTarget().getClass();
@@ -53,7 +52,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
             }
         }
 
-        throw new HkfsBizException(BizRetCode.AUTHORIZATION_ERROR.getCode(), BizRetCode.AUTHORIZATION_ERROR.getDescription());
+        throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
     }
 
     /**
@@ -76,7 +75,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
             }
         }
 
-        throw new HkfsBizException(BizRetCode.AUTHORIZATION_ERROR.getCode(), BizRetCode.AUTHORIZATION_ERROR.getDescription());
+        throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
     }
 
     /**

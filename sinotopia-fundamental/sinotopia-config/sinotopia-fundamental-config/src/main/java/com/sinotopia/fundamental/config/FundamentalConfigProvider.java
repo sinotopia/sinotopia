@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.config;
+package com.sinotopia.fundamental.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class FundamentalConfigProvider extends PropertyPlaceholderConfigurer {
     private static final String DEFAULT_CLASSPATH_PROPERTIES = "classpath*:config/*.properties";
     private static String charset = "UTF-8";
 
-    public static final String REMOTE_PROPERTIES_LOADER_CLASS_NAME = "com.hkfs.fundamental.config.RemotePropertiesLoader";
+    public static final String REMOTE_PROPERTIES_LOADER_CLASS_NAME = "com.sinotopia.fundamental.config.RemotePropertiesLoader";
 
     public FundamentalConfigProvider() {
         setProperties(FundamentalConfigProvider.getProp());

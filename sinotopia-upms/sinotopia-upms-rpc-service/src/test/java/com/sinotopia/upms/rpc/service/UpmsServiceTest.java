@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * 单元测试
- * Created by shuzheng on 2017/2/19.
+ * Created by sinotopia on 2017/2/19.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({
@@ -41,6 +41,7 @@ public class UpmsServiceTest {
 
     @Test
     public void index() {
+
         UpmsUser upmsUser = new UpmsUser();
         upmsUser.setAvatar("");
         upmsUser.setCtime(System.currentTimeMillis());

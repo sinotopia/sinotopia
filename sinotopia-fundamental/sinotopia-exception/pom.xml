@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<artifactId>hkfs-fundamental</artifactId>
-		<groupId>com.hkfs</groupId>
-		<version>1.1-SNAPSHOT</version>
-	</parent>
+    <parent>
+        <artifactId>sinotopia-fundamental</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
 
-	<artifactId>hkfs-exception</artifactId>
-	<packaging>pom</packaging>
+    <artifactId>sinotopia-exception</artifactId>
+    <packaging>pom</packaging>
 
-	<modules>
-		<module>hkfs-fundamental-exception</module>
-		<module>hkfs-fundamental-exception-aspect</module>
-	</modules>
+    <modules>
+        <module>sinotopia-fundamental-exception</module>
+        <module>sinotopia-fundamental-exception-aspect</module>
+    </modules>
 </project>

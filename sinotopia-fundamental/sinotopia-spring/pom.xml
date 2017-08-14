@@ -4,15 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.hkfs</groupId>
-		<artifactId>hkfs-fundamental</artifactId>
+		<groupId>com.sinotopia</groupId>
+		<artifactId>sinotopia-fundamental</artifactId>
 		<version>1.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hkfs-spring</artifactId>
+	<artifactId>sinotopia-spring</artifactId>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>hkfs-fundamental-spring</module>
+		<module>sinotopia-fundamental-spring</module>
 	</modules>
 </project>
