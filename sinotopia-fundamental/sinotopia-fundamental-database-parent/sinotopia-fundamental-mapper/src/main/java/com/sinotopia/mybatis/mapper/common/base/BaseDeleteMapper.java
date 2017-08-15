@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.common.base;
 
 import com.sinotopia.mybatis.mapper.common.base.delete.DeleteMapper;
-import tk.mybatis.mapper.common.base.delete.DeleteByPrimaryKeyMapper;
-import tk.mybatis.mapper.common.base.delete.DeleteMapper;
+import com.sinotopia.mybatis.mapper.common.base.delete.DeleteByPrimaryKeyMapper;
+import com.sinotopia.mybatis.mapper.common.base.delete.DeleteMapper;
 
 /**
  * 通用Mapper接口,基础删除

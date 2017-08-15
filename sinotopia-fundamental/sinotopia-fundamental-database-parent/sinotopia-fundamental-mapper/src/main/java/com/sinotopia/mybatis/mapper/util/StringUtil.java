@@ -24,7 +24,7 @@
 
 package com.sinotopia.mybatis.mapper.util;
 
-import tk.mybatis.mapper.code.Style;
+import com.sinotopia.mybatis.mapper.code.Style;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

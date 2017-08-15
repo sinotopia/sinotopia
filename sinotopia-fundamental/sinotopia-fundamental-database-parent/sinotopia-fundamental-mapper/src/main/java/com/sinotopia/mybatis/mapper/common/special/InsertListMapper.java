@@ -27,7 +27,7 @@ package com.sinotopia.mybatis.mapper.common.special;
 import com.sinotopia.mybatis.mapper.provider.SpecialProvider;
 import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.Options;
-import tk.mybatis.mapper.provider.SpecialProvider;
+import com.sinotopia.mybatis.mapper.provider.SpecialProvider;
 
 import java.util.List;
 

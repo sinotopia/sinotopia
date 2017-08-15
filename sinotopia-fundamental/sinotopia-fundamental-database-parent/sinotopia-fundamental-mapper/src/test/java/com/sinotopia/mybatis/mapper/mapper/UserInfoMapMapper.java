@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.mapper;
 
 import com.sinotopia.mybatis.mapper.model.UserInfoMap;
-import tk.mybatis.mapper.common.Mapper;
+import com.sinotopia.mybatis.mapper.common.Mapper;
 
 /**
  * Created by liuzh on 2014/11/19.

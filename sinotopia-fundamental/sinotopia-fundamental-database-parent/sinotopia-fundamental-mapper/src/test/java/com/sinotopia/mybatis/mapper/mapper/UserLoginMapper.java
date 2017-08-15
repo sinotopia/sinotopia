@@ -24,7 +24,7 @@
 
 package com.sinotopia.mybatis.mapper.mapper;
 
-import tk.mybatis.mapper.common.Mapper;
+import com.sinotopia.mybatis.mapper.common.Mapper;
 import com.sinotopia.mybatis.mapper.model.UserLogin;
 
 /**

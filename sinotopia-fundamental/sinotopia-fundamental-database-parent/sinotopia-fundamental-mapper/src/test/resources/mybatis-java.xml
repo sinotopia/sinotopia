@@ -36,7 +36,7 @@
     </settings>
 
     <typeAliases>
-        <package name="tk.mybatis.mapper.model"/>
+        <package name="com.sinotopia.mybatis.mapper.model"/>
     </typeAliases>
 
     <environments default="development">
@@ -74,7 +74,6 @@
         <mapper class="com.sinotopia.mybatis.mapper.mapper.UserLoginMapper"/>
         <mapper class="com.sinotopia.mybatis.mapper.mapper.UserLogin2Mapper"/>
         <mapper class="com.sinotopia.mybatis.mapper.mapper.JDBCMapper"/>
-
     </mappers>
 
 </configuration>

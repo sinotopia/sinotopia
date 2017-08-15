@@ -24,7 +24,7 @@
 
 package com.sinotopia.mybatis.mapper.mapper;
 
-import tk.mybatis.mapper.common.SqlServerMapper;
+import com.sinotopia.mybatis.mapper.common.SqlServerMapper;
 import com.sinotopia.mybatis.mapper.model.CountryJDBC;
 
 /**

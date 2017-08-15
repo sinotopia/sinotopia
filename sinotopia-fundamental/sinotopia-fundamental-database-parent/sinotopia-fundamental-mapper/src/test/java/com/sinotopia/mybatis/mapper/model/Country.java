@@ -26,8 +26,8 @@ package com.sinotopia.mybatis.mapper.model;
 
 import com.sinotopia.mybatis.mapper.typehandler.StringType2Handler;
 import org.apache.ibatis.type.JdbcType;
-import tk.mybatis.mapper.annotation.ColumnType;
-import tk.mybatis.mapper.entity.IDynamicTableName;
+import com.sinotopia.mybatis.mapper.annotation.ColumnType;
+import com.sinotopia.mybatis.mapper.entity.IDynamicTableName;
 
 import javax.persistence.Column;
 import javax.persistence.Transient;
@@ -40,6 +40,7 @@ import java.util.List;
  * Update: liuzh(2014-06-06 13:38)
  */
 public class Country extends Entity<Integer, String> implements Serializable, IDynamicTableName {
+
     private static final long serialVersionUID = -1626761012846137805L;
 
     @Column

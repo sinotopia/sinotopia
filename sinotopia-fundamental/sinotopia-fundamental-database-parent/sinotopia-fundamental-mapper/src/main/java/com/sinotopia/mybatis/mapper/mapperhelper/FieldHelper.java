@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.mapperhelper;
 
 import com.sinotopia.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.entity.EntityField;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.entity.EntityField;
 
 import javax.persistence.Entity;
 import java.beans.BeanInfo;

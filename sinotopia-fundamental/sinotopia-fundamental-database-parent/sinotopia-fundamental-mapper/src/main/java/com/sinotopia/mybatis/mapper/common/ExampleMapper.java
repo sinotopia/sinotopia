@@ -24,7 +24,7 @@
 
 package com.sinotopia.mybatis.mapper.common;
 
-import tk.mybatis.mapper.common.example.*;
+import com.sinotopia.mybatis.mapper.common.example.*;
 
 /**
  * 通用Mapper接口,Example查询

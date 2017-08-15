@@ -35,10 +35,10 @@ import org.apache.ibatis.annotations.UpdateProvider;
 import org.apache.ibatis.builder.annotation.ProviderSqlSource;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.session.Configuration;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.entity.Config;
-import tk.mybatis.mapper.provider.EmptyProvider;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.entity.Config;
+import com.sinotopia.mybatis.mapper.provider.EmptyProvider;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.lang.reflect.Method;
 import java.util.*;

@@ -27,12 +27,12 @@ package com.sinotopia.mybatis.mapper.provider;
 import com.sinotopia.mybatis.mapper.entity.EntityColumn;
 import com.sinotopia.mybatis.mapper.mapperhelper.SqlHelper;
 import org.apache.ibatis.mapping.MappedStatement;
-import tk.mybatis.mapper.entity.EntityColumn;
-import tk.mybatis.mapper.entity.EntityTable;
-import tk.mybatis.mapper.mapperhelper.EntityHelper;
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.mapperhelper.MapperTemplate;
-import tk.mybatis.mapper.mapperhelper.SqlHelper;
+import com.sinotopia.mybatis.mapper.entity.EntityColumn;
+import com.sinotopia.mybatis.mapper.entity.EntityTable;
+import com.sinotopia.mybatis.mapper.mapperhelper.EntityHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperTemplate;
+import com.sinotopia.mybatis.mapper.mapperhelper.SqlHelper;
 
 import java.util.Set;
 

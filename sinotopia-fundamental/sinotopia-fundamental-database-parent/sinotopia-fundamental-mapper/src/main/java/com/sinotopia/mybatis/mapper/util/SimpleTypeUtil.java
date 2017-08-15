@@ -1,7 +1,7 @@
 package com.sinotopia.mybatis.mapper.util;
 
 import com.sinotopia.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.MapperException;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.provider;
 
 import org.apache.ibatis.mapping.MappedStatement;
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.mapperhelper.MapperTemplate;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperTemplate;
 
 /**
  * ConditionProvider实现类，基础方法实现类

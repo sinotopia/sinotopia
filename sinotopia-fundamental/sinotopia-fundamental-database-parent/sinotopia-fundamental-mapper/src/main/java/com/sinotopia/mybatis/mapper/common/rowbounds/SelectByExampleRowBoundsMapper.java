@@ -27,7 +27,7 @@ package com.sinotopia.mybatis.mapper.common.rowbounds;
 import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 import org.apache.ibatis.annotations.SelectProvider;
 import org.apache.ibatis.session.RowBounds;
-import tk.mybatis.mapper.provider.ExampleProvider;
+import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 
 import java.util.List;
 

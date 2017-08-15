@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.common;
 
 import com.sinotopia.mybatis.mapper.common.special.InsertUseGeneratedKeysMapper;
-import tk.mybatis.mapper.common.special.InsertListMapper;
-import tk.mybatis.mapper.common.special.InsertUseGeneratedKeysMapper;
+import com.sinotopia.mybatis.mapper.common.special.InsertListMapper;
+import com.sinotopia.mybatis.mapper.common.special.InsertUseGeneratedKeysMapper;
 
 /**
  * 通用Mapper接口,MySql独有的通用方法

@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.common.base.insert;
 
 import org.apache.ibatis.annotations.InsertProvider;
-import tk.mybatis.mapper.provider.base.BaseInsertProvider;
+import com.sinotopia.mybatis.mapper.provider.base.BaseInsertProvider;
 
 /**
  * 通用Mapper接口,插入

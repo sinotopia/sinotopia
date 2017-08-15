@@ -28,7 +28,7 @@ import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.UpdateProvider;
-import tk.mybatis.mapper.provider.ConditionProvider;
+import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 
 /**
  * 通用Mapper接口,Condition查询

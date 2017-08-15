@@ -35,6 +35,7 @@ import javax.persistence.Table;
  */
 @Table(name = "country")
 public class CountryJDBC {
+
     @Id
     @GeneratedValue(generator = "JDBC")
     private Integer id;

@@ -26,9 +26,9 @@ package com.sinotopia.mybatis.mapper.mapperhelper;
 
 import com.sinotopia.mybatis.mapper.entity.EntityColumn;
 import com.sinotopia.mybatis.mapper.util.StringUtil;
-import tk.mybatis.mapper.entity.EntityColumn;
-import tk.mybatis.mapper.entity.IDynamicTableName;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.entity.EntityColumn;
+import com.sinotopia.mybatis.mapper.entity.IDynamicTableName;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.util.Set;
 

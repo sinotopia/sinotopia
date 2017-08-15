@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.common.condition;
 
 import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 import org.apache.ibatis.annotations.SelectProvider;
-import tk.mybatis.mapper.provider.ConditionProvider;
+import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 
 import java.util.List;
 

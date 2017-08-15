@@ -25,9 +25,9 @@
 package com.sinotopia.mybatis.mapper.provider;
 
 import org.apache.ibatis.mapping.MappedStatement;
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.mapperhelper.MapperTemplate;
-import tk.mybatis.mapper.mapperhelper.SqlHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperTemplate;
+import com.sinotopia.mybatis.mapper.mapperhelper.SqlHelper;
 
 /**
  * SqlServerProvider实现类，特殊方法实现类

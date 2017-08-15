@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.common.base.select;
 
 import com.sinotopia.mybatis.mapper.provider.base.BaseSelectProvider;
 import org.apache.ibatis.annotations.SelectProvider;
-import tk.mybatis.mapper.provider.base.BaseSelectProvider;
+import com.sinotopia.mybatis.mapper.provider.base.BaseSelectProvider;
 
 /**
  * 通用Mapper接口,查询

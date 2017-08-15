@@ -24,8 +24,8 @@
 
 package com.sinotopia.mybatis.mapper.provider;
 
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.mapperhelper.MapperTemplate;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperTemplate;
 
 /**
  * 空方法Mapper接口默认MapperTemplate

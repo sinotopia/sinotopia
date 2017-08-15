@@ -27,7 +27,7 @@ package com.sinotopia.mybatis.mapper.common.sqlserver;
 import com.sinotopia.mybatis.mapper.provider.SqlServerProvider;
 import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.Options;
-import tk.mybatis.mapper.provider.SqlServerProvider;
+import com.sinotopia.mybatis.mapper.provider.SqlServerProvider;
 
 /**
  * 通用Mapper接口,插入

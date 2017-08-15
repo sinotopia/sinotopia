@@ -32,8 +32,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.type.StringTypeHandler;
 import org.junit.Assert;
 import org.junit.Test;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.entity.Example;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.entity.Example;
 import com.sinotopia.mybatis.mapper.entity.model.CountryExample;
 
 import java.util.*;

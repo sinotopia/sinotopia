@@ -4,6 +4,7 @@ package com.sinotopia.mybatis.mapper;
  * @author liuzh
  */
 public class MapperException extends RuntimeException {
+
     public MapperException() {
         super();
     }

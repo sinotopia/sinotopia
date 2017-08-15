@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.common.base;
 
 import com.sinotopia.mybatis.mapper.common.base.insert.InsertSelectiveMapper;
-import tk.mybatis.mapper.common.base.insert.InsertMapper;
-import tk.mybatis.mapper.common.base.insert.InsertSelectiveMapper;
+import com.sinotopia.mybatis.mapper.common.base.insert.InsertMapper;
+import com.sinotopia.mybatis.mapper.common.base.insert.InsertSelectiveMapper;
 
 /**
  * 通用Mapper接口,基础查询

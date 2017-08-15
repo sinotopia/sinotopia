@@ -1,7 +1,7 @@
 package com.sinotopia.mybatis.mapper.common.ids;
 
 import org.apache.ibatis.annotations.SelectProvider;
-import tk.mybatis.mapper.provider.IdsProvider;
+import com.sinotopia.mybatis.mapper.provider.IdsProvider;
 
 import java.util.List;
 

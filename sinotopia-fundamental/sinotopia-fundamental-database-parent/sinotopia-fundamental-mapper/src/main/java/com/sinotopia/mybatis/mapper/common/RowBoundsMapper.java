@@ -26,8 +26,8 @@ package com.sinotopia.mybatis.mapper.common;
 
 import com.sinotopia.mybatis.mapper.common.rowbounds.SelectByExampleRowBoundsMapper;
 import com.sinotopia.mybatis.mapper.common.rowbounds.SelectRowBoundsMapper;
-import tk.mybatis.mapper.common.rowbounds.SelectByExampleRowBoundsMapper;
-import tk.mybatis.mapper.common.rowbounds.SelectRowBoundsMapper;
+import com.sinotopia.mybatis.mapper.common.rowbounds.SelectByExampleRowBoundsMapper;
+import com.sinotopia.mybatis.mapper.common.rowbounds.SelectRowBoundsMapper;
 
 /**
  * 通用Mapper接口,带RowBounds参数的查询

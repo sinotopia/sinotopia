@@ -29,11 +29,11 @@ import com.sinotopia.mybatis.mapper.code.IdentityDialect;
 import com.sinotopia.mybatis.mapper.code.Style;
 import com.sinotopia.mybatis.mapper.util.SimpleTypeUtil;
 import com.sinotopia.mybatis.mapper.util.StringUtil;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.code.IdentityDialect;
-import tk.mybatis.mapper.code.Style;
-import tk.mybatis.mapper.util.SimpleTypeUtil;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.code.IdentityDialect;
+import com.sinotopia.mybatis.mapper.code.Style;
+import com.sinotopia.mybatis.mapper.util.SimpleTypeUtil;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.util.Properties;
 
@@ -43,6 +43,7 @@ import java.util.Properties;
  * @author liuzh
  */
 public class Config {
+
     private String  UUID;
     private String  IDENTITY;
     private boolean BEFORE;

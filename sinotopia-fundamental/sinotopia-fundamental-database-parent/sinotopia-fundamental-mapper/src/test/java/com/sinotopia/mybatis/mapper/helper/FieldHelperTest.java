@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.mapper.helper;
 
 import org.junit.Test;
-import tk.mybatis.mapper.entity.EntityField;
-import tk.mybatis.mapper.mapperhelper.FieldHelper;
+import com.sinotopia.mybatis.mapper.entity.EntityField;
+import com.sinotopia.mybatis.mapper.mapperhelper.FieldHelper;
 import com.sinotopia.mybatis.mapper.model.Country;
 
 import javax.persistence.Id;

@@ -26,8 +26,8 @@ package com.sinotopia.mybatis.mapper.test.othres;
 
 import org.junit.Assert;
 import org.junit.Test;
-import tk.mybatis.mapper.code.Style;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.code.Style;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 /**
  * @author liuzh

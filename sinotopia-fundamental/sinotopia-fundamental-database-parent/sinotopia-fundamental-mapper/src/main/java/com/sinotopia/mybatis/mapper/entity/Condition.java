@@ -31,6 +31,7 @@ package com.sinotopia.mybatis.mapper.entity;
  * @since 2015-06-10
  */
 public class Condition extends Example {
+
     public Condition(Class<?> entityClass) {
         super(entityClass);
     }

@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.common.example;
 
 import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 import org.apache.ibatis.annotations.SelectProvider;
-import tk.mybatis.mapper.provider.ExampleProvider;
+import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 
 import java.util.List;
 

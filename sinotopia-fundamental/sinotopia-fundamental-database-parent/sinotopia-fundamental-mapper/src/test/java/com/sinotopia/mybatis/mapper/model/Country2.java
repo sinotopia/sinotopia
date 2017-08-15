@@ -34,6 +34,7 @@ import javax.persistence.Id;
  * Update: liuzh(2014-06-06 13:38)
  */
 public class Country2 {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

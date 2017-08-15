@@ -27,8 +27,8 @@ package com.sinotopia.mybatis.mapper.common;
 
 import com.sinotopia.mybatis.mapper.common.sqlserver.InsertMapper;
 import com.sinotopia.mybatis.mapper.common.sqlserver.InsertSelectiveMapper;
-import tk.mybatis.mapper.common.sqlserver.InsertMapper;
-import tk.mybatis.mapper.common.sqlserver.InsertSelectiveMapper;
+import com.sinotopia.mybatis.mapper.common.sqlserver.InsertMapper;
+import com.sinotopia.mybatis.mapper.common.sqlserver.InsertSelectiveMapper;
 
 /**
  * 通用Mapper接口,SqlServerMapper独有的通用方法

@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.mapper;
 
 import com.sinotopia.mybatis.mapper.hsqldb.HsqldbMapper;
-import tk.mybatis.mapper.common.Mapper;
+import com.sinotopia.mybatis.mapper.common.Mapper;
 import com.sinotopia.mybatis.mapper.model.Country;
 
 /**

@@ -36,11 +36,11 @@
     </settings>
 
     <typeAliases>
-        <package name="com.github.pagehelper.model"/>
+        <package name="com.sinotopia.mybatis.pagehelper.model"/>
     </typeAliases>
 
     <plugins>
-        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+        <plugin interceptor="com.sinotopia.mybatis.pagehelper.PageInterceptor">
             <property name="reasonable" value="true"/>
         </plugin>
     </plugins>
@@ -60,7 +60,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="com/github/pagehelper/mapper/CountryMapper.xml"/>
+        <mapper resource="com/sinotopia.mybatis/pagehelper/mapper/CountryMapper.xml"/>
     </mappers>
 
 </configuration>

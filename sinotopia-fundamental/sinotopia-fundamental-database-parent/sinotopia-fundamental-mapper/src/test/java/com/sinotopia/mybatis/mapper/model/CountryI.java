@@ -24,8 +24,8 @@
 
 package com.sinotopia.mybatis.mapper.model;
 
-import tk.mybatis.mapper.annotation.NameStyle;
-import tk.mybatis.mapper.code.Style;
+import com.sinotopia.mybatis.mapper.annotation.NameStyle;
+import com.sinotopia.mybatis.mapper.code.Style;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -38,6 +38,7 @@ import javax.persistence.Id;
  */
 @NameStyle(Style.camelhump)
 public class CountryI {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.common.condition;
 
 import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 import org.apache.ibatis.annotations.DeleteProvider;
-import tk.mybatis.mapper.provider.ConditionProvider;
+import com.sinotopia.mybatis.mapper.provider.ConditionProvider;
 
 /**
  * 通用Mapper接口,Condition查询

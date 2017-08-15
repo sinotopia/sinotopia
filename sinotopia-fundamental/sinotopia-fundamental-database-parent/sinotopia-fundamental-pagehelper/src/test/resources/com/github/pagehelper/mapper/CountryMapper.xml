@@ -27,7 +27,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.github.pagehelper.mapper.CountryMapper">
+<mapper namespace="com.sinotopia.mybatis.pagehelper.mapper.CountryMapper">
     <cache/>
     <select id="selectAll" resultType="Country">
         select * from country order by id
@@ -52,28 +52,28 @@
         #{countryname}
     </select>
 
-    <select id="selectAllOrderby" resultType="com.github.pagehelper.model.Country">
+    <select id="selectAllOrderby" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country order by countrycode desc
     </select>
     <select id="selectAllOrderby_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectAllOrderByParams" resultType="com.github.pagehelper.model.Country">
+    <select id="selectAllOrderByParams" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country order by ${order1} desc,${order2} asc
     </select>
     <select id="selectAllOrderByParams_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectAllOrderByMap" resultType="com.github.pagehelper.model.Country">
+    <select id="selectAllOrderByMap" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where id &lt;&gt; #{order1} and id &lt;&gt; #{order2} order by id
     </select>
     <select id="selectAllOrderByMap_TESTCOUNT" resultType="Long">
         select count(distinct id) from country where id &lt;&gt; #{order1} and id &lt;&gt; #{order2}
     </select>
 
-    <select id="selectAllOrderByList" resultType="com.github.pagehelper.model.Country">
+    <select id="selectAllOrderByList" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where id not in
         <foreach collection="list" item="par" separator="," open="(" close=")">
             #{par}
@@ -87,7 +87,7 @@
         </foreach>
     </select>
 
-    <select id="selectAllOrderByArray" resultType="com.github.pagehelper.model.Country">
+    <select id="selectAllOrderByArray" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where id not in
         <foreach collection="array" item="par" separator="," open="(" close=")">
             #{par}
@@ -101,7 +101,7 @@
         </foreach>
     </select>
 
-    <select id="selectIf" resultType="com.github.pagehelper.model.Country">
+    <select id="selectIf" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <if test="@Ognl@isNotNull(id)">
             <!--<if test="id!=null">-->
@@ -117,7 +117,7 @@
         </if>
     </select>
 
-    <select id="selectIf3" parameterType="Country" resultType="com.github.pagehelper.model.Country">
+    <select id="selectIf3" parameterType="Country" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <if test="id > 0">
             where id &gt; #{id}
@@ -131,7 +131,7 @@
         </if>
     </select>
 
-    <select id="selectIf2" resultType="com.github.pagehelper.model.Country">
+    <select id="selectIf2" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where id &gt; #{id1}
         <if test="id2!=null">
             and id &gt; #{id2}
@@ -144,7 +144,7 @@
         </if>
     </select>
 
-    <select id="selectIf2List" resultType="com.github.pagehelper.model.Country">
+    <select id="selectIf2List" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <where>
             <if test="id1!=null and id1.size>0">
@@ -180,7 +180,7 @@
         </where>
     </select>
 
-    <select id="selectIf2ListAndOrder" resultType="com.github.pagehelper.model.Country">
+    <select id="selectIf2ListAndOrder" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <where>
             <if test="id1!=null and id1.size>0">
@@ -221,7 +221,7 @@
         </where>
     </select>
 
-    <select id="selectChoose" resultType="com.github.pagehelper.model.Country">
+    <select id="selectChoose" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <where>
             <choose>
@@ -249,7 +249,7 @@
         </where>
     </select>
 
-    <select id="selectLike" resultType="com.github.pagehelper.model.Country">
+    <select id="selectLike" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where 1=1
         <if test="countryname!=null and countryname!=''">
             and lower(countryname) like '%${countryname}%'
@@ -263,7 +263,7 @@
         </if>
     </select>
 
-    <select id="selectByMap" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByMap" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country where 1=1
         <if test="countryname!=null and countryname !=''">
             and countryname= #{countryname}
@@ -282,14 +282,14 @@
         </if>
     </select>
 
-    <select id="selectByOrder2" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByOrder2" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country order by ${order}
     </select>
     <select id="selectByOrder2_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectUnion" resultType="com.github.pagehelper.model.Country">
+    <select id="selectUnion" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select id,countryname,countrycode from country where id &gt;180
         union
         select id,countryname,countrycode from country where id &lt;=10 order by id
@@ -301,7 +301,7 @@
         select id,countryname,countrycode from country where id &lt;=10) temp
     </select>
 
-    <select id="selectLeftjoin" resultType="com.github.pagehelper.model.Country">
+    <select id="selectLeftjoin" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select a.id,b.countryname,a.countrycode from country a
         left join country b on a.id = b.id
         order by a.id
@@ -311,7 +311,7 @@
         left join country b on a.id = b.id
     </select>
 
-    <select id="selectWith" resultType="com.github.pagehelper.model.Country">
+    <select id="selectWith" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         with rs as (select id from country where id>150) select * from country where id in (select * from rs) order by
         id
     </select>
@@ -320,7 +320,7 @@
     </select>
 
     <!--select column中包含参数时-->
-    <select id="selectColumns" resultType="com.github.pagehelper.model.Country">
+    <select id="selectColumns" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select
         <if test="columns==null or columns.length == 0">
             *
@@ -337,14 +337,14 @@
         select count(distinct id) from country
     </select>
 
-    <select id="selectMULId" resultType="com.github.pagehelper.model.Country">
+    <select id="selectMULId" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select id * #{mul} as id,countryname,countrycode from country order by id
     </select>
     <select id="selectMULId_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectGroupBy" resultType="com.github.pagehelper.model.Country">
+    <select id="selectGroupBy" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         /*keep orderby*/select countryname,countrycode,count(id) id from country
         group by countryname,countrycode
         order by countryname,countrycode
@@ -356,7 +356,7 @@
         order by countryname,countrycode) as temp
     </select>
 
-    <select id="selectByWhereMap" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByWhereMap" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <where>
             <foreach collection="map" item="val" index="key" separator="and">
@@ -405,8 +405,8 @@
         </where>
     </sql>
 
-    <select id="selectByExample" resultType="com.github.pagehelper.model.Country"
-            parameterType="com.github.pagehelper.model.CountryExample">
+    <select id="selectByExample" resultType="com.sinotopia.mybatis.pagehelper.model.Country"
+            parameterType="com.sinotopia.mybatis.pagehelper.model.CountryExample">
         select
         <if test="distinct">
             distinct
@@ -424,7 +424,7 @@
         </if>
     </select>
     <select id="selectByExample_TESTCOUNT" resultType="Long"
-            parameterType="com.github.pagehelper.model.CountryExample">
+            parameterType="com.sinotopia.mybatis.pagehelper.model.CountryExample">
         select
         count(
         <if test="distinct">
@@ -437,21 +437,21 @@
         </if>
     </select>
 
-    <select id="selectDistinct" resultType="com.github.pagehelper.model.Country">
+    <select id="selectDistinct" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select distinct SUBSTR(countryname,1,1) countryname from country
     </select>
     <select id="selectDistinct_TESTCOUNT" resultType="Long">
         select count(distinct SUBSTR(countryname,1,1)) from country
     </select>
 
-    <select id="selectExists" resultType="com.github.pagehelper.model.Country">
+    <select id="selectExists" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country a where exists(select 1 from country b where a.id = b.id and b.id >100)
     </select>
     <select id="selectExists_TESTCOUNT" resultType="Long">
         select count(distinct id) from country a where exists(select 1 from country b where a.id = b.id and b.id >100)
     </select>
 
-    <select id="select1" resultType="com.github.pagehelper.model.Country">
+    <select id="select1" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country a where 1=1
         <if test="country!=null and country.countryname !=null and country.countryname!=null">
             and countryname = #{country.countryname}
@@ -464,35 +464,35 @@
         </if>
     </select>
 
-    <select id="selectByPageNumSize" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByPageNumSize" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
     </select>
     <select id="selectByPageNumSize_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectByPageNumSizeOrderBy" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByPageNumSizeOrderBy" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
     </select>
     <select id="selectByPageNumSizeOrderBy_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectByOrderBy" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByOrderBy" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
     </select>
     <select id="selectByOrderBy_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectByQueryModel" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByQueryModel" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
     </select>
     <select id="selectByQueryModel_TESTCOUNT" resultType="Long">
         select count(distinct id) from country
     </select>
 
-    <select id="selectByIdList" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByIdList" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         select * from country
         <if test="idList != null and idList.size()>0">
             where id in
@@ -511,7 +511,7 @@
         </if>
     </select>
 
-    <select id="selectByIdList2" resultType="com.github.pagehelper.model.Country">
+    <select id="selectByIdList2" resultType="com.sinotopia.mybatis.pagehelper.model.Country">
         <foreach collection="idList" item="id" separator="union all">
             select * from country where id = #{id}
         </foreach>
@@ -528,9 +528,9 @@
         ${sql}
     </select>
     
-    <resultMap id="collectionMap" type="com.github.pagehelper.model.Country">
+    <resultMap id="collectionMap" type="com.sinotopia.mybatis.pagehelper.model.Country">
         <id column="id" property="id"/>
-        <collection property="countries" column="{id=id}" ofType="com.github.pagehelper.model.Country" select="selectGreterThanId"/>
+        <collection property="countries" column="{id=id}" ofType="com.sinotopia.mybatis.pagehelper.model.Country" select="selectGreterThanId"/>
     </resultMap>
     
     <select id="selectCollectionMap" resultMap="collectionMap">
@@ -540,7 +540,7 @@
         select count(distinct id) from country
     </select>
 
-    <resultMap id="codeMap" type="com.github.pagehelper.model.CountryCode">
+    <resultMap id="codeMap" type="com.sinotopia.mybatis.pagehelper.model.CountryCode">
         <id column="id" property="id"/>
         <result column="countrycode" property="countrycode" typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
     </resultMap>

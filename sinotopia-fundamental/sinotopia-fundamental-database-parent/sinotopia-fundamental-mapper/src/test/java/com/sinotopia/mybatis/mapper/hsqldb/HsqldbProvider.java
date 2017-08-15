@@ -26,10 +26,10 @@ package com.sinotopia.mybatis.mapper.hsqldb;
 
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.scripting.xmltags.*;
-import tk.mybatis.mapper.entity.EntityColumn;
-import tk.mybatis.mapper.mapperhelper.EntityHelper;
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.mapperhelper.MapperTemplate;
+import com.sinotopia.mybatis.mapper.entity.EntityColumn;
+import com.sinotopia.mybatis.mapper.mapperhelper.EntityHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperTemplate;
 
 import java.util.ArrayList;
 import java.util.List;

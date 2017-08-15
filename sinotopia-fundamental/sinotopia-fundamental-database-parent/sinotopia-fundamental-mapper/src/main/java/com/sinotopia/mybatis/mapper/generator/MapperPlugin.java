@@ -34,7 +34,7 @@ import org.mybatis.generator.api.dom.xml.XmlElement;
 import org.mybatis.generator.config.CommentGeneratorConfiguration;
 import org.mybatis.generator.config.Context;
 import org.mybatis.generator.internal.util.StringUtility;
-import tk.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.MapperException;
 
 import java.util.HashSet;
 import java.util.List;

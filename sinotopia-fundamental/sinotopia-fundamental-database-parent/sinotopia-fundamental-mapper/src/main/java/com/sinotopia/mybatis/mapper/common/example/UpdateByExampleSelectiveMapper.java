@@ -28,7 +28,7 @@ import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.UpdateProvider;
-import tk.mybatis.mapper.provider.ExampleProvider;
+import com.sinotopia.mybatis.mapper.provider.ExampleProvider;
 
 /**
  * 通用Mapper接口,Example查询

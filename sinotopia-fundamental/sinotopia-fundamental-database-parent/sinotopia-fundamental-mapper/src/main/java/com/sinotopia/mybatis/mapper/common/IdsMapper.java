@@ -1,8 +1,8 @@
 package com.sinotopia.mybatis.mapper.common;
 
 import com.sinotopia.mybatis.mapper.common.ids.DeleteByIdsMapper;
-import tk.mybatis.mapper.common.ids.DeleteByIdsMapper;
-import tk.mybatis.mapper.common.ids.SelectByIdsMapper;
+import com.sinotopia.mybatis.mapper.common.ids.DeleteByIdsMapper;
+import com.sinotopia.mybatis.mapper.common.ids.SelectByIdsMapper;
 
 /**
  * 通用Mapper接口,根据ids操作

@@ -38,11 +38,11 @@ import org.apache.ibatis.reflection.SystemMetaObject;
 import org.apache.ibatis.scripting.defaults.RawSqlSource;
 import org.apache.ibatis.scripting.xmltags.*;
 import org.apache.ibatis.session.Configuration;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.entity.EntityColumn;
-import tk.mybatis.mapper.entity.EntityTable;
-import tk.mybatis.mapper.entity.IDynamicTableName;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.entity.EntityColumn;
+import com.sinotopia.mybatis.mapper.entity.EntityTable;
+import com.sinotopia.mybatis.mapper.entity.IDynamicTableName;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

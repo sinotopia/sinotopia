@@ -24,8 +24,8 @@
 
 package com.sinotopia.mybatis.mapper.common.base;
 
-import tk.mybatis.mapper.common.base.update.UpdateByPrimaryKeyMapper;
-import tk.mybatis.mapper.common.base.update.UpdateByPrimaryKeySelectiveMapper;
+import com.sinotopia.mybatis.mapper.common.base.update.UpdateByPrimaryKeyMapper;
+import com.sinotopia.mybatis.mapper.common.base.update.UpdateByPrimaryKeySelectiveMapper;
 
 /**
  * 通用Mapper接口,基础查询

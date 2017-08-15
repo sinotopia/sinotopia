@@ -30,9 +30,9 @@ import com.sinotopia.mybatis.mapper.util.StringUtil;
 import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.reflection.SystemMetaObject;
 import org.apache.ibatis.type.TypeHandler;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.mapperhelper.EntityHelper;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.mapperhelper.EntityHelper;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.util.*;
 

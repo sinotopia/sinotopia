@@ -36,11 +36,11 @@
     </settings>
 
     <typeAliases>
-        <package name="com.github.pagehelper.model"/>
+        <package name="com.sinotopia.mybatis.pagehelper.model"/>
     </typeAliases>
 
     <plugins>
-        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+        <plugin interceptor="com.sinotopia.mybatis.pagehelper.PageInterceptor">
             <!-- dialect参数可以忽略不写 -->
             <!-- 如果需要用自己的实现方法，可以将value写成类的全限定名称 -->
             <!-- 如下所示，该类必须继承Parser接口 -->
@@ -53,7 +53,7 @@
             <property name="rowBoundsWithCount" value="true"/>
             <!-- 该参数可选，可以设置sql缓存实现类，默认为SimpleCache，当项目包含guava时，使用GuavaCache，
                  也可以通过参数 sqlCacheClass 指定自己的实现类 -->
-            <property name="sqlCacheClass" value="com.github.pagehelper.cache.SimpleCache"/>
+            <property name="sqlCacheClass" value="com.sinotopia.mybatis.pagehelper.cache.SimpleCache"/>
             <property name="countColumn" value="1"/>
         </plugin>
     </plugins>
@@ -72,7 +72,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="com/github/pagehelper/mapper/CountryMapper.xml"/>
+        <mapper resource="com/sinotopia.mybatis/pagehelper/mapper/CountryMapper.xml"/>
     </mappers>
 
 </configuration>

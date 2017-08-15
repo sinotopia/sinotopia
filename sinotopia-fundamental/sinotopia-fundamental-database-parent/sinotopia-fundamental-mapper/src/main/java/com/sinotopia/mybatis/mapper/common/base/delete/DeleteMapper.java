@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.common.base.delete;
 
 import org.apache.ibatis.annotations.DeleteProvider;
-import tk.mybatis.mapper.provider.base.BaseDeleteProvider;
+import com.sinotopia.mybatis.mapper.provider.base.BaseDeleteProvider;
 
 /**
  * 通用Mapper接口,删除

@@ -30,8 +30,8 @@ import org.apache.ibatis.mapping.ResultFlag;
 import org.apache.ibatis.mapping.ResultMap;
 import org.apache.ibatis.mapping.ResultMapping;
 import org.apache.ibatis.session.Configuration;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import javax.persistence.Table;
 import java.util.*;

@@ -12,6 +12,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>sinotopia-fundamental-database</module>
-        <!--<module>sinotopia-fundamental-mapper</module>-->
+        <module>sinotopia-fundamental-mapper</module>
+        <module>sinotopia-fundamental-pagehelper</module>
+        <module>sinotopia-fundamental-mybatis-spring</module>
     </modules>
 </project>

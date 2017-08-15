@@ -28,9 +28,9 @@ import com.sinotopia.mybatis.mapper.util.StringUtil;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
-import tk.mybatis.mapper.common.Marker;
-import tk.mybatis.mapper.mapperhelper.MapperHelper;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.common.Marker;
+import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 import java.util.Properties;
 

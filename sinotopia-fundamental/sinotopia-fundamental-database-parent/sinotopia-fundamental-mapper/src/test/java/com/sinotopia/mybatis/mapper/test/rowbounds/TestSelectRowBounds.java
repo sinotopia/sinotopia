@@ -30,7 +30,7 @@ import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Assert;
 import org.junit.Test;
-import tk.mybatis.mapper.entity.Example;
+import com.sinotopia.mybatis.mapper.entity.Example;
 import com.sinotopia.mybatis.mapper.model.Country;
 
 import java.util.List;

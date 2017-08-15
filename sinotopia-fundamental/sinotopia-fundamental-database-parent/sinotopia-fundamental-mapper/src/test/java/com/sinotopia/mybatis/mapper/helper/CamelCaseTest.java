@@ -2,7 +2,7 @@ package com.sinotopia.mybatis.mapper.helper;
 
 import org.junit.Assert;
 import org.junit.Test;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 /**
  * @author liuzh_3nofxnp
@@ -12,6 +12,7 @@ public class CamelCaseTest {
 
     @Test
     public void testCamelhumpToUnderline() {
+
         Assert.assertEquals("user_id", StringUtil.camelhumpToUnderline("userId"));
         Assert.assertEquals("sys_user", StringUtil.camelhumpToUnderline("sysUser"));
         Assert.assertEquals("sys_user_role", StringUtil.camelhumpToUnderline("sysUserRole"));

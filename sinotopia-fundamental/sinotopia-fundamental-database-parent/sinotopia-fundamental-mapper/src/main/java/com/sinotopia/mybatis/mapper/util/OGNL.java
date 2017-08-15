@@ -25,9 +25,9 @@
 package com.sinotopia.mybatis.mapper.util;
 
 import com.sinotopia.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.MapperException;
-import tk.mybatis.mapper.entity.Example;
-import tk.mybatis.mapper.entity.IDynamicTableName;
+import com.sinotopia.mybatis.mapper.MapperException;
+import com.sinotopia.mybatis.mapper.entity.Example;
+import com.sinotopia.mybatis.mapper.entity.IDynamicTableName;
 
 /**
  * OGNL静态方法

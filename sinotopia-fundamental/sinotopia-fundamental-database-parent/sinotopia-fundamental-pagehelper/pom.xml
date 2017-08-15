@@ -52,8 +52,8 @@
     <!--</scm>-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mybatis.version>3.4.4</mybatis.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.github.jsqlparser</groupId>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.4.4</version>
+            <version>${mybatis.version}</version>
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
@@ -78,7 +78,6 @@
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
-
         <!-- test -->
         <dependency>
             <groupId>junit</groupId>

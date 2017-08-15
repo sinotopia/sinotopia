@@ -32,6 +32,7 @@ import java.util.Date;
  */
 @Table(name = "USER_LOGIN")
 public class UserLogin2 extends UserLogin2Key {
+
     private Date logindate;
     private String loginip;
 

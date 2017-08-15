@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.common.base.update;
 
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.UpdateProvider;
-import tk.mybatis.mapper.provider.base.BaseUpdateProvider;
+import com.sinotopia.mybatis.mapper.provider.base.BaseUpdateProvider;
 
 /**
  * 通用Mapper接口,更新

@@ -28,10 +28,10 @@ import com.sinotopia.mybatis.mapper.common.base.BaseDeleteMapper;
 import com.sinotopia.mybatis.mapper.common.base.BaseInsertMapper;
 import com.sinotopia.mybatis.mapper.common.base.BaseSelectMapper;
 import com.sinotopia.mybatis.mapper.common.base.BaseUpdateMapper;
-import tk.mybatis.mapper.common.base.BaseDeleteMapper;
-import tk.mybatis.mapper.common.base.BaseInsertMapper;
-import tk.mybatis.mapper.common.base.BaseSelectMapper;
-import tk.mybatis.mapper.common.base.BaseUpdateMapper;
+import com.sinotopia.mybatis.mapper.common.base.BaseDeleteMapper;
+import com.sinotopia.mybatis.mapper.common.base.BaseInsertMapper;
+import com.sinotopia.mybatis.mapper.common.base.BaseSelectMapper;
+import com.sinotopia.mybatis.mapper.common.base.BaseUpdateMapper;
 
 /**
  * 通用Mapper接口,其他接口继承该接口即可

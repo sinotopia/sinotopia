@@ -29,7 +29,7 @@ import com.sinotopia.mybatis.mapper.mapper.MybatisHelper;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Assert;
 import org.junit.Test;
-import tk.mybatis.mapper.entity.Example;
+import com.sinotopia.mybatis.mapper.entity.Example;
 import com.sinotopia.mybatis.mapper.entity.model.CountryExample;
 import com.sinotopia.mybatis.mapper.model.Country;
 

@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.common;
 
 
-import tk.mybatis.mapper.common.condition.*;
+import com.sinotopia.mybatis.mapper.common.condition.*;
 
 /**
  * 通用Mapper接口,Condition查询

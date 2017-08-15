@@ -26,7 +26,7 @@ package com.sinotopia.mybatis.mapper.entity;
 
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.TypeHandler;
-import tk.mybatis.mapper.util.StringUtil;
+import com.sinotopia.mybatis.mapper.util.StringUtil;
 
 /**
  * 数据库表对应的列

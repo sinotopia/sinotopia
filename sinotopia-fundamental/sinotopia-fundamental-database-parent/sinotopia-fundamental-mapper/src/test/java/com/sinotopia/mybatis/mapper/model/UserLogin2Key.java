@@ -32,6 +32,7 @@ import javax.persistence.Id;
  * Created by liuzh on 2014/11/21.
  */
 public class UserLogin2Key {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer logid;
