@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package com.sinotopia.mybatis.spring.mapper;
+package com.sinotopia.mybatis.mapper;
 
 import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
 
