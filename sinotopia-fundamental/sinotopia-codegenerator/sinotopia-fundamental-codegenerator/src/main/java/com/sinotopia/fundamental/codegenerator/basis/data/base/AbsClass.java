@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.codegenerator.basis.data.base;
+package com.sinotopia.fundamental.codegenerator.basis.data.base;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Annotation;
-import com.hkfs.fundamental.codegenerator.basis.data.Comment;
-import com.hkfs.fundamental.codegenerator.basis.data.Method;
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.basis.utils.AppendUtils;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.io.Outputable;
+import com.sinotopia.fundamental.codegenerator.basis.data.Annotation;
+import com.sinotopia.fundamental.codegenerator.basis.data.Comment;
+import com.sinotopia.fundamental.codegenerator.basis.data.Method;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.basis.utils.AppendUtils;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.io.Outputable;
 
 public class AbsClass extends AbsFormat implements Outputable {
 	public String fullClassName;//接口的完整类名

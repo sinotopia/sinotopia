@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.bean;
+package com.sinotopia.fundamental.pay.spdb.bean;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

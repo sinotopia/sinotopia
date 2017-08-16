@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.validate.annotaion.validation;
+package com.sinotopia.fundamental.validate.annotaion.validation;
 
-import com.hkfs.fundamental.validate.constants.ValidationConstants;
+import com.sinotopia.fundamental.validate.constants.ValidationConstants;
 
 import javax.validation.Constraint;
 import javax.validation.OverridesAttribute;

@@ -1,19 +1,19 @@
-package com.hkfs.fundamental.test;
+package com.sinotopia.fundamental.test;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Annotation;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Interface;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Connection;
-import com.hkfs.fundamental.codegenerator.basis.data.db.MySql;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Table;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.template.TemplateMapper;
-import com.hkfs.fundamental.codegenerator.basis.translator.BaseColumnNameTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.BaseColumnTypeTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.ClassToDaoTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.TableToClassTranslator;
-import com.hkfs.fundamental.codegenerator.output.MultiCodeOutputer;
+import com.sinotopia.fundamental.codegenerator.basis.data.Annotation;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Interface;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Connection;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.MySql;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Table;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.template.TemplateMapper;
+import com.sinotopia.fundamental.codegenerator.basis.translator.BaseColumnNameTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.BaseColumnTypeTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.ClassToDaoTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.TableToClassTranslator;
+import com.sinotopia.fundamental.codegenerator.output.MultiCodeOutputer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,7 @@ public class TemplateTest {
     static Connection connection = new Connection("192.168.7.55", 3306, "djd", "root", "123456");
 
     private static final String ROOT = "F:\\temp1";
-    private static final String TEMPLATE_ROOT = "F:\\works\\hkfs-fundamental\\hkfs-fundamental\\hkfs-fundamental-codegenerator\\src\\test\\resources";
+    private static final String TEMPLATE_ROOT = "F:\\works\\sinotopia-fundamental\\sinotopia-fundamental\\sinotopia-fundamental-codegenerator\\src\\test\\resources";
 
     public static void main(String[] args) throws Exception {
         generateSms();

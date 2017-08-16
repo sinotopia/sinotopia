@@ -5,7 +5,7 @@
     <!--json解析第一部分-->
     <define id="bookParser-json-part1" type="Object">
         <define type="Integer" name="expensive" selector="$.data.product.expensive">
-            <processor class="com.hkfs.fundamental.parser.processor.number.IntegerFieldProcessor" />
+            <processor class="com.sinotopia.fundamental.parser.processor.number.IntegerFieldProcessor" />
         </define>
         <define type="Object" name="store" selector="$.data.store.bookStore">
             <define type="Object" name="bicycle" selector="$.data.store.bicycleStore.bicycle">
@@ -21,7 +21,7 @@
                     <define type="String" name="isbnNo" selector="$..isbn" /><!--名称不一致-->
                     <define type="Double" name="price" selector="$..price" />
                     <define type="String" name="createTime" selector="$..time" >
-                        <processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <argument>yyyy-MM-dd</argument>
                         </processor>
                     </define>
@@ -68,7 +68,7 @@
                     <define type="String" name="isbnNo" selector="./isbn" /><!--名称不一致-->
                     <define type="Double" name="price" selector="./price" />
                     <define type="String" name="createTime" selector="./time" >
-                        <processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <argument>yyyy-MM-dd</argument>
                         </processor>
                     </define>
@@ -118,7 +118,7 @@
                     <define type="String" name="isbnNo" selector=" td:eq(3)" />
                     <define type="Double" name="price" selector=" td:eq(4)" />
                     <define type="String" name="createTime" selector=" td:eq(5)" >
-                        <processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <argument>yyyy-MM-dd</argument>
                         </processor>
                     </define>
@@ -188,7 +188,7 @@
                     </define>
                     <define type="String" name="createTime" >
                         <selector><![CDATA[ regex[11]:<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>]]></selector>
-                        <processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <argument>yyyy-MM-dd</argument>
                         </processor>
                     </define>

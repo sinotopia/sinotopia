@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.zookeeper.bean;
+package com.sinotopia.fundamental.zookeeper.bean;
 
 /**
  * 结果容器。

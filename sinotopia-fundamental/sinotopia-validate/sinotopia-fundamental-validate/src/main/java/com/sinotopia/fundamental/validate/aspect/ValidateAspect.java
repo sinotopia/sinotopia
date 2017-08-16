@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.validate.aspect;
+package com.sinotopia.fundamental.validate.aspect;
 
 import com.sinotopia.fundamental.api.data.DataObjectBase;
-import com.hkfs.fundamental.validate.utils.ValidateUtils;
+import com.sinotopia.fundamental.validate.utils.ValidateUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

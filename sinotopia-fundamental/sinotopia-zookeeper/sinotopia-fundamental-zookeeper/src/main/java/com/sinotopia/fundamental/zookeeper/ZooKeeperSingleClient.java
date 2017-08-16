@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.zookeeper;
+package com.sinotopia.fundamental.zookeeper;
 
-import com.hkfs.fundamental.zookeeper.callback.ZooKeeperLockCallback;
-import com.hkfs.fundamental.zookeeper.listener.LeaderLatchEventListener;
-import com.hkfs.fundamental.zookeeper.listener.NodeDataCacheListener;
-import com.hkfs.fundamental.zookeeper.listener.PathChildrenCacheEventListener;
-import com.hkfs.fundamental.zookeeper.listener.ZooKeeperClientConnectionStateListener;
+import com.sinotopia.fundamental.zookeeper.callback.ZooKeeperLockCallback;
+import com.sinotopia.fundamental.zookeeper.listener.LeaderLatchEventListener;
+import com.sinotopia.fundamental.zookeeper.listener.NodeDataCacheListener;
+import com.sinotopia.fundamental.zookeeper.listener.PathChildrenCacheEventListener;
+import com.sinotopia.fundamental.zookeeper.listener.ZooKeeperClientConnectionStateListener;
 import org.apache.zookeeper.CreateMode;
 
 import java.io.EOFException;

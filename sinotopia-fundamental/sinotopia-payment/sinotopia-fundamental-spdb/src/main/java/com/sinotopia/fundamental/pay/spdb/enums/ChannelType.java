@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum ChannelType {
 	LL(1001, "", "连连"), 

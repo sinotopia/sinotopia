@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.io;
+package com.sinotopia.fundamental.codegenerator.io;
 
 public interface Outputable {
 	/**

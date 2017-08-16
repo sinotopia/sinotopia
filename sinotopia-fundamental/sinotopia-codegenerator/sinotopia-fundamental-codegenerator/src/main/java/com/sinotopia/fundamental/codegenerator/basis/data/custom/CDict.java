@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.codegenerator.basis.data.custom;
+package com.sinotopia.fundamental.codegenerator.basis.data.custom;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Dict;
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
-import com.hkfs.fundamental.codegenerator.basis.validate.Unique;
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.data.Dict;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.basis.validate.Unique;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
 
 public class CDict extends Dict {
 	public CDict(int value, String name, String comment) {

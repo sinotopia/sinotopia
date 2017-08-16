@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.codegenerator.recovery;
+package com.sinotopia.fundamental.codegenerator.recovery;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Annotation;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.*;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.FileUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Annotation;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.*;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.FileUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 import org.eclipse.jdt.core.dom.*;
 
 import java.util.ArrayList;

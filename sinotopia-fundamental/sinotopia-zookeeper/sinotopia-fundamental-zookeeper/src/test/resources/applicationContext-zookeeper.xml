@@ -12,6 +12,6 @@
                         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- 注册ZooKeeper客户端，工厂方法根据配置创建，全工程尽量只使用这一个，需要时注入 -->
-    <bean id="zkClient" class="com.hkfs.fundamental.zookeeper.ZooKeeperClientFactory"
+    <bean id="zkClient" class="com.sinotopia.fundamental.zookeeper.ZooKeeperClientFactory"
         factory-method="createZooKeeperClient" destroy-method="close"/>
 </beans>

@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.validate.annotaion.validation;
+package com.sinotopia.fundamental.validate.annotaion.validation;
 
-import com.hkfs.fundamental.validate.constants.ValidationConstants;
-import com.hkfs.fundamental.validate.validator.IdentityNoValidator;
+import com.sinotopia.fundamental.validate.constants.ValidationConstants;
+import com.sinotopia.fundamental.validate.validator.IdentityNoValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

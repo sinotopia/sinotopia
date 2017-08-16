@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.jackson.convert.serializer;
+package com.sinotopia.fundamental.jackson.convert.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.SerializerProvider;
-import com.hkfs.fundamental.jackson.convert.FundamentalJsonSerializer;
+import com.sinotopia.fundamental.jackson.convert.FundamentalJsonSerializer;
 
 import java.io.IOException;
 import java.util.Date;

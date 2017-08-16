@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.session;
+package com.sinotopia.fundamental.session;
 
 import com.alibaba.fastjson.JSON;
 import com.sinotopia.fundamental.api.enums.BizFields;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.common.utils.TimeUtils;
-import com.hkfs.fundamental.redis.RedisConnector;
-import com.hkfs.fundamental.servlet.utils.CookieUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.redis.RedisConnector;
+import com.sinotopia.fundamental.servlet.utils.CookieUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by zhoubing on 2016/4/12.
  */
 public class SessionHandler<T> {
-    public static final String SESSION_CACHE_KEY_PREFIX = "hkfs.session.";
+    public static final String SESSION_CACHE_KEY_PREFIX = "sinotopia.session.";
     public static final long SESSION_EXPIRE_MILLIS = TimeUtils.MILLIS_OF_HOUR/2;//会话缓存时间毫秒数
     public static final String AUTHORIZATION_COOKIE_VALUE_PREFIX = "Bearer ";//授权cookie前缀
     public static final String DELETE_AUTHORIZATION_COOKIE_VALUE = "Bearer deleteMe";//删除授权cookie

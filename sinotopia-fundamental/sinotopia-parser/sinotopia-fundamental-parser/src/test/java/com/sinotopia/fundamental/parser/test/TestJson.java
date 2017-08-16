@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.ParserWrap;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.json.JsonParser;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
-import com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.ParserWrap;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.json.JsonParser;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor;
 
 /**
  * Created by zhoubing on 2016/11/22.
@@ -16,8 +16,8 @@ public class TestJson {
         String data = "{\"retCode\":100,\"retMsg\":\"OK\",\"data\":{\"store\":{\"bookStore\":{\"manager\":\"John\",\"customer\":\"Justin\",\"name\":\"xinhua shudian\",\"book\":[{\"category\":\"reference\",\"author\":\"Nigel Rees\",\"title\":\"Sayings of the Century\",\"price\":8.95,\"time\":\"20150311\"},{\"category\":\"fiction\",\"author\":\"Evelyn Waugh\",\"title\":\"Sword of Honour\",\"price\":12.99,\"time\":\"20150924\"},{\"category\":\"fiction\",\"author\":\"Herman Melville\",\"title\":\"Moby Dick\",\"isbn\":\"0-553-21311-3\",\"price\":8.99,\"time\":\"20151212\"},{\"category\":\"fiction\",\"author\":\"J. R. R. Tolkien\",\"title\":\"The Lord of the Rings\",\"isbn\":\"0-395-19395-8\",\"price\":22.99,\"time\":\"20161124\"}]},\"bicycleStore\":{\"manager\":\"Mike\",\"bicycle\":{\"color\":\"red\",\"price\":19.95},\"factory\":{\"factoryName\":\"Beijing Book Ltd.Coxxxxx\"}},\"address\":\"zhejiang hangzhou\"},\"product\":{\"sellCount\":100,\"expensive\":10}}}";
 //        {"retCode":100,"retMsg":"OK","data":{"store":{"bookStore":{"manager":"John","customer":"Justin","name":"xinhua shudian","book":[{"category":"reference","author":"Nigel Rees","title":"Sayings of the Century","price":8.95,"time":"20150311"},{"category":"fiction","author":"Evelyn Waugh","title":"Sword of Honour","price":12.99,"time":"20150924"},{"category":"fiction","author":"Herman Melville","title":"Moby Dick","isbn":"0-553-21311-3","price":8.99,"time":"20151212"},{"category":"fiction","author":"J. R. R. Tolkien","title":"The Lord of the Rings","isbn":"0-395-19395-8","price":22.99,"time":"20161124"}]},"bicycleStore":{"manager":"Mike","bicycle":{"color":"red","price":19.95},"factory":{"factoryName":"Beijing Book Ltd.Coxxxxx"}},"address":"zhejiang hangzhou"},"product":{"sellCount":100,"expensive":10}}}
 
-        String data2 = "{\"paymentList\":[{\"baseAmount\":77788,\"company\":\"abc company\",\"companyAmount\":55.55},{\"baseAmount\":446,\"company\":\"guangzhou co\",\"companyAmount\":55.55},{\"baseAmount\":11224,\"company\":\"nanjing co\",\"companyAmount\":55.55}],\"user\":{\"authItem\":\"security\",\"channelCode\":\"djd\",\"cityCode\":\"621000\",\"idcard\":\"431381198109106573\",\"name\":\"test\",\"phone\":\"15858295625\",\"provinceCode\":\"620000\",\"token\":\"HkFs000000000wfTnwkbYl3My2wpbTqd\",\"userId\":\"1\"}}";
-//        {"paymentList":[{"baseAmount":77788,"company":"abc company","companyAmount":55.55},{"baseAmount":446,"company":"guangzhou co","companyAmount":55.55},{"baseAmount":11224,"company":"nanjing co","companyAmount":55.55}],"user":{"authItem":"security","channelCode":"djd","cityCode":"621000","idcard":"431381198109106573","name":"test","phone":"15858295625","provinceCode":"620000","token":"HkFs000000000wfTnwkbYl3My2wpbTqd","userId":"1"}}
+        String data2 = "{\"paymentList\":[{\"baseAmount\":77788,\"company\":\"abc company\",\"companyAmount\":55.55},{\"baseAmount\":446,\"company\":\"guangzhou co\",\"companyAmount\":55.55},{\"baseAmount\":11224,\"company\":\"nanjing co\",\"companyAmount\":55.55}],\"user\":{\"authItem\":\"security\",\"channelCode\":\"djd\",\"cityCode\":\"621000\",\"idcard\":\"431381198109106573\",\"name\":\"test\",\"phone\":\"15858295625\",\"provinceCode\":\"620000\",\"token\":\"sinotopia000000000wfTnwkbYl3My2wpbTqd\",\"userId\":\"1\"}}";
+//        {"paymentList":[{"baseAmount":77788,"company":"abc company","companyAmount":55.55},{"baseAmount":446,"company":"guangzhou co","companyAmount":55.55},{"baseAmount":11224,"company":"nanjing co","companyAmount":55.55}],"user":{"authItem":"security","channelCode":"djd","cityCode":"621000","idcard":"431381198109106573","name":"test","phone":"15858295625","provinceCode":"620000","token":"sinotopia000000000wfTnwkbYl3My2wpbTqd","userId":"1"}}
 
         Parser parser = new JsonParser();
         TestObject object = parser.parse(

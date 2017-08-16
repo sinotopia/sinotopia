@@ -12,7 +12,7 @@
           init-method="init" destroy-method="destroy">
     </bean>
 
-    <bean id="propertyConfigurer" class="com.hkfs.fundamental.config.BaiduPropertyPlaceholderConfigurer">
+    <bean id="propertyConfigurer" class="com.sinotopia.fundamental.config.BaiduPropertyPlaceholderConfigurer">
         <property name="ignoreResourceNotFound" value="true"/>
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
         <property name="propertiesArray">

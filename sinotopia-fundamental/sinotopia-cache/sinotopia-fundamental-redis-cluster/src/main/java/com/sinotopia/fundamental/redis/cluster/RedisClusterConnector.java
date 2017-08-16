@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis.cluster;
+package com.sinotopia.fundamental.redis.cluster;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.serializer.support.DeserializingConverter;

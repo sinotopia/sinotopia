@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.servlet.resolver;
+package com.sinotopia.fundamental.servlet.resolver;
 
 import com.sinotopia.fundamental.api.enums.ResultCode;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.servlet.utils.ActionUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.servlet.utils.ActionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerExceptionResolver;

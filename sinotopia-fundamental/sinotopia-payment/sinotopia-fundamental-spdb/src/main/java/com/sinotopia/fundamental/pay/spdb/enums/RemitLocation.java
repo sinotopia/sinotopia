@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum RemitLocation {
 	ZERO(0, "", "同城"),ONE(1, "", "异地");

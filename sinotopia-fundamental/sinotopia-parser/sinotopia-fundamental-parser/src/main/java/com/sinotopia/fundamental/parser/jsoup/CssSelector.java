@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.jsoup;
+package com.sinotopia.fundamental.parser.jsoup;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 
 /**
  * 扩展的css query

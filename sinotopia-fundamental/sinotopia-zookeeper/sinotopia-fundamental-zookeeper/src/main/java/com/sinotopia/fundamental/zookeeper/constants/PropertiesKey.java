@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.zookeeper.constants;
+package com.sinotopia.fundamental.zookeeper.constants;
 
 /**
  * Created by pc on 2016/4/22.

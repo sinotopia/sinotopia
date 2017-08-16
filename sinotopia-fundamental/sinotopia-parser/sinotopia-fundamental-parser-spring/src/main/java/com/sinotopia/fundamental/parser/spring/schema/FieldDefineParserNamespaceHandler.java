@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.parser.spring.schema;
+package com.sinotopia.fundamental.parser.spring.schema;
 
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 

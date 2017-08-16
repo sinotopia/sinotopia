@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.akka;
+package com.sinotopia.fundamental.akka;
 
 import akka.actor.Extension;
 import akka.actor.Props;

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis.cluster;
+package com.sinotopia.fundamental.redis.cluster;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.JedisShardInfo;

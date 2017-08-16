@@ -1,1 +1,1 @@
-http\://www.hakim.com.cn/schema/defines=com.hkfs.fundamental.parser.spring.schema.FieldDefineParserNamespaceHandler
+http\://www.hakim.com.cn/schema/defines=com.sinotopia.fundamental.parser.spring.schema.FieldDefineParserNamespaceHandler

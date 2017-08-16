@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.basis.global;
+package com.sinotopia.fundamental.codegenerator.basis.global;
 
 public class Consts {
 	public static String CLASS_MODIFIER = "public";

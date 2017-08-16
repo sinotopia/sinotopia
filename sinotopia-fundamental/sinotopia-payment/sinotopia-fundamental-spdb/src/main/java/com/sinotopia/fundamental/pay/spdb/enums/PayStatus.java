@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum PayStatus {
 	PENDING(0, "", "待处理"), SUCCESS(1, "", "提现成功"), FAILURE(2, "", "提现失败"), PROCESSING(3, "", "提现进行中");

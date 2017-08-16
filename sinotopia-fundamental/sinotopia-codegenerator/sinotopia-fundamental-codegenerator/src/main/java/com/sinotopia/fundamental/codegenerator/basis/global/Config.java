@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.global;
+package com.sinotopia.fundamental.codegenerator.basis.global;
 
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 import java.util.HashMap;
 import java.util.HashSet;

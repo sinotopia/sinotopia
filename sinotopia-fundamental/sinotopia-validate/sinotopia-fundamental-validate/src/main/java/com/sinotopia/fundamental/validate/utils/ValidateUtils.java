@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.validate.utils;
+package com.sinotopia.fundamental.validate.utils;
 
-import com.sinotopia.fundamental.api.enums.BizRetCode;
+import com.sinotopia.fundamental.api.enums.ResultCode;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
@@ -24,7 +24,7 @@ public class ValidateUtils {
     public static <T> void validOrThrowException(T bean) {
         Set<ConstraintViolation<T>> violations = validator.validate(bean);
         if (!violations.isEmpty()) {
-            throw new com.hkfs.fundamental.exception.ApplicationBizException(BizRetCode.PARAMETER_ERROR.getCode(), buildMessageFromViolations(violations));
+            throw new com.sinotopia.fundamental.exception.ApplicationBizException(ResultCode.PARAMETER_ERROR.getCode(), buildMessageFromViolations(violations));
         }
     }
     

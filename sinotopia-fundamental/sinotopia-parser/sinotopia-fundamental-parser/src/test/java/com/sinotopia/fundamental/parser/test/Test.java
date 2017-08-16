@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.common.utils.FileUtils;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.jsoup.JsoupParser;
+import com.sinotopia.fundamental.common.utils.FileUtils;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.jsoup.JsoupParser;
 
 import java.util.Map;
 

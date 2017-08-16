@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.jackson.convert.serializer;
+package com.sinotopia.fundamental.jackson.convert.serializer;
 
 /**
  * Float类型字段值的序列化

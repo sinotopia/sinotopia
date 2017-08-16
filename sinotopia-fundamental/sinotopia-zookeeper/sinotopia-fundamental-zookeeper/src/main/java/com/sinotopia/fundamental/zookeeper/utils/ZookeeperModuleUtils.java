@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.zookeeper.utils;
+package com.sinotopia.fundamental.zookeeper.utils;
 
 import java.io.*;
 import java.nio.charset.Charset;

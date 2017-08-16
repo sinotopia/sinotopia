@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.codegenerator.basis.data.db;
+package com.sinotopia.fundamental.codegenerator.basis.data.db;
 
-import com.hkfs.fundamental.codegenerator.enums.DatabaseType;
-import com.hkfs.fundamental.codegenerator.utils.DatabaseUtils;
+import com.sinotopia.fundamental.codegenerator.enums.DatabaseType;
+import com.sinotopia.fundamental.codegenerator.utils.DatabaseUtils;
 
 /**
  * 数据库连接

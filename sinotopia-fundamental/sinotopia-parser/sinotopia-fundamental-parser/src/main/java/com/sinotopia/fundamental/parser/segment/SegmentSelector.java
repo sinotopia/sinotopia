@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.parser.segment;
+package com.sinotopia.fundamental.parser.segment;
 
-import com.hkfs.fundamental.common.data.PrefixSuffix;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.common.utils.SubStrUtils;
+import com.sinotopia.fundamental.common.data.PrefixSuffix;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.SubStrUtils;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.util;
+package com.sinotopia.fundamental.pay.spdb.util;
 
 public final class Base64 {  
 	  

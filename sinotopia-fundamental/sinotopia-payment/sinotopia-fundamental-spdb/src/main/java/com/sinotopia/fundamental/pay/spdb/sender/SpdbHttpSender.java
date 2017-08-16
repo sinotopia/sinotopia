@@ -1,14 +1,13 @@
-package com.hkfs.fundamental.pay.spdb.sender;
+package com.sinotopia.fundamental.pay.spdb.sender;
 
-import com.hkfs.fundamental.exception.HkfsBizException;
-import com.hkfs.fundamental.pay.spdb.bean.BankInfoResponse;
-import com.hkfs.fundamental.pay.spdb.bean.MessageInfo;
-import com.hkfs.fundamental.pay.spdb.bean.WithDrawRecordsDetail;
-import com.hkfs.fundamental.pay.spdb.bean.WithDrawalsInfo;
-import com.hkfs.fundamental.pay.spdb.enums.*;
-import com.hkfs.fundamental.pay.spdb.exception.WithDrawConstants;
-import com.hkfs.fundamental.pay.spdb.util.HelperUtil;
-import com.hkfs.fundamental.pay.spdb.util.JsonUtil;
+import com.sinotopia.fundamental.pay.spdb.bean.BankInfoResponse;
+import com.sinotopia.fundamental.pay.spdb.bean.MessageInfo;
+import com.sinotopia.fundamental.pay.spdb.bean.WithDrawRecordsDetail;
+import com.sinotopia.fundamental.pay.spdb.bean.WithDrawalsInfo;
+import com.sinotopia.fundamental.pay.spdb.enums.*;
+import com.sinotopia.fundamental.pay.spdb.exception.WithDrawConstants;
+import com.sinotopia.fundamental.pay.spdb.util.HelperUtil;
+import com.sinotopia.fundamental.pay.spdb.util.JsonUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.velocity.app.VelocityEngine;
 import org.slf4j.Logger;

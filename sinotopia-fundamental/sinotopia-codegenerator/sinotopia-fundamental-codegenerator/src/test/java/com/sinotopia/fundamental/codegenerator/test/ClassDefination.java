@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.codegenerator.test;
+package com.sinotopia.fundamental.codegenerator.test;
 
 
-import com.hkfs.fundamental.codegenerator.basis.data.*;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.output.MultiCodeOutputer;
+import com.sinotopia.fundamental.codegenerator.basis.data.*;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.output.MultiCodeOutputer;
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;

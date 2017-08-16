@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.zookeeper.lock;
+package com.sinotopia.fundamental.zookeeper.lock;
 
-import com.hkfs.fundamental.zookeeper.ZooKeeperClient;
+import com.sinotopia.fundamental.zookeeper.ZooKeeperClient;
 import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

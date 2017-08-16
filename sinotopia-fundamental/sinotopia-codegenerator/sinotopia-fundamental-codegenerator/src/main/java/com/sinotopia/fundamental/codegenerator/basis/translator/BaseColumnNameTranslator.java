@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.codegenerator.basis.translator;
+package com.sinotopia.fundamental.codegenerator.basis.translator;
 
-import com.hkfs.fundamental.codegenerator.basis.data.db.Column;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Column;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 /**
  * 默认的数据库字段名称转换器

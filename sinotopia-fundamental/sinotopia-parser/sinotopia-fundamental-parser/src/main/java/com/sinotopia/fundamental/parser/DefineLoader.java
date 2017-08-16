@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.parser;
+package com.sinotopia.fundamental.parser;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
 import org.dom4j.*;
 import org.dom4j.io.SAXReader;
 

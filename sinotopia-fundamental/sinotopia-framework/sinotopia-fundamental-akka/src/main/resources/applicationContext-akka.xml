@@ -7,7 +7,7 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="springExtension" class="com.hkfs.fundamental.akka.SpringExtension" />
+    <bean id="springExtension" class="com.sinotopia.fundamental.akka.SpringExtension" />
     <bean id="actorSystem" class="akka.actor.ActorSystem" factory-method="create" destroy-method="shutdown" scope="singleton">
         <constructor-arg value="AkkaSpringSystem"/>
     </bean>

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.data.db;
+package com.sinotopia.fundamental.codegenerator.basis.data.db;
 
-import com.hkfs.fundamental.codegenerator.utils.DatabaseUtils;
+import com.sinotopia.fundamental.codegenerator.utils.DatabaseUtils;
 
 import java.sql.Connection;
 import java.sql.*;
@@ -21,7 +21,7 @@ public class MySql {
 	 */
 	private HashSet<String> excludeSet = new HashSet<String>();
 	
-	private MySql(com.hkfs.fundamental.codegenerator.basis.data.db.Connection connection) {
+	private MySql(com.sinotopia.fundamental.codegenerator.basis.data.db.Connection connection) {
 		this.databaseName = connection.databaseName;
 		this.connection = DatabaseUtils.connect(connection.url, connection.username, connection.password);
 	}
@@ -44,7 +44,7 @@ public class MySql {
 		return this;
 	}
 	
-	public static MySql newInstance(com.hkfs.fundamental.codegenerator.basis.data.db.Connection connection) {
+	public static MySql newInstance(com.sinotopia.fundamental.codegenerator.basis.data.db.Connection connection) {
 		return new MySql(connection);
 	}
 	

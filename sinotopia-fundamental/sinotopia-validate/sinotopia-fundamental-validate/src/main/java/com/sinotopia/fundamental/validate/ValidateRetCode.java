@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.validate;
+package com.sinotopia.fundamental.validate;
 
 /**
  * Created by zhoubing on 2016/5/24.

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.pay.spdb.util;
+package com.sinotopia.fundamental.pay.spdb.util;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 import org.apache.commons.lang.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -14,10 +14,10 @@
 
     <aop:aspectj-autoproxy/>
 
-    <bean id="validateFilterAspectBean" class="com.hkfs.fundamental.validate.aspect.ValidateFilterAspect" />
+    <bean id="validateFilterAspectBean" class="com.sinotopia.fundamental.validate.aspect.ValidateFilterAspect" />
 
     <aop:config>
-        <aop:pointcut id="pc-validate" expression="@annotation(com.hkfs.fundamental.validate.annotaion.ValidateFilters)" />
+        <aop:pointcut id="pc-validate" expression="@annotation(com.sinotopia.fundamental.validate.annotaion.ValidateFilters)" />
         <aop:aspect id="validateFilterAspect" ref="validateFilterAspectBean" order="1">
             <aop:around pointcut-ref="pc-validate" method="process" />
         </aop:aspect>

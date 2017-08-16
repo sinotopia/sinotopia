@@ -1,16 +1,16 @@
-package com.hkfs.fundamental.codegenerator.lazy;
+package com.sinotopia.fundamental.codegenerator.lazy;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Annotation;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Interface;
-import com.hkfs.fundamental.codegenerator.basis.data.db.*;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
-import com.hkfs.fundamental.codegenerator.basis.translator.*;
-import com.hkfs.fundamental.codegenerator.io.CodeInputer;
-import com.hkfs.fundamental.codegenerator.output.MultiCodeOutputer;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Annotation;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Interface;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.*;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.basis.translator.*;
+import com.sinotopia.fundamental.codegenerator.io.CodeInputer;
+import com.sinotopia.fundamental.codegenerator.output.MultiCodeOutputer;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,8 +21,8 @@ import java.util.Map;
  * Created by brucezee on 2017/1/17.
  */
 public class LazyCodeGenerator {
-    public static final String DAO_BASE_CLASS_NAME      = "com.hkfs.fundamental.database.DaoBase<T, Long>";
-    public static final String PAGE_DAO_BASE_CLASS_NAME = "com.hkfs.fundamental.database.PageDaoBase<T, Long>";
+    public static final String DAO_BASE_CLASS_NAME      = "com.sinotopia.fundamental.database.DaoBase<T, Long>";
+    public static final String PAGE_DAO_BASE_CLASS_NAME = "com.sinotopia.fundamental.database.PageDaoBase<T, Long>";
 
     private String root;
     private String pojoRoot;
@@ -40,7 +40,7 @@ public class LazyCodeGenerator {
     private String[] excludeTables;
 
     private String primaryKeyColumnName = "id";
-    private String pojoParentClassFullName = "com.hkfs.fundamental.api.data.PojoDataObjectBase";
+    private String pojoParentClassFullName = "com.sinotopia.fundamental.api.data.PojoDataObjectBase";
     private String[] tablePrefix = new String[] {"tb_", "t_"};
     private boolean serializable = true;
     private String parentBaseMapperName = DAO_BASE_CLASS_NAME;

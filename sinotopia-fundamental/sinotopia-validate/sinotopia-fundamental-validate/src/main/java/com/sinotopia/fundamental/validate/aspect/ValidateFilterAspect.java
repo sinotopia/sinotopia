@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.validate.aspect;
+package com.sinotopia.fundamental.validate.aspect;
 
 import com.sinotopia.fundamental.api.data.ListResultEx;
 import com.sinotopia.fundamental.api.data.ObjectResultEx;
 import com.sinotopia.fundamental.api.data.Result;
 import com.sinotopia.fundamental.api.data.ResultEx;
-import com.hkfs.fundamental.validate.ValidateFilter;
-import com.hkfs.fundamental.validate.ValidateRetCode;
-import com.hkfs.fundamental.validate.annotaion.ValidateFilters;
+import com.sinotopia.fundamental.validate.ValidateFilter;
+import com.sinotopia.fundamental.validate.ValidateRetCode;
+import com.sinotopia.fundamental.validate.annotaion.ValidateFilters;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.beans.BeansException;
@@ -40,7 +40,7 @@ public class ValidateFilterAspect implements ApplicationContextAware{
      * @return
      * @throws Throwable
      */
-//    @Around("@annotation(com.hkfs.fundamental.common.validate.annotaion.VaildateFilters)")
+//    @Around("@annotation(com.sinotopia.fundamental.common.validate.annotaion.VaildateFilters)")
     public Object process(ProceedingJoinPoint pjp) throws Throwable {
         Object[] args = pjp.getArgs();
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();

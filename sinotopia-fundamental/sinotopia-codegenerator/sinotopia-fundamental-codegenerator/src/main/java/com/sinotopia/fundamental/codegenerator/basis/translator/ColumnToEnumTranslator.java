@@ -1,15 +1,15 @@
-package com.hkfs.fundamental.codegenerator.basis.translator;
+package com.sinotopia.fundamental.codegenerator.basis.translator;
 
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CDict;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CEnum;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.StrDict;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.StrEnum;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Column;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Table;
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
-import com.hkfs.fundamental.codegenerator.basis.data.Enum;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CDict;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CEnum;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.StrDict;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.StrEnum;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Column;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Table;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Enum;
 
 import java.util.ArrayList;
 import java.util.List;

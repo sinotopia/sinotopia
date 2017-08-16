@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.jackson.convert.serializer;
+package com.sinotopia.fundamental.jackson.convert.serializer;
 
 import java.math.BigDecimal;
 

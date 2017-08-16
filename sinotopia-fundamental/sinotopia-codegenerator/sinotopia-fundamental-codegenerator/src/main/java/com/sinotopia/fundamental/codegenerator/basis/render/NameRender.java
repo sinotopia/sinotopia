@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.render;
+package com.sinotopia.fundamental.codegenerator.basis.render;
 
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 /**
  * 名称的处理器

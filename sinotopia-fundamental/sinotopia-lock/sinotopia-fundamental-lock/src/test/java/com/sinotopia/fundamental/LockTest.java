@@ -1,8 +1,8 @@
-package com.hkfs.fundamental;
+package com.sinotopia.fundamental;
 
-import com.hkfs.fundamental.lock.RedisLock1;
-import com.hkfs.fundamental.lock.redis.LockCallback;
-import com.hkfs.fundamental.lock.redis.LockServiceImpl;
+import com.sinotopia.fundamental.lock.RedisLock1;
+import com.sinotopia.fundamental.lock.redis.LockCallback;
+import com.sinotopia.fundamental.lock.redis.LockServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

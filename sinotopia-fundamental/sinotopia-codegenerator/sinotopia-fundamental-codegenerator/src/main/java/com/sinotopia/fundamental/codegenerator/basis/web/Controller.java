@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.codegenerator.basis.web;
+package com.sinotopia.fundamental.codegenerator.basis.web;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Comment;
-import com.hkfs.fundamental.codegenerator.basis.data.Method;
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsClass;
+import com.sinotopia.fundamental.codegenerator.basis.data.Comment;
+import com.sinotopia.fundamental.codegenerator.basis.data.Method;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsClass;
 
 /**
  * SpringMVC的Controller

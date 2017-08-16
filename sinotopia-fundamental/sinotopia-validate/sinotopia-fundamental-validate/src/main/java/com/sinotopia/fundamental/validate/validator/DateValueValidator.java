@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.validate.validator;
+package com.sinotopia.fundamental.validate.validator;
 
-import com.hkfs.fundamental.validate.annotaion.validation.DateValue;
+import com.sinotopia.fundamental.validate.annotaion.validation.DateValue;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

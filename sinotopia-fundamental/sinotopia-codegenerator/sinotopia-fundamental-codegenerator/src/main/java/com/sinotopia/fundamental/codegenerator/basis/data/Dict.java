@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.codegenerator.basis.data;
+package com.sinotopia.fundamental.codegenerator.basis.data;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
-import com.hkfs.fundamental.codegenerator.basis.render.TabRender;
-import com.hkfs.fundamental.codegenerator.basis.validate.Unique;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.basis.render.TabRender;
+import com.sinotopia.fundamental.codegenerator.basis.validate.Unique;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 /**
  * 枚举项

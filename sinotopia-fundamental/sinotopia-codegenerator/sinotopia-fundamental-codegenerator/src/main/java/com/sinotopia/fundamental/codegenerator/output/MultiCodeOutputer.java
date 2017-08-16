@@ -1,13 +1,13 @@
-package com.hkfs.fundamental.codegenerator.output;
+package com.sinotopia.fundamental.codegenerator.output;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsClass;
-import com.hkfs.fundamental.codegenerator.utils.FileUtils;
-import com.hkfs.fundamental.codegenerator.io.CodeOutputer;
-import com.hkfs.fundamental.codegenerator.io.FolderCleaner;
-import com.hkfs.fundamental.codegenerator.io.Outputable;
-import com.hkfs.fundamental.codegenerator.io.PathBuilder;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsClass;
+import com.sinotopia.fundamental.codegenerator.utils.FileUtils;
+import com.sinotopia.fundamental.codegenerator.io.CodeOutputer;
+import com.sinotopia.fundamental.codegenerator.io.FolderCleaner;
+import com.sinotopia.fundamental.codegenerator.io.Outputable;
+import com.sinotopia.fundamental.codegenerator.io.PathBuilder;
 
 import java.util.List;
 

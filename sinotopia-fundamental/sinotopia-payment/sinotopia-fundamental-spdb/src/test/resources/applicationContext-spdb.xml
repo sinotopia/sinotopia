@@ -21,7 +21,7 @@
             </value>
         </property>
     </bean>
-    <bean id="spdbHttpSender"  class="com.hkfs.fundamental.pay.spdb.sender.SpdbHttpSender">
+    <bean id="spdbHttpSender"  class="com.sinotopia.fundamental.pay.spdb.sender.SpdbHttpSender">
         <property name="velocityEngine" ref="velocityEngine">
         </property>
     </bean>

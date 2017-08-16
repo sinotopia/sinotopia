@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum BusinessSatus {
 	BACKDATA_ZERO(0, "", "失败"),BACKDATA_ONE(1, "", "成功"), BACKDATA_TWO(2, "", "待认证"), BACKDATA_THREE(

@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.servlet.base;
+package com.sinotopia.fundamental.servlet.base;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.servlet.utils.ActionUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.servlet.utils.ActionUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;

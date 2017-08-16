@@ -1,15 +1,15 @@
-package com.hkfs.fundamental.codegenerator.basis.data;
+package com.sinotopia.fundamental.codegenerator.basis.data;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsClass;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CDict;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CEnum;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.basis.render.FieldMethodRender;
-import com.hkfs.fundamental.codegenerator.basis.render.RelatedEnumFieldMethodRender;
-import com.hkfs.fundamental.codegenerator.basis.render.TabRender;
-import com.hkfs.fundamental.codegenerator.basis.utils.AppendUtils;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsClass;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CDict;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CEnum;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.basis.render.FieldMethodRender;
+import com.sinotopia.fundamental.codegenerator.basis.render.RelatedEnumFieldMethodRender;
+import com.sinotopia.fundamental.codegenerator.basis.render.TabRender;
+import com.sinotopia.fundamental.codegenerator.basis.utils.AppendUtils;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 import java.util.ArrayList;
 

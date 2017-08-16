@@ -5,27 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.hkfs</groupId>
-        <artifactId>hkfs-email</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-email</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hkfs-fundamental-email</artifactId>
+    <artifactId>sinotopia-fundamental-email</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-config</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-config</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-spring</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-spring</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-test</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-test</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
 

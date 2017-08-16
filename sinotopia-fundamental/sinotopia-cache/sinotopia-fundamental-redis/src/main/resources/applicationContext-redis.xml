@@ -31,10 +31,8 @@
         </constructor-arg>
     </bean>
 
-    <bean class="com.hkfs.fundamental.redis.RedisConnector">
+    <bean class="com.sinotopia.fundamental.redis.RedisConnector">
         <property name="shardedJedisPool" ref="shardedJedisPool" />
     </bean>
-
-
 
 </beans>

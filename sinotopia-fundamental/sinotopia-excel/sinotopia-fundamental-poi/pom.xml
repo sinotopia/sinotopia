@@ -5,27 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.hkfs</groupId>
-        <artifactId>hkfs-excel</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-excel</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hkfs-fundamental-poi</artifactId>
+    <artifactId>sinotopia-fundamental-poi</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-servlet</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-servlet</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-common-tools</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-common-tools</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-logger</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-logger</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
 

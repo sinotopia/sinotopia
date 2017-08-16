@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.codegenerator.utils;
+package com.sinotopia.fundamental.codegenerator.utils;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Enum;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
-import com.hkfs.fundamental.codegenerator.io.Outputable;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Enum;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.io.Outputable;
 
 import java.util.List;
 
@@ -211,7 +211,7 @@ public class CodeUtils {
 	 * @param enumList 枚举列表
 	 * @param nameRender 枚举名称处理器
 	 */
-	public static <T extends com.hkfs.fundamental.codegenerator.basis.data.Enum> List<T> setDictNameRender(List<T> enumList, NameRender nameRender) {
+	public static <T extends com.sinotopia.fundamental.codegenerator.basis.data.Enum> List<T> setDictNameRender(List<T> enumList, NameRender nameRender) {
 		for (Enum em : enumList) {
 			em.setDictNameRender(nameRender);
 		}

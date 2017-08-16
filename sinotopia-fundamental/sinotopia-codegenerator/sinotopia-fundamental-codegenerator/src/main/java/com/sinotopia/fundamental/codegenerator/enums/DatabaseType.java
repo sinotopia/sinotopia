@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.enums;
+package com.sinotopia.fundamental.codegenerator.enums;
 
 /**
  * 数据库类型枚举

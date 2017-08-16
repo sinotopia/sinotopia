@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum MessageInfoStatus {
 	SUCCESS(1, "", "提现成功"), FAILURE(0, "", "提现失败");

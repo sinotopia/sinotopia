@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.parser.define;
+package com.sinotopia.fundamental.parser.define;
 
 /**
  * 字段类型枚举
- * Created by zhoubing on 2016/11/28.
  */
 public enum FieldTypeEnum {
+
     Object  ("Object",   java.lang.Object.class),
     Map     ("Map",      java.util.Map.class),
     Array   ("Array",    java.lang.reflect.Array.class),

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.data.custom;
+package com.sinotopia.fundamental.codegenerator.basis.data.custom;
 
-import com.hkfs.fundamental.codegenerator.basis.render.NameRender;
+import com.sinotopia.fundamental.codegenerator.basis.render.NameRender;
 
 
 public class StrDict extends CDict {

@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.session;
+package com.sinotopia.fundamental.session;
 
 import com.sinotopia.fundamental.api.params.BaseParameter;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.servlet.utils.ActionUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.servlet.utils.ActionUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

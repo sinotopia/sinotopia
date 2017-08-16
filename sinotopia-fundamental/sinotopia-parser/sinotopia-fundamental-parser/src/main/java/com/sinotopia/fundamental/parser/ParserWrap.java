@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser;
+package com.sinotopia.fundamental.parser;
 
-import com.hkfs.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
 
 /**
  * Created by zhoubing on 2016/12/1.

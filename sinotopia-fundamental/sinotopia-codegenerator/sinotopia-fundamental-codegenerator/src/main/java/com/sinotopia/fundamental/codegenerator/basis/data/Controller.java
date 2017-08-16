@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.data;
+package com.sinotopia.fundamental.codegenerator.basis.data;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsClass;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsClass;
 
 /**
  * Created by pc on 2016/4/13.

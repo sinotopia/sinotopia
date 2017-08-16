@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.session;
+package com.sinotopia.fundamental.session;
 
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;

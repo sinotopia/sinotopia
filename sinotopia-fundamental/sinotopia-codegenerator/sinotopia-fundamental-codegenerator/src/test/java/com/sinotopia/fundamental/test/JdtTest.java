@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.test;
+package com.sinotopia.fundamental.test;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.output.MultiCodeOutputer;
-import com.hkfs.fundamental.codegenerator.recovery.JdtProcessor;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.output.MultiCodeOutputer;
+import com.sinotopia.fundamental.codegenerator.recovery.JdtProcessor;
 
 import java.io.File;
 import java.util.LinkedList;

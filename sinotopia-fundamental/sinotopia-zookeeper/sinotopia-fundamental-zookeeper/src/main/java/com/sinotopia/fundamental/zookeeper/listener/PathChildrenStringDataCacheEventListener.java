@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.zookeeper.listener;
+package com.sinotopia.fundamental.zookeeper.listener;
 
-import com.hkfs.fundamental.zookeeper.utils.ZookeeperModuleUtils;
+import com.sinotopia.fundamental.zookeeper.utils.ZookeeperModuleUtils;
 import org.apache.zookeeper.data.Stat;
 
 

@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.web.start;
+package com.sinotopia.fundamental.web.start;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
-import com.hkfs.fundamental.spring.utils.SpringContextUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.spring.utils.SpringContextUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeansException;

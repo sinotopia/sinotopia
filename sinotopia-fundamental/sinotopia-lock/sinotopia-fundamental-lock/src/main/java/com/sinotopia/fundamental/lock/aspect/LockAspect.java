@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.lock.aspect;
+package com.sinotopia.fundamental.lock.aspect;
 
-import com.hkfs.fundamental.lock.RedisLock;
+import com.sinotopia.fundamental.lock.RedisLock;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Pointcut;

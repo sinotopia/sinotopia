@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.lock;
+package com.sinotopia.fundamental.lock;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
-import com.hkfs.fundamental.lock.constants.PropertiesKey;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.lock.constants.PropertiesKey;
 import org.redisson.Config;
 import org.redisson.Redisson;
 import org.redisson.connection.RandomLoadBalancer;

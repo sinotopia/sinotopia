@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.parser;
+package com.sinotopia.fundamental.parser;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.util.TypeUtils;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.define.FieldTypeEnum;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.define.FieldTypeEnum;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
 
 import java.util.HashMap;
 import java.util.List;

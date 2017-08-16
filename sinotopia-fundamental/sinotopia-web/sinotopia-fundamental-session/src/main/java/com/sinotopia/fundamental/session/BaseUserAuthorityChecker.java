@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.session;
+package com.sinotopia.fundamental.session;
 
 import com.sinotopia.fundamental.api.enums.ResultCode;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.session.annotation.UserRole;
-import com.hkfs.fundamental.session.annotation.UserType;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.session.annotation.UserRole;
+import com.sinotopia.fundamental.session.annotation.UserType;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.reflect.MethodSignature;
 
@@ -23,7 +23,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
         //获取会话
         SessionIdentity sessionIdentity = sessionParameter.getSessionIdentity();
         if (sessionIdentity == null) {
-            throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.NOT_LOGIN_ERROR.getCode(), ResultCode.NOT_LOGIN_ERROR.getDescription());
+            throw new com.sinotopia.fundamental.exception.ApplicationBizException(ResultCode.NOT_LOGIN_ERROR.getCode(), ResultCode.NOT_LOGIN_ERROR.getDescription());
         }
 
         Class<?> targetClass = pjp.getTarget().getClass();
@@ -52,7 +52,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
             }
         }
 
-        throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
+        throw new com.sinotopia.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
     }
 
     /**
@@ -75,7 +75,7 @@ public class BaseUserAuthorityChecker implements UserAuthorityChecker {
             }
         }
 
-        throw new com.hkfs.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
+        throw new com.sinotopia.fundamental.exception.ApplicationBizException(ResultCode.AUTHORIZATION_ERROR.getCode(), ResultCode.AUTHORIZATION_ERROR.getDescription());
     }
 
     /**

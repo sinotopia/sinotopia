@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.akka;
+package com.sinotopia.fundamental.akka;
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import com.hkfs.fundamental.akka.utils.ActorSystemUtils;
+import com.sinotopia.fundamental.akka.utils.ActorSystemUtils;
 
 import java.io.Serializable;
 

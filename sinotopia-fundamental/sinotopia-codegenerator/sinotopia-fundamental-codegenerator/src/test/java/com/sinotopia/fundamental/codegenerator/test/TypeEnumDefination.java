@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.codegenerator.test;
+package com.sinotopia.fundamental.codegenerator.test;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CDict;
-import com.hkfs.fundamental.codegenerator.basis.data.custom.CEnum;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CDict;
+import com.sinotopia.fundamental.codegenerator.basis.data.custom.CEnum;
 
 public class TypeEnumDefination {
 //	new JsonClass("AndroidDictionary", "客户端通用数据字典定义", new JsonField[] {

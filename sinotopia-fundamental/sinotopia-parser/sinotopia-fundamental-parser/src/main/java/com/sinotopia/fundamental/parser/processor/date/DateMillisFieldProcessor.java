@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.processor.date;
+package com.sinotopia.fundamental.parser.processor.date;
 
-import com.hkfs.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
 
 /**
  * 日期字符串转时间毫秒数

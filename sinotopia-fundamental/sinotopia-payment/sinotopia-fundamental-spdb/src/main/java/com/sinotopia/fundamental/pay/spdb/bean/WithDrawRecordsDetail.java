@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.bean;
+package com.sinotopia.fundamental.pay.spdb.bean;
 
 public class WithDrawRecordsDetail {
 	private Object voucherNo;//凭证号

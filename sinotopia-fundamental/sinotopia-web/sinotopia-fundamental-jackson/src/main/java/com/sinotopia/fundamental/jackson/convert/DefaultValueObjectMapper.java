@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.jackson.convert;
+package com.sinotopia.fundamental.jackson.convert;
 
-import com.hkfs.fundamental.jackson.convert.serializer.NullNumberJsonSerializer;
-import com.hkfs.fundamental.jackson.convert.serializer.NullStringJsonSerializer;
+import com.sinotopia.fundamental.jackson.convert.serializer.NullNumberJsonSerializer;
+import com.sinotopia.fundamental.jackson.convert.serializer.NullStringJsonSerializer;
 
 import java.util.ArrayList;
 import java.util.List;

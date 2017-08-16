@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.recovery;
+package com.sinotopia.fundamental.codegenerator.recovery;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
 
 /**
  * 注释处理器

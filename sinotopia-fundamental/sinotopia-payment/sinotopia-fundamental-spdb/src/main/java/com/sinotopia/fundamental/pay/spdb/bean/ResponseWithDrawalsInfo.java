@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.bean;
+package com.sinotopia.fundamental.pay.spdb.bean;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

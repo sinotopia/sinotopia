@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.codegenerator.utils;
+package com.sinotopia.fundamental.codegenerator.utils;
 
-import com.hkfs.fundamental.codegenerator.basis.data.db.Table;
-import com.hkfs.fundamental.codegenerator.enums.DatabaseType;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Table;
+import com.sinotopia.fundamental.codegenerator.enums.DatabaseType;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

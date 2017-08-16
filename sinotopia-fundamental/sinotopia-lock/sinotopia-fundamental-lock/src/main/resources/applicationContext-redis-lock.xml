@@ -8,7 +8,7 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 分布式锁服务 -->
-    <bean id="lockService" class="com.hkfs.fundamental.lock.redis.LockServiceImpl">
+    <bean id="lockService" class="com.sinotopia.fundamental.lock.redis.LockServiceImpl">
         <property name="shardedJedisPool" ref="shardedJedisPool" />
     </bean>
 

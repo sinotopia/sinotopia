@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.translator;
+package com.sinotopia.fundamental.codegenerator.basis.translator;
 
-import com.hkfs.fundamental.codegenerator.basis.data.db.Column;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Column;
 
 import java.util.HashMap;
 import java.util.Map;

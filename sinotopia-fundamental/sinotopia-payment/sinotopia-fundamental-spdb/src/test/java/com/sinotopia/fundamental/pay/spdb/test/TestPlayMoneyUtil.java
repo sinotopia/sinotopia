@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.pay.spdb.test;
+package com.sinotopia.fundamental.pay.spdb.test;
 
-import com.hkfs.fundamental.pay.spdb.bean.WithDrawalsInfo;
-import com.hkfs.fundamental.pay.spdb.enums.BankCodeEnum;
-import com.hkfs.fundamental.pay.spdb.sender.SpdbHttpSender;
+import com.sinotopia.fundamental.pay.spdb.bean.WithDrawalsInfo;
+import com.sinotopia.fundamental.pay.spdb.enums.BankCodeEnum;
+import com.sinotopia.fundamental.pay.spdb.sender.SpdbHttpSender;
 import org.apache.velocity.app.VelocityEngine;
 import org.junit.FixMethodOrder;
 import org.junit.Test;

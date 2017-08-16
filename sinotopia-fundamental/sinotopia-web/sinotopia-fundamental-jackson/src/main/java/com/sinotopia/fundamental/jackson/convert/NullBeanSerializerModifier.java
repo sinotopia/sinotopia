@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.jackson.convert;
+package com.sinotopia.fundamental.jackson.convert;
 
 import com.fasterxml.jackson.databind.BeanDescription;
 import com.fasterxml.jackson.databind.JsonSerializer;

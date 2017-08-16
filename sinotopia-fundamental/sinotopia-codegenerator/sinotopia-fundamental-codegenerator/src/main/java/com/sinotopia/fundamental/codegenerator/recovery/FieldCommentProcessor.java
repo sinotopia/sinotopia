@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.codegenerator.recovery;
+package com.sinotopia.fundamental.codegenerator.recovery;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.FileUtils;
-import com.hkfs.fundamental.codegenerator.utils.IOUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.FileUtils;
+import com.sinotopia.fundamental.codegenerator.utils.IOUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;

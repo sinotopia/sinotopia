@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.zookeeper;
+package com.sinotopia.fundamental.zookeeper;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
-import com.hkfs.fundamental.zookeeper.constants.PropertiesKey;
-import com.hkfs.fundamental.zookeeper.utils.ZookeeperModuleUtils;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.zookeeper.constants.PropertiesKey;
+import com.sinotopia.fundamental.zookeeper.utils.ZookeeperModuleUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

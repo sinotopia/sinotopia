@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.parser.processor.number;
+package com.sinotopia.fundamental.parser.processor.number;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.parser.processor.BaseFieldProcessor;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.parser.processor.BaseFieldProcessor;
 
 /**
  * 数字类型的字段处理器

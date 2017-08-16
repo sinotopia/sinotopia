@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.httpclient;
+package com.sinotopia.fundamental.httpclient;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.httpclient.http.*;
-import com.hkfs.fundamental.httpclient.utils.ClientUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.httpclient.http.*;
+import com.sinotopia.fundamental.httpclient.utils.ClientUtils;
 import org.apache.http.*;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;

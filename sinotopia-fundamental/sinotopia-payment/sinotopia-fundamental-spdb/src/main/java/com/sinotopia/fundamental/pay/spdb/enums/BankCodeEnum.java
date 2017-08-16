@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum BankCodeEnum {
 	ICBC("ICBC","102100099996","工商银行"),

@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.codegenerator.basis.data;
+package com.sinotopia.fundamental.codegenerator.basis.data;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.basis.utils.AppendUtils;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.utils.AppendUtils;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 /**
  * 参数

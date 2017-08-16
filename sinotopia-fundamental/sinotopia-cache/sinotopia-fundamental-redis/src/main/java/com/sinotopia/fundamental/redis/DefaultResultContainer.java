@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis;
+package com.sinotopia.fundamental.redis;
 
 /**
  * <p>输入注释</p>

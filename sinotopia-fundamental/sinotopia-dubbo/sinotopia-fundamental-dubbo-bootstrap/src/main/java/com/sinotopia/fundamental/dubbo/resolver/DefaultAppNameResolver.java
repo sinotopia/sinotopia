@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.dubbo.resolver;
+package com.sinotopia.fundamental.dubbo.resolver;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

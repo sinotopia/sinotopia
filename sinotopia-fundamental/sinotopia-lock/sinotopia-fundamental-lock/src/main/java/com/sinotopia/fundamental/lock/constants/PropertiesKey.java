@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.lock.constants;
+package com.sinotopia.fundamental.lock.constants;
 
 /**
  * Created by pc on 2016/4/22.

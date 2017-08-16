@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis;
+package com.sinotopia.fundamental.redis;
 
 import redis.clients.jedis.JedisShardInfo;
 
@@ -7,9 +7,9 @@ import java.util.List;
 
 /**
  * redis集群配置
- * Created by zhoubing on 2016/8/4.
  */
 public class ClusterShardedJedisPoolConfig {
+
     private String connections;
     private int timeout;
     private String passwords;

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.exception;
+package com.sinotopia.fundamental.pay.spdb.exception;
 
 class ErrorCode {
 	

@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.codegenerator.output;
+package com.sinotopia.fundamental.codegenerator.output;
 
-import com.hkfs.fundamental.codegenerator.basis.data.db.Mapper;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
-import com.hkfs.fundamental.codegenerator.io.CodeInputer;
-import com.hkfs.fundamental.codegenerator.io.CodeOutputer;
-import com.hkfs.fundamental.codegenerator.io.FolderCleaner;
-import com.hkfs.fundamental.codegenerator.io.PathBuilder;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Mapper;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.io.CodeInputer;
+import com.sinotopia.fundamental.codegenerator.io.CodeOutputer;
+import com.sinotopia.fundamental.codegenerator.io.FolderCleaner;
+import com.sinotopia.fundamental.codegenerator.io.PathBuilder;
 
 import java.util.List;
 

@@ -1,13 +1,13 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.parser.DefineLoader;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.ParserWrap;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
-import com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor;
-import com.hkfs.fundamental.parser.xml.XmlParser;
+import com.sinotopia.fundamental.parser.DefineLoader;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.ParserWrap;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor;
+import com.sinotopia.fundamental.parser.xml.XmlParser;
 
 /**
  * Created by zhoubing on 2016/11/22.
@@ -17,8 +17,8 @@ public class TestXml {
         String data = "<?xml version=\"1.0\" encoding=\"utf-8\"?><root><retCode hello=\"OO\">100</retCode><retMsg>OK</retMsg><data><store><bookStore><manager>John</manager><customer>Justin</customer><name>xinhua shudian</name><book><category>reference</category><author>Nigel Rees</author><title>Sayings of the Century</title><price>8.95</price><time>20150311</time></book><book><category>fiction</category><author>Evelyn Waugh</author><title>Sword of Honour</title><price>12.99</price><time>20150924</time></book><book><category>fiction</category><author>Herman Melville</author><title>Moby Dick</title><isbn>0-553-21311-3</isbn><price>8.99</price><time>20151212</time></book><book><category>fiction</category><author>J. R. R. Tolkien</author><title>The Lord of the Rings</title><isbn>0-395-19395-8</isbn><price>22.99</price><time>20161124</time></book></bookStore><bicycleStore><manager>Mike</manager><bicycle><color>red</color><price>19.95</price></bicycle><factory><factoryName>Beijing Book Ltd.Coxxxxx</factoryName></factory></bicycleStore><address>zhejiang hangzhou</address></store><product><sellCount>100</sellCount><expensive>10</expensive></product></data></root>";
 //        <?xml version="1.0" encoding="utf-8"?><root><retCode>100</retCode><retMsg>OK</retMsg><data><store><bookStore><manager>John</manager><customer>Justin</customer><name>xinhua shudian</name><book><category>reference</category><author>Nigel Rees</author><title>Sayings of the Century</title><price>8.95</price><time>20150311</time></book><book><category>fiction</category><author>Evelyn Waugh</author><title>Sword of Honour</title><price>12.99</price><time>20150924</time></book><book><category>fiction</category><author>Herman Melville</author><title>Moby Dick</title><isbn>0-553-21311-3</isbn><price>8.99</price><time>20151212</time></book><book><category>fiction</category><author>J. R. R. Tolkien</author><title>The Lord of the Rings</title><isbn>0-395-19395-8</isbn><price>22.99</price><time>20161124</time></book></bookStore><bicycleStore><manager>Mike</manager><bicycle><color>red</color><price>19.95</price></bicycle><factory><factoryName>Beijing Book Ltd.Coxxxxx</factoryName></factory></bicycleStore><address>zhejiang hangzhou</address></store><product><sellCount>100</sellCount><expensive>10</expensive></product></data></root>
 
-        String data2 = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><root><paymentList><payment><value>77788</value><value>abc company</value><value>55.55</value></payment><payment><value>4124</value><value>nanjing co</value><value>19.14</value></payment><payment><value>2588</value><value>abc company</value><value>62.09</value></payment></paymentList><user channelCode=\"djd\"><authItem>security</authItem><cityCode>621000</cityCode><idcard>431381198109106573</idcard><name>test</name><phone>15858295625</phone><provinceCode>620000</provinceCode><token>HkFs000000000wfTnwkbYl3My2wpbTqd</token><userId>1</userId></user></root>";
-//        <?xml version="1.0" encoding="UTF-8" ?><root><paymentList><payment><value>77788</value><value>abc company</value><value>55.55</value></payment><payment><value>4124</value><value>nanjing co</value><value>19.14</value></payment><payment><value>2588</value><value>abc company</value><value>62.09</value></payment></paymentList><user channelCode="djd"><authItem>security</authItem><cityCode>621000</cityCode><idcard>431381198109106573</idcard><name>test</name><phone>15858295625</phone><provinceCode>620000</provinceCode><token>HkFs000000000wfTnwkbYl3My2wpbTqd</token><userId>1</userId></user></root>
+        String data2 = "<?xml version=\"1.0\" encoding=\"UTF-8\" ?><root><paymentList><payment><value>77788</value><value>abc company</value><value>55.55</value></payment><payment><value>4124</value><value>nanjing co</value><value>19.14</value></payment><payment><value>2588</value><value>abc company</value><value>62.09</value></payment></paymentList><user channelCode=\"djd\"><authItem>security</authItem><cityCode>621000</cityCode><idcard>431381198109106573</idcard><name>test</name><phone>15858295625</phone><provinceCode>620000</provinceCode><token>sinotopia000000000wfTnwkbYl3My2wpbTqd</token><userId>1</userId></user></root>";
+//        <?xml version="1.0" encoding="UTF-8" ?><root><paymentList><payment><value>77788</value><value>abc company</value><value>55.55</value></payment><payment><value>4124</value><value>nanjing co</value><value>19.14</value></payment><payment><value>2588</value><value>abc company</value><value>62.09</value></payment></paymentList><user channelCode="djd"><authItem>security</authItem><cityCode>621000</cityCode><idcard>431381198109106573</idcard><name>test</name><phone>15858295625</phone><provinceCode>620000</provinceCode><token>sinotopia000000000wfTnwkbYl3My2wpbTqd</token><userId>1</userId></user></root>
 
         Parser parser = new XmlParser();
         TestObject object = parser.parse(

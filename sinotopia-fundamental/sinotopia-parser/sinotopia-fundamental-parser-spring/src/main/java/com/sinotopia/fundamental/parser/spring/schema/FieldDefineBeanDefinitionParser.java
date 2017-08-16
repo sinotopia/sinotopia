@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.parser.spring.schema;
+package com.sinotopia.fundamental.parser.spring.schema;
 
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;

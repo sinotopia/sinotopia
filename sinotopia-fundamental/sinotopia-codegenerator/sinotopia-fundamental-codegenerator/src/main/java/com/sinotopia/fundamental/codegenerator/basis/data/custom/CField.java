@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.codegenerator.basis.data.custom;
+package com.sinotopia.fundamental.codegenerator.basis.data.custom;
 
-import com.hkfs.fundamental.codegenerator.basis.data.*;
-import com.hkfs.fundamental.codegenerator.basis.data.Enum;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.*;
+import com.sinotopia.fundamental.codegenerator.basis.data.Enum;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 public class CField extends Field {
 	public CField(String name, String fullClassName) {

@@ -1,13 +1,13 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.parser.DefineLoader;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.ParserWrap;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.jsoup.JsoupParser;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
-import com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor;
+import com.sinotopia.fundamental.parser.DefineLoader;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.ParserWrap;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.jsoup.JsoupParser;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -33,8 +33,8 @@ public class TestJsoup {
         String data = "<html><head><title>Document</title></head><body><div class=\"data\"><div class=\"store\"><div id=\"bookStore\"><span class=\"manager\">John</span><span class=\"customer\">Justin</span><span class=\"name\">xinhua shudian</span><table class=\"tb\"><tr><td>reference</td><td>Nigel Rees</td><td>Sayings of the Century</td><td>0-553-21311-3</td><td>8.95</td><td>20150311</td></tr><tr><td>fiction</td><td>Evelyn Waugh</td><td>Sword of Honour</td><td>0-553-21311-3</td><td>12.99</td><td>20150924</td></tr><tr><td>fiction</td><td>Herman Melville</td><td>Moby Dick</td><td>0-553-21311-3</td><td>8.99</td><td>20151212</td></tr><tr><td>fiction</td><td>J. R. R. Tolkien</td><td>The Lord of the Rings</td><td>0-395-19395-8</td><td>22.99</td><td>20161124</td></tr></table></div><div id=\"bicycleStore\"><span class=\"manager\">Mike</span><div><span class=\"color\">red</span><span class=\"price\">19.95</span></div><div><span class=\"factoryName\">Beijing Book Ltd.Coxxxxx</span></div></div><span>zhejiang hangzhou</span></div><span id=\"product\"><span class=\"sellCount\">100</span><span class=\"expensive\">10</span></span></div></body></html>";
 //        <html><head><title>Document</title></head><body><div class="data"><div class="store"><div id="bookStore"><span class="manager">John</span><span class="customer">Justin</span><span class="name">xinhua shudian</span><table class="tb"><tr><td>reference</td><td>Nigel Rees</td><td>Sayings of the Century</td><td>0-553-21311-3</td><td>8.95</td><td>20150311</td></tr><tr><td>fiction</td><td>Evelyn Waugh</td><td>Sword of Honour</td><td>0-553-21311-3</td><td>12.99</td><td>20150924</td></tr><tr><td>fiction</td><td>Herman Melville</td><td>Moby Dick</td><td>0-553-21311-3</td><td>8.99</td><td>20151212</td></tr><tr><td>fiction</td><td>J. R. R. Tolkien</td><td>The Lord of the Rings</td><td>0-395-19395-8</td><td>22.99</td><td>20161124</td></tr></table></div><div id="bicycleStore"><span class="manager">Mike</span><div><span class="color">red</span><span class="price">19.95</span></div><div><span class="factoryName">Beijing Book Ltd.Coxxxxx</span></div></div><span>zhejiang hangzhou</span></div><span id="product"><span class="sellCount">100</span><span class="expensive">10</span></span></div></body></html>
 
-        String data2 = "<html><head><title>Document</title></head><body><div><table id=\"paymentList\"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class=\"user\" channelCode=\"djd\"><label class=\"authItem\">security</label><span class=\"cityCode\">621000</span><label class=\"idcard\">431381198109106573</label><label class=\"name\">test</label><label class=\"phone\">15858295625</label><label class=\"provinceCode\">620000</label><label class=\"token\">HkFs000000000wfTnwkbYl3My2wpbTqd</label><label class=\"userId\">1</label></div></div></body></html>";
-//        <html><head><title>Document</title></head><body><div><table id="paymentList"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class="user" channelCode="djd"><label class="authItem">security</label><span class="cityCode">621000</span><label class="idcard">431381198109106573</label><label class="name">test</label><label class="phone">15858295625</label><label class="provinceCode">620000</label><label class="token">HkFs000000000wfTnwkbYl3My2wpbTqd</label><label class="userId">1</label></div></div></body></html>
+        String data2 = "<html><head><title>Document</title></head><body><div><table id=\"paymentList\"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class=\"user\" channelCode=\"djd\"><label class=\"authItem\">security</label><span class=\"cityCode\">621000</span><label class=\"idcard\">431381198109106573</label><label class=\"name\">test</label><label class=\"phone\">15858295625</label><label class=\"provinceCode\">620000</label><label class=\"token\">sinotopia000000000wfTnwkbYl3My2wpbTqd</label><label class=\"userId\">1</label></div></div></body></html>";
+//        <html><head><title>Document</title></head><body><div><table id="paymentList"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class="user" channelCode="djd"><label class="authItem">security</label><span class="cityCode">621000</span><label class="idcard">431381198109106573</label><label class="name">test</label><label class="phone">15858295625</label><label class="provinceCode">620000</label><label class="token">sinotopia000000000wfTnwkbYl3My2wpbTqd</label><label class="userId">1</label></div></div></body></html>
 
         Parser parser = new JsoupParser();
         TestObject object = parser.parse(

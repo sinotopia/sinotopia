@@ -5,22 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.hkfs</groupId>
-        <artifactId>hkfs-framework</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-framework</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hkfs-fundamental-akka</artifactId>
+    <artifactId>sinotopia-fundamental-akka</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-spring</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-spring</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-common-tools</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-common-tools</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
 

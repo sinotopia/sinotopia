@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.tomcat.constants;
+package com.sinotopia.fundamental.tomcat.constants;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 
 /**
  * <p>输入注释</p>

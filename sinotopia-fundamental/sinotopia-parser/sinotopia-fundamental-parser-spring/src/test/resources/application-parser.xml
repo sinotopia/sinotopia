@@ -14,16 +14,16 @@
                         "
        default-autowire="byName">
 
-    <bean id="testJson" class="com.hkfs.fundamental.parser.test.TestJson" />
-    <bean id="testJsoup" class="com.hkfs.fundamental.parser.test.TestJsoup" />
-    <bean id="testXml" class="com.hkfs.fundamental.parser.test.TestXml" />
-    <bean id="testRegex" class="com.hkfs.fundamental.parser.test.TestRegex" />
+    <bean id="testJson" class="com.sinotopia.fundamental.parser.test.TestJson" />
+    <bean id="testJsoup" class="com.sinotopia.fundamental.parser.test.TestJsoup" />
+    <bean id="testXml" class="com.sinotopia.fundamental.parser.test.TestXml" />
+    <bean id="testRegex" class="com.sinotopia.fundamental.parser.test.TestRegex" />
 
     <!--==========================================json==========================================-->
     <!--json解析第一部分-->
     <ps:define id="bookParser-json-part1" type="Object">
         <ps:define type="Integer" name="expensive" selector="$.data.product.expensive">
-            <ps:processor class="com.hkfs.fundamental.parser.processor.number.IntegerFieldProcessor" />
+            <ps:processor class="com.sinotopia.fundamental.parser.processor.number.IntegerFieldProcessor" />
         </ps:define>
         <ps:define type="Object" name="store" selector="$.data.store.bookStore">
             <ps:define type="Object" name="bicycle" selector="$.data.store.bicycleStore.bicycle">
@@ -39,7 +39,7 @@
                     <ps:define type="String" name="isbnNo" selector="$..isbn" /><!--名称不一致-->
                     <ps:define type="Double" name="price" selector="$..price" />
                     <ps:define type="String" name="createTime" selector="$..time" >
-                        <ps:processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <ps:processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <ps:argument>yyyy-MM-dd</ps:argument>
                         </ps:processor>
                     </ps:define>
@@ -86,7 +86,7 @@
                     <ps:define type="String" name="isbnNo" selector="./isbn" /><!--名称不一致-->
                     <ps:define type="Double" name="price" selector="./price" />
                     <ps:define type="String" name="createTime" selector="./time" >
-                        <ps:processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <ps:processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <ps:argument>yyyy-MM-dd</ps:argument>
                         </ps:processor>
                     </ps:define>
@@ -136,7 +136,7 @@
                     <ps:define type="String" name="isbnNo" selector=" td:eq(3)" />
                     <ps:define type="Double" name="price" selector=" td:eq(4)" />
                     <ps:define type="String" name="createTime" selector=" td:eq(5)" >
-                        <ps:processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <ps:processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <ps:argument>yyyy-MM-dd</ps:argument>
                         </ps:processor>
                     </ps:define>
@@ -206,7 +206,7 @@
                     </ps:define>
                     <ps:define type="String" name="createTime" >
                         <ps:selector><![CDATA[ regex[11]:<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>([\w\W]*?)<td>(.*?)</td>]]></ps:selector>
-                        <ps:processor class="com.hkfs.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
+                        <ps:processor class="com.sinotopia.fundamental.parser.processor.date.DateFormatFieldProcessor"> <!-- 指定processor -->
                             <ps:argument>yyyy-MM-dd</ps:argument>
                         </ps:processor>
                     </ps:define>

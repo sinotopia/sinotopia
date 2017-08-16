@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.common.utils.TimeUtils;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.ParserWrap;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
-import com.hkfs.fundamental.parser.regex.RegexParser;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.ParserWrap;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.regex.RegexParser;
 
 /**
  * Created by zhoubing on 2016/11/22.
@@ -110,13 +110,13 @@ public class TestRegex {
                 "                <label class=\"name\">test</label>\n" +
                 "                <label class=\"phone\">15858295625</label>\n" +
                 "                <label class=\"provinceCode\">620000</label>\n" +
-                "                <label class=\"token\">HkFs000000000wfTnwkbYl3My2wpbTqd</label>\n" +
+                "                <label class=\"token\">sinotopia000000000wfTnwkbYl3My2wpbTqd</label>\n" +
                 "                <label class=\"userId\">1</label>\n" +
                 "            </div>\n" +
                 "        </div>\n" +
                 "    </body>\n" +
                 "</html>";
-//        <html><head><title>Document</title></head><body><div><table id="paymentList"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class="user" channelCode="djd"><label class="authItem">security</label><span class="cityCode">621000</span><label class="idcard">431381198109106573</label><label class="name">test</label><label class="phone">15858295625</label><label class="provinceCode">620000</label><label class="token">HkFs000000000wfTnwkbYl3My2wpbTqd</label><label class="userId">1</label></div></div></body></html>
+//        <html><head><title>Document</title></head><body><div><table id="paymentList"><tr><td>77788</td><td>abc company</td><td>55.55</td></tr><tr><td>446</td><td>guangzhou co</td><td>55.55</td></tr><tr><td>11224</td><td>nanjing co</td><td>55.55</td></tr></table><div class="user" channelCode="djd"><label class="authItem">security</label><span class="cityCode">621000</span><label class="idcard">431381198109106573</label><label class="name">test</label><label class="phone">15858295625</label><label class="provinceCode">620000</label><label class="token">sinotopia000000000wfTnwkbYl3My2wpbTqd</label><label class="userId">1</label></div></div></body></html>
 
             Parser parser = new RegexParser();
             TestObject object = parser.parse(

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.servlet.utils;
+package com.sinotopia.fundamental.servlet.utils;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

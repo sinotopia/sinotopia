@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.basis.validate;
+package com.sinotopia.fundamental.codegenerator.basis.validate;
 
 import java.util.ArrayList;
 import java.util.Arrays;

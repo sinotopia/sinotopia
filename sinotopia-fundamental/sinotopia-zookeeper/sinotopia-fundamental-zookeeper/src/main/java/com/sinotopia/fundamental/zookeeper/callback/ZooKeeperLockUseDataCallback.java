@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.zookeeper.callback;
+package com.sinotopia.fundamental.zookeeper.callback;
 
-import com.hkfs.fundamental.zookeeper.ZooKeeperClient;
-import com.hkfs.fundamental.zookeeper.bean.ResultContainer;
-import com.hkfs.fundamental.zookeeper.utils.ZookeeperModuleUtils;
+import com.sinotopia.fundamental.zookeeper.ZooKeeperClient;
+import com.sinotopia.fundamental.zookeeper.bean.ResultContainer;
+import com.sinotopia.fundamental.zookeeper.utils.ZookeeperModuleUtils;
 
 /**
  * 在ZooKeeper里加锁后使用节点上的数据执行业务逻辑的回调接口。

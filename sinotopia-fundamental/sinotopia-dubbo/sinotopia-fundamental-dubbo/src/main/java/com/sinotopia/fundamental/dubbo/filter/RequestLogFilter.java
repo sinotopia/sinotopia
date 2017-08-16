@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.dubbo.filter;
+package com.sinotopia.fundamental.dubbo.filter;
 
 import com.alibaba.dubbo.rpc.*;
 import com.sinotopia.fundamental.api.params.SessionIdentity;
 import com.sinotopia.fundamental.api.params.SessionParameter;
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.regex;
+package com.sinotopia.fundamental.parser.regex;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.parser.processor.number;
+package com.sinotopia.fundamental.parser.processor.number;
 
 /**
  * 数字类处理器工厂

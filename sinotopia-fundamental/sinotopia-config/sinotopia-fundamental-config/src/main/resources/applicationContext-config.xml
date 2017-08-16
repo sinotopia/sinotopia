@@ -7,6 +7,6 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
    
-   <bean id="propertyPlaceholder" class="com.hkfs.fundamental.config.FundamentalConfigProvider" />
+   <bean id="propertyPlaceholder" class="com.sinotopia.fundamental.config.FundamentalConfigProvider" />
 
 </beans>

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.basis.data.db;
+package com.sinotopia.fundamental.codegenerator.basis.data.db;
 
 /**
  * 数据库字段

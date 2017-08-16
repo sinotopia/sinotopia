@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.codegenerator.io;
+package com.sinotopia.fundamental.codegenerator.io;
 
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 public class PathBuilder {
 	private String root;

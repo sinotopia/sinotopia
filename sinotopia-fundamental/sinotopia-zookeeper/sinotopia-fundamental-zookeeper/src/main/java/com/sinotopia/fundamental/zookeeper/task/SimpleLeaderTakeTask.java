@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.zookeeper.task;
+package com.sinotopia.fundamental.zookeeper.task;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
-import com.hkfs.fundamental.zookeeper.ZooKeeperClient;
-import com.hkfs.fundamental.zookeeper.constants.PropertiesKey;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.zookeeper.ZooKeeperClient;
+import com.sinotopia.fundamental.zookeeper.constants.PropertiesKey;
 import org.apache.curator.framework.recipes.leader.Participant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -93,7 +93,7 @@ public abstract class SimpleLeaderTakeTask {
             LOGGER.warn(taskTypeId + " is Locked ...");
             return;
         }
-        /*ExecutorService executorService = ExecutorUtils.getCachedThreadPool("hkfsTask");
+        /*ExecutorService executorService = ExecutorUtils.getCachedThreadPool("sinotopiaTask");
         executorService.submit(new Runnable() {
             @Override
             public void run() {

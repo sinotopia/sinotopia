@@ -4,32 +4,29 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.hkfs</groupId>
-		<artifactId>hkfs-zookeeper</artifactId>
+		<groupId>com.sinotopia</groupId>
+		<artifactId>sinotopia-zookeeper</artifactId>
 		<version>1.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hkfs-fundamental-zookeeper</artifactId>
+	<artifactId>sinotopia-fundamental-zookeeper</artifactId>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-config</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-config</artifactId>
+			<version>${sinotopia.fundamental.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-test</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-test</artifactId>
+			<version>${sinotopia.fundamental.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-fastjson</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-fastjson</artifactId>
+			<version>${sinotopia.fundamental.version}</version>
 		</dependency>
-
-
-
 		<!-- zookeeper -->
 		<dependency>
 			<groupId>org.apache.zookeeper</groupId>
@@ -53,7 +50,5 @@
 			<groupId>org.apache.curator</groupId>
 			<artifactId>curator-recipes</artifactId>
 		</dependency>
-
 	</dependencies>
-
 </project>

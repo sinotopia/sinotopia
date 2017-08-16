@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.codegenerator.basis.data.custom;
+package com.sinotopia.fundamental.codegenerator.basis.data.custom;
 
-import com.hkfs.fundamental.codegenerator.basis.data.*;
-import com.hkfs.fundamental.codegenerator.basis.data.Enum;
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.basis.render.Initializer;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.*;
+import com.sinotopia.fundamental.codegenerator.basis.data.Enum;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.render.Initializer;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 public class CEnum extends Enum {
 	public CEnum(String fullClassName, Dict[] dicts) {

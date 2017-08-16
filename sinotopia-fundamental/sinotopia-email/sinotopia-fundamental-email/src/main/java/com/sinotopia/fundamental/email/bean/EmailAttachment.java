@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.email.bean;
+package com.sinotopia.fundamental.email.bean;
 
 import java.io.File;
 import java.io.Serializable;

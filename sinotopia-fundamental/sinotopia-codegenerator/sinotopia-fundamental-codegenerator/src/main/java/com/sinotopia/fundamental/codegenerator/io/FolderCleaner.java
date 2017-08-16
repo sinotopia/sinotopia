@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.codegenerator.io;
+package com.sinotopia.fundamental.codegenerator.io;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
 
 public class FolderCleaner {
 	private String[] folderPaths;

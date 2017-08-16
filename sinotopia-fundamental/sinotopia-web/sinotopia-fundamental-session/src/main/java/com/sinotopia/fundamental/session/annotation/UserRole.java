@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.session.annotation;
+package com.sinotopia.fundamental.session.annotation;
 
 import java.lang.annotation.*;
 

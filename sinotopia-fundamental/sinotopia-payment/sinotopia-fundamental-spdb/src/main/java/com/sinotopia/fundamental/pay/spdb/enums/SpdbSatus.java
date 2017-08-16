@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum SpdbSatus {
 	BACKDATA_ZERO(0, "", "待补录"),BACKDATA_ONE(1, "", "待记帐"), BACKDATA_TWO(2, "", "待复核"), BACKDATA_THREE(

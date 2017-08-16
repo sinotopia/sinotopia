@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.servlet.utils;
+package com.sinotopia.fundamental.servlet.utils;
 
-import com.hkfs.fundamental.common.utils.IOUtils;
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.IOUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

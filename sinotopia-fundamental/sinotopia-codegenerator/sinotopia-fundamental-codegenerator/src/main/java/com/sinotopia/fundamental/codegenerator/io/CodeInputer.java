@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.codegenerator.io;
+package com.sinotopia.fundamental.codegenerator.io;
 
-import com.hkfs.fundamental.codegenerator.basis.data.*;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.utils.FileUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.*;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.utils.FileUtils;
 
 public class CodeInputer {
 	public String filePath;

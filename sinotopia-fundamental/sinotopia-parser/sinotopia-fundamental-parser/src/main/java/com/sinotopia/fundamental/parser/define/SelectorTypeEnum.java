@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.parser.define;
+package com.sinotopia.fundamental.parser.define;
 
 /**
  * Created by zhoubing on 2016/11/30.

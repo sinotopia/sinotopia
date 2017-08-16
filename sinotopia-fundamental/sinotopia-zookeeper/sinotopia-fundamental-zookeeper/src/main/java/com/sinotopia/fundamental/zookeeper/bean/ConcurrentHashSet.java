@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.zookeeper.bean;
+package com.sinotopia.fundamental.zookeeper.bean;
 
 import java.util.AbstractSet;
 import java.util.Collection;

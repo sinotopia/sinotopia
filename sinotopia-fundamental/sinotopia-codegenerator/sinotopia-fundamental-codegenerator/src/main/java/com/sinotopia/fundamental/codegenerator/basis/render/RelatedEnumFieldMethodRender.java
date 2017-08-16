@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.codegenerator.basis.render;
+package com.sinotopia.fundamental.codegenerator.basis.render;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
 
 public class RelatedEnumFieldMethodRender implements FieldMethodRender {
 	@Override

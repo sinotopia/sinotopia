@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.lock;
+package com.sinotopia.fundamental.lock;
 
-import com.hkfs.fundamental.lock.redis.LockService;
+import com.sinotopia.fundamental.lock.redis.LockService;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;

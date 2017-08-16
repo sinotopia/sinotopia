@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.zookeeper.seckill;
+package com.sinotopia.fundamental.zookeeper.seckill;
 
-import com.hkfs.fundamental.zookeeper.ZooKeeperClient;
-import com.hkfs.fundamental.zookeeper.bean.ResultContainer;
+import com.sinotopia.fundamental.zookeeper.ZooKeeperClient;
+import com.sinotopia.fundamental.zookeeper.bean.ResultContainer;
 
 /**
  * Created by pc on 2016/4/26.

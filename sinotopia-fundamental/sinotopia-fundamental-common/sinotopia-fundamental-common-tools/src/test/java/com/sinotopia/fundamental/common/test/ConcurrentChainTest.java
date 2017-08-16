@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.common.test;
+package com.sinotopia.fundamental.common.test;
 
-import com.hkfs.fundamental.common.hanger.Chain;
-import com.hkfs.fundamental.common.hanger.ConcurrentChain;
-import com.hkfs.fundamental.common.hanger.Executor;
-import com.hkfs.fundamental.common.hanger.exception.ExceptionHandler;
-import com.hkfs.fundamental.common.hanger.loop.NumberLoop;
-import com.hkfs.fundamental.common.utils.NumberUtils;
-import com.hkfs.fundamental.common.utils.ThreadUtils;
+import com.sinotopia.fundamental.common.hanger.Chain;
+import com.sinotopia.fundamental.common.hanger.ConcurrentChain;
+import com.sinotopia.fundamental.common.hanger.Executor;
+import com.sinotopia.fundamental.common.hanger.exception.ExceptionHandler;
+import com.sinotopia.fundamental.common.hanger.loop.NumberLoop;
+import com.sinotopia.fundamental.common.utils.NumberUtils;
+import com.sinotopia.fundamental.common.utils.ThreadUtils;
 
 import java.util.concurrent.Executors;
 

@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.email;
+package com.sinotopia.fundamental.email;
 
-import com.hkfs.fundamental.email.bean.EmailAttachment;
+import com.sinotopia.fundamental.email.bean.EmailAttachment;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;

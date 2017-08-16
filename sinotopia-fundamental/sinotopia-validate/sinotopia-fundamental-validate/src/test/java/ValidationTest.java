@@ -1,4 +1,4 @@
-import com.hkfs.fundamental.validate.annotaion.validation.*;
+import com.sinotopia.fundamental.validate.annotaion.validation.*;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.ConstraintViolation;

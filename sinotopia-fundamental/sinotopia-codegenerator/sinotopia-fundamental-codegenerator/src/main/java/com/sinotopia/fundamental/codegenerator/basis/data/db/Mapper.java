@@ -1,13 +1,13 @@
-package com.hkfs.fundamental.codegenerator.basis.data.db;
+package com.sinotopia.fundamental.codegenerator.basis.data.db;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.basis.translator.ColumnNameTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.ColumnTypeTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.TableToClassTranslator;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.io.Outputable;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.translator.ColumnNameTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.ColumnTypeTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.TableToClassTranslator;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.io.Outputable;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 public class Mapper extends AbsFormat implements Outputable {
 	public String packageName;

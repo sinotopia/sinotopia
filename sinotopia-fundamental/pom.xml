@@ -32,8 +32,10 @@
         <module>sinotopia-aspect</module><!--切面-->
         <module>sinotopia-email</module><!--邮件相关-->
         <module>sinotopia-test</module><!--测试相关-->
-        <module>sinotopia-payment</module><!--支付相关-->
-        <module>sinotopia-fundamental-demonstration</module><!--范例-->
+        <!--支付相关-->
+        <module>sinotopia-payment</module>
+        <!--范例-->
+        <!--<module>sinotopia-fundamental-demonstration-parent</module>-->
         <module>sinotopia-shiro</module><!--shiro-->
         <module>sinotopia-queue</module><!--消息队列-->
         <module>sinotopia-jsoup</module><!--HTML解析-->

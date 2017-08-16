@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.processor.number;
+package com.sinotopia.fundamental.parser.processor.number;
 
-import com.hkfs.fundamental.common.utils.NumberUtils;
+import com.sinotopia.fundamental.common.utils.NumberUtils;
 
 /**
  * Float类型的字段处理

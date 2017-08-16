@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.zookeeper;
+package com.sinotopia.fundamental.zookeeper;
 
 import com.alibaba.fastjson.JSON;
-import com.hkfs.fundamental.zookeeper.bean.ResultContainer;
-import com.hkfs.fundamental.zookeeper.seckill.SecKillHandler;
-import com.hkfs.fundamental.zookeeper.seckill.SecKillService;
+import com.sinotopia.fundamental.zookeeper.bean.ResultContainer;
+import com.sinotopia.fundamental.zookeeper.seckill.SecKillHandler;
+import com.sinotopia.fundamental.zookeeper.seckill.SecKillService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.pay.spdb.util;
+package com.sinotopia.fundamental.pay.spdb.util;
 
 
-import com.hkfs.fundamental.pay.spdb.enums.ChannelType;
-import com.hkfs.fundamental.pay.spdb.bean.ResponseWithDrawalsInfo;
-import com.hkfs.fundamental.pay.spdb.bean.WithDrawalsInfo;
-import com.hkfs.fundamental.pay.spdb.exception.WithDrawConstants;
+import com.sinotopia.fundamental.pay.spdb.enums.ChannelType;
+import com.sinotopia.fundamental.pay.spdb.bean.ResponseWithDrawalsInfo;
+import com.sinotopia.fundamental.pay.spdb.bean.WithDrawalsInfo;
+import com.sinotopia.fundamental.pay.spdb.exception.WithDrawConstants;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

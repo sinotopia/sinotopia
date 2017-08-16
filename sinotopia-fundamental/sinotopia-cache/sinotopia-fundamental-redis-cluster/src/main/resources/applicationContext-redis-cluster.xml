@@ -16,17 +16,17 @@
         <property name="testWhileIdle" value="${redis.pool.testWhileIdle}"/>
     </bean>
 
-    <bean id="jedisCluster" class="com.hkfs.fundamental.redis.cluster.FundamentalJedisCluster">
+    <bean id="jedisCluster" class="com.sinotopia.fundamental.redis.cluster.FundamentalJedisCluster">
         <constructor-arg index="0" ref="jedisPoolConfig" />
         <constructor-arg index="1">
-            <bean class="com.hkfs.fundamental.redis.cluster.FundamentalJedisClusterConfig">
+            <bean class="com.sinotopia.fundamental.redis.cluster.FundamentalJedisClusterConfig">
                 <property name="connections" value="${redis.cluster.connections}" />
                 <property name="timeout" value="${redis.cluster.timeout}" />
             </bean>
         </constructor-arg>
     </bean>
 
-    <bean class="com.hkfs.fundamental.redis.cluster.RedisClusterConnector">
+    <bean class="com.sinotopia.fundamental.redis.cluster.RedisClusterConnector">
         <property name="jedisCluster" ref="jedisCluster" />
     </bean>
 

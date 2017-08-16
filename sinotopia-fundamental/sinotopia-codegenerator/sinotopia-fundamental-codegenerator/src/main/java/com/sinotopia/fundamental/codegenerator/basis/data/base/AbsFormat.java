@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.codegenerator.basis.data.base;
+package com.sinotopia.fundamental.codegenerator.basis.data.base;
 
-import com.hkfs.fundamental.codegenerator.basis.global.Consts;
-import com.hkfs.fundamental.codegenerator.basis.render.Initializer;
-import com.hkfs.fundamental.codegenerator.basis.render.TabRender;
+import com.sinotopia.fundamental.codegenerator.basis.global.Consts;
+import com.sinotopia.fundamental.codegenerator.basis.render.Initializer;
+import com.sinotopia.fundamental.codegenerator.basis.render.TabRender;
 
 
 public class AbsFormat {

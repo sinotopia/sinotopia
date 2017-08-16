@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.zookeeper.listener;
+package com.sinotopia.fundamental.zookeeper.listener;
 
 /**
  * 主导节点竞争事件监听器。

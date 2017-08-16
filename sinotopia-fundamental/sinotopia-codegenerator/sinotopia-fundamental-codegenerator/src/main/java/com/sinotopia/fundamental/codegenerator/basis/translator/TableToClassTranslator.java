@@ -1,12 +1,12 @@
-package com.hkfs.fundamental.codegenerator.basis.translator;
+package com.sinotopia.fundamental.codegenerator.basis.translator;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Column;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Table;
-import com.hkfs.fundamental.codegenerator.basis.render.FieldMethodRender;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Column;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Table;
+import com.sinotopia.fundamental.codegenerator.basis.render.FieldMethodRender;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 
 import java.util.ArrayList;
 import java.util.List;

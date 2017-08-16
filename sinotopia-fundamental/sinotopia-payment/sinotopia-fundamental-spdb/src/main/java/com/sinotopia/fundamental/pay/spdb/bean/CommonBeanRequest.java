@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.pay.spdb.bean;
+package com.sinotopia.fundamental.pay.spdb.bean;
 
 import java.util.Map;
 
-import com.hkfs.fundamental.pay.spdb.util.ReflectUtil;
+import com.sinotopia.fundamental.pay.spdb.util.ReflectUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

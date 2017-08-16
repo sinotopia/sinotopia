@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.httpclient.utils;
+package com.sinotopia.fundamental.httpclient.utils;
 
-import com.hkfs.fundamental.common.utils.ExecutorUtils;
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.ExecutorUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 import org.apache.http.*;
 import org.apache.http.client.config.AuthSchemes;
 import org.apache.http.client.config.RequestConfig;

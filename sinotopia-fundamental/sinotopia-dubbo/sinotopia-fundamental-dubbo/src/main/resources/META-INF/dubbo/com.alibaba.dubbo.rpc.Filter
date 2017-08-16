@@ -1,1 +1,1 @@
-requestLogFilter=com.hkfs.fundamental.dubbo.filter.RequestLogFilter
+requestLogFilter=com.sinotopia.fundamental.dubbo.filter.RequestLogFilter

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis;
+package com.sinotopia.fundamental.redis;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.HostAndPort;
@@ -10,6 +10,7 @@ import java.util.Set;
  * Created by zhoubing on 2016/8/4.
  */
 public class FundamentalJedisCluster extends JedisCluster {
+
     public FundamentalJedisCluster(final GenericObjectPoolConfig poolConfig, final FundamentalJedisClusterConfig clusterConfig) {
         super(clusterConfig.getHostAndPorts(), clusterConfig.getTimeout(), clusterConfig.getTimeout(), clusterConfig.getMaxRedirections(), poolConfig);
     }

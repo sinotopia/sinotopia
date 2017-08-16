@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.akka;
+package com.sinotopia.fundamental.akka;
 
 import akka.actor.*;
-import com.hkfs.fundamental.akka.utils.ActorSystemUtils;
+import com.sinotopia.fundamental.akka.utils.ActorSystemUtils;
 
 /**
  * UntypedActor基类

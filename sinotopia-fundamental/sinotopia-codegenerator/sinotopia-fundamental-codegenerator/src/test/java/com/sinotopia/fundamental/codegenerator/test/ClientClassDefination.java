@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.codegenerator.test;
+package com.sinotopia.fundamental.codegenerator.test;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
 
 public class ClientClassDefination {
 	public static Clazz[] classes = new Clazz[] {

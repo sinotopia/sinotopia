@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum SysFlag {
 	ZERO(0, "", "本行"),ONE(1, "", "他行");

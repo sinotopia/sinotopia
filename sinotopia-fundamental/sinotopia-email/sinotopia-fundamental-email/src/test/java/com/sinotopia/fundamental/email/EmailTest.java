@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.email;
+package com.sinotopia.fundamental.email;
 
-import com.hkfs.fundamental.email.bean.EmailAttachment;
+import com.sinotopia.fundamental.email.bean.EmailAttachment;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

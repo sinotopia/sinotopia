@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.jsoup.utils;
+package com.sinotopia.fundamental.jsoup.utils;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.common.utils.StrUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;

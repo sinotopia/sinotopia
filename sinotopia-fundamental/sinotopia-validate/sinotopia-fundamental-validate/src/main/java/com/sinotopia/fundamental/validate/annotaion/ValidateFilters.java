@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.validate.annotaion;
+package com.sinotopia.fundamental.validate.annotaion;
 
-import com.hkfs.fundamental.validate.ValidateFilter;
+import com.sinotopia.fundamental.validate.ValidateFilter;
 
 import java.lang.annotation.*;
 

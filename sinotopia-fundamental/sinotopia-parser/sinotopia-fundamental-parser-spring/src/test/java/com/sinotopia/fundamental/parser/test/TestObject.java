@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.parser.test;
+package com.sinotopia.fundamental.parser.test;
 
 import java.util.List;
 

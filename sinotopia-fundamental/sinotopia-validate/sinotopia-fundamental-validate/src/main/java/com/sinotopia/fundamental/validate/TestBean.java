@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.validate;
+package com.sinotopia.fundamental.validate;
 
 
-import com.hkfs.fundamental.validate.utils.ValidateUtils;
+import com.sinotopia.fundamental.validate.utils.ValidateUtils;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.validation.constraints.NotNull;

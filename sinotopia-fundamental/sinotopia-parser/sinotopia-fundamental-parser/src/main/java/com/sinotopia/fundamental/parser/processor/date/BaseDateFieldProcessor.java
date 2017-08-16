@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.parser.processor.date;
+package com.sinotopia.fundamental.parser.processor.date;
 
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.parser.processor.BaseFieldProcessor;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.parser.processor.BaseFieldProcessor;
 
 /**
  *

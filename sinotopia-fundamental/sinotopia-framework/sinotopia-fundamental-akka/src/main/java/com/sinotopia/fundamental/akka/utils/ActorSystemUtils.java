@@ -1,11 +1,11 @@
-package com.hkfs.fundamental.akka.utils;
+package com.sinotopia.fundamental.akka.utils;
 
 import akka.actor.ActorContext;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import com.hkfs.fundamental.akka.SpringExtension;
-import com.hkfs.fundamental.spring.utils.SpringContextUtils;
+import com.sinotopia.fundamental.akka.SpringExtension;
+import com.sinotopia.fundamental.spring.utils.SpringContextUtils;
 
 /**
  * Actor的工具类

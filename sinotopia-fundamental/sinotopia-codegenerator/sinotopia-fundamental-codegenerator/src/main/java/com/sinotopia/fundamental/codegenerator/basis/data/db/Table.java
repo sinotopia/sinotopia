@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.codegenerator.basis.data.db;
+package com.sinotopia.fundamental.codegenerator.basis.data.db;
 
 import java.util.ArrayList;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 /**
  * 数据库表

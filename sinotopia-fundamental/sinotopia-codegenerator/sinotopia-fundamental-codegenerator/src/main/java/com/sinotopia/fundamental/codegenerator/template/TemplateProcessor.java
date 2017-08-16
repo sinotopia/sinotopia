@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.codegenerator.template;
+package com.sinotopia.fundamental.codegenerator.template;
 
-import com.hkfs.fundamental.codegenerator.utils.IOUtils;
-import com.hkfs.fundamental.codegenerator.utils.StrUtils;
+import com.sinotopia.fundamental.codegenerator.utils.IOUtils;
+import com.sinotopia.fundamental.codegenerator.utils.StrUtils;
 import freemarker.template.Configuration;
 import freemarker.template.DefaultObjectWrapper;
 import freemarker.template.Template;

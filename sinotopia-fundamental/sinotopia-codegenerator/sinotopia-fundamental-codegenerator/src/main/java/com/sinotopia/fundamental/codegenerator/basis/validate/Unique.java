@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.basis.validate;
+package com.sinotopia.fundamental.codegenerator.basis.validate;
 
 public interface Unique {
 	/**

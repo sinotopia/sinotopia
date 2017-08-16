@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.jackson.convert;
+package com.sinotopia.fundamental.jackson.convert;
 
-import com.hkfs.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
 import org.springframework.core.convert.converter.Converter;
 
 import java.util.Date;

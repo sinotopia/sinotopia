@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.template;
+package com.sinotopia.fundamental.codegenerator.template;
 
 /**
  * 数据库字段对应java类成员变量

@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.hkfs</groupId>
-        <artifactId>hkfs-jsoup</artifactId>
+        <groupId>com.sinotopia</groupId>
+        <artifactId>sinotopia-jsoup</artifactId>
         <version>1.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>hkfs-fundamental-jsoup</artifactId>
+    <artifactId>sinotopia-fundamental-jsoup</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.hkfs</groupId>
-            <artifactId>hkfs-fundamental-common-tools</artifactId>
+            <groupId>com.sinotopia</groupId>
+            <artifactId>sinotopia-fundamental-common-tools</artifactId>
             <version>1.1-SNAPSHOT</version>
         </dependency>
 

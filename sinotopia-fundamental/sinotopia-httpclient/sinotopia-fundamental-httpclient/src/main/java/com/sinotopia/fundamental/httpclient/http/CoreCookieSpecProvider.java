@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.httpclient.http;
+package com.sinotopia.fundamental.httpclient.http;
 
 import org.apache.http.cookie.*;
 import org.apache.http.impl.cookie.BrowserCompatSpec;

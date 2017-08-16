@@ -1,17 +1,17 @@
-package com.hkfs.fundamental.parser.json;
+package com.sinotopia.fundamental.parser.json;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONPath;
 import com.alibaba.fastjson.util.TypeUtils;
-import com.hkfs.fundamental.common.utils.StrUtils;
-import com.hkfs.fundamental.parser.Parser;
-import com.hkfs.fundamental.parser.define.FieldDefine;
-import com.hkfs.fundamental.parser.define.FieldTypeEnum;
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
-import com.hkfs.fundamental.parser.regex.RegexSelector;
-import com.hkfs.fundamental.parser.segment.SegmentSelector;
+import com.sinotopia.fundamental.common.utils.StrUtils;
+import com.sinotopia.fundamental.parser.Parser;
+import com.sinotopia.fundamental.parser.define.FieldDefine;
+import com.sinotopia.fundamental.parser.define.FieldTypeEnum;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.regex.RegexSelector;
+import com.sinotopia.fundamental.parser.segment.SegmentSelector;
 
 import java.util.HashMap;
 import java.util.List;

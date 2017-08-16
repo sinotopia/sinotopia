@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.redis.cluster;
+package com.sinotopia.fundamental.redis.cluster;
 
 import redis.clients.jedis.HostAndPort;
 

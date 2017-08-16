@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.validate.validator;
+package com.sinotopia.fundamental.validate.validator;
 
-import com.hkfs.fundamental.common.utils.NCIISUtils;
-import com.hkfs.fundamental.validate.annotaion.validation.IdentityNo;
+import com.sinotopia.fundamental.common.utils.NCIISUtils;
+import com.sinotopia.fundamental.validate.annotaion.validation.IdentityNo;
 import org.apache.commons.beanutils.BeanUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

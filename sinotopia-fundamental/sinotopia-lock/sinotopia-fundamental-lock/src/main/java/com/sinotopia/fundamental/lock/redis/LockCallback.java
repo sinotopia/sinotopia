@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.lock.redis;
+package com.sinotopia.fundamental.lock.redis;
 
 /**
  * Created by zhoubing on 2017/1/4.

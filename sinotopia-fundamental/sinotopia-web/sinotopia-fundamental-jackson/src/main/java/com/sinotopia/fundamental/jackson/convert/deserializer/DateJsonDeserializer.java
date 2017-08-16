@@ -1,9 +1,9 @@
-package com.hkfs.fundamental.jackson.convert.deserializer;
+package com.sinotopia.fundamental.jackson.convert.deserializer;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.hkfs.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -4,32 +4,32 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.hkfs</groupId>
-		<artifactId>hkfs-lock</artifactId>
+		<groupId>com.sinotopia</groupId>
+		<artifactId>sinotopia-lock</artifactId>
 		<version>1.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>hkfs-fundamental-lock</artifactId>
+	<artifactId>sinotopia-fundamental-lock</artifactId>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-config</artifactId>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-config</artifactId>
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-redis</artifactId>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-redis</artifactId>
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-test</artifactId>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-test</artifactId>
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.hkfs</groupId>
-			<artifactId>hkfs-fundamental-aspect</artifactId>
+			<groupId>com.sinotopia</groupId>
+			<artifactId>sinotopia-fundamental-aspect</artifactId>
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
 

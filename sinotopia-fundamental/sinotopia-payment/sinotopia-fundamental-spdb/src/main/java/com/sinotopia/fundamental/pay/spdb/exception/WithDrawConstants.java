@@ -1,7 +1,7 @@
-package com.hkfs.fundamental.pay.spdb.exception;
+package com.sinotopia.fundamental.pay.spdb.exception;
 
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
 
 public class WithDrawConstants {
 	

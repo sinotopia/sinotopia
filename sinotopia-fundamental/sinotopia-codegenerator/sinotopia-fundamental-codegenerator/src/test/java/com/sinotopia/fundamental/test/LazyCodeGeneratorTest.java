@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.test;
+package com.sinotopia.fundamental.test;
 
-import com.hkfs.fundamental.codegenerator.lazy.LazyCodeGenerator;
+import com.sinotopia.fundamental.codegenerator.lazy.LazyCodeGenerator;
 
 /**
  * Created by brucezee on 2017/1/17.

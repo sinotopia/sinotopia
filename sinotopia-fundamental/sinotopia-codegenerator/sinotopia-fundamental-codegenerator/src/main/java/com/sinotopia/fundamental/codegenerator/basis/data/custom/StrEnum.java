@@ -1,13 +1,13 @@
-package com.hkfs.fundamental.codegenerator.basis.data.custom;
+package com.sinotopia.fundamental.codegenerator.basis.data.custom;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Annotation;
-import com.hkfs.fundamental.codegenerator.basis.data.Comment;
-import com.hkfs.fundamental.codegenerator.basis.data.Constructor;
-import com.hkfs.fundamental.codegenerator.basis.data.Dict;
-import com.hkfs.fundamental.codegenerator.basis.data.Field;
-import com.hkfs.fundamental.codegenerator.basis.data.Method;
-import com.hkfs.fundamental.codegenerator.basis.data.Param;
-import com.hkfs.fundamental.codegenerator.utils.CodeUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.Annotation;
+import com.sinotopia.fundamental.codegenerator.basis.data.Comment;
+import com.sinotopia.fundamental.codegenerator.basis.data.Constructor;
+import com.sinotopia.fundamental.codegenerator.basis.data.Dict;
+import com.sinotopia.fundamental.codegenerator.basis.data.Field;
+import com.sinotopia.fundamental.codegenerator.basis.data.Method;
+import com.sinotopia.fundamental.codegenerator.basis.data.Param;
+import com.sinotopia.fundamental.codegenerator.utils.CodeUtils;
 
 public class StrEnum extends CEnum {
 	public StrEnum(String fullClassName, Dict[] dicts) {
@@ -93,7 +93,7 @@ public class StrEnum extends CEnum {
 		super.setComments(comments);
 		return this;
 	}
-	public com.hkfs.fundamental.codegenerator.basis.data.Enum setComment(Comment comment) {
+	public com.sinotopia.fundamental.codegenerator.basis.data.Enum setComment(Comment comment) {
 		super.setComment(comment);
 		return this;
 	}

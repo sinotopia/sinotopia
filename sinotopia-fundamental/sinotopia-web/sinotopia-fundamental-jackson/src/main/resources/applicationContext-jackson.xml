@@ -20,7 +20,7 @@
 	<bean id="fundamentalConversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
 			<set>
-				<bean class="com.hkfs.fundamental.jackson.convert.DateConverter" />
+				<bean class="com.sinotopia.fundamental.jackson.convert.DateConverter" />
 			</set>
 		</property>
 	</bean>
@@ -36,7 +36,7 @@
 					</list>
 				</property>
 				<property name="objectMapper">
-					<bean class="com.hkfs.fundamental.jackson.convert.FundamentalObjectMapper" />
+					<bean class="com.sinotopia.fundamental.jackson.convert.FundamentalObjectMapper" />
 				</property>
 			</bean>
 		</mvc:message-converters>

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.validate.annotaion;
+package com.sinotopia.fundamental.validate.annotaion;
 
 import org.springframework.stereotype.Component;
 

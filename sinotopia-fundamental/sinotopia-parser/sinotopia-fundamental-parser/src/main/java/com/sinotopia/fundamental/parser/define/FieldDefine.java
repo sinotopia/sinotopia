@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.define;
+package com.sinotopia.fundamental.parser.define;
 
-import com.hkfs.fundamental.parser.processor.FieldProcessor;
+import com.sinotopia.fundamental.parser.processor.FieldProcessor;
 
 import java.io.Serializable;
 

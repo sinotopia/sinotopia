@@ -1,6 +1,6 @@
-package com.hkfs.fundamental.parser.processor.date;
+package com.sinotopia.fundamental.parser.processor.date;
 
-import com.hkfs.fundamental.common.utils.TimeUtils;
+import com.sinotopia.fundamental.common.utils.TimeUtils;
 
 /**
  * 将一种格式的日期字符串转换成另外一种格式的日期字符串

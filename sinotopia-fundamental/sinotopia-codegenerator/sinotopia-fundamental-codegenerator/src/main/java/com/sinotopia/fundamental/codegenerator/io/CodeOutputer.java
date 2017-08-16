@@ -1,8 +1,8 @@
-package com.hkfs.fundamental.codegenerator.io;
+package com.sinotopia.fundamental.codegenerator.io;
 
-import com.hkfs.fundamental.codegenerator.basis.data.base.AbsFormat;
-import com.hkfs.fundamental.codegenerator.basis.global.Config;
-import com.hkfs.fundamental.codegenerator.utils.FileUtils;
+import com.sinotopia.fundamental.codegenerator.basis.data.base.AbsFormat;
+import com.sinotopia.fundamental.codegenerator.basis.global.Config;
+import com.sinotopia.fundamental.codegenerator.utils.FileUtils;
 
 public class CodeOutputer {
 	public String filePath;

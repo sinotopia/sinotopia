@@ -27,7 +27,7 @@
         </property>
     </bean>
     <!--mail sender-->
-    <bean id="emailSender" class="com.hkfs.fundamental.email.EmailSender">
+    <bean id="emailSender" class="com.sinotopia.fundamental.email.EmailSender">
         <property name="javaMailSender" ref="mailSender"/>
     </bean>
 </beans>

@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.codegenerator.utils;
+package com.sinotopia.fundamental.codegenerator.utils;
 
 import java.io.*;
 import java.math.BigInteger;

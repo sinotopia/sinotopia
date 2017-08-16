@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.util;
+package com.sinotopia.fundamental.pay.spdb.util;
 
 import java.util.HashMap;
 import java.util.Iterator;

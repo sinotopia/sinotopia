@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.pay.spdb.enums;
+package com.sinotopia.fundamental.pay.spdb.enums;
 
 public enum PayeeBankSelectFlag {
 	ZERO(0, "", "非速选"),ONE(1, "", "速选");

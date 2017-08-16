@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.zookeeper.seckill;
+package com.sinotopia.fundamental.zookeeper.seckill;
 
-import com.hkfs.fundamental.config.FundamentalConfigProvider;
-import com.hkfs.fundamental.zookeeper.ZooKeeperClient;
-import com.hkfs.fundamental.zookeeper.bean.ResultContainer;
-import com.hkfs.fundamental.zookeeper.callback.ZooKeeperLockUseDataCallback;
-import com.hkfs.fundamental.zookeeper.constants.PropertiesKey;
+import com.sinotopia.fundamental.config.FundamentalConfigProvider;
+import com.sinotopia.fundamental.zookeeper.ZooKeeperClient;
+import com.sinotopia.fundamental.zookeeper.bean.ResultContainer;
+import com.sinotopia.fundamental.zookeeper.callback.ZooKeeperLockUseDataCallback;
+import com.sinotopia.fundamental.zookeeper.constants.PropertiesKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

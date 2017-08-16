@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.parser.processor;
+package com.sinotopia.fundamental.parser.processor;
 
 /**
  * 字段处理器

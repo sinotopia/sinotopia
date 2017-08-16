@@ -1,10 +1,10 @@
-package com.hkfs.fundamental.httpclient.utils;
+package com.sinotopia.fundamental.httpclient.utils;
 
-import com.hkfs.fundamental.common.utils.HttpUtils;
-import com.hkfs.fundamental.httpclient.ClientEx;
-import com.hkfs.fundamental.httpclient.http.CoreRedirectStrategy;
-import com.hkfs.fundamental.httpclient.http.CoreRetryHandler;
-import com.hkfs.fundamental.httpclient.http.CoreTrustStrategy;
+import com.sinotopia.fundamental.common.utils.HttpUtils;
+import com.sinotopia.fundamental.httpclient.ClientEx;
+import com.sinotopia.fundamental.httpclient.http.CoreRedirectStrategy;
+import com.sinotopia.fundamental.httpclient.http.CoreRetryHandler;
+import com.sinotopia.fundamental.httpclient.http.CoreTrustStrategy;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

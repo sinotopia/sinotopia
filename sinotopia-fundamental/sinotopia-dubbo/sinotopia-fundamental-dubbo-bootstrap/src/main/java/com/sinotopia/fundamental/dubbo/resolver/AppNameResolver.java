@@ -1,4 +1,4 @@
-package com.hkfs.fundamental.dubbo.resolver;
+package com.sinotopia.fundamental.dubbo.resolver;
 
 /**
  * <p>输入注释</p>

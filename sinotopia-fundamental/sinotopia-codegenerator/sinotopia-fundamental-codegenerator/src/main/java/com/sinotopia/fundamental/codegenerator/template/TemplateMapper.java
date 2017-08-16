@@ -1,14 +1,14 @@
-package com.hkfs.fundamental.codegenerator.template;
+package com.sinotopia.fundamental.codegenerator.template;
 
-import com.hkfs.fundamental.codegenerator.basis.data.Clazz;
-import com.hkfs.fundamental.codegenerator.basis.data.Interface;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Column;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Mapper;
-import com.hkfs.fundamental.codegenerator.basis.data.db.Table;
-import com.hkfs.fundamental.codegenerator.basis.translator.ColumnNameTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.ColumnTypeTranslator;
-import com.hkfs.fundamental.codegenerator.basis.translator.TableToClassTranslator;
-import com.hkfs.fundamental.codegenerator.io.Outputable;
+import com.sinotopia.fundamental.codegenerator.basis.data.Clazz;
+import com.sinotopia.fundamental.codegenerator.basis.data.Interface;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Column;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Mapper;
+import com.sinotopia.fundamental.codegenerator.basis.data.db.Table;
+import com.sinotopia.fundamental.codegenerator.basis.translator.ColumnNameTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.ColumnTypeTranslator;
+import com.sinotopia.fundamental.codegenerator.basis.translator.TableToClassTranslator;
+import com.sinotopia.fundamental.codegenerator.io.Outputable;
 
 import java.util.ArrayList;
 import java.util.List;
