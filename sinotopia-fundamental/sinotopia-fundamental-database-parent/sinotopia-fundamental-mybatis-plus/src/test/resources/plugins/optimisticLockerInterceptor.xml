@@ -7,7 +7,7 @@
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd  
            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-	<context:component-scan base-package="com.baomidou.mybatisplus.test.plugins.optimisticLocker" />
+	<context:component-scan base-package="com.sinotopia.mybatis.plus.test.plugins.optimisticLocker" />
 
 	<import resource="classpath:h2/spring-jdbc.xml" />
 
@@ -16,7 +16,7 @@
 		class="com.sinotopia.mybatis.plus.spring.MybatisSqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="typeAliasesPackage"
-			value="com.baomidou.mybatisplus.test.plugins.optimisticLocker.entity" />
+			value="com.sinotopia.mybatis.plus.test.plugins.optimisticLocker.entity" />
 		<property name="plugins">
 			<array>
 				<bean class="com.sinotopia.mybatis.plus.plugins.OptimisticLockerInterceptor">
@@ -37,6 +37,6 @@
 
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage"
-			value="com.baomidou.mybatisplus.test.plugins.optimisticLocker.mapper" />
+			value="com.sinotopia.mybatis.plus.test.plugins.optimisticLocker.mapper" />
 	</bean>
 </beans>

@@ -39,6 +39,7 @@
                 typeHandler="com.sinotopia.mybatis.plus.test.mysql.typehandler.PhoneTypeHandler"/>
 
         <!-- 级联查询 -->
-        <association column="role" property="role" select="com.sinotopia.mybatis.plus.test.mysql.mapper.RoleMapper.selectById"/>
+        <association column="role" property="role"
+                     select="com.sinotopia.mybatis.plus.test.mysql.mapper.RoleMapper.selectById"/>
     </resultMap>
 </mapper>
