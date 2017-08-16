@@ -31,12 +31,13 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * hsqldb 基于 RowBounds 的分页
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class HsqldbRowBoundsDialect extends AbstractRowBoundsDialect {
 
     @Override
     public String getPageSql(String sql, RowBounds rowBounds, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 20);
         sqlBuilder.append(sql);
         if (rowBounds.getLimit() > 0) {

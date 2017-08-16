@@ -27,7 +27,7 @@ package com.sinotopia.mybatis.pagehelper.cache;
 /**
  * Simple cache interface
  *
- * @author liuzh
+ * @author cacotopia
  */
 public interface Cache<K, V> {
 

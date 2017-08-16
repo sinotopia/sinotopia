@@ -30,12 +30,13 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * sqlserver2012 基于 RowBounds 的分页
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class SqlServer2012RowBoundsDialect extends SqlServerRowBoundsDialect {
 
     @Override
     public String getPageSql(String sql, RowBounds rowBounds, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 14);
         sqlBuilder.append(sql);
         sqlBuilder.append(" OFFSET ");

@@ -33,7 +33,7 @@ import java.util.Properties;
 /**
  * CacheFactory
  *
- * @author liuzh
+ * @author cacotopia
  */
 public abstract class CacheFactory {
 
@@ -44,6 +44,7 @@ public abstract class CacheFactory {
      * @return
      */
     public static <K, V> Cache<K, V> createCache(String sqlCacheClass, String prefix, Properties properties) {
+
         if (StringUtil.isEmpty(sqlCacheClass)) {
             try {
                 Class.forName("com.google.common.cache.Cache");

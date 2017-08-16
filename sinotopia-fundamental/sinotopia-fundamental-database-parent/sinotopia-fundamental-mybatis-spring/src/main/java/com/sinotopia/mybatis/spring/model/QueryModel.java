@@ -1,10 +1,11 @@
 package com.sinotopia.mybatis.spring.model;
 
 /**
- * @author liuzh_3nofxnp
+ * @author cacotopia
  * @since 2015-11-09 22:25
  */
 public class QueryModel {
+
     private Integer pageNum;
     private Integer pageSize;
     private String orderBy;

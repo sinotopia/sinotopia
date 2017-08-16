@@ -31,12 +31,13 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * oracle 基于 RowBounds 的分页
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class OracleRowBoundsDialect extends AbstractRowBoundsDialect {
 
     @Override
     public String getPageSql(String sql, RowBounds rowBounds, CacheKey pageKey) {
+
         int startRow = rowBounds.getOffset();
         int endRow = rowBounds.getOffset() + rowBounds.getLimit();
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 120);

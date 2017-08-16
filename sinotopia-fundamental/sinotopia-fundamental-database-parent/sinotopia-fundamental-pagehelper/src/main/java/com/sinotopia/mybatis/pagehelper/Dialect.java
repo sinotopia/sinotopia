@@ -35,9 +35,10 @@ import java.util.Properties;
 /**
  * 数据库方言，针对不同数据库进行实现
  *
- * @author liuzh
+ * @author cacotopia
  */
 public interface Dialect {
+
     /**
      * 跳过 count 和 分页查询
      *

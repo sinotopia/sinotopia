@@ -31,12 +31,13 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * informix 基于 RowBounds 的分页
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class InformixRowBoundsDialect extends AbstractRowBoundsDialect {
 
     @Override
     public String getPageSql(String sql, RowBounds rowBounds, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 40);
         sqlBuilder.append("SELECT ");
         if (rowBounds.getOffset() > 0) {

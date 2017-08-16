@@ -25,8 +25,8 @@
 package com.sinotopia.mybatis.spring.mapper;
 
 import com.sinotopia.mybatis.spring.model.Country;
-import com.sinotopia.mybatis.spring.util.MyMapper;
+import com.sinotopia.mybatis.spring.util.SimpleMapper;
 
-public interface CountryMapper extends MyMapper<Country> {
+public interface CountryMapper extends SimpleMapper<Country> {
 
 }

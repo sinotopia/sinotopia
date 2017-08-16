@@ -29,7 +29,7 @@ import com.sinotopia.mybatis.pagehelper.dialect.AbstractHelperDialect;
 import org.apache.ibatis.cache.CacheKey;
 
 /**
- * @author liuzh
+ * @author cacotopia
  */
 public class InformixDialect extends AbstractHelperDialect {
 

@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.pagehelper.util;
 
 /**
- * @author liuzh
+ * @author cacotopia
  * @since 4.1.0
  */
 public class StringUtil {

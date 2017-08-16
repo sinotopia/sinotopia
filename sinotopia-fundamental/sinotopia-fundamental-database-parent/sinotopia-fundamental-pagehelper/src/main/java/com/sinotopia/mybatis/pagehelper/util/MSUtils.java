@@ -34,9 +34,10 @@ import java.util.List;
 /**
  * 创建新的MappedStatement,主要是Count返回值int
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class MSUtils {
+
     public static final String COUNT = "_COUNT";
     private static final List<ResultMapping> EMPTY_RESULTMAPPING = new ArrayList<ResultMapping>(0);
 

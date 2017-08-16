@@ -27,9 +27,10 @@ package com.sinotopia.mybatis.pagehelper;
 import org.apache.ibatis.session.RowBounds;
 
 /**
- * @author liuzenghui
+ * @author cacotopia
  */
 public class PageRowBounds extends RowBounds {
+
     private Long total;
 
     public PageRowBounds(int offset, int limit) {

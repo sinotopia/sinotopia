@@ -31,17 +31,19 @@ import java.util.List;
 /**
  * Mybatis - 分页对象
  *
- * @author liuzh/abel533/isea533
+ * @author cacotopia
  * @version 3.6.0
- *          项目地址 : http://git.oschina.net/free/Mybatis_PageHelper
+ *
  */
 public class Page<E> extends ArrayList<E> implements Closeable {
+
     private static final long serialVersionUID = 1L;
 
     /**
      * 页码，从1开始
      */
     private int pageNum;
+
     /**
      * 页面大小
      */

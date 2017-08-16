@@ -48,7 +48,7 @@ import java.util.Properties;
  * Mybatis - 通用分页拦截器<br/>
  * 项目地址 : http://git.oschina.net/free/Mybatis_PageHelper
  *
- * @author liuzh/abel533/isea533
+ * @author cacotopia
  * @version 5.0.0
  */
 @SuppressWarnings({"rawtypes", "unchecked"})

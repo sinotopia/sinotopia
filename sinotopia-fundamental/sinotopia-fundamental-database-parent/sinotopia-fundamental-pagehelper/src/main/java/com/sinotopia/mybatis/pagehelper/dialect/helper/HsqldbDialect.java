@@ -29,12 +29,13 @@ import com.sinotopia.mybatis.pagehelper.dialect.AbstractHelperDialect;
 import org.apache.ibatis.cache.CacheKey;
 
 /**
- * @author liuzh
+ * @author cacotopia
  */
 public class HsqldbDialect extends AbstractHelperDialect {
 
     @Override
     public String getPageSql(String sql, Page page, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 20);
         sqlBuilder.append(sql);
         if (page.getPageSize() > 0) {

@@ -35,9 +35,10 @@ import java.util.Map;
 /**
  * 分页参数对象工具类
  *
- * @author liuzh
+ * @author cacotopia
  */
 public abstract class PageObjectUtil {
+
     //request获取方法
     protected static Boolean hasRequest;
     protected static Class<?> requestClass;

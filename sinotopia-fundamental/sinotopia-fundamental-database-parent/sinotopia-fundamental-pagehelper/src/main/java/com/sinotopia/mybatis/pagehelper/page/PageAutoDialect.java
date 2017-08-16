@@ -28,7 +28,6 @@ import com.sinotopia.mybatis.pagehelper.PageException;
 import com.sinotopia.mybatis.pagehelper.dialect.helper.*;
 import com.sinotopia.mybatis.pagehelper.util.StringUtil;
 import com.sinotopia.mybatis.pagehelper.dialect.AbstractHelperDialect;
-import com.sinotopia.mybatis.pagehelper.dialect.helper.*;
 import org.apache.ibatis.mapping.MappedStatement;
 
 import javax.sql.DataSource;
@@ -43,7 +42,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 基础方言信息
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class PageAutoDialect {
 

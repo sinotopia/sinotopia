@@ -35,9 +35,10 @@ import java.util.Properties;
 /**
  * Page 参数信息
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class PageParams {
+
     //RowBounds参数offset作为PageNum使用 - 默认不使用
     protected boolean offsetAsPageNum = false;
     //RowBounds是否进行count查询 - 默认不查询

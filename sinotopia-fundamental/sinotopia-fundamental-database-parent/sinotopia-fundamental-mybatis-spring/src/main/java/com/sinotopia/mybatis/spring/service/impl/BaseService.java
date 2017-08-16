@@ -31,7 +31,7 @@ import com.sinotopia.mybatis.mapper.common.Mapper;
 import java.util.List;
 
 /**
- * Created by liuzh on 2014/12/11.
+ * Created by cacotopia on 2014/12/11.
  */
 public abstract class BaseService<T> implements IService<T> {
 

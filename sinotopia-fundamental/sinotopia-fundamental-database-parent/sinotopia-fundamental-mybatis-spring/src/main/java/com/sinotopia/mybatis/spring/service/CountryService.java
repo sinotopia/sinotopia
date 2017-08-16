@@ -5,7 +5,7 @@ import com.sinotopia.mybatis.spring.model.Country;
 import java.util.List;
 
 /**
- * @author liuzh_3nofxnp
+ * @author cacotopia
  * @since 2015-09-19 17:17
  */
 public interface CountryService extends IService<Country> {

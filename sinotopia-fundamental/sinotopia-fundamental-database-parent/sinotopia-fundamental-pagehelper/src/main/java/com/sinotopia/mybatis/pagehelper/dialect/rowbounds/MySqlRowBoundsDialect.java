@@ -31,12 +31,13 @@ import org.apache.ibatis.session.RowBounds;
 /**
  * mysql 基于 RowBounds 的分页
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class MySqlRowBoundsDialect extends AbstractRowBoundsDialect {
 
     @Override
     public String getPageSql(String sql, RowBounds rowBounds, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 14);
         sqlBuilder.append(sql);
         if (rowBounds.getOffset() == 0) {

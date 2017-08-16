@@ -38,9 +38,10 @@ import org.apache.ibatis.session.RowBounds;
 import java.util.Properties;
 
 /**
- * @author liuzh
+ * @author cacotopia
  */
 public class SqlServerDialect extends AbstractHelperDialect {
+
     protected SqlServerParser pageSql = new SqlServerParser();
     protected Cache<String, String> CACHE_COUNTSQL;
     protected Cache<String, String> CACHE_PAGESQL;
@@ -50,6 +51,7 @@ public class SqlServerDialect extends AbstractHelperDialect {
 
     @Override
     public String getCountSql(MappedStatement ms, BoundSql boundSql, Object parameterObject, RowBounds rowBounds, CacheKey countKey) {
+
         String sql = boundSql.getSql();
         String cacheSql = CACHE_COUNTSQL.get(sql);
         if (cacheSql != null) {

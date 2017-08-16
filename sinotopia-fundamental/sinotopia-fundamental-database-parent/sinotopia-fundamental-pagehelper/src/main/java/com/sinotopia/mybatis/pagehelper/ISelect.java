@@ -27,7 +27,7 @@ package com.sinotopia.mybatis.pagehelper;
 /**
  * 分页查询接口
  *
- * @author liuzh_3nofxnp
+ * @author cacotopia
  * @since 2015-12-18 18:51
  */
 public interface ISelect {

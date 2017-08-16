@@ -28,6 +28,7 @@ package com.sinotopia.mybatis.pagehelper;
  * 分页插件异常
  */
 public class PageException extends RuntimeException {
+
     public PageException() {
         super();
     }

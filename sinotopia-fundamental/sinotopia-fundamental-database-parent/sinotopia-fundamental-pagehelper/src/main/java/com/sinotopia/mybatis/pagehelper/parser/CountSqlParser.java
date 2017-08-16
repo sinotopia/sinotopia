@@ -37,10 +37,12 @@ import java.util.List;
 /**
  * sql解析类，提供更智能的count查询sql
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class CountSqlParser {
+
     public static final String KEEP_ORDERBY = "/*keep orderby*/";
+
     private static final Alias TABLE_ALIAS;
 
     static {

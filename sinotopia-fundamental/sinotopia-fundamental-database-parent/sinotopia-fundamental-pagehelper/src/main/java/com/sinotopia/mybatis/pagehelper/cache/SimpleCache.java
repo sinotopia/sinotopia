@@ -34,13 +34,14 @@ import java.util.Properties;
 /**
  * Simple MyBatis Cache
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class SimpleCache<K, V> implements Cache<K, V> {
 
     private final org.apache.ibatis.cache.Cache CACHE;
 
     public SimpleCache(Properties properties, String prefix) {
+
         CacheBuilder cacheBuilder = new CacheBuilder("SQL_CACHE");
         String typeClass = properties.getProperty(prefix + ".typeClass");
         if (StringUtil.isNotEmpty(typeClass)) {

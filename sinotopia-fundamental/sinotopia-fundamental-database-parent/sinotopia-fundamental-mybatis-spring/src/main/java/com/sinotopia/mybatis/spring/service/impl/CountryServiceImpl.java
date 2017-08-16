@@ -10,7 +10,7 @@ import com.sinotopia.mybatis.mapper.util.StringUtil;
 import java.util.List;
 
 /**
- * @author liuzh_3nofxnp
+ * @author cacotopia
  * @since 2015-09-19 17:17
  */
 @Service("countryService")
@@ -18,6 +18,7 @@ public class CountryServiceImpl extends BaseService<Country> implements CountryS
 
     @Override
     public List<Country> selectByCountry(Country country, int page, int rows) {
+
         Example example = new Example(Country.class);
         Example.Criteria criteria = example.createCriteria();
         if (StringUtil.isNotEmpty(country.getCountryname())) {

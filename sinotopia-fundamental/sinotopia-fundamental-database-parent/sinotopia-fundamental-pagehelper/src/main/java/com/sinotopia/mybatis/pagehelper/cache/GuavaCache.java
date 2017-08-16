@@ -33,13 +33,14 @@ import java.util.concurrent.TimeUnit;
 /**
  * Simple Guava Cache
  *
- * @author liuzh
+ * @author cacotopia
  */
 public class GuavaCache<K, V> implements Cache<K, V> {
 
     private final com.google.common.cache.Cache<K, V> CACHE;
 
     public GuavaCache(Properties properties, String prefix) {
+
         CacheBuilder cacheBuilder = CacheBuilder.newBuilder();
         String maximumSize = properties.getProperty(prefix + ".maximumSize");
         if (StringUtil.isNotEmpty(maximumSize)) {

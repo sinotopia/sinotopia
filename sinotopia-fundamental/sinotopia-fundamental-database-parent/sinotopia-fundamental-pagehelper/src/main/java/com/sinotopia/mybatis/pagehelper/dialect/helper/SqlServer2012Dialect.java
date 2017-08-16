@@ -28,12 +28,13 @@ import com.sinotopia.mybatis.pagehelper.Page;
 import org.apache.ibatis.cache.CacheKey;
 
 /**
- * @author liuzh
+ * @author cacotopia
  */
 public class SqlServer2012Dialect extends SqlServerDialect {
 
     @Override
     public String getPageSql(String sql, Page page, CacheKey pageKey) {
+
         StringBuilder sqlBuilder = new StringBuilder(sql.length() + 14);
         sqlBuilder.append(sql);
         sqlBuilder.append(" OFFSET ");

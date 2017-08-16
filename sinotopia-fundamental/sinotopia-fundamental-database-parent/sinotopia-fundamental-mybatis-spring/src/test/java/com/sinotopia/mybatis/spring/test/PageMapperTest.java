@@ -24,19 +24,19 @@
 
 package com.sinotopia.mybatis.spring.test;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+import com.sinotopia.mybatis.pagehelper.PageHelper;
+import com.sinotopia.mybatis.pagehelper.PageInfo;
 import com.sinotopia.mybatis.spring.mapper.CountryMapper;
 import com.sinotopia.mybatis.spring.model.Country;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import tk.mybatis.mapper.entity.Example;
+import com.sinotopia.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
 /**
- * Created by liuzh on 2015/3/7.
+ * Created by cacotopia on 2015/3/7.
  */
 public class PageMapperTest extends BasicTest {
 

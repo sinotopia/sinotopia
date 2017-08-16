@@ -29,6 +29,7 @@ import java.util.Date;
 
 @Table(name = "`user login info`")
 public class UserLoginInfo {
+
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -28,6 +28,7 @@ import javax.persistence.*;
 
 @Table(name = "user_info")
 public class UserInfo {
+
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

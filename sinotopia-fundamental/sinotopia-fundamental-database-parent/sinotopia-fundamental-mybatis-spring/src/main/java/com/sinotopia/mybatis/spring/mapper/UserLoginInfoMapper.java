@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.spring.mapper;
 
 import com.sinotopia.mybatis.spring.model.UserLoginInfo;
-import com.sinotopia.mybatis.spring.util.MyMapper;
+import com.sinotopia.mybatis.spring.util.SimpleMapper;
 
-public interface UserLoginInfoMapper extends MyMapper<UserLoginInfo> {
+public interface UserLoginInfoMapper extends SimpleMapper<UserLoginInfo> {
 }
