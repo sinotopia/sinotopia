@@ -54,9 +54,9 @@ public interface CountryMapper {
     //嵌套查询
     List<Country> selectCollectionMap();
 
-    List<Country> selectGreterThanId(int id);
+    List<Country> selectGreaterThanId(int id);
 
-    List<Country> selectGreterThanIdAndNotEquelContryname(@Param("id") int id, @Param("countryname") String countryname);
+    List<Country> selectGreaterThanIdAndNotEquelContryName(@Param("id") int id, @Param("countryname") String countryname);
 
     List<Country> selectAll(RowBounds rowBounds);
 

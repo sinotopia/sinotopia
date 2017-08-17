@@ -62,7 +62,7 @@
     </environments>
 
     <mappers>
-        <mapper resource="com/sinotopia.mybatis/pagehelper/mapper/CountryMapper.xml"/>
+        <mapper resource="com/sinotopia/mybatis/pagehelper/mapper/CountryMapper.xml"/>
     </mappers>
 
 </configuration>
