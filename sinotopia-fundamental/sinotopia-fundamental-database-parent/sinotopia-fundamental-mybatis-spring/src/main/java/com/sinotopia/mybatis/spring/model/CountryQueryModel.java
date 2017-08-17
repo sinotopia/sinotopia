@@ -45,18 +45,18 @@ public class CountryQueryModel extends QueryModel {
     }
 
     public String getCountrycode() {
-        return country.getCountrycode();
+        return country.getCountryCode();
     }
 
     public void setCountrycode(String countrycode) {
-        country.setCountrycode(countrycode);
+        country.setCountryCode(countrycode);
     }
 
     public String getCountryname() {
-        return country.getCountryname();
+        return country.getCountryName();
     }
 
     public void setCountryname(String countryname) {
-        country.setCountryname(countryname);
+        country.setCountryName(countryname);
     }
 }

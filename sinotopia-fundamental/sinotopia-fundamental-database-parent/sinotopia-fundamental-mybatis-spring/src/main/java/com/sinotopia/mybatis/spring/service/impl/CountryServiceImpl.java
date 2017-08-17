@@ -21,11 +21,11 @@ public class CountryServiceImpl extends BaseService<Country> implements CountryS
 
         Example example = new Example(Country.class);
         Example.Criteria criteria = example.createCriteria();
-        if (StringUtil.isNotEmpty(country.getCountryname())) {
-            criteria.andLike("countryname", "%" + country.getCountryname() + "%");
+        if (StringUtil.isNotEmpty(country.getCountryName())) {
+            criteria.andLike("countryname", "%" + country.getCountryName() + "%");
         }
-        if (StringUtil.isNotEmpty(country.getCountrycode())) {
-            criteria.andLike("countrycode", "%" + country.getCountrycode() + "%");
+        if (StringUtil.isNotEmpty(country.getCountryCode())) {
+            criteria.andLike("countrycode", "%" + country.getCountryCode() + "%");
         }
         if (country.getId() != null) {
             criteria.andEqualTo("id", country.getId());

@@ -37,7 +37,7 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.isea533.mybatis.service"/>
+    <context:component-scan base-package="com.sinotopia.mybatis.spring.service"/>
 
     <context:property-placeholder location="classpath:config.properties"/>
 
@@ -70,10 +70,10 @@
                 <value>classpath:mapper/*.xml</value>
             </array>
         </property>
-        <property name="typeAliasesPackage" value="com.isea533.mybatis.model"/>
+        <property name="typeAliasesPackage" value="com.sinotopia.mybatis.model"/>
         <property name="plugins">
             <array>
-                <bean class="com.github.pagehelper.PageInterceptor">
+                <bean class="com.sinotopia.mybatis.pagehelper.PageInterceptor">
                     <!-- 这里的几个配置主要演示如何使用，如果不理解，一定要去掉下面的配置 -->
                     <property name="properties">
                         <value>
@@ -89,14 +89,14 @@
         </property>
     </bean>
 
-    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.isea533.mybatis.mapper"/>
+    <bean class="com.sinotopia.mybatis.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.sinotopia.mybatis.mapper"/>
         <!-- 3.2.2版本新特性，markerInterface可以起到mappers配置的作用，详细情况需要看Marker接口类 -->
         <property name="markerInterface" value="com.sinotopia.mybatis.spring.util.SimpleMapper"/>
         <!-- 通用Mapper通过属性注入进行配置，默认不配置时会注册Mapper<T>接口
         <property name="properties">
             <value>
-                mappers=tk.mybatis.mapper.common.Mapper
+                mappers=com.sinotopia.mybatis.mapper.common.Mapper
             </value>
         </property>
         -->
@@ -109,7 +109,7 @@
     <aop:aspectj-autoproxy/>
 
     <aop:config>
-        <aop:pointcut id="appService" expression="execution(* com.isea533.mybatis.service..*Service*.*(..))"/>
+        <aop:pointcut id="appService" expression="execution(* com.sinotopia.mybatis.spring.service..*Service*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="appService"/>
     </aop:config>
 
