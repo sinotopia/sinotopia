@@ -39,7 +39,7 @@ import org.apache.ibatis.logging.LogFactory;
  * IOUtils Copy org.apache.commons.io.IOUtils
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-11-23
  */
 public class IOUtils {

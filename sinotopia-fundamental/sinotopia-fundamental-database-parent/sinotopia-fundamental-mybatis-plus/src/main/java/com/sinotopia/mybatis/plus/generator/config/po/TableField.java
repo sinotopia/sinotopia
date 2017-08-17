@@ -24,7 +24,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 表字段信息
  * </p>
  *
- * @author YangHu
+ * @author cacotopia
  * @since 2016-12-03
  */
 public class TableField {

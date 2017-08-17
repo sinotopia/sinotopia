@@ -7,7 +7,7 @@ import com.sinotopia.mybatis.plus.exceptions.MybatisPlusException;
  * VersionUtils ，比较版本号
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-12-5
  */
 public class VersionUtils {

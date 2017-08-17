@@ -25,7 +25,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 查询字段
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2017-04-27
  */
 public class Column implements Serializable {

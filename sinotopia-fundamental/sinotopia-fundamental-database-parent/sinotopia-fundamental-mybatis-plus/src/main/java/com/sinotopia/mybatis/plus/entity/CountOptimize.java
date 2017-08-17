@@ -5,7 +5,7 @@ package com.sinotopia.mybatis.plus.entity;
  * 优化Count SQL实体
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-11-13
  */
 public class CountOptimize {

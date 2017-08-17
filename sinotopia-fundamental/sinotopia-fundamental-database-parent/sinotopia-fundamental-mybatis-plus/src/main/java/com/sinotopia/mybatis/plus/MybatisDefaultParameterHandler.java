@@ -52,7 +52,7 @@ import com.sinotopia.mybatis.plus.toolkit.TableInfoHelper;
  * 自定义 ParameterHandler 重装构造函数，填充插入方法主键 ID
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-03-11
  */
 public class MybatisDefaultParameterHandler extends DefaultParameterHandler {
@@ -66,6 +66,7 @@ public class MybatisDefaultParameterHandler extends DefaultParameterHandler {
     private final Object parameterObject;
     private BoundSql boundSql;
     private Configuration configuration;
+
     public MybatisDefaultParameterHandler(MappedStatement mappedStatement, Object parameterObject, BoundSql boundSql) {
         super(mappedStatement, processBatch(mappedStatement, parameterObject), boundSql);
         this.mappedStatement = mappedStatement;

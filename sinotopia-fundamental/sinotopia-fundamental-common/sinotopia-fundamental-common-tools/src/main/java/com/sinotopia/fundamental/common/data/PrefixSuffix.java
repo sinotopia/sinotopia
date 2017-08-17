@@ -2,7 +2,6 @@ package com.sinotopia.fundamental.common.data;
 
 /**
  * 前缀和后缀的配置
- * Created by zhoubing on 2016/5/17.
  */
 public class PrefixSuffix {
     /**
@@ -26,6 +25,7 @@ public class PrefixSuffix {
         this.prefix = prefix;
         this.suffix = suffix;
     }
+
     public PrefixSuffix(String prefix, String suffix, boolean lazyPrefix, boolean lazySuffix) {
         this.prefix = prefix;
         this.suffix = suffix;

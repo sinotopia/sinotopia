@@ -21,10 +21,11 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
 /**
  * 从数据库表到文件的命名策略
  *
- * @author YangHu, tangguo
+ * @author cacotopia
  * @since 2016/8/30
  */
 public enum NamingStrategy {
+
     /**
      * 不做任何改变，原样输出
      */

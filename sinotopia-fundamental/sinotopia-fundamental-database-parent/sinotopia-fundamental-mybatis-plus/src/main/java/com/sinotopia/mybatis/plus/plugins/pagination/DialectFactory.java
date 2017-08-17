@@ -35,7 +35,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.dialects.SQLiteDialect;
  * 分页方言工厂类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class DialectFactory {

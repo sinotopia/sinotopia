@@ -25,7 +25,7 @@
 package com.sinotopia.mybatis.mapper.code;
 
 /**
- * @author liuzh
+ * @author cacotopia
  */
 public enum IdentityDialect {
     DB2("VALUES IDENTITY_VAL_LOCAL()"),

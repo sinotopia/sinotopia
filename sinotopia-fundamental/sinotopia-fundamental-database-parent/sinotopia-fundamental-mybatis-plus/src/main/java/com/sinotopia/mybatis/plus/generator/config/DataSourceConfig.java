@@ -31,7 +31,7 @@ import com.sinotopia.mybatis.plus.generator.config.rules.DbType;
  * 数据库配置
  * </p>
  *
- * @author YangHu
+ * @author cacotopia
  * @since 2016/8/30
  */
 public class DataSourceConfig {

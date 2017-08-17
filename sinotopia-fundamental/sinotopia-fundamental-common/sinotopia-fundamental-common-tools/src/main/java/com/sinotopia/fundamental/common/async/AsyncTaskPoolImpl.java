@@ -3,7 +3,6 @@ package com.sinotopia.fundamental.common.async;
 import java.util.concurrent.ExecutorService;
 
 /**
- * @author brucezee 2013-3-24 上午10:12:54
  */
 public class AsyncTaskPoolImpl implements AsyncTaskPool {
 

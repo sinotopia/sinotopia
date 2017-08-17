@@ -30,7 +30,7 @@ import com.sinotopia.mybatis.mapper.mapperhelper.MapperHelper;
  * 增加mapperHelper
  *
  * @param <T>
- * @author liuzh
+ * @author cacotopia
  */
 public class MapperFactoryBean<T> extends org.mybatis.spring.mapper.MapperFactoryBean<T> {
 

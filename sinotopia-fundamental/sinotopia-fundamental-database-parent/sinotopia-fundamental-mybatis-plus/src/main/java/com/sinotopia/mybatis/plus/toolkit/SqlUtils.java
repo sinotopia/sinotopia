@@ -25,7 +25,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.Pagination;
  * SqlUtils工具类
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-11-13
  */
 public class SqlUtils {

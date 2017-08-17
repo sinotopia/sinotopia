@@ -45,7 +45,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * IService 实现类（ 泛型：M 是 mapper 对象，T 是实体 ， PK 是主键泛型 ）
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-04-20
  */
 public class ServiceImpl<M extends BaseMapper<T>, T> implements IService<T> {
@@ -71,7 +71,7 @@ public class ServiceImpl<M extends BaseMapper<T>, T> implements IService<T> {
     }
 
     @SuppressWarnings("unchecked")
-    protected Class<T> currentModleClass() {
+    protected Class<T> currentModelClass() {
         return ReflectionKit.getSuperClassGenricType(getClass(), 1);
     }
 
@@ -81,7 +81,7 @@ public class ServiceImpl<M extends BaseMapper<T>, T> implements IService<T> {
      * </p>
      */
     protected SqlSession sqlSessionBatch() {
-        return SqlHelper.sqlSessionBatch(currentModleClass());
+        return SqlHelper.sqlSessionBatch(currentModelClass());
     }
 
     /**
@@ -91,7 +91,7 @@ public class ServiceImpl<M extends BaseMapper<T>, T> implements IService<T> {
      * @return
      */
     protected String sqlStatement(SqlMethod sqlMethod) {
-        return SqlHelper.table(currentModleClass()).getSqlStatement(sqlMethod.getMethod());
+        return SqlHelper.table(currentModelClass()).getSqlStatement(sqlMethod.getMethod());
     }
 
     @Transactional

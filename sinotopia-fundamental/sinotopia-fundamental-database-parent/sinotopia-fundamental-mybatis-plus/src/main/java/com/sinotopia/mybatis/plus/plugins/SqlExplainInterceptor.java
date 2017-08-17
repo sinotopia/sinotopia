@@ -46,7 +46,7 @@ import com.sinotopia.mybatis.plus.toolkit.VersionUtils;
  * SQL 执行分析拦截器【 目前只支持 MYSQL-5.6.3 以上版本 】
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-08-16
  */
 @Intercepts({@Signature(type = Executor.class, method = "update", args = {MappedStatement.class, Object.class})})

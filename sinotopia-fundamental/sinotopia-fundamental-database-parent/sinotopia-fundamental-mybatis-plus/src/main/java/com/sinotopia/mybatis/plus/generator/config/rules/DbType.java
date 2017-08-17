@@ -18,12 +18,15 @@ package com.sinotopia.mybatis.plus.generator.config.rules;
 /**
  * 数据库类型定义
  *
- * @author YangHu
+ * @author cacotopia
  * @since 2016/8/30
  */
 public enum DbType {
 
-    MYSQL("mysql"), ORACLE("oracle"), SQL_SERVER("sql_server"), POSTGRE_SQL("postgre_sql");
+    MYSQL("mysql"),
+    ORACLE("oracle"),
+    SQL_SERVER("sql_server"),
+    POSTGRE_SQL("postgre_sql");
 
     private final String value;
 

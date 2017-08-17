@@ -20,7 +20,7 @@ package com.sinotopia.mybatis.plus.generator.config;
  * 模板路径配置项
  * </p>
  *
- * @author tzg
+ * @author cacotopia
  * @since 2016/11/10
  */
 public class TemplateConfig {

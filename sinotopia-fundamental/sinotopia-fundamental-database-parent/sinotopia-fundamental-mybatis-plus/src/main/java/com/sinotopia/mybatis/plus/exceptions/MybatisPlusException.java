@@ -20,7 +20,7 @@ package com.sinotopia.mybatis.plus.exceptions;
  * MybatisPlus 异常类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class MybatisPlusException extends RuntimeException {

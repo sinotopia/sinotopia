@@ -23,7 +23,7 @@ import org.apache.ibatis.reflection.MetaObject;
  * 默认填充器关闭操作
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @since 2017-04-19
  */
 public class DefaultMetaObjectHandler extends MetaObjectHandler {

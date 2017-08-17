@@ -6,6 +6,7 @@ import com.sinotopia.fundamental.api.data.DataObjectBase;
  * 参数基类
  */
 public class BaseParameter extends DataObjectBase {
+
     private static final long serialVersionUID = 1L;
 
     /**

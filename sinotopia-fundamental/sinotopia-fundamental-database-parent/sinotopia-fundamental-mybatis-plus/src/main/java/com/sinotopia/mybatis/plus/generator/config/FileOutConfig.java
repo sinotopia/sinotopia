@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.generator.config.po.TableInfo;
  * 输出文件配置
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @since 2017-01-18
  */
 public abstract class FileOutConfig {

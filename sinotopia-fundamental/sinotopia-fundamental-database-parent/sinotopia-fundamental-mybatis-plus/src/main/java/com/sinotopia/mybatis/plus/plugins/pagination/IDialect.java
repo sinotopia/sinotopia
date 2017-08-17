@@ -20,7 +20,7 @@ package com.sinotopia.mybatis.plus.plugins.pagination;
  * 数据库 分页语句组装接口
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public interface IDialect {

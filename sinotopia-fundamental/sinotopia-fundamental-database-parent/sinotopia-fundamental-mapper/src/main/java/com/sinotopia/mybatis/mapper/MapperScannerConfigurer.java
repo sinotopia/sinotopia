@@ -35,6 +35,7 @@ import java.util.Properties;
 
 
 public class MapperScannerConfigurer extends org.mybatis.spring.mapper.MapperScannerConfigurer {
+
     private MapperHelper mapperHelper = new MapperHelper();
 
     public void setMarkerInterface(Class<?> superClass) {

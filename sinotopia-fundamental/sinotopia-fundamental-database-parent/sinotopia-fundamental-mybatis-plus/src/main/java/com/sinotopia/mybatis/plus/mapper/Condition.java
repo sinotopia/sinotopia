@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 条件查询构造器
  * </p>
  *
- * @author hubin Caratacus
+ * @author cacotopia
  * @date 2016-11-7
  */
 @SuppressWarnings({"rawtypes", "serial"})

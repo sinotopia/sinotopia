@@ -33,7 +33,7 @@ import com.sinotopia.mybatis.plus.exceptions.MybatisPlusException;
  * 包扫描辅助类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-06-16
  */
 public class PackageHelper {

@@ -20,7 +20,7 @@ package com.sinotopia.mybatis.plus.enums;
  * MybatisPlus 数据库类型
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-04-15
  */
 public enum DBType {

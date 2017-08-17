@@ -21,7 +21,7 @@ import java.nio.charset.Charset;
 /**
  * 定义常量
  *
- * @author YangHu, tangguo
+ * @author cacotopia
  * @since 2016/8/31
  */
 public class ConstVal {
@@ -29,14 +29,14 @@ public class ConstVal {
     public static final String MODULENAME = "ModuleName";
 
     public static final String ENTITY = "Entity";
-    public static final String SERIVCE = "Service";
+    public static final String SERVICE = "Service";
     public static final String SERVICEIMPL = "ServiceImpl";
     public static final String MAPPER = "Mapper";
     public static final String XML = "Xml";
     public static final String CONTROLLER = "Controller";
 
     public static final String ENTITY_PATH = "entity_path";
-    public static final String SERIVCE_PATH = "serivce_path";
+    public static final String SERVICE_PATH = "service_path";
     public static final String SERVICEIMPL_PATH = "serviceimpl_path";
     public static final String MAPPER_PATH = "mapper_path";
     public static final String XML_PATH = "xml_path";
@@ -62,8 +62,8 @@ public class ConstVal {
     public static final String VM_LOADPATH_KEY = "file.resource.loader.class";
     public static final String VM_LOADPATH_VALUE = "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader";
 
-    public static final String SUPERD_MAPPER_CLASS = "com.baomidou.mybatisplus.mapper.BaseMapper";
-    public static final String SUPERD_SERVICE_CLASS = "com.baomidou.mybatisplus.service.IService";
-    public static final String SUPERD_SERVICEIMPL_CLASS = "com.baomidou.mybatisplus.service.impl.ServiceImpl";
+    public static final String SUPERD_MAPPER_CLASS = "com.sinotopia.mybatis.plus.mapper.BaseMapper";
+    public static final String SUPERD_SERVICE_CLASS = "com.sinotopia.mybatis.plus.service.IService";
+    public static final String SUPERD_SERVICEIMPL_CLASS = "com.sinotopia.mybatis.plus.service.impl.ServiceImpl";
 
 }

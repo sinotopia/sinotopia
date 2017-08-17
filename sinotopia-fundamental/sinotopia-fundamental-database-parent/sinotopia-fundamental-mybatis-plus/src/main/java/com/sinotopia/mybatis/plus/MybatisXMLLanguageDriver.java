@@ -25,7 +25,7 @@ import org.apache.ibatis.scripting.xmltags.XMLLanguageDriver;
  * 继承 XMLLanguageDriver 重装构造函数，使用自定义 ParameterHandler
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-03-11
  */
 public class MybatisXMLLanguageDriver extends XMLLanguageDriver {

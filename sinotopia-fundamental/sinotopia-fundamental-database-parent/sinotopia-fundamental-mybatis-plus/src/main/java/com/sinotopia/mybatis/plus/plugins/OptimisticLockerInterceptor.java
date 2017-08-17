@@ -74,7 +74,7 @@ import net.sf.jsqlparser.statement.update.Update;
  * 其他类型可以自定义实现,注入versionHandlers,多个以逗号分隔
  * </pre>
  *
- * @author TaoYu 小锅盖
+ * @author cacotopia
  * @since 2017-04-08
  */
 @Intercepts({

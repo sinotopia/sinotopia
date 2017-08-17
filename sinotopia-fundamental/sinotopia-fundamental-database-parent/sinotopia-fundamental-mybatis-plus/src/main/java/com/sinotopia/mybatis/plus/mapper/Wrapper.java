@@ -37,7 +37,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 条件构造抽象类，定义T-SQL语法
  * </p>
  *
- * @author hubin , yanghu , Dyang , Caratacus
+ * @author cacotopia
  * @Date 2016-11-7
  */
 @SuppressWarnings("serial")

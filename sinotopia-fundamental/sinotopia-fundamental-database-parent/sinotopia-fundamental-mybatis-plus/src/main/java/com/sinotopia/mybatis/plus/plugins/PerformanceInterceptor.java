@@ -41,7 +41,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 性能分析拦截器，用于输出每条 SQL 语句及其执行时间
  * </p>
  *
- * @author hubin nieqiurong TaoYu
+ * @author cacotopia
  * @Date 2016-07-07
  */
 @Intercepts({@Signature(type = StatementHandler.class, method = "query", args = {Statement.class, ResultHandler.class}),

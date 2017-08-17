@@ -26,7 +26,7 @@ import com.sinotopia.mybatis.plus.entity.GlobalConfiguration;
  * 数据库保留字转义处理类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @date 2016-08-18
  */
 public class SqlReservedWords {

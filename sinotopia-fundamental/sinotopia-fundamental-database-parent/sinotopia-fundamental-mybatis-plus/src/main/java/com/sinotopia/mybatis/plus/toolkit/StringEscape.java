@@ -5,7 +5,7 @@ package com.sinotopia.mybatis.plus.toolkit;
  * StringEscape ，数据库字符串转义
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-10-16
  */
 public class StringEscape {

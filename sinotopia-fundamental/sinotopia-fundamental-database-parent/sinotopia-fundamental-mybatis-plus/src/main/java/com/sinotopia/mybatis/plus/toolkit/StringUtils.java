@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
  * String 工具类
  * </p>
  *
- * @author D.Yang
+ * @author cacotopia
  * @Date 2016-08-18
  */
 public class StringUtils {

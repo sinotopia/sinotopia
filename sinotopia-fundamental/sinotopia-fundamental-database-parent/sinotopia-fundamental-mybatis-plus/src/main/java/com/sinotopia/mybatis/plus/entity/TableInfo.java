@@ -28,7 +28,7 @@ import com.sinotopia.mybatis.plus.exceptions.MybatisPlusException;
  * 数据库表反射信息
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class TableInfo {

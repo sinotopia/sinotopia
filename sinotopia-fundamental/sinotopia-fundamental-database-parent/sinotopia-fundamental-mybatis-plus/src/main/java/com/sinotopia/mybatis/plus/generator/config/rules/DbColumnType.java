@@ -20,10 +20,11 @@ package com.sinotopia.mybatis.plus.generator.config.rules;
  * 表字段类型
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @since 2017-01-11
  */
 public enum DbColumnType {
+
     STRING("String", null),
     LONG("Long", null),
     INTEGER("Integer", null),

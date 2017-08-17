@@ -57,7 +57,7 @@ import org.apache.ibatis.type.JdbcType;
  * by MybatisConfiguration class
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2017-01-04
  */
 public class MybatisXMLConfigBuilder extends BaseBuilder {

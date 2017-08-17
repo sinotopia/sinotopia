@@ -31,7 +31,7 @@ import com.sinotopia.mybatis.plus.exceptions.MybatisPlusException;
  * 优化开源项目：http://git.oschina.net/yu120/sequence
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @date 2016-08-18
  */
 public class Sequence {

@@ -10,7 +10,6 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author brucezee 2013-5-25 下午2:01:20
  */
 public class GroupAsyncTaskExecutor {
 
@@ -19,7 +18,7 @@ public class GroupAsyncTaskExecutor {
     private static final long TIMEOUT_MILLISECONDS = 15000;
 
     private List<GroupSafeRunnable> taskList = new LinkedList<GroupSafeRunnable>();
-    
+
     private long timeout = 0;
 
     private AsyncTaskPool asyncTaskPool;

@@ -26,7 +26,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.Pagination;
  * 实现分页辅助类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-03-01
  */
 public class Page<T> extends Pagination {

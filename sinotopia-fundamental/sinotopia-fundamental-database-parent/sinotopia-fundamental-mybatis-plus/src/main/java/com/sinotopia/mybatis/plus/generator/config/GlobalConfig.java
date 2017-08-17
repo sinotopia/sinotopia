@@ -20,7 +20,7 @@ package com.sinotopia.mybatis.plus.generator.config;
  * 全局配置
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @since 2016-12-02
  */
 public class GlobalConfig {

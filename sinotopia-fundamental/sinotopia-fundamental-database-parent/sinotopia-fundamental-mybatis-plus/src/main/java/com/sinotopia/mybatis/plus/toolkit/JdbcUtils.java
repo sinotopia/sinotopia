@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.enums.DBType;
  * JDBC 工具类
  * </p>
  *
- * @author nieqiurong
+ * @author cacotopia
  * @Date 2016-12-05
  */
 public class JdbcUtils {

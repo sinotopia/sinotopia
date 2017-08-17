@@ -22,7 +22,7 @@ import org.apache.ibatis.reflection.MetaObject;
  * 元对象字段填充控制器抽象类，实现公共字段自动写入
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-08-28
  */
 public abstract class MetaObjectHandler {
@@ -38,10 +38,6 @@ public abstract class MetaObjectHandler {
 
     /**
      * 更新元对象字段填充（用于更新时对公共字段的填充）
-     * Created with IntelliJ IDEA.
-     * Author:  Wu Yujie
-     * Email:  coffee377@dingtalk.com
-     * Time:  2017/04/16 15:03
      *
      * @param metaObject 元对象
      */

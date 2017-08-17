@@ -35,7 +35,7 @@
         <!--支付相关-->
         <module>sinotopia-payment</module>
         <!--范例-->
-        <!--<module>sinotopia-fundamental-demonstration-parent</module>-->
+        <module>sinotopia-fundamental-demonstration-parent</module>
         <module>sinotopia-shiro</module><!--shiro-->
         <module>sinotopia-queue</module><!--消息队列-->
         <module>sinotopia-jsoup</module><!--HTML解析-->

@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.IDialect;
  * H2 数据库分页方言
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-11-10
  */
 public class H2Dialect implements IDialect {

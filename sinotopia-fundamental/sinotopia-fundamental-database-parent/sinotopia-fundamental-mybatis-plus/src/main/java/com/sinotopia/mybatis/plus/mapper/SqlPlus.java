@@ -23,7 +23,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 实现AbstractSQL ，实现WHERE条件自定义
  * </p>
  *
- * @author yanghu , Caratacus
+ * @author cacotopia
  * @Date 2016-08-22
  */
 @SuppressWarnings("serial")

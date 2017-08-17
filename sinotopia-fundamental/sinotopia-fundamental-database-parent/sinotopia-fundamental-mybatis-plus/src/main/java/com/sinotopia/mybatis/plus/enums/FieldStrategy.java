@@ -20,16 +20,23 @@ package com.sinotopia.mybatis.plus.enums;
  * 字段策略枚举类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-09-09
  */
 public enum FieldStrategy {
-    IGNORED(0, "ignored"), NOT_NULL(1, "not null"), NOT_EMPTY(2, "not empty");
 
-    /** 主键 */
+    IGNORED(0, "ignored"),
+    NOT_NULL(1, "not null"),
+    NOT_EMPTY(2, "not empty");
+
+    /**
+     * 主键
+     */
     private final int key;
 
-    /** 描述 */
+    /**
+     * 描述
+     */
     private final String desc;
 
     FieldStrategy(final int key, final String desc) {

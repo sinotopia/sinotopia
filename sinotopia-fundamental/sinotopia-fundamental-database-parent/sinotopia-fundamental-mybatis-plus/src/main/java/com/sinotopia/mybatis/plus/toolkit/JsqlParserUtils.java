@@ -37,7 +37,7 @@ import net.sf.jsqlparser.statement.select.SelectItem;
  * JsqlParserUtils工具类
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-11-30
  */
 public class JsqlParserUtils {

@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.IDialect;
  * SQLServer 数据库分页语句组装实现
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-03-23
  */
 public class SQLServerDialect implements IDialect {

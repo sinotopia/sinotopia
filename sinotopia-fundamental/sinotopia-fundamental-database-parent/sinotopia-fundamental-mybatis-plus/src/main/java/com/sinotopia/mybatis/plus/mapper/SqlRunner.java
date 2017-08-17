@@ -32,23 +32,24 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * SqlRunner 执行 SQL
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-12-11
  */
 public class SqlRunner {
 
-    public static final String INSERT = "com.baomidou.mybatisplus.mapper.SqlRunner.Insert";
-    public static final String DELETE = "com.baomidou.mybatisplus.mapper.SqlRunner.Delete";
-    public static final String UPDATE = "com.baomidou.mybatisplus.mapper.SqlRunner.Update";
-    public static final String SELECT_LIST = "com.baomidou.mybatisplus.mapper.SqlRunner.SelectList";
-    public static final String SELECT_OBJS = "com.baomidou.mybatisplus.mapper.SqlRunner.SelectObjs";
-    public static final String COUNT = "com.baomidou.mybatisplus.mapper.SqlRunner.Count";
+    public static final String INSERT = "com.sinotopia.mybatis.plus.mapper.SqlRunner.Insert";
+    public static final String DELETE = "com.sinotopia.mybatis.plus.mapper.SqlRunner.Delete";
+    public static final String UPDATE = "com.sinotopia.mybatis.plus.mapper.SqlRunner.Update";
+    public static final String SELECT_LIST = "com.sinotopia.mybatis.plus.mapper.SqlRunner.SelectList";
+    public static final String SELECT_OBJS = "com.sinotopia.mybatis.plus.mapper.SqlRunner.SelectObjs";
+    public static final String COUNT = "com.sinotopia.mybatis.plus.mapper.SqlRunner.Count";
     public static final String SQLScript = "${sql}";
     public static final String SQL = "sql";
     // 单例Query
     public static final SqlRunner DEFAULT = new SqlRunner();
     // 默认FACTORY
     public static SqlSessionFactory FACTORY;
+
     private SqlSessionFactory sqlSessionFactory;
 
     private Class<?> clazz;

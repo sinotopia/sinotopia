@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.mapper.IKeyGenerator;
  * Oracle Key Sequence 生成器
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2017-05-08
  */
 public class OracleKeyGenerator implements IKeyGenerator {

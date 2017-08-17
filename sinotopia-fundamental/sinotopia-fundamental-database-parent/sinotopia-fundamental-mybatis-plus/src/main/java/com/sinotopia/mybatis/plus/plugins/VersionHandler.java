@@ -22,7 +22,7 @@ import java.lang.reflect.Field;
  * 乐观锁处理器,底层接口
  * </p>
  *
- * @author TaoYu 小锅盖
+ * @author cacotopia
  * @since 2017-04-08
  */
 public interface VersionHandler<T> {

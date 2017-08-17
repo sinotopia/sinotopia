@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.generator.config.rules.DbColumnType;
  * 数据库字段类型转换
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @date 2017-01-20
  */
 public interface ITypeConvert {

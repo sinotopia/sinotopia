@@ -30,7 +30,7 @@ import org.apache.ibatis.session.RowBounds;
  * 这个 Mapper 支持 id 泛型
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public interface BaseMapper<T> {

@@ -5,7 +5,7 @@ package com.sinotopia.mybatis.plus.toolkit;
  * ArrayUtils工具类
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2017-03-09
  */
 public class ArrayUtils {

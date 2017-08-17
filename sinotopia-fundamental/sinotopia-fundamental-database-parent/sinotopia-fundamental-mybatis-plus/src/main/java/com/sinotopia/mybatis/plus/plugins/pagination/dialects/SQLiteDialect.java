@@ -22,7 +22,7 @@ import com.sinotopia.mybatis.plus.plugins.pagination.IDialect;
  * SQLite 数据库分页语句组装实现
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class SQLiteDialect implements IDialect {

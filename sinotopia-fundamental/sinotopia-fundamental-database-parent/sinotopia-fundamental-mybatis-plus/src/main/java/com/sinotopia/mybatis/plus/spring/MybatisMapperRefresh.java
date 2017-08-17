@@ -51,7 +51,7 @@ import org.springframework.util.ResourceUtils;
  * 方便开发时使用，不用每次修改xml文件后都要去重启应用.<br>
  * </p>
  *
- * @author nieqiurong
+ * @author cacotopia
  * @Date 2016-08-25
  */
 public class MybatisMapperRefresh implements Runnable {

@@ -29,10 +29,10 @@ import com.sinotopia.mybatis.plus.entity.GlobalConfiguration;
  * replace default Configuration class
  * </p>
  * <p>
- * Caratacus 2016/9/25 replace mapperRegistry
+ * replace mapperRegistry
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class MybatisConfiguration extends Configuration {
@@ -71,7 +71,7 @@ public class MybatisConfiguration extends Configuration {
             this.mappedStatements.remove(ms.getId());
         } else {
             if (this.mappedStatements.containsKey(ms.getId())) {
-				/*
+                /*
 				 * 说明已加载了xml中的节点； 忽略mapper中的SqlProvider数据
 				 */
                 logger.error("mapper[" + ms.getId() + "] is ignored, because it's exists, maybe from xml file");

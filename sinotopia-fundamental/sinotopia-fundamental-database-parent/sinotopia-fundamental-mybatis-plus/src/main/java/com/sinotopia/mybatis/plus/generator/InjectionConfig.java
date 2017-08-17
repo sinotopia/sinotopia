@@ -26,7 +26,7 @@ import com.sinotopia.mybatis.plus.generator.config.builder.ConfigBuilder;
  * 抽象的对外接口
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @since 2016-12-07
  */
 public abstract class InjectionConfig {

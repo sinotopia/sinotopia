@@ -23,7 +23,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 策略配置项
  * </p>
  *
- * @author YangHu, tangguo, hubin
+ * @author cacotopia
  * @since 2016/8/30
  */
 public class StrategyConfig {

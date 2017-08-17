@@ -13,32 +13,32 @@
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-config</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-api</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-logger</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-spring</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-aspect</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-common-tools</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>

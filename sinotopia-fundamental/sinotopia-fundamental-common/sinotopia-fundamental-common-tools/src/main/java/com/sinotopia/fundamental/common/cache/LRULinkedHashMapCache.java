@@ -6,7 +6,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @param <K, V>
- * @author brucezee 2013-3-24 下午6:37:58
  */
 public class LRULinkedHashMapCache<K, V> extends LinkedHashMap<K, V> {
 

@@ -22,7 +22,7 @@ import java.util.Collection;
  * Collection工具类
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-09-19
  */
 public class CollectionUtils {

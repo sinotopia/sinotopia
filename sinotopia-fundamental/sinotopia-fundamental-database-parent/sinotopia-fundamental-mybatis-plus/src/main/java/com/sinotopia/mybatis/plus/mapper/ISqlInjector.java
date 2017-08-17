@@ -23,7 +23,7 @@ import org.apache.ibatis.session.Configuration;
  * SQL 自动注入器接口
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-07-24
  */
 public interface ISqlInjector {

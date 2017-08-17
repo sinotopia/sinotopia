@@ -9,7 +9,6 @@ import java.io.File;
 
 /**
  * 文本文档一行一行的读取并进行处理
- * Created by zhoubing on 2016/12/14.
  */
 public class FileLineReader {
     private String filePath;
@@ -20,10 +19,12 @@ public class FileLineReader {
         this.filePath = file.getAbsolutePath();
         this.lineProcessor = lineProcessor;
     }
+
     public FileLineReader(String filePath, FileLineProcessor lineProcessor) {
         this.filePath = filePath;
         this.lineProcessor = lineProcessor;
     }
+
     public FileLineReader setCharset(String charset) {
         this.charset = charset;
         return this;
@@ -39,13 +40,11 @@ public class FileLineReader {
                     break;
                 }
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             if (lineProcessor != null) {
                 lineProcessor.onException(e);
             }
-        }
-        finally {
+        } finally {
             IOUtils.close(br);
         }
     }

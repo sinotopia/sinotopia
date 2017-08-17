@@ -52,7 +52,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 实体类反射表辅助类
  * </p>
  *
- * @author hubin sjy
+ * @author cacotopia
  * @Date 2016-09-09
  */
 public class TableInfoHelper {

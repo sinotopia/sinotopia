@@ -68,7 +68,7 @@ import com.sinotopia.mybatis.plus.exceptions.MybatisPlusException;
  * 加载自定义 MybatisXmlConfigBuilder
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2017-01-04
  */
 public class MybatisSqlSessionFactoryBean implements FactoryBean<SqlSessionFactory>, InitializingBean, ApplicationListener<ApplicationEvent> {

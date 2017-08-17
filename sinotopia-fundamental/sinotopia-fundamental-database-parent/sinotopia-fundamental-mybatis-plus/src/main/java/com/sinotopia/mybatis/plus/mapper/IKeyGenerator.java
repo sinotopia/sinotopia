@@ -23,7 +23,7 @@ import com.sinotopia.mybatis.plus.entity.TableInfo;
  * 表关键词 key 生成器接口
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2017-05-08
  */
 public interface IKeyGenerator {

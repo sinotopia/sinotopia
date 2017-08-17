@@ -30,7 +30,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 表信息，关联到当前字段信息
  * </p>
  *
- * @author YangHu
+ * @author cacotopia
  * @since 2016/8/30
  */
 public class TableInfo {

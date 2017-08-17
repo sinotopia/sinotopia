@@ -44,7 +44,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 缓存分页拦截器
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 @Intercepts({

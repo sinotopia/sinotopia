@@ -22,7 +22,7 @@
     <!--切面-->
     <aop:config>
         <!--对controller切面-->
-        <aop:pointcut id="pc-controller" expression="execution(* com.hakim.demo.admin.web.controller..*.*(..))" />
+        <aop:pointcut id="pc-controller" expression="execution(* com.sinotopia.demonstration.admin.web.controller..*.*(..))" />
         <aop:aspect id="logAspect" ref="logAspectBean" order="0">
             <aop:around pointcut-ref="pc-controller" method="log" />
         </aop:aspect>

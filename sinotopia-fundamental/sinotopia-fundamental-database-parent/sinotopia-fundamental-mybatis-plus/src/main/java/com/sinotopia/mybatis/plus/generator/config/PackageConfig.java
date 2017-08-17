@@ -21,7 +21,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * <p>
  * 跟包相关的配置项
  *
- * @author YangHu, tangguo
+ * @author cacotopia
  * @since 2016-08-30
  */
 public class PackageConfig {
@@ -29,7 +29,7 @@ public class PackageConfig {
     /**
      * 父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
      */
-    private String parent = "com.baomidou";
+    private String parent = "com.sinotopia";
 
     /**
      * 父包模块名。

@@ -36,7 +36,7 @@ import java.util.concurrent.atomic.AtomicLong;
  * 100万：50,10,5.0%<br>
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-08-01
  */
 public class SystemClock {

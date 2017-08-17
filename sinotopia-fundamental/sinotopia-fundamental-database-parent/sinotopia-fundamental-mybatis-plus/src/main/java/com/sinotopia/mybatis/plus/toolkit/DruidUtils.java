@@ -22,7 +22,7 @@ import com.alibaba.druid.sql.PagerUtils;
  * DruidUtils工具类
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2016-11-30
  */
 public class DruidUtils {

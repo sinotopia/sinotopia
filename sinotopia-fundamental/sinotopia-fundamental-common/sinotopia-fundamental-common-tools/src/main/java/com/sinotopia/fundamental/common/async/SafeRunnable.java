@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author brucezee 2013-3-24 上午10:39:28
  */
 public abstract class SafeRunnable implements Runnable {
 

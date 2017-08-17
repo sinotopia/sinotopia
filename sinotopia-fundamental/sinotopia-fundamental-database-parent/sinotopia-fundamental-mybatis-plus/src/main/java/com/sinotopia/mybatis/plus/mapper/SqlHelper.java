@@ -36,7 +36,7 @@ import com.sinotopia.mybatis.plus.toolkit.CollectionUtils;
  * SQL 辅助类
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-11-06
  */
 public class SqlHelper {

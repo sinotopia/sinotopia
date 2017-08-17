@@ -20,10 +20,11 @@ package com.sinotopia.mybatis.plus.generator.config.rules;
  * 表数据查询
  * </p>
  *
- * @author hubin, tangguo
+ * @author cacotopia
  * @since 2016-04-25
  */
 public enum QuerySQL {
+
     MYSQL("mysql", "show tables", "show table status", "show full fields from %s", "NAME", "COMMENT", "FIELD", "TYPE",
             "COMMENT", "KEY"),
 

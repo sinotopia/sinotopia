@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * MapUtils
  *
- * @author Caratacus
+ * @author cacotopia
  * @date 2016/11/16
  */
 public class MapUtils {

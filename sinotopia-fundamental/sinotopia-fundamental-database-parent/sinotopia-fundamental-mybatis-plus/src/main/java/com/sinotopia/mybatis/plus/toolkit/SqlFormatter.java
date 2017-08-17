@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
  * Copy Hibernate BasicFormatterImpl
  * </P>
  *
- * @author Gavin King
+ * @author cacotopia
  * @author Steve Ebersole
  */
 public class SqlFormatter {

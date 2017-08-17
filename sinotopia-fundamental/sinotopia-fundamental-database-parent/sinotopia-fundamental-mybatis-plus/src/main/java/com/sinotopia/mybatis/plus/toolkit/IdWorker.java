@@ -23,7 +23,7 @@ import java.util.UUID;
  * 优化开源项目 http://git.oschina.net/yu120/sequence
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-08-01
  */
 public class IdWorker {

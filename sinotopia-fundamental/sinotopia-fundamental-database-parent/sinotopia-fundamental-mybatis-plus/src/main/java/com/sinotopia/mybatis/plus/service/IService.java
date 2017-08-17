@@ -27,7 +27,7 @@ import com.sinotopia.mybatis.plus.plugins.Page;
  * 顶级 Service
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-04-20
  */
 public interface IService<T> {

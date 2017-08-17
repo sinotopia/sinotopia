@@ -50,7 +50,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * Mybatis全局缓存
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @since 2016-12-06
  */
 public class GlobalConfiguration implements Cloneable {
@@ -59,6 +59,7 @@ public class GlobalConfiguration implements Cloneable {
      * 默认参数
      */
     public static final GlobalConfiguration DEFAULT = new GlobalConfiguration();
+
     // 日志
     private static final Log logger = LogFactory.getLog(GlobalConfiguration.class);
     /**

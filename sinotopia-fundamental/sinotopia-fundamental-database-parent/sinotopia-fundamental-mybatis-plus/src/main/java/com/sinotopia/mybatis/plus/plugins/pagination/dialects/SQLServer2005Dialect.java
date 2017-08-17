@@ -23,7 +23,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * SQLServer 2005 数据库分页方言
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-11-10
  */
 public class SQLServer2005Dialect implements IDialect {

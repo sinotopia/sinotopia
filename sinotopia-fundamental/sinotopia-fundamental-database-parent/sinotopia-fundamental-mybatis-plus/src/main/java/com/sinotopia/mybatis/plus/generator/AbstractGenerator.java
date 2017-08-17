@@ -27,7 +27,7 @@ import com.sinotopia.mybatis.plus.generator.config.builder.ConfigBuilder;
  * 插件基类，用于属性配置 设计成抽象类主要是用于后期可扩展，共享参数配置。
  * </p>
  *
- * @author YangHu
+ * @author cacotopia
  * @since 2016/8/30
  */
 public abstract class AbstractGenerator {

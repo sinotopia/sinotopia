@@ -32,7 +32,7 @@ import java.util.Map;
  * 1、支持逻辑删除
  * </p>
  *
- * @author hubin willenfoo
+ * @author cacotopia
  * @Date 2017-09-09
  */
 public class LogicSqlInjector extends AutoSqlInjector {

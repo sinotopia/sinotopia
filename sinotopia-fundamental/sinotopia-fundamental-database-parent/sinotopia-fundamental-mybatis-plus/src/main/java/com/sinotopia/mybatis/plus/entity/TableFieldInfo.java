@@ -28,7 +28,7 @@ import java.lang.reflect.Field;
  * 数据库表字段反射信息
  * </p>
  *
- * @author hubin sjy willenfoo
+ * @author cacotopia
  * @Date 2016-09-09
  */
 public class TableFieldInfo {

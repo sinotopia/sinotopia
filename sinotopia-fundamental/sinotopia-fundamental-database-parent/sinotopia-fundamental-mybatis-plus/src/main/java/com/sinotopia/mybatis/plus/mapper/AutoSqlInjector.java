@@ -55,7 +55,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * SQL 自动注入器
  * </p>
  *
- * @author hubin sjy
+ * @author cacotopia
  * @Date 2016-09-09
  */
 public class AutoSqlInjector implements ISqlInjector {

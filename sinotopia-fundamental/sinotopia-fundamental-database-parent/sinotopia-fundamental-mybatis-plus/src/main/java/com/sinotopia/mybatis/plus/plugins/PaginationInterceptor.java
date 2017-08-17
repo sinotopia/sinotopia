@@ -50,7 +50,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 分页拦截器
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 @Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})})

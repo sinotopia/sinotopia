@@ -32,7 +32,7 @@ import org.apache.ibatis.session.SqlSession;
  * 继承至MapperRegistry
  * </p>
  *
- * @author Caratacus hubin
+ * @author cacotopia
  * @since 2017-04-19
  */
 public class MybatisMapperRegistry extends MapperRegistry {

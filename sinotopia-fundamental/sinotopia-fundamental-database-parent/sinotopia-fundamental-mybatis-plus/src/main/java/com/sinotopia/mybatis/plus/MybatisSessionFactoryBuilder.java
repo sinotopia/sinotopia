@@ -32,7 +32,7 @@ import com.sinotopia.mybatis.plus.toolkit.IOUtils;
  * replace default SqlSessionFactoryBuilder class
  * </p>
  *
- * @author hubin
+ * @author cacotopia
  * @Date 2016-01-23
  */
 public class MybatisSessionFactoryBuilder extends SqlSessionFactoryBuilder {

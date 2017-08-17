@@ -27,7 +27,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
  * 重定义 AbstractSQL ，实现标准TSQL的 查询条件自定义
  * </p>
  *
- * @author yanghu
+ * @author cacotopia
  * @Date 2016-08-22
  */
 @SuppressWarnings("serial")
@@ -163,7 +163,7 @@ public abstract class MybatisAbstractSQL<T> implements Serializable {
          * 构建SQL的条件
          *
          * @param builder     连接器
-         * @param keyword     TSQL中的关键字
+         * @param keyword     T-SQL中的关键字
          * @param parts       SQL条件语句集合
          * @param open        起始符号
          * @param close       结束符号
@@ -222,6 +222,7 @@ public abstract class MybatisAbstractSQL<T> implements Serializable {
          * @return
          */
         private String buildSQL(SafeAppendable builder) {
+
             sqlClause(builder, "WHERE", where, "(", ")", AND);
             sqlClause(builder, "GROUP BY", groupBy, "", "", ", ");
             sqlClause(builder, "HAVING", having, "(", ")", AND);
