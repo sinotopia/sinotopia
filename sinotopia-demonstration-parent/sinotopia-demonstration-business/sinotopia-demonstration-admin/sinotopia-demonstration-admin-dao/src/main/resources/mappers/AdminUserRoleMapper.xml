@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sinotopia.demonstration.admin.dao.AdminUserRoleDao">
+    
+    <sql id="requestAllFields">
+        <![CDATA[
+            id,
+            status,
+            userId,
+            roleId,
+            createdTime,
+            updatedTime
+        ]]>
+    </sql>
+    
+    <sql id="whereClause">
+        <where>
+            <if test="null!=id">AND id = #{id}</if>
+            <if test="null!=status">AND status = #{status}</if>
+            <if test="null!=userId">AND userId = #{userId}</if>
+            <if test="null!=roleId">AND roleId = #{roleId}</if>
+            <include refid="extendedWhereClause" />
+        </where>
+    </sql>
+    
+    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" keyProperty="id">
+        INSERT INTO tb_admin_user_role
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="null!=status">,status</if>
+            <if test="null!=userId">,userId</if>
+            <if test="null!=roleId">,roleId</if>
+            <if test="null!=createdTime">,createdTime</if>
+            <if test="null!=updatedTime">,updatedTime</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" prefixOverrides=",">
+            <if test="null!=status">,#{status}</if>
+            <if test="null!=userId">,#{userId}</if>
+            <if test="null!=roleId">,#{roleId}</if>
+            <if test="null!=createdTime">,#{createdTime}</if>
+            <if test="null!=updatedTime">,#{updatedTime}</if>
+        </trim>
+    </insert>
+    
+    <update id="update" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+        UPDATE tb_admin_user_role
+        <trim prefix="SET" prefixOverrides=",">
+            <if test="null!=status">,status = #{status}</if>
+            <if test="null!=userId">,userId = #{userId}</if>
+            <if test="null!=roleId">,roleId = #{roleId}</if>
+            <if test="null!=createdTime">,createdTime = #{createdTime}</if>
+            <if test="null!=updatedTime">,updatedTime = #{updatedTime}</if>
+            <include refid="extendedUpdateSql" />
+        </trim>
+        WHERE id = #{id}
+    </update>
+    
+    <select id="query" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+        SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
+        <include refid="whereClause" />
+        <include refid="extendedOrderByClause" />
+        <if test="null!=requestOffset">
+            LIMIT #{requestOffset}, #{requestCount}
+        </if>
+    </select>
+    
+    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+        SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
+        <include refid="whereClause" />
+        <include refid="extendedOrderByClause" />
+    </select>
+    
+    <select id="get" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+        SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
+        <include refid="whereClause" />
+        LIMIT 1
+    </select>
+    
+    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+        SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role WHERE id = #{id}
+    </select>
+    
+    <select id="count" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="int">
+        SELECT COUNT(1) FROM tb_admin_user_role <include refid="whereClause" />
+    </select>
+    
+    <!-- 扩展的更新等语句（自定义）-->
+    <sql id="extendedUpdateSql">
+        <if test="null!=extendedParameter">
+            
+        </if>
+    </sql>
+    
+    <!-- 扩展的条件过滤语句（自定义）-->
+    <sql id="extendedWhereClause">
+        <if test="null!=extendedParameter">
+            <if test="null!=extendedParameter.excludedStatus">AND status != #{extendedParameter.excludedStatus}</if>
+        </if>
+    </sql>
+    
+    <!-- 扩展的排序等语句（自定义）-->
+    <sql id="extendedOrderByClause">
+        <if test="null!=extendedParameter">
+            <if test="null!=extendedParameter.orderBy">${extendedParameter.orderBy.content}</if>
+        </if>
+    </sql>
+
+    <select id="queryUserRoleList" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.result.AdminUserRoleView">
+        SELECT
+            aur.id,
+            aur.status,
+            aur.userId,
+            au.name AS userName,
+            au.phone AS userPhone,
+            au.email AS userEmail,
+            aur.roleId,
+            ar.name AS roleName,
+            ar.code AS roleCode,
+            aur.createdTime,
+            aur.updatedTime
+        FROM
+            tb_admin_user_role aur
+        LEFT JOIN tb_admin_user au ON aur.userId = au.id
+        LEFT JOIN tb_admin_role ar ON aur.roleId = ar.id
+        <where>
+            <if test="null!=id">AND aur.id = #{id}</if>
+            <if test="null!=status">AND aur.status = #{status}</if>
+            <if test="null!=userId">AND aur.userId = #{userId}</if>
+            <if test="null!=roleId">AND aur.roleId = #{roleId}</if>
+            <if test="null!=extendedParameter">
+                <if test="null!=extendedParameter.excludedStatus">AND aur.status != #{extendedParameter.excludedStatus}</if>
+                <if test="null!=extendedParameter.roleStatus">AND ar.status = #{extendedParameter.roleStatus}</if>
+                <if test="null!=extendedParameter.userIds">
+                    AND aur.userId IN
+                    <foreach collection="extendedParameter.userIds" item="eachUserId" open="(" close=")" separator=",">
+                        #{eachUserId}
+                    </foreach>
+                </if>
+            </if>
+        </where>
+        <if test="null!=extendedParameter">
+            <if test="null!=extendedParameter.orderBy">${extendedParameter.orderBy.content}</if>
+        </if>
+    </select>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM tb_admin_user_role WHERE id = #{id}
+    </delete>
+
+</mapper>

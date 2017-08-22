@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="heyanhui">
+    <title>后台管理系统</title>
+
+    <!--icheck-->
+    <link href="js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/square.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/red.css" rel="stylesheet">
+    <link href="js/iCheck/skins/square/blue.css" rel="stylesheet">
+
+    <!--dynamic table-->
+    <link href="/css/datatables/tools/css/dataTables.tableTools.css" rel="stylesheet">
+
+    <!-- sweet-alert plugins -->
+    <link rel="stylesheet" href="/js/sweetAlert/sweetalert.css" />
+
+    <!--gritter css-->
+    <link rel="stylesheet" href="js/gritter/css/jquery.gritter.css" />
+
+    <!--common-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="DucApp"  class="sticky-header">
+
+<section ng-controller="commonCtr">
+<!-- left side start-->
+<div class="left-side sticky-left-side">
+
+    <!--logo and iconic logo start-->
+    <div class="logo">
+        <a href="/"><img src="images/logo.png" alt=""></a>
+    </div>
+
+    <div class="logo-icon text-center">
+        <a href="/"><img src="images/logo_icon.png" alt=""></a>
+    </div>
+    <!--logo and iconic logo end-->
+
+    <div left-menu class="left-side-inner"></div>
+</div>
+<!-- left side end-->
+
+<!-- main content start-->
+<div class="main-content" >
+
+<!-- header section start-->
+<div class="header-section">
+
+<!--toggle button start-->
+<a class="toggle-btn"><i class="fa fa-bars"></i></a>
+<!--toggle button end-->
+
+
+<!--notification menu start -->
+<div class="menu-right">
+    <ul class="notification-menu">
+        <li ng-class="{'open': tag%2==0}" ng-init="tag=1">
+            <span class="btn btn-default dropdown-toggle" ng-class="{'active': tag%2==0}" ng-click="tag=tag+1">
+                <img src="images/photos/user-avatar.png" alt="" />
+                {{personName}}
+                <span class="caret"></span>
+            </span>
+            <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                <li ng-click="tag=tag+1"><a ng-click="showModal('#updatePwModal')"><i class="fa fa-cog"></i>  修改密码</a></li>
+                <li ng-click="tag=tag+1"><a ng-click="logout()"><i class="fa fa-sign-out"></i> 注消</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+<!--notification menu end -->
+</div>
+<!-- header section end-->
+
+
+<!--body wrapper start-->
+<div ng-view=""></div>
+<!--body wrapper end-->
+
+</div>
+<!-- main content end-->
+</section>
+
+<!-- updatePwModal start-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="updatePwModal" class="modal fade" ng-controller="updatePwCtr">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <form class="cmxform form-horizontal" role="form" id="passwordForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="col-lg-3 col-sm-3 control-label">原密码</label>
+                        <div class="col-lg-9">
+                            <input type="password" class="form-control" name="originPassword" ng-model="originPassword" placeholder="请输入原密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 col-sm-3 control-label">新密码</label>
+                        <div class="col-lg-9">
+                            <input type="password" class="form-control" name="newPassword" ng-model="newPassword" placeholder="请牢记新密码" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-3 col-lg-9" id="pwErrorMsg"></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="submit" class="btn btn-success" >确定</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- updatePwModal end-->
+
+<form action="" method="post" id="exportFileForm" target="exportFileSrc" ng-show="false"></form>
+<iframe name="exportFileSrc" src="" ng-show="false"></iframe>
+
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+
+<!-- sweetAlert -->
+<script src="/js/sweetAlert/sweetalert.min.js"></script>
+
+<!--dynamic table-->
+<script src="js/datatables/jquery.dataTables.min.js"></script>
+<script src="js/datatables/jquery.dataTables-init.js"></script>
+
+<!--angular-->
+<script src="/js/angular-1.2.7/angular.min.js"></script>
+<script src="/js/angular-1.2.7/angular-route.min.js"></script>
+<script src="/js/angular-1.2.7/angular-animate.js"></script>
+
+<script src="/js/main/main-controller.js"></script>
+<script src="/js/main/main-service.js"></script>
+<script src="/js/main/main-directive.js"></script>
+<script src="/js/main/main-filter.js"></script>
+<script src="/js/main/config.js"></script>
+
+<!--gritter script-->
+<script src="js/gritter/js/jquery.gritter.js"></script>
+<script src="js/gritter/js/gritter-init.js"></script>
+
+<!--WdatePicker script-->
+<script src="js/MyDatePicker/WdatePicker.js"></script>
+
+<!--icheck -->
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/icheck-init.js"></script>
+
+<!--Calendar-->
+<script src="js/calendar/clndr.js"></script>
+<script src="js/calendar/evnt.calendar.init.js"></script>
+<script src="js/calendar/moment-2.2.1.js"></script>
+<script src="js/underscore-min.js"></script>
+
+
+
+<!--common scripts for all pages-->
+<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

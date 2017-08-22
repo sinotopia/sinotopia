@@ -1,0 +1,157 @@
+
+<div class="page-heading">
+	<div class="form-group">
+		<button type="button" id="addAdminBtn" class="btn btn-success" ng-click="showModal('#adminListModal')">
+			<i class='fa fa-plus-square'></i> &nbsp;添加管理员
+		</button>
+	</div>
+</div>
+
+<div class="wrapper">
+	<div class="row">
+		<div class="col-sm-12">
+			<section class="panel panel-body">
+				<table id="adminListTable" class="table table-striped responsive-utilities jambo_table">
+					<thead>
+					<tr class="headings">
+						<th>ID</th>
+						<th>用户名称</th>
+						<th>用户状态</th>
+						<th>手机号</th>
+						<th>邮箱</th>
+						<th>角色名称</th>
+						<th class=" no-link last"><span class="nobr">操作</span>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<!-- /modal adminListModal -->
+<div class="modal fade" id="adminListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					新增管理员
+				</h4>
+			</div>
+			<form id="addAdminForm" class="cmxform form-horizontal">
+				<div class="modal-body">
+					<input type="hidden" name="adminId" ng-model="adminId" value=""/>
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">用户名 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<input type="text" name="username" ng-model="username" class="form-control col-md-7 col-xs-12" placeholder="用户名">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">密码 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<input type="password" name="password" ng-model="password" class="form-control col-md-7 col-xs-12" placeholder="密码">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">姓名 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<input type="text" name="name" ng-model="name" class="form-control col-md-7 col-xs-12" placeholder="姓名">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">手机号码 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<input type="number" name="phone" ng-model="phone" class="form-control col-md-7 col-xs-12" placeholder="手机号码">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12" >Email <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<input type="text" name="email" ng-model="email" class="form-control col-md-7 col-xs-12" placeholder="Email">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">状态 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<label class="radio-inline">
+								<input type="radio" name="status" ng-model="status" class="flat" value="1" checked="checked" /> 开启 &nbsp;&nbsp;
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="status" ng-model="status" class="flat" value="2" /> 关闭
+							</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-lg-offset-3 col-lg-9" id="addAdminFormErrorMsg"></div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+					<button type="submit" class="btn btn-success">提交更改</button>
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div>
+</div>
+<!-- /modal adminListModal -->
+
+
+<!-- /modal empowerment -->
+<div class="modal fade" id="empowerment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabelEmp">
+					分配权限
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form id="formEmp" data-parsley-validate class="form-horizontal form-label-left">
+					<div class="form-group">
+						<label class="control-label col-md-3 col-sm-3 col-xs-12">权限列表 <span class="required">*</span>
+						</label>
+						<div class="col-md-9 col-sm-9 col-xs-12">
+							<select class="form-control col-md-7 col-xs-12"  name="roleId" ng-model="roleId">
+								<option value='' ng-selected="true">请选择角色名称</option>
+								<option value='{{value.id}}' ng-repeat="value in resRoles" >{{value.name}}</option>
+							</select>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" ng-click="submitEmpowerment()"  class="btn btn-success">提交更改</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div>
+</div>
+<!-- /modal adminListModal -->
+
+
+<script src="js/module/admin/admin-user-list.js"></script>
