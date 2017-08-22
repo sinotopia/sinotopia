@@ -1,25 +1,41 @@
 package com.sinotopia.fundamental.api.data;
 
 /**
- * Created by Administrator on 2015/12/17.
+ * Created by sinotopia on 2015/12/17.
  */
 public class PageDataObjectBase extends DataObjectBase {
 
     private static final long serialVersionUID = 1L;
+
+    /**
+     *
+     */
     public Integer requestOffset;
+
+    /**
+     *
+     */
     public Integer requestCount;
+
+
     public Integer getRequestOffset() {
         return requestOffset;
     }
+
     public void setRequestOffset(Integer requestOffset) {
         this.requestOffset = requestOffset;
     }
+
+
     public Integer getRequestCount() {
         return requestCount;
     }
+
+
     public void setRequestCount(Integer requestCount) {
         this.requestCount = requestCount;
     }
+
     /**
      * 请求从偏移量以后多少条记录
      * @param requestOffset 偏移量
@@ -37,6 +53,7 @@ public class PageDataObjectBase extends DataObjectBase {
         this.requestOffset = 0;
         this.requestCount = 1;
     }
+
     /**
      * 请求指定记录条数的记录
      * @param requestCount 请求返回记录条数

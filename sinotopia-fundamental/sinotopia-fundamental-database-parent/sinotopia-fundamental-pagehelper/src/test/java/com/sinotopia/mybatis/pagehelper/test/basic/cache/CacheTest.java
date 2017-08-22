@@ -50,23 +50,23 @@ public class CacheTest {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(10);
+            List<Country> list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(2, 10);
-            list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(3, 10);
-            list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(4, 10);
-            list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(5, 10);
-            list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
         } finally {
             sqlSession.close();
@@ -112,11 +112,11 @@ public class CacheTest {
             CountryMapper countryMapper = sqlSession.getMapper(CountryMapper.class);
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            List<Country> list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
             //获取第2页，10条内容，默认查询总数count
             PageHelper.startPage(2, 10);
-            list = countryMapper.selectGreterThanIdAndNotEquelContryname(10, "china");
+            list = countryMapper.selectGreaterThanIdAndNotEquelContryName(10, "china");
             assertEquals(10, list.size());
             sqlSession.close();
         }

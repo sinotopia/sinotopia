@@ -2,15 +2,16 @@ package com.sinotopia.fundamental.api.data;
 
 /**
  * <p>通用返回类</p>
- * <p>2015-06-24 14:05</p>
  */
 public class Result extends DataObjectBase {
+
     public static final long serialVersionUID = 1L;
 
     /**
      * 返回结果错误码
      */
     public Integer retCode;
+
     /**
      * 返回结果消息
      */

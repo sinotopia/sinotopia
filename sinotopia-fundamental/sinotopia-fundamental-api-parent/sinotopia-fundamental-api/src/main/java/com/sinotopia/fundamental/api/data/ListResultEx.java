@@ -7,11 +7,20 @@ import java.util.List;
 public class ListResultEx<T> extends ResultEx {
 
 	private static final long serialVersionUID = 1L;
-	//总记录数
+
+	/**
+	 * 总记录数
+	 */
 	private Integer totalCount;
-	//页码
+
+	/**
+	 * 页码
+	 */
 	private Integer pageNo;
-	//每页数量
+
+	/**
+	 * 每页数量
+	 */
 	private Integer pageSize;
 
 	public Integer getTotalCount() {

@@ -3,6 +3,7 @@ package com.sinotopia.fundamental.api.enums;
 /**
  */
 public class BizFields {
+
     /**
      * accessToken的参数名
      */
@@ -11,6 +12,7 @@ public class BizFields {
      * accessToken的cookie名
      */
     public static final String AUTHORIZATION = "Authorization";
+
     /**
      * 微信openid
      */

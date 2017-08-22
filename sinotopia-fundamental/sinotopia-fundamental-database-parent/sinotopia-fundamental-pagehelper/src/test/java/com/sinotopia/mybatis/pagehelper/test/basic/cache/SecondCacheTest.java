@@ -39,17 +39,18 @@ public class SecondCacheTest {
 
     @Test
     public void test1() {
+
         SqlSession sqlSession = MybatisHelper.getSqlSession();
         CountryMapper countryMapper = sqlSession.getMapper(CountryMapper.class);
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(10);
+            List<Country> list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
 
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            list = countryMapper.selectGreterThanId(10);
+            list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
         } finally {
             sqlSession.close();
@@ -60,7 +61,7 @@ public class SecondCacheTest {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(10);
+            List<Country> list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
         } finally {
             sqlSession.close();
@@ -74,7 +75,7 @@ public class SecondCacheTest {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(10);
+            List<Country> list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
         } finally {
             sqlSession.close();
@@ -88,7 +89,7 @@ public class SecondCacheTest {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(10);
+            List<Country> list = countryMapper.selectGreaterThanId(10);
             assertEquals(10, list.size());
         } finally {
             sqlSession.close();

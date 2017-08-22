@@ -48,7 +48,7 @@ public class TestParameterOne {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 10);
-            List<Country> list = countryMapper.selectGreterThanId(1);
+            List<Country> list = countryMapper.selectGreaterThanId(1);
             assertEquals(2, list.get(0).getId());
             assertEquals(10, list.size());
             assertEquals(182, ((Page<?>) list).getTotal());

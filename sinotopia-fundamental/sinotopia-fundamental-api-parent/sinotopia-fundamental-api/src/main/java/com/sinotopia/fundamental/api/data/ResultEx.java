@@ -3,6 +3,9 @@ package com.sinotopia.fundamental.api.data;
 
 import com.sinotopia.fundamental.api.enums.ResultCode;
 
+/**
+ *
+ */
 public class ResultEx extends Result {
 
     private static final long serialVersionUID = 1L;
@@ -17,6 +20,7 @@ public class ResultEx extends Result {
     }
 
     public ResultEx makeResult(Integer retCode, String retMsg, Object data) {
+
         if (retCode != null) {
             setRetCode(retCode);
         }

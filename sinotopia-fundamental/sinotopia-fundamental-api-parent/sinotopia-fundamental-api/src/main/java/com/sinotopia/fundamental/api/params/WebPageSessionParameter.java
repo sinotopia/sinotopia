@@ -4,6 +4,7 @@ package com.sinotopia.fundamental.api.params;
  * 需要登录的分页参数基类
  */
 public class WebPageSessionParameter<T extends SessionIdentity> extends SessionParameter<T> {
+
     //页码
     private Integer pageNo = 1;
     //每页数量

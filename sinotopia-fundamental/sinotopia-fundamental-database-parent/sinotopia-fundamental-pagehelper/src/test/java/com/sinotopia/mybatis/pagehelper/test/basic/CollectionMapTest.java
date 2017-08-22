@@ -46,7 +46,7 @@ public class CollectionMapTest {
         try {
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 5);
-            List<Country> list1 = countryMapper.selectGreterThanId(1);
+            List<Country> list1 = countryMapper.selectGreaterThanId(1);
 
             //获取第1页，10条内容，默认查询总数count
             PageHelper.startPage(1, 5);

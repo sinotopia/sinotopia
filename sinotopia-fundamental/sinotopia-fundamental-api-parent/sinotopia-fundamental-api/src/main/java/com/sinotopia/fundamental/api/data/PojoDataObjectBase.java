@@ -21,6 +21,7 @@ public class PojoDataObjectBase extends PageDataObjectBase {
 	}
 
 	public void putExtendedParameterValue(String key, Object value) {
+
 		if (extendedParameter == null) {
 			extendedParameter = new LinkedHashMap<String, Object>();
 		}
