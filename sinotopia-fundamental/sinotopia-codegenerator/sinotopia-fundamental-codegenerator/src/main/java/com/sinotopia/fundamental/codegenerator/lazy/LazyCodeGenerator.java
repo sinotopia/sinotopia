@@ -18,10 +18,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by brucezee on 2017/1/17.
+ * Created by cacotopia on 2017/1/17.
  */
 public class LazyCodeGenerator {
-    public static final String DAO_BASE_CLASS_NAME      = "com.sinotopia.fundamental.database.DaoBase<T, Long>";
+
+    public static final String DAO_BASE_CLASS_NAME = "com.sinotopia.fundamental.database.DaoBase<T, Long>";
     public static final String PAGE_DAO_BASE_CLASS_NAME = "com.sinotopia.fundamental.database.PageDaoBase<T, Long>";
 
     private String root;
@@ -41,7 +42,7 @@ public class LazyCodeGenerator {
 
     private String primaryKeyColumnName = "id";
     private String pojoParentClassFullName = "com.sinotopia.fundamental.api.data.PojoDataObjectBase";
-    private String[] tablePrefix = new String[] {"tb_", "t_"};
+    private String[] tablePrefix = new String[]{"tb_", "t_"};
     private boolean serializable = true;
     private String parentBaseMapperName = DAO_BASE_CLASS_NAME;
 
@@ -109,7 +110,7 @@ public class LazyCodeGenerator {
         if (columnTypeTranslator == null) {
             columnTypeTranslator = new BaseColumnTypeTranslator();
             if (columnTypeReflection != null) {
-                ((BaseColumnTypeTranslator)columnTypeTranslator).setReflection(columnTypeReflection);
+                ((BaseColumnTypeTranslator) columnTypeTranslator).setReflection(columnTypeReflection);
             }
         }
         if (columnNameTranslator == null) {
@@ -130,7 +131,7 @@ public class LazyCodeGenerator {
                                 return enumName + "Enum";
                             }
                         }
-                        return super.processEnumClassName(table, column)+"Enum";
+                        return super.processEnumClassName(table, column) + "Enum";
                     }
                 };
             }
@@ -203,14 +204,15 @@ public class LazyCodeGenerator {
                     }
                     return super.processGetListSQL() + processGetPageListSQL();
                 }
+
                 protected String processGetPageListSQL() {
                     StringBuilder sb = new StringBuilder();
-                    sb.append(tab()+"<select id=\"pageQuery\" parameterType=\""+processParameterType()+"\" resultType=\""+processResultType()+"\">"+line());
-                    sb.append(tab(2)+"SELECT <include refid=\""+processRequestAllFieldsSQLId()+"\"/> FROM "+table.name+""+line());
-                    sb.append(tab(2)+"<include refid=\""+processWhereClauseSQLId()+"\" />"+line());
-                    sb.append(tab(2)+"<include refid=\""+processExtendedOrderByClauseSQLId()+"\" />"+line());
-                    sb.append(tab()+"</select>"+line());
-                    sb.append(tab()+line());
+                    sb.append(tab() + "<select id=\"pageQuery\" parameterType=\"" + processParameterType() + "\" resultType=\"" + processResultType() + "\">" + line());
+                    sb.append(tab(2) + "SELECT <include refid=\"" + processRequestAllFieldsSQLId() + "\"/> FROM " + table.name + "" + line());
+                    sb.append(tab(2) + "<include refid=\"" + processWhereClauseSQLId() + "\" />" + line());
+                    sb.append(tab(2) + "<include refid=\"" + processExtendedOrderByClauseSQLId() + "\" />" + line());
+                    sb.append(tab() + "</select>" + line());
+                    sb.append(tab() + line());
                     return sb.toString();
                 }
             };
@@ -230,7 +232,7 @@ public class LazyCodeGenerator {
     protected Interface[] translate(Mapper[] mappers) {
         List<Interface> list = new ArrayList<Interface>();
         for (Mapper mapper : mappers) {
-            String parentMapperName = parentBaseMapperName.replace("<T,", "<"+mapper.pojoClass.fullClassName+",");
+            String parentMapperName = parentBaseMapperName.replace("<T,", "<" + mapper.pojoClass.fullClassName + ",");
             Interface it = new Interface(mapper.processNamespace()).setParentInterface(new Interface(parentMapperName));
             it.setAnnotation(new Annotation("@Repository"));
             list.add(it);
