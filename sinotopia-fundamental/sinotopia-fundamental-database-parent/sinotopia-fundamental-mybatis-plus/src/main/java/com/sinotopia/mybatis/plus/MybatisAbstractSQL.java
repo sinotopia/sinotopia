@@ -24,7 +24,7 @@ import com.sinotopia.mybatis.plus.toolkit.StringUtils;
 
 /**
  * <p>
- * 重定义 AbstractSQL ，实现标准TSQL的 查询条件自定义
+ * 重定义 AbstractSQL ，实现标准T-SQL的 查询条件自定义
  * </p>
  *
  * @author cacotopia

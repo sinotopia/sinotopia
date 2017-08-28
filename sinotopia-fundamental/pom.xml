@@ -6,43 +6,71 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3.1.RELEASE</version>
+        <version>1.5.6.RELEASE</version>
     </parent>
     <groupId>com.sinotopia</groupId>
     <artifactId>sinotopia-fundamental</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>sinotopia-fundamental-database-parent</module><!--数据库-->
-        <module>sinotopia-fundamental-api-parent</module><!--全局对象-->
-        <module>sinotopia-spring</module><!--spring-->
-        <module>sinotopia-config</module><!--配置相关-->
-        <module>sinotopia-logger</module><!--打印日志-->
-        <module>sinotopia-exception</module><!--异常-->
-        <module>sinotopia-fundamental-common</module><!--通用-->
-        <module>sinotopia-web</module><!--web相关-->
-        <module>sinotopia-codegenerator</module><!--代码生成-->
-        <module>sinotopia-validate</module><!--验证相关-->
-        <module>sinotopia-zookeeper</module><!--zookeeper-->
-        <module>sinotopia-lock</module><!--分布式锁相关-->
-        <module>sinotopia-dubbo</module><!--dubbo服务-->
-        <module>sinotopia-json</module><!--json相关-->
-        <module>sinotopia-httpclient</module><!--HttpClient相关-->
-        <module>sinotopia-cache</module><!--缓存-->
-        <module>sinotopia-aspect</module><!--切面-->
-        <module>sinotopia-email</module><!--邮件相关-->
-        <module>sinotopia-test</module><!--测试相关-->
+        <!--数据库-->
+        <module>sinotopia-fundamental-database-parent</module>
+        <!--全局对象-->
+        <module>sinotopia-fundamental-api-parent</module>
+        <!--spring-->
+        <module>sinotopia-spring</module>
+        <!--配置相关-->
+        <module>sinotopia-config</module>
+        <!--打印日志-->
+        <module>sinotopia-logger</module>
+        <!--异常-->
+        <module>sinotopia-exception</module>
+        <!--通用-->
+        <module>sinotopia-fundamental-common</module>
+        <!--web相关-->
+        <module>sinotopia-web</module>
+        <!--代码生成-->
+        <module>sinotopia-codegenerator</module>
+        <!--验证相关-->
+        <module>sinotopia-validate</module>
+        <!--zookeeper-->
+        <module>sinotopia-zookeeper</module>
+        <!--分布式锁相关-->
+        <module>sinotopia-lock</module>
+        <!--dubbo服务-->
+        <module>sinotopia-dubbo</module>
+        <!--json相关-->
+        <module>sinotopia-json</module>
+        <!--HttpClient相关-->
+        <module>sinotopia-httpclient</module>
+        <!--缓存-->
+        <module>sinotopia-cache</module>
+        <!--切面-->
+        <module>sinotopia-aspect</module>
+        <!--邮件相关-->
+        <module>sinotopia-email</module>
+        <!--测试相关-->
+        <module>sinotopia-test</module>
         <!--支付相关-->
-        <module>sinotopia-payment</module>
+        <!--<module>sinotopia-payment</module>-->
         <!--范例-->
         <!--<module>sinotopia-fundamental-demonstration-parent</module>-->
-        <module>sinotopia-shiro</module><!--shiro-->
-        <module>sinotopia-queue</module><!--消息队列-->
-        <module>sinotopia-jsoup</module><!--HTML解析-->
-        <module>sinotopia-xml</module><!--xml解析-->
-        <module>sinotopia-excel</module><!--Excel-->
-        <module>sinotopia-parser</module><!--文本解析框架-->
-        <module>sinotopia-framework</module><!--技术框架-->
+        <!--shiro-->
+        <module>sinotopia-shiro</module>
+        <!--消息队列-->
+        <module>sinotopia-queue</module>
+        <!--HTML解析-->
+        <module>sinotopia-jsoup</module>
+        <!--xml解析-->
+        <module>sinotopia-xml</module>
+        <!--Excel-->
+        <module>sinotopia-excel</module>
+        <!--文本解析框架-->
+        <module>sinotopia-parser</module>
+        <!--技术框架-->
+        <module>sinotopia-framework</module>
+
+        <module>sinotopia-modelmapper</module>
     </modules>
     <distributionManagement>
         <repository>
@@ -59,21 +87,20 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.1</slf4j.version>
-        <logback.version>1.0.7</logback.version>
-        <logback.ext.version>0.1.1</logback.ext.version>
-        <commons.io.version>2.4</commons.io.version>
-        <jackson.version>2.5.1</jackson.version>
+
+        <jackson.version>2.8.8</jackson.version>
         <google.guava.version>13.0.1</google.guava.version>
-        <!--4.2.4.RELEASE-->
-        <spring.version>4.2.4.RELEASE</spring.version>
+        <!--4.3.8.RELEASE-->
+        <spring.version>4.3.8.RELEASE</spring.version>
+        <spring.boot.version>1.5.6.RELEASE</spring.boot.version>
+        <spring.security.version>3.2.0.RELEASE</spring.security.version>
         <commons.pool.version>1.6</commons.pool.version>
         <commons.dbcp.version>1.4</commons.dbcp.version>
+        <commons.io.version>2.4</commons.io.version>
+        <commons-beanutils.version>1.9.2</commons-beanutils.version>
         <javamail.version>1.4.1</javamail.version>
-        <spring.security.version>3.2.0.RELEASE</spring.security.version>
         <freemarker.version>2.3.23</freemarker.version>
         <hibernate-validator.version>4.3.2.Final</hibernate-validator.version>
-        <commons-beanutils.version>1.9.2</commons-beanutils.version>
         <httpcomponents.version>4.4.1</httpcomponents.version>
         <!-- zookeeper -->
         <zookeeper.version>3.4.6</zookeeper.version>
@@ -94,6 +121,13 @@
         <!--akka-->
         <scala.tools.version>2.11</scala.tools.version>
         <akka.version>2.4.17</akka.version>
+        <dubbo.version>2.5.4</dubbo.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <logback.version>1.0.7</logback.version>
+        <logback.ext.version>0.1.1</logback.ext.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <javax.version>3.1.0</javax.version>
+        <fastjson.version>1.2.37</fastjson.version>
     </properties>
     <build>
         <plugins>
@@ -131,14 +165,9 @@
                 <version>5.1.31</version>
             </dependency>
             <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.9</version>
-            </dependency>
-            <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.1.41</version>
+                <version>${fastjson.version}</version>
             </dependency>
             <dependency>
                 <groupId>log4j</groupId>
@@ -163,6 +192,12 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!-- commons -->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.9</version>
+            </dependency>
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
@@ -174,18 +209,34 @@
                 <version>3.2.1</version>
             </dependency>
             <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons.io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.4</version>
+            </dependency>
+            <!-- SpringFramework -->
+            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-tx</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
+                <artifactId>spring-core</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-test</artifactId>
+                <artifactId>spring-beans</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
@@ -230,25 +281,24 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
+                <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-
+            <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
-                <version>1.8.2</version>
+                <version>${aspectj.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjrt</artifactId>
-                <version>1.8.2</version>
+                <version>${aspectj.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.5.4</version>
+                <version>${dubbo.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.springframework</groupId>
@@ -289,6 +339,11 @@
                 <artifactId>logback-classic</artifactId>
                 <version>1.0.13</version>
             </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-access</artifactId>
+                <version>1.0.13</version>
+            </dependency>
             <!--logback表达式所需-->
             <dependency>
                 <groupId>org.codehaus.janino</groupId>
@@ -297,22 +352,14 @@
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
                 <artifactId>jcl-over-slf4j</artifactId>
-                <version>1.7.0</version>
+                <version>${slf4j.version}</version>
             </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-access</artifactId>
-                <version>1.0.13</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>${commons.io.version}</version>
-            </dependency>
-
             <!-- jackson -->
             <dependency>
                 <groupId>org.glassfish.jersey.media</groupId>
@@ -326,25 +373,23 @@
                 <version>${google.guava.version}</version>
             </dependency>
 
-
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
-                <version>3.1.0</version>
+                <version>${javax.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>1.1.2</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>jstl</artifactId>
+                        <groupId>javax.servlet</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
-            <!-- commons -->
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>2.4</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>3.4</version>
-            </dependency>
             <!-- <dependency>
                  <groupId>commons-httpclient</groupId>
                  <artifactId>commons-httpclient</artifactId>
@@ -393,17 +438,6 @@
                 <version>3.3</version>
             </dependency>
 
-            <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>jstl</artifactId>
-                <version>1.1.2</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>jstl</artifactId>
-                        <groupId>javax.servlet</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <dependency>
                 <groupId>taglibs</groupId>
                 <artifactId>standard</artifactId>
@@ -674,6 +708,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 </project>

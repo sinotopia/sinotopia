@@ -8,7 +8,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 执行链条
- * Created by zhoubing on 2016/12/5.
  */
 public class Chain implements Executor {
     protected Map<String, Executor> executors = new LinkedHashMap<String, Executor>();

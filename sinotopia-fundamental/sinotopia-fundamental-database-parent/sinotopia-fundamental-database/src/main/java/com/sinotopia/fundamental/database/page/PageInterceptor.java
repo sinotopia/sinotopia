@@ -29,6 +29,7 @@ import java.util.Properties;
         @Signature(type = ResultSetHandler.class, method = "handleResultSets", args = {Statement.class}),
 })
 public class PageInterceptor implements Interceptor {
+
     private static final Log logger = LogFactory.getLog(PageInterceptor.class);
 
     protected static final ThreadLocal<Integer> localPage = new ThreadLocal<Integer>();//用于缓存总记录数

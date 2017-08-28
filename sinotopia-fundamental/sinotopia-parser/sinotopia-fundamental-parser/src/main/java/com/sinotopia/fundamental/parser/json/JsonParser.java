@@ -19,9 +19,9 @@ import java.util.Map;
 
 /**
  * 基于jsonpath解析json类型数据的解析器
- * Created by zhoubing on 2016/11/21.
  */
 public class JsonParser extends Parser {
+
     public void parseData(String data, FieldDefine fieldDefine, Map result) {
         parseJson(JSON.parseObject(data), fieldDefine, result);
     }
@@ -53,7 +53,7 @@ public class JsonParser extends Parser {
                     continue;
                 }
 
-                throw new IllegalArgumentException("unhandled json parser define type ["+type+"] when selector is empty.");
+                throw new IllegalArgumentException("unhandled json parser define type [" + type + "] when selector is empty.");
             }
 
             if (RegexSelector.isRegexSelector(selector)) {
@@ -70,12 +70,10 @@ public class JsonParser extends Parser {
             Object value = null;
             if (isRelativeSelector(selector)) {
                 value = getJsonValue(jsonObject, selector, define);
-            }
-            else if (isAbsoluteSelector(selector)) {
+            } else if (isAbsoluteSelector(selector)) {
                 value = getJsonValue(rootJsonObject, selector, define);
-            }
-            else {
-                throw new IllegalArgumentException("unsupported json selector ["+selector+"].");
+            } else {
+                throw new IllegalArgumentException("unsupported json selector [" + selector + "].");
             }
 
             if (value == null) {
@@ -90,7 +88,7 @@ public class JsonParser extends Parser {
                     continue;
                 }
 
-                throw new IllegalArgumentException("the parser define type is Object or Map, but the result is NOT a JSONObject. It is "+value.getClass().getSimpleName()+".");
+                throw new IllegalArgumentException("the parser define type is Object or Map, but the result is NOT a JSONObject. It is " + value.getClass().getSimpleName() + ".");
             }
 
             if (FieldTypeEnum.Array.isEqual(type) || FieldTypeEnum.List.isEqual(type)) {
@@ -109,7 +107,7 @@ public class JsonParser extends Parser {
                     continue;
                 }
 
-                throw new IllegalArgumentException("the parser define type is Array or List, but the result is NOT a JSONArray. It is "+value.getClass().getSimpleName()+".");
+                throw new IllegalArgumentException("the parser define type is Array or List, but the result is NOT a JSONArray. It is " + value.getClass().getSimpleName() + ".");
             }
 
             result.put(define.getName(), value);
@@ -119,9 +117,11 @@ public class JsonParser extends Parser {
     private boolean isAbsoluteSelector(String selector) {
         return selector != null && !isRelativeSelector(selector) && selector.startsWith("$.");
     }
+
     private boolean isRelativeSelector(String selector) {
         return selector != null && selector.startsWith("$..");
     }
+
     private boolean isJsonPathSelector(String selector) {
         return selector != null && selector.startsWith("$");
     }
@@ -130,8 +130,7 @@ public class JsonParser extends Parser {
         Object result = null;
         if (!isJsonPathSelector(selector)) {
             result = jsonObject.get(selector);
-        }
-        else {
+        } else {
             result = JSONPath.compile(selector).eval(jsonObject);
         }
 

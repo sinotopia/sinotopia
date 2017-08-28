@@ -17,9 +17,9 @@ import java.util.List;
 
 /**
  * excel导出
- * Created by zhoubing on 2016/2/23.
  */
 public abstract class BaseExcelExporter<T> {
+
     private static Logger logger = LoggerFactory.getLogger(BaseExcelExporter.class);
 
     /**

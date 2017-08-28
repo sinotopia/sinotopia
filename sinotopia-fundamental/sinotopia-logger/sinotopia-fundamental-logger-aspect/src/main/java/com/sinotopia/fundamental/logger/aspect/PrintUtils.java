@@ -15,6 +15,7 @@ import java.util.Map.Entry;
 
 
 public class PrintUtils {
+
     private static Map<String, PrintType> printFilter = new HashMap<String, PrintType>();
     private static final Logger LOGGER = LoggerFactory.getLogger(PrintUtils.class);
     public static final String HTTP_SERVLET_RESPONSE = "javax.servlet.http.HttpServletResponse";
@@ -135,12 +136,12 @@ public class PrintUtils {
     }
 
     @SuppressWarnings("unchecked")
-	public static String printObjectData(Object data) {
-    	return printObjectData(data, null);
+    public static String printObjectData(Object data) {
+        return printObjectData(data, null);
     }
 
     public static String printObjectData(String name, Object data) {
-    	return printObjectData(data, printFilter.get(name));
+        return printObjectData(data, printFilter.get(name));
     }
 
     private static String printObjectData(Object data, PrintType type) {
@@ -148,42 +149,36 @@ public class PrintUtils {
             return "";
         }
 
-    	StringBuilder sb = new StringBuilder();
-    	if (data instanceof String){
-    		if (type == null) {
-    			sb.append(data);
-    		}else{
-    			switch (type){
-    				case IDNO :
-    					 sb.append(printIdNo(String.valueOf(data)));
-    					 break;
-    				case PASSWORD:
-    					sb.append(printPwd(String.valueOf(data)));
-    					break;
-    				case BIGDATA:
-    					sb.append(printBigDataLength(String.valueOf(data)));
-    					break;
-    				default:
-    					sb.append(String.valueOf(data));
-    			}
-    		}
-    	}
-    	else if (data instanceof Map) {
-    		sb.append(printMapData((Map<Object, Object>)data));
-    	}
-    	else if (data instanceof Collection){
-    		sb.append(printListData((Collection<Object>)data));
-    	}
-    	else if (data instanceof Object[]){
-    		sb.append(printArrayData((Object[])data));
-        }
-        else if (isIgnoreParameter(data)) {
+        StringBuilder sb = new StringBuilder();
+        if (data instanceof String) {
+            if (type == null) {
+                sb.append(data);
+            } else {
+                switch (type) {
+                    case IDNO:
+                        sb.append(printIdNo(String.valueOf(data)));
+                        break;
+                    case PASSWORD:
+                        sb.append(printPwd(String.valueOf(data)));
+                        break;
+                    case BIGDATA:
+                        sb.append(printBigDataLength(String.valueOf(data)));
+                        break;
+                    default:
+                        sb.append(String.valueOf(data));
+                }
+            }
+        } else if (data instanceof Map) {
+            sb.append(printMapData((Map<Object, Object>) data));
+        } else if (data instanceof Collection) {
+            sb.append(printListData((Collection<Object>) data));
+        } else if (data instanceof Object[]) {
+            sb.append(printArrayData((Object[]) data));
+        } else if (isIgnoreParameter(data)) {
             sb.append(data);
-        }
-        else if (data instanceof Result) {
-            sb.append(printResult((Result)data));
-        }
-        else {
+        } else if (data instanceof Result) {
+            sb.append(printResult((Result) data));
+        } else {
             sb.append(printObjectString(data));
         }
         return sb.toString();
@@ -200,6 +195,7 @@ public class PrintUtils {
 
     /**
      * 判断是否是不需要再次遍历成员变量的打印对象
+     *
      * @param data
      * @return
      */
@@ -231,62 +227,62 @@ public class PrintUtils {
     }
 
     private static String printMapData(Map<Object, Object> map) {
-		Iterator<Entry<Object, Object>> i = map.entrySet().iterator();
-		if (!i.hasNext())
-			return "{}";
-		StringBuilder sb = new StringBuilder();
-		sb.append('{');
-		for (;;) {
-			Entry<Object, Object> e = i.next();
-			Object key = e.getKey();
-			Object value = e.getValue();
-			sb.append(printObjectData(key));
-			sb.append('=');
-			if (key instanceof String) {
-				sb.append(printObjectData(value, printFilter.get(key)));
-			}
-			else{
-				sb.append(printObjectData(value));
-			}
-			if (!i.hasNext())
-				return sb.append('}').toString();
-			sb.append(',').append(' ');
-		}
+        Iterator<Entry<Object, Object>> i = map.entrySet().iterator();
+        if (!i.hasNext())
+            return "{}";
+        StringBuilder sb = new StringBuilder();
+        sb.append('{');
+        for (; ; ) {
+            Entry<Object, Object> e = i.next();
+            Object key = e.getKey();
+            Object value = e.getValue();
+            sb.append(printObjectData(key));
+            sb.append('=');
+            if (key instanceof String) {
+                sb.append(printObjectData(value, printFilter.get(key)));
+            } else {
+                sb.append(printObjectData(value));
+            }
+            if (!i.hasNext())
+                return sb.append('}').toString();
+            sb.append(',').append(' ');
+        }
     }
 
     private static String printListData(Collection<Object> data) {
-		Iterator<Object> it = data.iterator();
-		if (!it.hasNext())
-			return "[]";
+        Iterator<Object> it = data.iterator();
+        if (!it.hasNext())
+            return "[]";
 
-		StringBuilder sb = new StringBuilder();
-		sb.append('[');
-		for (;;) {
-			Object e = it.next();
-			sb.append(printObjectData(e));
-			if (!it.hasNext())
-				return sb.append(']').toString();
-			sb.append(',').append(' ');
-		}
+        StringBuilder sb = new StringBuilder();
+        sb.append('[');
+        for (; ; ) {
+            Object e = it.next();
+            sb.append(printObjectData(e));
+            if (!it.hasNext())
+                return sb.append(']').toString();
+            sb.append(',').append(' ');
+        }
     }
 
     public static String printArrayData(Object[] data) {
-    	StringBuilder sb = new StringBuilder();
-    	if (data != null) {
-    		sb.append("[");
-    		for(int i=0; i<data.length; i++) {
-    			sb.append(printObjectData(data[i]));
-    		}
-    		sb.append("]");
-    	}else{
-    		sb.append("[]");
-    	}
-    	return sb.toString();
+        StringBuilder sb = new StringBuilder();
+        if (data != null) {
+            sb.append("[");
+            for (int i = 0; i < data.length; i++) {
+                sb.append(printObjectData(data[i]));
+            }
+            sb.append("]");
+        } else {
+            sb.append("[]");
+        }
+        return sb.toString();
     }
 
     private static String printObjectString(Object data) {
         return printObjectString(data, null);
     }
+
     private static String printObjectString(Object data, HashSet<String> ignoreMethods) {
         if (data == null) {
             return null;
@@ -300,7 +296,7 @@ public class PrintUtils {
             if (pds != null) {
                 for (PropertyDescriptor pd : pds) {
                     Method method = pd.getReadMethod();
-                    if(method == null){
+                    if (method == null) {
                         continue;
                     }
                     if (pd.getWriteMethod() == null) {
@@ -326,17 +322,17 @@ public class PrintUtils {
         return sb.toString();
     }
 
-	public static void printComponentLoaded(Logger logger, String componentName) {
-		if (null == logger) {
-			logger = LOGGER;
-		}
-		logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + componentName + " loaded");
-	}
+    public static void printComponentLoaded(Logger logger, String componentName) {
+        if (null == logger) {
+            logger = LOGGER;
+        }
+        logger.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + componentName + " loaded");
+    }
 
     public enum PrintType {
-    	 PASSWORD,
-    	 BIGDATA,
-    	 IDNO,
+        PASSWORD,
+        BIGDATA,
+        IDNO,
     }
 
 

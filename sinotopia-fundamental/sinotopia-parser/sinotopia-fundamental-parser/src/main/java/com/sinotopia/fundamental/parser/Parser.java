@@ -12,14 +12,14 @@ import java.util.Map;
 
 /**
  * 页面解析基类
- * Created by zhoubing on 2016/12/1.
  */
 public abstract class Parser {
     /**
      * 根据字段解析规则解析页面，输出结果对象
-     * @param data 待解析的页面
+     *
+     * @param data        待解析的页面
      * @param fieldDefine 字段解析定义
-     * @param clazz 解析结果类
+     * @param clazz       解析结果类
      * @param <T>
      * @return 解析结果对象
      */
@@ -29,10 +29,11 @@ public abstract class Parser {
 
     /**
      * 根据字段解析规则解析页面，输出结果对象
-     * @param data 待解析的页面
+     *
+     * @param data        待解析的页面
      * @param fieldDefine 字段解析定义
-     * @param clazz 解析结果类
-     * @param result 解析结果过程存储的Map
+     * @param clazz       解析结果类
+     * @param result      解析结果过程存储的Map
      * @param <T>
      * @return 解析结果对象
      */
@@ -43,6 +44,7 @@ public abstract class Parser {
 
     /**
      * 根据多个字段解析规则解析多个页面，输出结果对象
+     *
      * @param wraps 多个解析页面和解析定义的组合
      * @param clazz 解析结果类
      * @param <T>
@@ -58,6 +60,7 @@ public abstract class Parser {
 
     /**
      * 根据多个字段解析规则解析多个页面，输出结果对象
+     *
      * @param wraps 多个解析页面和解析定义的组合
      * @param clazz 解析结果类
      * @param <T>
@@ -73,7 +76,8 @@ public abstract class Parser {
 
     /**
      * 根据字段解析规则解析页面，输出Map类型的对象
-     * @param data 待解析的页面
+     *
+     * @param data        待解析的页面
      * @param fieldDefine 字段解析定义
      * @return 解析结果Map类型的对象
      */
@@ -85,6 +89,7 @@ public abstract class Parser {
 
     /**
      * 定义的字段类型转换成相应的Class<?>
+     *
      * @param type
      * @return
      */
@@ -98,6 +103,7 @@ public abstract class Parser {
 
     /**
      * 根据字段定义将结果值转换成相应类型的值
+     *
      * @param define
      * @param value
      * @return
@@ -113,6 +119,7 @@ public abstract class Parser {
 
     /**
      * 获取字符串列表第一项作为最终的值，并进行相应的类型转换
+     *
      * @param list
      * @param define
      * @return
@@ -123,9 +130,10 @@ public abstract class Parser {
 
     /**
      * 根据解析规则解析数据，并将相应解析结果存储于Map中
-     * @param data 待解析的页面
+     *
+     * @param data        待解析的页面
      * @param fieldDefine 字段解析定义
-     * @param result 解析结果Map类型的对象
+     * @param result      解析结果Map类型的对象
      */
     public abstract void parseData(String data, FieldDefine fieldDefine, Map result);
 }

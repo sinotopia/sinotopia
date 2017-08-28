@@ -99,7 +99,7 @@ import com.sinotopia.mybatis.plus.mapper.BaseMapper;
  * 继承 MapperAnnotationBuilder 没有XML配置文件注入基础CRUD方法
  * </p>
  *
- * @author Caratacus
+ * @author cacotopia
  * @Date 2017-01-04
  */
 public class MybatisMapperAnnotationBuilder extends MapperAnnotationBuilder {

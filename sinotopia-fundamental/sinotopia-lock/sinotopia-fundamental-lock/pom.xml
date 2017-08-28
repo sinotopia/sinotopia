@@ -15,22 +15,22 @@
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-config</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-redis</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-test</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-aspect</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
     </dependencies>
 </project>

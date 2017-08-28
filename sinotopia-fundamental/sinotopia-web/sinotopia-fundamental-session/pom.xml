@@ -16,41 +16,38 @@
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-api</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-aspect</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-servlet</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-fastjson</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-redis</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-exception</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-spring</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>${sinotopia.fundamental.version}</version>
         </dependency>
-
-
-
     </dependencies>
 
 

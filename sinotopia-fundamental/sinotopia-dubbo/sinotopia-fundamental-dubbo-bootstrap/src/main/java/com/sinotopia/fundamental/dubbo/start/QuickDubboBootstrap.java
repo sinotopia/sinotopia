@@ -36,7 +36,7 @@ import java.util.*;
 
 // Spring Java Config的标识
 @Configuration
-@ComponentScan(basePackages = {"com.djd", "com.hakim", "com.dyc"}, excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = QuickDubboBootstrap.class)})
+@ComponentScan(basePackages = {"com.sinotopia"}, excludeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = QuickDubboBootstrap.class)})
 // Spring Boot的AutoConfig和载入外部properties文件的 标识
 //@ImportResource(value = {"classpath*:applicationContext-*.xml","classpath*:spring/applicationContext-*.xml","classpath*:spring/dubbo-*.xml"})
 @EnableConfigurationProperties
@@ -162,18 +162,15 @@ public class QuickDubboBootstrap implements ApplicationContextAware {
                         resourceMap.put(xmlFileName, resource);
 
                         LOGGER.info("fundamental xml :{} will be overrided by {}!", xmlFileName, resource.getURI());
-                    }
-                    else if (!isExistingResourceFundamental && isCurrentResourceFundamental) {
+                    } else if (!isExistingResourceFundamental && isCurrentResourceFundamental) {
                         resourceMap.put(xmlFileName, existingResource);
 
                         LOGGER.info("fundamental xml :{} will be overrided by {}!", xmlFileName, existingResource.getURI());
-                    }
-                    else {
+                    } else {
                         //不允许xml名字相同
                         throw new IllegalArgumentException("resource name conflict!" + existingResource.toString() + " " + resource.toString());
                     }
-                }
-                else {
+                } else {
                     resourceMap.put(xmlFileName, resource);
                 }
             }
@@ -270,7 +267,6 @@ public class QuickDubboBootstrap implements ApplicationContextAware {
         }
         return false;
     }
-
 
     /**
      * 负责springboot容器初始化

@@ -14,6 +14,7 @@ import java.util.Map;
 public class LogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+
     private static final String HTTP_SERVLET_RESPONSE = "javax.servlet.http.HttpServletResponse";
     private static final String HTTP_SERVLET_REQUEST = "javax.servlet.http.HttpServletRequest";
     public static final String FORMAT_KV = "kv";

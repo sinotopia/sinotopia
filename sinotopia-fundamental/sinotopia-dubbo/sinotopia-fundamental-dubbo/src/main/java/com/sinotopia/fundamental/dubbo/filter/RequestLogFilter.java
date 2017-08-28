@@ -34,7 +34,6 @@ public class RequestLogFilter implements Filter {
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         boolean isNew = false;
         boolean isClear = false;
-//        String infoMark = "";
         StringBuilder infoMark = new StringBuilder();
         String requestSEQ = null;
         String args = "none";
@@ -82,11 +81,9 @@ public class RequestLogFilter implements Filter {
             throw e;
         } finally {
             if (isClear) {
-//                MDC.clear();
                 MDC.remove(REQUEST_SEQ);
             }
             if (isNew) {
-//                MDC.clear();
                 MDC.remove(REQUEST_SEQ);
                 LogContext.getContext().clear();
             }
@@ -193,7 +190,6 @@ public class RequestLogFilter implements Filter {
         public static void putPrintFilter(String fildName, PrintType type) {
             printFilter.put(fildName, type);
         }
-
 
         public static String printSensitiveRealLength(String info) {
             if (StringUtils.isEmpty(info)) {

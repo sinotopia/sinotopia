@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 对空字符，空数字序列化时使用默认的空串或0
- * Created by zhoubing on 2016/8/5.
  */
 public class DefaultValueObjectMapper extends FundamentalObjectMapper {
     public DefaultValueObjectMapper() {

@@ -9,9 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.test.EnvironmentTestUtils;
-import org.springframework.boot.test.IntegrationTest;
-import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.util.EnvironmentTestUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -40,14 +39,11 @@ import java.util.*;
 
 /**
  * <p>
- *     不要在location里面配下面这些路径
- *     <ul>classpath*:spring/applicationContext-*.xml</ul>
- *     <ul>classpath*:spring/spring/dubbo-*.xml</ul>
- *     <ul>classpath*:classpath*:applicationContext-*.xml</ul>
+ * 不要在location里面配下面这些路径
+ * <ul>classpath*:spring/applicationContext-*.xml</ul>
+ * <ul>classpath*:spring/spring/dubbo-*.xml</ul>
+ * <ul>classpath*:classpath*:applicationContext-*.xml</ul>
  * </p>
- *
- * @Author dzr
- * @Date 2016/6/6
  */
 public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoader {
 
@@ -63,7 +59,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
     private static String[] excludeLoadXmlArr = null;
     private static String[] apiXmls = null;
 
-//    private static String appName = null;
+    //    private static String appName = null;
 //    private static String apiXml = null;
     @Override
     public ApplicationContext loadContext(final MergedContextConfiguration config)
@@ -85,7 +81,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 //            new WebConfigurer().configure(config, application, initializers);
 //        }
 //        else {
-            application.setWebEnvironment(false);
+        application.setWebEnvironment(false);
 //        }
         application.setInitializers(initializers);
         ConfigurableApplicationContext applicationContext = application.run();
@@ -96,7 +92,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
         boolean hasWebAppConfiguration = AnnotationUtils.findAnnotation(testClass,
                 WebAppConfiguration.class) != null;
         boolean hasWebIntegrationTest = AnnotationUtils.findAnnotation(testClass,
-                WebIntegrationTest.class) != null;
+                SpringBootTest.class) != null;
         if (hasWebAppConfiguration && hasWebIntegrationTest) {
             throw new IllegalStateException("@WebIntegrationTest and "
                     + "@WebAppConfiguration cannot be used together");
@@ -105,7 +101,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 
     private Set<Object> getSources(MergedContextConfiguration mergedConfig) {
         Set<Object> sources = new LinkedHashSet<Object>();
-        try{
+        try {
             LOGGER.info("dubbo test begin start ……");
 
             //如果配置文件中自定一些不需要加载的xml文件
@@ -157,21 +153,21 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 //            }
 
 //            //2.处理自定义的
-            for(String location : mergedConfig.getLocations()){
+            for (String location : mergedConfig.getLocations()) {
                 Resource[] resources = resourcePatternResolver.getResources(location);
-                for(Resource resource : resources){
-                    if(!isExcludedResource(resource)) {
+                for (Resource resource : resources) {
+                    if (!isExcludedResource(resource)) {
                         boolean flag = sources.add(resource);
-                        if(flag) {
+                        if (flag) {
                             LOGGER.info("Under classPath of {} ,the xml:{} is added!", location, resource.getFilename());
-                        }else{
+                        } else {
                             LOGGER.info("Under classPath of {} ,the xml:{} is load!", location, resource.getFilename());
                         }
                     }
                 }
             }
-        }catch (Exception e){
-            LOGGER.error("init sources happen error:",e);
+        } catch (Exception e) {
+            LOGGER.error("init sources happen error:", e);
         }
 
 //        sources.addAll(Arrays.asList(mergedConfig.getLocations()));
@@ -265,13 +261,12 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
             ContextConfigurationAttributes configAttributes) {
         super.processContextConfiguration(configAttributes);
         if (!configAttributes.hasResources()) {
-            Class<?>[] defaultConfigClasses =  AnnotationConfigContextLoaderUtils
+            Class<?>[] defaultConfigClasses = AnnotationConfigContextLoaderUtils
                     .detectDefaultConfigurationClasses(
-                    configAttributes.getDeclaringClass());
+                            configAttributes.getDeclaringClass());
             configAttributes.setClasses(defaultConfigClasses);
         }
     }
-
 
     @Override
     public ApplicationContext loadContext(String... locations) throws Exception {
@@ -281,7 +276,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 
     @Override
     protected String[] getResourceSuffixes() {
-        return new String[] { "-context.xml", "Context.groovy" };
+        return new String[]{"-context.xml", "Context.groovy"};
     }
 
     @Override
@@ -341,8 +336,8 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 
         public static boolean isIntegrationTest(
                 MergedContextConfiguration configuration) {
-            return (hasAnnotation(configuration, IntegrationTest.class)
-                    || hasAnnotation(configuration, WebIntegrationTest.class));
+            return (hasAnnotation(configuration, SpringBootTest.class)
+                    || hasAnnotation(configuration, SpringBootTest.class));
         }
 
         private static boolean hasAnnotation(MergedContextConfiguration configuration,
@@ -355,11 +350,12 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 
     /**
      * 获取应用的名称
+     *
      * @param fileName
      * @return
      */
-    private static String getAppName(String fileName){
-        if( appNameResolver != null){
+    private static String getAppName(String fileName) {
+        if (appNameResolver != null) {
             return appNameResolver.resolver(fileName);
         }
         return null;

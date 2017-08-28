@@ -5,10 +5,8 @@ import java.io.Serializable;
 
 /**
  * <p>邮件附件</p>
- * @Author dzr
- * @Date 2016/5/18.
  */
-public class EmailAttachment implements Serializable{
+public class EmailAttachment implements Serializable {
 
     private String attachmentName;
 

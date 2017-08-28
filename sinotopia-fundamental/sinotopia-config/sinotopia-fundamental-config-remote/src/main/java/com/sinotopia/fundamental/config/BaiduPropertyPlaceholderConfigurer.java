@@ -5,7 +5,6 @@ import com.baidu.disconf.client.addons.properties.ReloadingPropertyPlaceholderCo
 
 /**
  * 重写百度的PropertyPlaceholderConfigurer，添加FundamentalConfigProvider重新加载配置
- * Created by brucezee on 2017/2/6.
  */
 public class BaiduPropertyPlaceholderConfigurer extends ReloadingPropertyPlaceholderConfigurer {
     @Override
