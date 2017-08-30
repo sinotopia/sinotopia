@@ -52,9 +52,11 @@ public class TypeMapNameTest {
         final User user = new User("John Doe", 23);
 
         final UserDto userDto1 = modelMapper.map(user, UserDto.class);
+
         assertThat(userDto1.getFirstName(), is(nullValue()));
 
         final UserDto userDto2 = modelMapper.map(user, UserDto.class, "userMappingV1");
+
         assertThat(userDto2.getFirstName(), equalTo("John Doe"));
         assertThat(userDto2.getAge(), equalTo(user.getAge()));
     }

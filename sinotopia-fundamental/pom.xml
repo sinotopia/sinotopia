@@ -71,6 +71,7 @@
         <module>sinotopia-framework</module>
 
         <module>sinotopia-modelmapper</module>
+        <module>sinotopia-reactivex</module>
     </modules>
     <distributionManagement>
         <repository>
