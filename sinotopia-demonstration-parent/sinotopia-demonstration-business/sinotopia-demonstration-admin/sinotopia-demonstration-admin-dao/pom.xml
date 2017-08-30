@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.sinotopia.demonstration</groupId>
-        <artifactId>sinotopia-fundamental-demonstration-admin</artifactId>
+        <artifactId>sinotopia-demonstration-admin</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sinotopia-fundamental-demonstration-admin-dao</artifactId>
+    <artifactId>sinotopia-demonstration-admin-dao</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
 
@@ -21,12 +21,12 @@
 
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-bean</artifactId>
+            <artifactId>sinotopia-demonstration-admin-bean</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-api-java</artifactId>
+            <artifactId>sinotopia-demonstration-admin-api-java</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

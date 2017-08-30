@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.sinotopia.demonstration</groupId>
-        <artifactId>sinotopia-fundamental-demonstration-admin</artifactId>
+        <artifactId>sinotopia-demonstration-admin</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sinotopia-fundamental-demonstration-admin-common</artifactId>
+    <artifactId>sinotopia-demonstration-admin-common</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
 

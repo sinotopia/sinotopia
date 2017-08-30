@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.sinotopia.demonstration</groupId>
-    <artifactId>sinotopia-fundamental-demonstration-jobs</artifactId>
+    <artifactId>sinotopia-demonstration-jobs</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>

@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.sinotopia.demonstration</groupId>
-    <artifactId>sinotopia-fundamental-demonstration-web</artifactId>
+    <artifactId>sinotopia-demonstration-platform</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
@@ -148,7 +148,7 @@
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
             <artifactId>sinotopia-fundamental-demonstration-admin-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>

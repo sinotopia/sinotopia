@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.sinotopia.demonstration</groupId>
-    <artifactId>sinotopia-fundamental-demonstration-admin-impl</artifactId>
+    <artifactId>sinotopia-demonstration-admin-impl</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
@@ -104,28 +104,26 @@
             <artifactId>sinotopia-fundamental-dubbo</artifactId>
             <version>${sinotopia.fundamental.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-api-java</artifactId>
+            <artifactId>sinotopia-demonstration-admin-api-java</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-bean</artifactId>
+            <artifactId>sinotopia-demonstration-admin-bean</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-dao</artifactId>
+            <artifactId>sinotopia-demonstration-admin-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
-            <artifactId>sinotopia-fundamental-demonstration-admin-common</artifactId>
+            <artifactId>sinotopia-demonstration-admin-common</artifactId>
             <version>${project.version}</version>
         </dependency>
-
     </dependencies>
 
 </project>

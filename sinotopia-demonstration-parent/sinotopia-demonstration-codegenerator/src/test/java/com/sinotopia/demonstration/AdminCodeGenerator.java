@@ -10,6 +10,7 @@ public class AdminCodeGenerator {
     public static void main(String[] args) {
 
         LazyCodeGenerator lazyCodeGenerator = LazyCodeGenerator.create()
+                
                 .setRoot("../sinotopia-demonstration/demonstration-business/demonstration-admin")               //全局根路径
                 .setPojoRoot("sinotopia-admin-bean/src/main/java")                   //数据库对象的根路径
                 .setDaoRoot("sinotopia-admin-dao/src/main/java")                     //Dao的根路径

@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
 /**
  * 用户管理
  */
@@ -27,7 +26,7 @@ public class AdminUserController {
 
     @Autowired
     private AdminUserService adminUserService;
-    
+
     @RequestMapping(value = "/addUser", name = "新增用户")
     public ResultEx addUser(AddUserParameter parameter) {
         return adminUserService.addUser(parameter);
@@ -72,7 +71,7 @@ public class AdminUserController {
 
         //通过SessionHandler实现SessionIdentity缓存到redis以及向客户端返回相应会话cookie
         SessionHandler sessionHandler = new SessionHandler();
-        String accessToken = sessionHandler.login(sessionIdentity, response, TimeUtils.MILLIS_OF_HOUR*12);
+        String accessToken = sessionHandler.login(sessionIdentity, response, TimeUtils.MILLIS_OF_HOUR * 12);
 
         //如果当前登录接口需要返回用户信息则返回，否则重新实例化一个Result返回成功即可
         loginUserView.setAccessToken(accessToken);
