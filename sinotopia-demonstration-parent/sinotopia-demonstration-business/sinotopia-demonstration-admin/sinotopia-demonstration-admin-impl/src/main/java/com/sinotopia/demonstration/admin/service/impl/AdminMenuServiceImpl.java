@@ -184,15 +184,14 @@ public class AdminMenuServiceImpl implements AdminMenuService {
             if (menuIdSet.contains(each.getMenuId())) {
                 enableAdminRoleMenu(each);
                 menuIdSet.remove(each.getMenuId());
-            }
-            else {
+            } else {
                 adminRoleMenuDao.delete(each.getId());
             }
         }
 
         if (menuIdSet.size() > 0) {
             Iterator<Long> it = menuIdSet.iterator();
-            while(it.hasNext()) {
+            while (it.hasNext()) {
                 addRoleMenuByMenuId(roleId, it.next());
             }
         }

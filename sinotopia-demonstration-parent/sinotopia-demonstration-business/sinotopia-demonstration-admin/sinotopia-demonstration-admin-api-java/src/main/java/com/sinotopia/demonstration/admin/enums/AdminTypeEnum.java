@@ -20,24 +20,31 @@ public enum AdminTypeEnum {
      * 注释
      */
     public String comment;
+
     public void setValue(int value) {
         this.value = value;
     }
+
     public int getValue() {
         return this.value;
     }
+
     public void setComment(String comment) {
         this.comment = comment;
     }
+
     public String getComment() {
         return this.comment;
     }
+
     AdminTypeEnum(int value, String comment) {
         this.value = value;
         this.comment = comment;
     }
+
     /**
      * 根据值获取对应的枚举
+     *
      * @param value 枚举的数值
      * @return 成功返回相应的枚举，否则返回null。
      */
@@ -55,6 +62,7 @@ public enum AdminTypeEnum {
 
     /**
      * 判断是否是超级管理员
+     *
      * @param value
      * @return
      */

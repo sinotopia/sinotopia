@@ -5,14 +5,15 @@ import org.hibernate.validator.constraints.NotBlank;
 
 /**
  * 登录用户参数
- * Created by brucezee on 2017/3/1.
  */
 public class LoginUserParameter extends BaseParameter {
+
     /**
      * 登录用户名
      */
     @NotBlank(message = "登录用户名不能为空")
     private String username;
+
     /**
      * 登录密码
      */

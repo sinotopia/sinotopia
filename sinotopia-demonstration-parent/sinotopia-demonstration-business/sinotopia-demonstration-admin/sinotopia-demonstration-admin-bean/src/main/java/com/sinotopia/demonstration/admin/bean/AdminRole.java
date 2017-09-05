@@ -1,7 +1,9 @@
 package com.sinotopia.demonstration.admin.bean;
 
 import com.sinotopia.fundamental.api.data.PojoDataObjectBase;
+
 import java.util.Date;
+
 /**
  * 系统角色表
  */
@@ -35,45 +37,59 @@ public class AdminRole extends PojoDataObjectBase {
      * 更新时间
      */
     private Date updatedTime;
+
     public Long getId() {
         return this.id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public Integer getStatus() {
         return this.status;
     }
+
     public void setStatus(Integer status) {
         this.status = status;
     }
+
     public String getName() {
         return this.name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getCode() {
         return this.code;
     }
+
     public void setCode(String code) {
         this.code = code;
     }
+
     public String getDescription() {
         return this.description;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public Date getCreatedTime() {
         return this.createdTime;
     }
+
     public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
     }
+
     public Date getUpdatedTime() {
         return this.updatedTime;
     }
+
     public void setUpdatedTime(Date updatedTime) {
         this.updatedTime = updatedTime;
     }

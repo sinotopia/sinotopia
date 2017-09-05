@@ -40,7 +40,7 @@
         <!--dubbo服务-->
         <module>sinotopia-dubbo</module>
         <!--json相关-->
-        <module>sinotopia-json</module>
+        <module>sinotopia-fundamental-json</module>
         <!--HttpClient相关-->
         <module>sinotopia-httpclient</module>
         <!--缓存-->
@@ -69,9 +69,9 @@
         <module>sinotopia-parser</module>
         <!--技术框架-->
         <module>sinotopia-framework</module>
-
         <module>sinotopia-modelmapper</module>
         <module>sinotopia-reactivex</module>
+        <module>sinotopia-springboot</module>
     </modules>
     <distributionManagement>
         <repository>

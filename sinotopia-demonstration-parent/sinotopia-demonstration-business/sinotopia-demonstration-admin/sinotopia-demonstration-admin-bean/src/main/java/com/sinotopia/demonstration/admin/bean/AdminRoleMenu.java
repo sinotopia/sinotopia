@@ -1,7 +1,9 @@
 package com.sinotopia.demonstration.admin.bean;
 
 import com.sinotopia.fundamental.api.data.PojoDataObjectBase;
+
 import java.util.Date;
+
 /**
  * 系统角色对应菜单表
  */
@@ -31,39 +33,51 @@ public class AdminRoleMenu extends PojoDataObjectBase {
      * 更新时间
      */
     private Date updatedTime;
+
     public Long getId() {
         return this.id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public Integer getStatus() {
         return this.status;
     }
+
     public void setStatus(Integer status) {
         this.status = status;
     }
+
     public Long getRoleId() {
         return this.roleId;
     }
+
     public void setRoleId(Long roleId) {
         this.roleId = roleId;
     }
+
     public Long getMenuId() {
         return this.menuId;
     }
+
     public void setMenuId(Long menuId) {
         this.menuId = menuId;
     }
+
     public Date getCreatedTime() {
         return this.createdTime;
     }
+
     public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
     }
+
     public Date getUpdatedTime() {
         return this.updatedTime;
     }
+
     public void setUpdatedTime(Date updatedTime) {
         this.updatedTime = updatedTime;
     }

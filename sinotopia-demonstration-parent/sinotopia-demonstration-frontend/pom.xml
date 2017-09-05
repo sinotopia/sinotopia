@@ -20,7 +20,8 @@
                     <nodeVersion>v6.11.2</nodeVersion>
                     <npmVersion>3.10.9</npmVersion>
                 </configuration>
-                <executions>
+                <!--
+                 <executions>
                     <execution>
                         <id>install node and npm</id>
                         <goals>
@@ -32,7 +33,6 @@
                         <goals>
                             <goal>npm</goal>
                         </goals>
-                        <!-- Optional configuration which provides for running any npm command -->
                         <configuration>
                             <arguments>install</arguments>
                         </configuration>
@@ -61,7 +61,7 @@
                             <goal>jspm</goal>
                         </goals>
                         <configuration>
-                            <arguments>--version</arguments>
+                            <arguments>-version</arguments>
                         </configuration>
                     </execution>
                     <execution>
@@ -70,7 +70,7 @@
                             <goal>grunt</goal>
                         </goals>
                         <configuration>
-                            <arguments>--no-color</arguments>
+                            <arguments>-no-color</arguments>
                         </configuration>
                     </execution>
                     <execution>
@@ -99,16 +99,13 @@
                         <goals>
                             <goal>webpack</goal>
                         </goals>
-                        <!-- optional: the default phase is "generate-resources" -->
                         <phase>generate-resources</phase>
-
                         <configuration>
-                            <!-- optional: if not specified, it will run webpack's default
-                            build (and you can remove this whole <configuration> section.) -->
                             <arguments>-p</arguments>
                         </configuration>
                     </execution>
                 </executions>
+                -->
             </plugin>
         </plugins>
     </build>

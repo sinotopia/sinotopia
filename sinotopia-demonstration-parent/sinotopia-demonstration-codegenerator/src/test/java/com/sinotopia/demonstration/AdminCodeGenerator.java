@@ -10,14 +10,14 @@ public class AdminCodeGenerator {
     public static void main(String[] args) {
 
         LazyCodeGenerator lazyCodeGenerator = LazyCodeGenerator.create()
-                
+
                 .setRoot("../sinotopia-demonstration/demonstration-business/demonstration-admin")               //全局根路径
                 .setPojoRoot("sinotopia-admin-bean/src/main/java")                   //数据库对象的根路径
                 .setDaoRoot("sinotopia-admin-dao/src/main/java")                     //Dao的根路径
                 .setMapperRoot("sinotopia-admin-dao/src/main/resources/mappers")     //数据库Mapper的根路径
                 .setPojoPackageName("com.sinotopia.demonstration.admin.bean")                //数据库对象的包名
                 .setDaoPackageName("com.sinotopia.demonstration.admin.dao")                  //Dao的包名
-                .setConnection("192.168.7.187", 3306, "admin", "root", "123456")//数据库连接配置
+                .setConnection("127.0.0.1", 3306, "demonstration", "root", "YuHuanLong")//数据库连接配置
                 .usePageDaoBase()                           //使用分页PageDaoBase作为Dao的基类，生成分页的Dao和Mapper
 
 //                .setIncludeTables("tb_product", "tb_borrow")              //只单独处理的表

@@ -13,8 +13,7 @@ public enum AdminResultEnum {
     ROLE_CODE_EXISTS(120, "角色代码已经存在"),
     USERNAME_EXISTS(121, "登录用户名已经存在"),
     USER_DISABLED(123, "用户已被冻结"),
-    USER_ROLE_EXISTS(124, "用户已经具有该项角色"),
-    ;
+    USER_ROLE_EXISTS(124, "用户已经具有该项角色"),;
 
 
     /**
@@ -25,24 +24,31 @@ public enum AdminResultEnum {
      * 注释
      */
     public String comment;
+
     public void setValue(int value) {
         this.value = value;
     }
+
     public int getValue() {
         return this.value;
     }
+
     public void setComment(String comment) {
         this.comment = comment;
     }
+
     public String getComment() {
         return this.comment;
     }
+
     AdminResultEnum(int value, String comment) {
         this.value = value;
         this.comment = comment;
     }
+
     /**
      * 根据值获取对应的枚举
+     *
      * @param value 枚举的数值
      * @return 成功返回相应的枚举，否则返回null。
      */

@@ -41,7 +41,6 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Autowired
     private AdminRoleService adminRoleService;
 
-
     @Override
     public ResultEx addUser(AddUserParameter parameter) {
         ResultEx resultEx = new ResultEx();
