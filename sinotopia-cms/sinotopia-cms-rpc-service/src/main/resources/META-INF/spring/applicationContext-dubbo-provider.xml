@@ -23,7 +23,7 @@
                    timeout="10000"/>
 
     <!-- 评论 -->
-    <bean id="cmsCommentServiceImpl" class="com.sinotopia.sinotopia.rpc.service.impl.CmsCommentServiceImpl"/>
+    <bean id="cmsCommentServiceImpl" class="com.sinotopia.cms.rpc.service.impl.CmsCommentServiceImpl"/>
     <dubbo:service interface="com.sinotopia.cms.rpc.api.CmsCommentService" ref="cmsCommentServiceImpl" timeout="10000"/>
 
     <!-- 标签 -->

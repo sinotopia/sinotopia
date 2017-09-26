@@ -12,6 +12,7 @@ import java.util.Properties;
  * Created by sinotopia on 2017/1/1.
  */
 public class SerializablePlugin extends PluginAdapter {
+
     private FullyQualifiedJavaType serializable = new FullyQualifiedJavaType("java.io.Serializable");
     private FullyQualifiedJavaType gwtSerializable = new FullyQualifiedJavaType("com.google.gwt.user.client.rpc.IsSerializable");
     private boolean addGWTInterface;

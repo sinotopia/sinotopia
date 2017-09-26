@@ -15,7 +15,7 @@ import static com.sinotopia.common.util.StringUtil.lineToHump;
 
 /**
  * 代码生成类
- * Created by ZhangShuzheng on 2017/1/10.
+ * Created by sinotopia on 2017/1/10.
  */
 public class MybatisGeneratorUtil {
 

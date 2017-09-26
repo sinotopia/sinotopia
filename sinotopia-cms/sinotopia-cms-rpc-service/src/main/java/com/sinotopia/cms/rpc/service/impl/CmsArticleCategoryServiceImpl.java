@@ -14,9 +14,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
-* CmsArticleCategoryService实现
-* Created by shuzheng on 2017/4/5.
-*/
+ * CmsArticleCategoryService实现
+ * Created by sinotopia on 2017/4/5.
+ */
 @Service
 @Transactional
 @BaseService
@@ -25,6 +25,6 @@ public class CmsArticleCategoryServiceImpl extends BaseServiceImpl<CmsArticleCat
     private static Logger _log = LoggerFactory.getLogger(CmsArticleCategoryServiceImpl.class);
 
     @Autowired
-    CmsArticleCategoryMapper cmsArticleCategoryMapper;
+    private CmsArticleCategoryMapper cmsArticleCategoryMapper;
 
 }

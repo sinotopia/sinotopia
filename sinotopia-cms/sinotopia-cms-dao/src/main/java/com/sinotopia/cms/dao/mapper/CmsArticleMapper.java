@@ -8,6 +8,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface CmsArticleMapper {
+
     long countByExample(CmsArticleExample example);
 
     int deleteByExample(CmsArticleExample example);

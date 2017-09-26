@@ -2,7 +2,7 @@ package com.sinotopia.cms.rpc.mapper;
 
 /**
  * 标签VOMapper
- * Created by shuzheng on 2017/01/07.
+ * Created by sinotopia on 2017/01/07.
  */
 public interface CmsTagExtMapper {
 

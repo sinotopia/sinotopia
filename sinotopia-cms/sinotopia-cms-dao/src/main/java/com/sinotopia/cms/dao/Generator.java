@@ -8,7 +8,7 @@ import java.util.Map;
 
 /**
  * 代码生成类
- * Created by ZhangShuzheng on 2017/1/10.
+ * Created by sinotopia on 2017/1/10.
  */
 public class Generator {
 
@@ -36,5 +36,4 @@ public class Generator {
     public static void main(String[] args) throws Exception {
         MybatisGeneratorUtil.generator(JDBC_DRIVER, JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD, MODULE, DATABASE, TABLE_PREFIX, PACKAGE_NAME, LAST_INSERT_ID_TABLES);
     }
-
 }

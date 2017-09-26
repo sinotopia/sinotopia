@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
 * CmsSettingService实现
-* Created by shuzheng on 2017/4/5.
+* Created by sinotopia on 2017/4/5.
 */
 @Service
 @Transactional

@@ -13,9 +13,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
-* CmsTagService实现
-* Created by shuzheng on 2017/4/5.
-*/
+ * CmsTagService实现
+ * Created by sinotopia on 2017/4/5.
+ */
 @Service
 @Transactional
 @BaseService
@@ -24,6 +24,6 @@ public class CmsTagServiceImpl extends BaseServiceImpl<CmsTagMapper, CmsTag, Cms
     private static Logger _log = LoggerFactory.getLogger(CmsTagServiceImpl.class);
 
     @Autowired
-    CmsTagMapper cmsTagMapper;
+    private CmsTagMapper cmsTagMapper;
 
 }
