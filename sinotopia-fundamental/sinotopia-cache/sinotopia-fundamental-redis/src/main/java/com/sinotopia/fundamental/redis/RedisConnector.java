@@ -13,12 +13,13 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by zhoubing on 2016/4/8.
  */
 public class RedisConnector {
+
     private static ShardedJedisPool shardedJedisPool;
     private static JdkSerializationRedisSerializer redisSerializer = new JdkSerializationRedisSerializer();
     private static Long MAX_EXPIRE_TIME = Long.parseLong(String.valueOf(Integer.MAX_VALUE)) * 1000;
+
     public static ShardedJedisPool getShardedJedisPool() {
         return shardedJedisPool;
     }
@@ -37,10 +38,9 @@ public class RedisConnector {
 
     public static Long incrBy(String key, long integer) {
         ShardedJedis jedis = getResource();
-        try{
+        try {
             return jedis.incrBy(key, integer);
-        }
-        finally {
+        } finally {
             close(jedis);
         }
     }
@@ -53,7 +53,7 @@ public class RedisConnector {
         ShardedJedis jedis = getResource();
         try {
             //redis默认的过期时间是seconds 即秒
-            String result = jedis.setex(key, ((Long)(milliseconds/1000)).intValue(), value);
+            String result = jedis.setex(key, ((Long) (milliseconds / 1000)).intValue(), value);
             return "OK".equals(result);
         } finally {
             close(jedis);
@@ -70,7 +70,7 @@ public class RedisConnector {
         ShardedJedis jedis = getResource();
         try {
             //redis默认的过期时间是seconds 即秒
-            String result = jedis.setex(keyBytes, ((Long)(milliseconds/1000)).intValue(), valueBytes);
+            String result = jedis.setex(keyBytes, ((Long) (milliseconds / 1000)).intValue(), valueBytes);
             return "OK".equals(result);
         } finally {
             close(jedis);
@@ -86,8 +86,9 @@ public class RedisConnector {
         }
         return redisSerializer.serialize(value);
     }
+
     public static Object deserializeValue(byte[] value) {
-        return redisSerializer == null?value:redisSerializer.deserialize(value);
+        return redisSerializer == null ? value : redisSerializer.deserialize(value);
     }
 
     public static String get(String key) {
@@ -285,7 +286,7 @@ public class RedisConnector {
      * @param values
      * @return
      */
-    public static Long zrem(String key, String...values) {
+    public static Long zrem(String key, String... values) {
         ShardedJedis jedis = getResource();
         try {
             Long count = jedis.zrem(key, values);
@@ -305,10 +306,9 @@ public class RedisConnector {
 
     public static Long incrBy(ShardedJedisPool shardedJedisPool, String key, long integer) {
         ShardedJedis jedis = getResource(shardedJedisPool);
-        try{
+        try {
             return jedis.incrBy(key, integer);
-        }
-        finally {
+        } finally {
             close(shardedJedisPool, jedis);
         }
     }
@@ -321,7 +321,7 @@ public class RedisConnector {
         ShardedJedis jedis = getResource(shardedJedisPool);
         try {
             //redis默认的过期时间是seconds 即秒
-            String result = jedis.setex(key, ((Long)(milliseconds/1000)).intValue(), value);
+            String result = jedis.setex(key, ((Long) (milliseconds / 1000)).intValue(), value);
             return "OK".equals(result);
         } finally {
             close(shardedJedisPool, jedis);
@@ -338,7 +338,7 @@ public class RedisConnector {
         ShardedJedis jedis = getResource(shardedJedisPool);
         try {
             //redis默认的过期时间是seconds 即秒
-            String result = jedis.setex(keyBytes, ((Long)(milliseconds/1000)).intValue(), valueBytes);
+            String result = jedis.setex(keyBytes, ((Long) (milliseconds / 1000)).intValue(), valueBytes);
             return "OK".equals(result);
         } finally {
             close(shardedJedisPool, jedis);
@@ -540,7 +540,7 @@ public class RedisConnector {
      * @param values
      * @return
      */
-    public static Long zrem(ShardedJedisPool shardedJedisPool, String key, String...values) {
+    public static Long zrem(ShardedJedisPool shardedJedisPool, String key, String... values) {
         ShardedJedis jedis = getResource(shardedJedisPool);
         try {
             Long count = jedis.zrem(key, values);
@@ -558,7 +558,7 @@ public class RedisConnector {
         }
 
         public Object deserialize(byte[] bytes) {
-            if(bytes == null || bytes.length == 0) {
+            if (bytes == null || bytes.length == 0) {
                 return null;
             } else {
                 return this.deserializer.convert(bytes);
@@ -566,10 +566,10 @@ public class RedisConnector {
         }
 
         public byte[] serialize(Object object) {
-            if(object == null) {
+            if (object == null) {
                 return new byte[0];
             } else {
-                return (byte[])this.serializer.convert(object);
+                return (byte[]) this.serializer.convert(object);
             }
         }
     }
@@ -581,23 +581,23 @@ public class RedisConnector {
         // 准备一个结果容器
         ResultContainer<T> resultContainer = new DefaultResultContainer<T>();
         long start = System.currentTimeMillis();
-        long timeout = unit.convert(time,TimeUnit.MILLISECONDS);
+        long timeout = unit.convert(time, TimeUnit.MILLISECONDS);
         boolean flag = false;
         try {
 //            while ((System.currentTimeMillis() - start) < timeout){
-                if("OK".equals(jedis.watch(key))){
-                    String oldData = jedis.get(key);
-                    Transaction tx = jedis.multi();
-                    lockCallback.doWork(key, resultContainer,oldData, tx, jedis);
-                    List<Object> results = tx.exec();
-                    if (results != null) {
-                        flag = true;
-                        long end = System.currentTimeMillis();
-                        System.out.println("获得乐观锁，耗时" + ((end - start) / 1000.0) + "秒");
-                    }else {
-                        jedis.unwatch();
-                    }
+            if ("OK".equals(jedis.watch(key))) {
+                String oldData = jedis.get(key);
+                Transaction tx = jedis.multi();
+                lockCallback.doWork(key, resultContainer, oldData, tx, jedis);
+                List<Object> results = tx.exec();
+                if (results != null) {
+                    flag = true;
+                    long end = System.currentTimeMillis();
+                    System.out.println("获得乐观锁，耗时" + ((end - start) / 1000.0) + "秒");
+                } else {
+                    jedis.unwatch();
                 }
+            }
 //            }
         } catch (Exception e) {
             // 执行错误，抛出异常
@@ -606,7 +606,7 @@ public class RedisConnector {
         } finally {
             close(shardedJedis);
         }
-        if(!flag){
+        if (!flag) {
             String message = "获取乐观锁失败：" + key;
             throw new RuntimeException(message);
         }

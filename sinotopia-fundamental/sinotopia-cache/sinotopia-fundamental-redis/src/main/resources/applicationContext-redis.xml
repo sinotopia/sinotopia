@@ -8,22 +8,22 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
-        <property name="maxTotal" value="${redis.pool.maxTotal}" />
-        <property name="maxIdle" value="${redis.pool.maxIdle}" />
-        <property name="maxWaitMillis" value="${redis.pool.maxWaitMillis}" />
-        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}" />
-        <property name="testOnReturn" value="${redis.pool.testOnReturn}" />
-         <property name="testWhileIdle" value="${redis.pool.testWhileIdle}"/>
+        <property name="maxTotal" value="${redis.pool.maxTotal}"/>
+        <property name="maxIdle" value="${redis.pool.maxIdle}"/>
+        <property name="maxWaitMillis" value="${redis.pool.maxWaitMillis}"/>
+        <property name="testOnBorrow" value="${redis.pool.testOnBorrow}"/>
+        <property name="testOnReturn" value="${redis.pool.testOnReturn}"/>
+        <property name="testWhileIdle" value="${redis.pool.testWhileIdle}"/>
     </bean>
 
     <bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool">
-        <constructor-arg index="0" ref="jedisPoolConfig" />
+        <constructor-arg index="0" ref="jedisPoolConfig"/>
         <constructor-arg index="1">
             <list>
                 <bean class="redis.clients.jedis.JedisShardInfo">
-                    <constructor-arg name="host" value="${redis.host}" />
-                    <constructor-arg name="port" value="${redis.port}" />
-                    <constructor-arg name="timeout" value="${redis.timeout}" />
+                    <constructor-arg name="host" value="${redis.host}"/>
+                    <constructor-arg name="port" value="${redis.port}"/>
+                    <constructor-arg name="timeout" value="${redis.timeout}"/>
                     <property name="password" value="${redis.password}"/>
                 </bean>
                 <!--这里可以配置多个连接信息-->
@@ -32,7 +32,7 @@
     </bean>
 
     <bean class="com.sinotopia.fundamental.redis.RedisConnector">
-        <property name="shardedJedisPool" ref="shardedJedisPool" />
+        <property name="shardedJedisPool" ref="shardedJedisPool"/>
     </bean>
 
 </beans>

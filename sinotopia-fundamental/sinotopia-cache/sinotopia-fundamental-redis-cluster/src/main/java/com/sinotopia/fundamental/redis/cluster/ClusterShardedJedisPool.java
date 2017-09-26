@@ -10,9 +10,9 @@ import java.util.regex.Pattern;
 
 /**
  * 支持集群的redis pool
- * Created by zhoubing on 2016/8/4.
  */
 public class ClusterShardedJedisPool extends ShardedJedisPool {
+
     public ClusterShardedJedisPool(final GenericObjectPoolConfig poolConfig, ClusterShardedJedisPoolConfig clusterConfig) {
         this(poolConfig, clusterConfig.getShards());
     }
@@ -22,17 +22,17 @@ public class ClusterShardedJedisPool extends ShardedJedisPool {
     }
 
     public ClusterShardedJedisPool(final GenericObjectPoolConfig poolConfig, List<JedisShardInfo> shards,
-                            Hashing algo) {
+                                   Hashing algo) {
         this(poolConfig, shards, algo, null);
     }
 
     public ClusterShardedJedisPool(final GenericObjectPoolConfig poolConfig, List<JedisShardInfo> shards,
-                            Pattern keyTagPattern) {
+                                   Pattern keyTagPattern) {
         this(poolConfig, shards, Hashing.MURMUR_HASH, keyTagPattern);
     }
 
     public ClusterShardedJedisPool(final GenericObjectPoolConfig poolConfig, List<JedisShardInfo> shards,
-                            Hashing algo, Pattern keyTagPattern) {
+                                   Hashing algo, Pattern keyTagPattern) {
         super(poolConfig, shards, algo, keyTagPattern);
     }
 }

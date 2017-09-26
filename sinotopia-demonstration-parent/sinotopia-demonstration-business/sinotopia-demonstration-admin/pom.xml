@@ -16,7 +16,7 @@
         <module>sinotopia-demonstration-admin-api</module>
         <module>sinotopia-demonstration-admin-api-java</module>
         <module>sinotopia-demonstration-admin-dao</module>
-        <module>sinotopia-demonstration-admin-bean</module>
+        <module>sinotopia-demonstration-admin-domain</module>
         <module>sinotopia-demonstration-admin-common</module>
         <module>sinotopia-demonstration-admin-impl</module>
     </modules>

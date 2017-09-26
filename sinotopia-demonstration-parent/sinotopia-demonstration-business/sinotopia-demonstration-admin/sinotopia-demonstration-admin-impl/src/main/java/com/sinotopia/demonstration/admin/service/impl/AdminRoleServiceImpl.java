@@ -1,7 +1,7 @@
 package com.sinotopia.demonstration.admin.service.impl;
 
-import com.sinotopia.demonstration.admin.bean.AdminRole;
-import com.sinotopia.demonstration.admin.bean.AdminUserRole;
+import com.sinotopia.demonstration.admin.domain.AdminRole;
+import com.sinotopia.demonstration.admin.domain.AdminUserRole;
 import com.sinotopia.demonstration.admin.dao.AdminRoleDao;
 import com.sinotopia.demonstration.admin.dao.AdminUserRoleDao;
 import com.sinotopia.demonstration.admin.enums.AdminResultEnum;

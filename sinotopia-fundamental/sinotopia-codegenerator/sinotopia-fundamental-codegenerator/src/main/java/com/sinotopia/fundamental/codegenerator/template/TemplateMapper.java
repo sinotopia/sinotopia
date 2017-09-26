@@ -15,9 +15,9 @@ import java.util.List;
 
 /**
  * 使用模板生成的mapper对象
- * Created by zhoubing on 2016/5/3.
  */
 public class TemplateMapper extends Mapper implements Outputable {
+
     public Interface daoInterface;
     public ColumnField[] columnFields;
     public String templateFilePath;
@@ -70,42 +70,55 @@ public class TemplateMapper extends Mapper implements Outputable {
     public Table getTable() {
         return table;
     }
+
     public Interface getDaoInterface() {
         return daoInterface;
     }
+
     public Clazz getPojoClass() {
         return pojoClass;
     }
+
     public ColumnField[] getColumnFields() {
         return columnFields;
     }
+
     public String getTemplateFilePath() {
         return templateFilePath;
     }
+
     public String getFieldClause() {
         return fieldClause;
     }
+
     public String getWhereClause() {
         return whereClause;
     }
+
     public String getInsertParams() {
         return insertParams;
     }
+
     public String getInsertValues() {
         return insertValues;
     }
+
     public String getUpdateClause() {
         return updateClause;
     }
+
     public String getTableName() {
         return tableName;
     }
+
     public String getNamespace() {
         return namespace;
     }
+
     public String getParameterType() {
         return parameterType;
     }
+
     public String getResultType() {
         return resultType;
     }

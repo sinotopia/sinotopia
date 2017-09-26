@@ -43,11 +43,11 @@ public class TemplateTest {
     }
 
     private static void generate(String module, String[] tableNames) throws Exception {
-        String root = ROOT+"/djd-business-"+module+"/";
-        String mapperRoot = root+"djd-business-"+module+"-impl/src/main/resources/mappers";
-        String pojoPackageName = "com.djd.business."+module+".bean";
-        String daoPackageName = "com.djd.business."+module+".dao";
-        String templateFilePath = TEMPLATE_ROOT+ "/mapper.ftl";
+        String root = ROOT + "/djd-business-" + module + "/";
+        String mapperRoot = root + "djd-business-" + module + "-impl/src/main/resources/mappers";
+        String pojoPackageName = "com.djd.business." + module + ".bean";
+        String daoPackageName = "com.djd.business." + module + ".dao";
+        String templateFilePath = TEMPLATE_ROOT + "/mapper.ftl";
 
         TableToClassTranslator tableToClassTranslator = new TableToClassTranslator(pojoPackageName,
                 new BaseColumnTypeTranslator().setReflection("DECIMAL", "Double"), new BaseColumnNameTranslator());
@@ -99,7 +99,7 @@ public class TemplateTest {
         @Override
         public Interface translate(Clazz pojoClass) {
             String daoClassName = processDaoFullClassName(pojoClass);
-            String parentDaoClassName = parentBaseMapperName.replace("<T,", "<"+pojoClass.fullClassName+",");
+            String parentDaoClassName = parentBaseMapperName.replace("<T,", "<" + pojoClass.fullClassName + ",");
             Interface it = new Interface(daoClassName).setParentInterface(new Interface(parentDaoClassName));
             it.setAnnotation(new Annotation("@Repository"));
             return it;

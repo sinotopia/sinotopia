@@ -14,7 +14,7 @@
         <sinotopia.fundamental.version>1.1-SNAPSHOT</sinotopia.fundamental.version>
     </properties>
     <modules>
-        <!--<module>sinotopia-fundamental-database</module>-->
+        <module>sinotopia-fundamental-database</module>
         <module>sinotopia-fundamental-mapper</module>
         <module>sinotopia-fundamental-pagehelper</module>
         <module>sinotopia-fundamental-mybatis-spring</module>

@@ -12,7 +12,7 @@ public interface DaoBase<T, K> {
      *
      * @param t
      */
-    public void add(T t);
+    void add(T t);
 
     /**
      * 更新
@@ -20,7 +20,7 @@ public interface DaoBase<T, K> {
      * @param t
      * @return
      */
-    public int update(T t);
+    int update(T t);
 
     /**
      * 条件查询
@@ -28,7 +28,7 @@ public interface DaoBase<T, K> {
      * @param t
      * @return
      */
-    public T get(T t);
+    T get(T t);
 
     /**
      * 根据id查询
@@ -36,7 +36,7 @@ public interface DaoBase<T, K> {
      * @param id
      * @return
      */
-    public T getById(K id);
+    T getById(K id);
 
     /**
      * 条件查询列表
@@ -44,7 +44,7 @@ public interface DaoBase<T, K> {
      * @param t
      * @return
      */
-    public List<T> query(T t);
+    List<T> query(T t);
 
     /**
      * 根据id删除记录
@@ -52,7 +52,7 @@ public interface DaoBase<T, K> {
      * @param id
      * @return
      */
-    public int delete(K id);
+    int delete(K id);
 
     /**
      * 查询记录数
@@ -60,5 +60,5 @@ public interface DaoBase<T, K> {
      * @param t
      * @return
      */
-    public int count(T t);
+    int count(T t);
 }

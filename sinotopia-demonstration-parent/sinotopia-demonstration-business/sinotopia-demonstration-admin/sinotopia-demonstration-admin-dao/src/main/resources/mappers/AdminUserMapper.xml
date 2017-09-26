@@ -33,7 +33,7 @@
         </where>
     </sql>
     
-    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser" keyProperty="id">
+    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser" keyProperty="id">
         INSERT INTO tb_admin_user
         <trim prefix="(" suffix=")" prefixOverrides=",">
             <if test="null!=type">,type</if>
@@ -62,7 +62,7 @@
         </trim>
     </insert>
     
-    <update id="update" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser">
+    <update id="update" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser">
         UPDATE tb_admin_user
         <trim prefix="SET" prefixOverrides=",">
             <if test="null!=type">,type = #{type}</if>
@@ -80,7 +80,7 @@
         WHERE id = #{id}
     </update>
     
-    <select id="query" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser" resultType="com.sinotopia.demonstration.admin.bean.AdminUser">
+    <select id="query" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser" resultType="com.sinotopia.demonstration.admin.domain.AdminUser">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
@@ -89,23 +89,23 @@
         </if>
     </select>
     
-    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser" resultType="com.sinotopia.demonstration.admin.bean.AdminUser">
+    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser" resultType="com.sinotopia.demonstration.admin.domain.AdminUser">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
     </select>
     
-    <select id="get" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser" resultType="com.sinotopia.demonstration.admin.bean.AdminUser">
+    <select id="get" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser" resultType="com.sinotopia.demonstration.admin.domain.AdminUser">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user
         <include refid="whereClause" />
         LIMIT 1
     </select>
     
-    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.bean.AdminUser">
+    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.domain.AdminUser">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user WHERE id = #{id}
     </select>
     
-    <select id="count" parameterType="com.sinotopia.demonstration.admin.bean.AdminUser" resultType="int">
+    <select id="count" parameterType="com.sinotopia.demonstration.admin.domain.AdminUser" resultType="int">
         SELECT COUNT(1) FROM tb_admin_user <include refid="whereClause" />
     </select>
     

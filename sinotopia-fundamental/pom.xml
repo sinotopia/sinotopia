@@ -88,7 +88,6 @@
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <jackson.version>2.8.8</jackson.version>
         <google.guava.version>13.0.1</google.guava.version>
         <!--4.3.8.RELEASE-->
@@ -123,12 +122,23 @@
         <scala.tools.version>2.11</scala.tools.version>
         <akka.version>2.4.17</akka.version>
         <dubbo.version>2.5.4</dubbo.version>
-        <slf4j.version>1.7.25</slf4j.version>
-        <logback.version>1.0.7</logback.version>
-        <logback.ext.version>0.1.1</logback.ext.version>
         <aspectj.version>1.8.10</aspectj.version>
         <javax.version>3.1.0</javax.version>
         <fastjson.version>1.2.37</fastjson.version>
+        <logback.version>1.0.13</logback.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <logback.ext.version>0.1.1</logback.ext.version>
+        <junit.version>4.11</junit.version>
+        <mybatis.version>3.2.6</mybatis.version>
+        <mybatis.spring.version>1.2.1</mybatis.spring.version>
+        <mysql.connect.version>5.1.31</mysql.connect.version>
+        <pdfbox.version>1.8.10</pdfbox.version>
+        <commons-logging.verrsion>1.9</commons-logging.verrsion>
+        <commons-logging.version>1.2</commons-logging.version>
+        <commons-collections.version>3.2.1</commons-collections.version>
+        <commons-lang.version>2.4</commons-lang.version>
+        <commons-lang3.version>3.4</commons-lang3.version>
     </properties>
     <build>
         <plugins>
@@ -147,23 +157,23 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.11</version>
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
-                <version>3.2.6</version>
+                <version>${mybatis.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis-spring</artifactId>
-                <version>1.2.1</version>
+                <version>${mybatis.spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>5.1.31</version>
+                <version>${mysql.connect.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -173,7 +183,7 @@
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
-                <version>1.2.17</version>
+                <version>${log4j.version}</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>jms</artifactId>
@@ -197,17 +207,17 @@
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
-                <version>1.9</version>
+                <version>${commons-logging.verrsion}</version>
             </dependency>
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
-                <version>1.2</version>
+                <version>${commons-logging.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-collections</groupId>
                 <artifactId>commons-collections</artifactId>
-                <version>3.2.1</version>
+                <version>${commons-collections.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -217,12 +227,22 @@
             <dependency>
                 <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
-                <version>2.4</version>
+                <version>${commons-lang.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.4</version>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <!-- <dependency>
+               <groupId>commons-httpclient</groupId>
+               <artifactId>commons-httpclient</artifactId>
+               <version>3.1</version>
+           </dependency>-->
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.3.1</version>
             </dependency>
             <!-- SpringFramework -->
             <dependency>
@@ -322,28 +342,26 @@
                 <artifactId>javassist</artifactId>
                 <version>3.12.1.GA</version>
             </dependency>
-
             <dependency>
                 <groupId>org.jboss.netty</groupId>
                 <artifactId>netty</artifactId>
                 <version>3.2.10.Final</version>
             </dependency>
-
             <!--logback  配置 -->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
-                <version>1.0.13</version>
+                <version>${logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
-                <version>1.0.13</version>
+                <version>${logback.version}</version>
             </dependency>
             <dependency>
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-access</artifactId>
-                <version>1.0.13</version>
+                <version>${logback.version}</version>
             </dependency>
             <!--logback表达式所需-->
             <dependency>
@@ -367,13 +385,11 @@
                 <artifactId>jersey-media-json-jackson</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${google.guava.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
@@ -390,55 +406,36 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
-            <!-- <dependency>
-                 <groupId>commons-httpclient</groupId>
-                 <artifactId>commons-httpclient</artifactId>
-                 <version>3.1</version>
-             </dependency>-->
-
             <dependency>
                 <groupId>com.google.code</groupId>
                 <artifactId>kaptcha</artifactId>
                 <version>2.3.2</version>
             </dependency>
-
-            <dependency>
-                <groupId>commons-fileupload</groupId>
-                <artifactId>commons-fileupload</artifactId>
-                <version>1.3.1</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.apache.pdfbox</groupId>
                 <artifactId>pdfbox</artifactId>
-                <version>1.8.10</version>
+                <version>${pdfbox.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.pdfbox</groupId>
                 <artifactId>xmpbox</artifactId>
-                <version>1.8.10</version>
+                <version>${pdfbox.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.pdfbox</groupId>
                 <artifactId>fontbox</artifactId>
-                <version>1.8.10</version>
+                <version>${pdfbox.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>net.lingala.zip4j</groupId>
                 <artifactId>zip4j</artifactId>
                 <version>1.3.2</version>
             </dependency>
-
             <dependency>
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
                 <version>3.3</version>
             </dependency>
-
             <dependency>
                 <groupId>taglibs</groupId>
                 <artifactId>standard</artifactId>
@@ -459,62 +456,52 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
             <dependency>
                 <groupId>commons-pool</groupId>
                 <artifactId>commons-pool</artifactId>
                 <version>${commons.pool.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
                 <version>${commons.dbcp.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>${commons-beanutils.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson</artifactId>
                 <version>2.1.0</version>
             </dependency>
-
             <dependency>
                 <groupId>javax.mail</groupId>
                 <artifactId>mail</artifactId>
                 <version>${javamail.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>jdom</groupId>
                 <artifactId>jdom</artifactId>
                 <version>1.0</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-web</artifactId>
                 <version>${spring.security.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
                 <version>${spring.security.version}</version>
             </dependency>
-
             <!--html parser-->
             <dependency>
                 <groupId>org.jsoup</groupId>
                 <artifactId>jsoup</artifactId>
                 <version>1.8.3</version>
             </dependency>
-
             <!-- freemarker -->
             <dependency>
                 <groupId>org.freemarker</groupId>
@@ -527,7 +514,6 @@
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate-validator.version}</version>
             </dependency>
-
             <!--httpclient-->
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
@@ -561,7 +547,6 @@
                 <artifactId>curator-recipes</artifactId>
                 <version>${curator.version}</version>
             </dependency>
-
             <!--velocity-->
             <dependency>
                 <groupId>org.apache.velocity</groupId>
@@ -585,7 +570,6 @@
                 <artifactId>xom</artifactId>
                 <version>1.0b3</version>
             </dependency>
-
             <!--shiro-->
             <dependency>
                 <groupId>org.apache.shiro</groupId>
@@ -607,7 +591,6 @@
                 <artifactId>shiro-ehcache</artifactId>
                 <version>${shiro.version}</version>
             </dependency>
-
             <!--activemq-->
             <dependency>
                 <groupId>org.apache.activemq</groupId>
@@ -624,25 +607,21 @@
                 <artifactId>spring-jms</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>dom4j</groupId>
                 <artifactId>dom4j</artifactId>
                 <version>${dom4j.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
                 <version>${poi.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.baidu.disconf</groupId>
                 <artifactId>disconf-client</artifactId>
@@ -654,7 +633,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
             <dependency>
                 <groupId>org.scala-lang</groupId>
                 <artifactId>scala-library</artifactId>
@@ -701,7 +679,6 @@
                 <artifactId>akka-testkit_${scala.tools.version}</artifactId>
                 <version>${akka.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>javax.inject</groupId>
                 <artifactId>javax.inject</artifactId>
@@ -709,5 +686,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>

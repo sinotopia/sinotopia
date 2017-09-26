@@ -26,7 +26,7 @@ public class DjdCodeGenerator {
 
     static Connection connection = new Connection("192.168.7.55", 3306, "djd", "root", "123456");
 
-//    private static final String ROOT = "F:\\works\\dingjidai\\djd-v2-git\\djd-fundamental\\djd-fundamental-codegenerator\\src\\out\\";
+    //    private static final String ROOT = "F:\\works\\dingjidai\\djd-v2-git\\djd-fundamental\\djd-fundamental-codegenerator\\src\\out\\";
     private static final String ROOT = "djd-business/";
 
     public static void main(String[] args) throws Exception {
@@ -181,7 +181,7 @@ public class DjdCodeGenerator {
 
     private static void generateDefaultMapper() throws Exception {
         String root = "F:\\temp2\\";
-        String mapperRoot = root+"/src/main/resources/mappers";
+        String mapperRoot = root + "/src/main/resources/mappers";
         String pojoPackageName = "com.djd.business.bean";
         String daoPackageName = "com.djd.business.dao";
 
@@ -200,13 +200,13 @@ public class DjdCodeGenerator {
     }
 
     private static void generate(String module, String[] tableNames) throws Exception {
-        String root = ROOT+"/djd-business-"+module+"/";
-        String apiRoot = root+"djd-business-"+module+"-api/src/main/java";
-        String implRoot = root+"djd-business-"+module+"-impl/src/main/java";
-        String mapperRoot = root+"djd-business-"+module+"-impl/src/main/resources/mappers";
-        String pojoPackageName = "com.djd.business."+module+".bean";
-        String pojoEnumDefultPackageName = "com.djd.business."+module+".enums";
-        String daoPackageName = "com.djd.business."+module+".dao";
+        String root = ROOT + "/djd-business-" + module + "/";
+        String apiRoot = root + "djd-business-" + module + "-api/src/main/java";
+        String implRoot = root + "djd-business-" + module + "-impl/src/main/java";
+        String mapperRoot = root + "djd-business-" + module + "-impl/src/main/resources/mappers";
+        String pojoPackageName = "com.djd.business." + module + ".bean";
+        String pojoEnumDefultPackageName = "com.djd.business." + module + ".enums";
+        String daoPackageName = "com.djd.business." + module + ".dao";
 
         TableToClassTranslator tableToClassTranslator = new TableToClassTranslator(pojoPackageName,
                 new BaseColumnTypeTranslator().setReflection("DECIMAL", "Double"), new BaseColumnNameTranslator());
@@ -262,6 +262,7 @@ public class DjdCodeGenerator {
         }
         return list.toArray(new ExMapper[tables.length]);
     }
+
     //将table转换成扩展mapper
     private static Mapper[] translate2(MultiCodeOutputer mapperOutputer, String packageName, Table[] tables, TableToClassTranslator tableToClassTranslator) {
         List<Mapper> list = new ArrayList<Mapper>();
@@ -287,7 +288,7 @@ public class DjdCodeGenerator {
 
         @Override
         public String processNamespace() {
-            return packageName+"."+processPojoClassName()+"Dao";
+            return packageName + "." + processPojoClassName() + "Dao";
         }
 
         @Override
@@ -299,22 +300,24 @@ public class DjdCodeGenerator {
         protected String processParameterType() {
             return pojoClass.fullClassName;
         }
+
         @Override
         protected String processResultType() {
             return pojoClass.fullClassName;
         }
+
         @Override
         protected String processRequestAllFieldsSQLPrefix() {
-            return "<sql id=\""+processRequestAllFieldsSQLId()+"\">"+line()+tab(2)+"<![CDATA[";
+            return "<sql id=\"" + processRequestAllFieldsSQLId() + "\">" + line() + tab(2) + "<![CDATA[";
         }
+
         protected String processSelectItemSQL(Column column, boolean isLastItem) {
             StringBuilder sb = new StringBuilder();
             sb.append(tab(3));
             String parameterName = columnNameTranslator.translate(column.name);
             if (parameterName.equals(column.name)) {
                 sb.append(parameterName);
-            }
-            else {
+            } else {
                 sb.append(column.name).append(" AS ").append(parameterName);
             }
             if (!isLastItem) {
@@ -326,7 +329,7 @@ public class DjdCodeGenerator {
 
         @Override
         protected String processRequestAllFieldsSQLSuffix() {
-            return tab()+"]]>"+line()+tab()+"</sql>";
+            return tab() + "]]>" + line() + tab() + "</sql>";
         }
 
         @Override
@@ -391,7 +394,7 @@ public class DjdCodeGenerator {
         List<Interface> list = new ArrayList<Interface>();
         String parentBaseMapperName = "com.djd.fundamental.database.DaoBase<T, Long>";
         for (Mapper mapper : mappers) {
-            String parentMapperName = parentBaseMapperName.replace("<T,", "<"+mapper.pojoClass.fullClassName+",");
+            String parentMapperName = parentBaseMapperName.replace("<T,", "<" + mapper.pojoClass.fullClassName + ",");
             Interface it = new Interface(mapper.processNamespace()).setParentInterface(new Interface(parentMapperName));
             it.setAnnotation(new Annotation("@Repository"));
             list.add(it);

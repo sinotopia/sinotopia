@@ -14,11 +14,9 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-
     <properties>
         <sinotopia.fundamental.version>1.1-SNAPSHOT</sinotopia.fundamental.version>
     </properties>
-
     <profiles>
         <profile>
             <id>dev</id>
@@ -36,7 +34,6 @@
             </properties>
         </profile>
     </profiles>
-
     <build>
         <finalName>${project.artifactId}</finalName>
         <!--开发环境可使用config_dev文件夹下的配置文件，线上环境从外部加载配置，打包之后不包含配置文件（如果有需要也可以包含）-->
@@ -55,7 +52,6 @@
                 <targetPath>config</targetPath>
             </resource>
         </resources>
-
         <plugins>
             <!-- resources插件 -->
             <plugin>
@@ -97,7 +93,6 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
         <dependency>
             <groupId>com.sinotopia</groupId>

@@ -4,7 +4,6 @@ import com.sinotopia.fundamental.common.utils.StrUtils;
 
 /**
  * 默认的sql及参数获取处理
- * Created by zhoubing on 2016/12/15.
  */
 public class BasicExtractHandler implements ExtractHandler {
     @Override

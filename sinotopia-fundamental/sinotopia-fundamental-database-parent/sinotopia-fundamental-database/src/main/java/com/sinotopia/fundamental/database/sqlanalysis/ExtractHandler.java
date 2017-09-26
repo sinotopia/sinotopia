@@ -1,7 +1,6 @@
 package com.sinotopia.fundamental.database.sqlanalysis;
 
 /**
- * Created by zhoubing on 2016/12/15.
  */
 public interface ExtractHandler {
     /**
@@ -10,7 +9,7 @@ public interface ExtractHandler {
      * @param text
      * @return
      */
-    public String getPreparing(String text);
+    String getPreparing(String text);
 
     /**
      * 获取参数文本
@@ -18,5 +17,5 @@ public interface ExtractHandler {
      * @param text
      * @return
      */
-    public String getParameters(String text);
+    String getParameters(String text);
 }

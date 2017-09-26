@@ -8,6 +8,7 @@ import java.util.*;
  * Sql日志分析
  */
 public class SqlAnalysis {
+
     private String url;
     private String username;
     private String password;

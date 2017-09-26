@@ -51,7 +51,7 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
 
     private static final String APP_SPRING_EXCLUDE_XML_KEY = "app.spring.exclude.xml";
     private static final String APP_DUBBO_API_XML_TPL_KEY = "app.dubbo.api.xml.tpl";
-    private static final String APP_NAME_RESOLVER_CLASS_KEY = "app.name.resovler.class";
+    private static final String APP_NAME_RESOLVER_CLASS_KEY = "app.name.resolver.class";
 
     private static AppNameResolver appNameResolver = new DefaultAppNameResolver();
     private static String APP_DUBBO_API_XML_TPL = "applicationContext-{}-api.xml";
@@ -118,11 +118,11 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
             //获取app解析名称
             String appNameResolverClass = FundamentalConfigProvider.getString(APP_NAME_RESOLVER_CLASS_KEY);
             if (!StrUtils.isEmpty(appNameResolverClass)) {
-                LOGGER.info("current dubbo app name resovler:{}", appNameResolverClass);
+                LOGGER.info("current dubbo app name resolver:{}", appNameResolverClass);
                 Class<?> appNameResolverClz = ClassUtils.forName(appNameResolverClass, ClassUtils.getDefaultClassLoader());
                 appNameResolver = (AppNameResolver) appNameResolverClz.newInstance();
             }
-            LOGGER.info("current dubbo app name resovler:{}", appNameResolver.getClass().getName());
+            LOGGER.info("current dubbo app name resolver:{}", appNameResolver.getClass().getName());
             LOGGER.info("current dubbo api xml tpl:{}", APP_DUBBO_API_XML_TPL);
 
 
@@ -345,7 +345,6 @@ public class SinotopiaDubboApplicationContextLoader extends AbstractContextLoade
             return (AnnotationUtils.findAnnotation(configuration.getTestClass(),
                     annotation) != null);
         }
-
     }
 
     /**

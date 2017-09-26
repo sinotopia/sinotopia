@@ -28,7 +28,7 @@
         </where>
     </sql>
     
-    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu" keyProperty="id">
+    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu" keyProperty="id">
         INSERT INTO tb_admin_menu
         <trim prefix="(" suffix=")" prefixOverrides=",">
             <if test="null!=status">,status</if>
@@ -51,7 +51,7 @@
         </trim>
     </insert>
     
-    <update id="update" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu">
+    <update id="update" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu">
         UPDATE tb_admin_menu
         <trim prefix="SET" prefixOverrides=",">
             <if test="null!=status">,status = #{status}</if>
@@ -66,7 +66,7 @@
         WHERE id = #{id}
     </update>
     
-    <select id="query" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu" resultType="com.sinotopia.demonstration.admin.bean.AdminMenu">
+    <select id="query" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu" resultType="com.sinotopia.demonstration.admin.domain.AdminMenu">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_menu
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
@@ -75,23 +75,23 @@
         </if>
     </select>
     
-    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu" resultType="com.sinotopia.demonstration.admin.bean.AdminMenu">
+    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu" resultType="com.sinotopia.demonstration.admin.domain.AdminMenu">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_menu
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
     </select>
     
-    <select id="get" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu" resultType="com.sinotopia.demonstration.admin.bean.AdminMenu">
+    <select id="get" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu" resultType="com.sinotopia.demonstration.admin.domain.AdminMenu">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_menu
         <include refid="whereClause" />
         LIMIT 1
     </select>
     
-    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.bean.AdminMenu">
+    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.domain.AdminMenu">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_menu WHERE id = #{id}
     </select>
     
-    <select id="count" parameterType="com.sinotopia.demonstration.admin.bean.AdminMenu" resultType="int">
+    <select id="count" parameterType="com.sinotopia.demonstration.admin.domain.AdminMenu" resultType="int">
         SELECT COUNT(1) FROM tb_admin_menu <include refid="whereClause" />
     </select>
     

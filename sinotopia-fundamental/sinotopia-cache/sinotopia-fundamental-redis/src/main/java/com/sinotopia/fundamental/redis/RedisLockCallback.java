@@ -11,5 +11,5 @@ import redis.clients.jedis.Transaction;
  */
 public interface RedisLockCallback<T> {
 
-    public void doWork(String key, ResultContainer<T> resultContainer, String oldData, Transaction tx, Jedis jedis);
+    void doWork(String key, ResultContainer<T> resultContainer, String oldData, Transaction tx, Jedis jedis);
 }

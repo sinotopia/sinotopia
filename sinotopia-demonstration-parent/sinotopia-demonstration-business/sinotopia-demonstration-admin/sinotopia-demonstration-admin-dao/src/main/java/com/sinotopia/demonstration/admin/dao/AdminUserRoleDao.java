@@ -1,6 +1,6 @@
 package com.sinotopia.demonstration.admin.dao;
 
-import com.sinotopia.demonstration.admin.bean.AdminUserRole;
+import com.sinotopia.demonstration.admin.domain.AdminUserRole;
 import com.sinotopia.demonstration.admin.result.AdminUserRoleView;
 import com.sinotopia.fundamental.database.PageDaoBase;
 import com.sinotopia.fundamental.database.page.PageList;

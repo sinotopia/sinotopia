@@ -16,7 +16,6 @@ import java.util.Map;
 
 /**
  * java文件解析成Class
- * Created by zhoubing on 2016/5/3.
  */
 public class JdtProcessor {
     public static JdtProcessor newInstance() {
@@ -88,9 +87,8 @@ public class JdtProcessor {
 
         String fullClassName = null;
         if (StrUtils.notEmpty(packageName)) {
-            fullClassName = packageName+"."+className;
-        }
-        else {
+            fullClassName = packageName + "." + className;
+        } else {
             fullClassName = className;
         }
         Clazz cls = new Clazz(fullClassName);
@@ -131,8 +129,7 @@ public class JdtProcessor {
                 if (obj instanceof SimpleType) {
                     SimpleType type = (SimpleType) obj;
                     in = new Interface(type.getName().toString());
-                }
-                else {
+                } else {
                     in = new Interface(obj.toString());
                 }
 
@@ -197,7 +194,7 @@ public class JdtProcessor {
         List<Param> list = new ArrayList<Param>();
         if (parameters != null) {
             for (Object obj : parameters) {
-                SingleVariableDeclaration declaration = (SingleVariableDeclaration)obj;
+                SingleVariableDeclaration declaration = (SingleVariableDeclaration) obj;
                 String type = declaration.getType().toString();
                 String name = declaration.getName().toString();
                 Param param = new Param(type, name);
@@ -236,6 +233,7 @@ public class JdtProcessor {
         }
         return null;
     }
+
     protected String[] getCommentText(Javadoc javadoc) {
         if (javadoc != null) {
             return getCommentText(javadoc.toString());
@@ -262,7 +260,7 @@ public class JdtProcessor {
         StringBuilder sb = new StringBuilder();
         if (modifiers != null) {
             int size = modifiers.size();
-            for (int i = 0; i < size-1; i++) {
+            for (int i = 0; i < size - 1; i++) {
                 Object obj = modifiers.get(i);
                 if (obj instanceof org.eclipse.jdt.core.dom.Annotation) {
                     continue;
@@ -292,12 +290,10 @@ public class JdtProcessor {
                         annotation.keyValues = getKeyValues(values);
                     }
                     list.add(annotation);
-                }
-                else if (obj instanceof org.eclipse.jdt.core.dom.Annotation) {
+                } else if (obj instanceof org.eclipse.jdt.core.dom.Annotation) {
                     Annotation an = new Annotation(obj.toString(), obj.toString());
                     list.add(an);
-                }
-                else {
+                } else {
                     break;
                 }
             }

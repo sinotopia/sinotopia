@@ -8,8 +8,9 @@ import com.sinotopia.fundamental.database.page.PageList;
 public interface PageDaoBase<T, K> extends DaoBase<T, K> {
     /**
      * 分页查询
+     *
      * @param t
      * @return
      */
-    public PageList<T> pageQuery(T t);
+    PageList<T> pageQuery(T t);
 }

@@ -1,6 +1,6 @@
 package com.sinotopia.demonstration.admin.dao;
 
-import com.sinotopia.demonstration.admin.bean.AdminRole;
+import com.sinotopia.demonstration.admin.domain.AdminRole;
 import com.sinotopia.fundamental.database.PageDaoBase;
 import org.springframework.stereotype.Repository;
 

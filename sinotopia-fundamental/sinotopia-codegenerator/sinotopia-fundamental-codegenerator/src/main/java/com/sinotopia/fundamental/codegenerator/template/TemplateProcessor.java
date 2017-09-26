@@ -11,10 +11,10 @@ import java.io.*;
 import java.util.Locale;
 
 /**
- * Created by zhoubing on 2016/5/4.
  */
 public class TemplateProcessor {
     private String templateFilePath;
+
     public TemplateProcessor(String templateFilePath) {
         this.templateFilePath = templateFilePath;
     }
@@ -53,8 +53,7 @@ public class TemplateProcessor {
             return baos.toString(StrUtils.UTF_8);
         } catch (Exception e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             IOUtils.close(baos);
             IOUtils.close(writer);
         }
@@ -64,6 +63,7 @@ public class TemplateProcessor {
     private File getTemplateLoadingFolder() {
         return new File(templateFilePath).getParentFile();
     }
+
     private String getTemplateFileName() {
         return new File(templateFilePath).getName();
     }

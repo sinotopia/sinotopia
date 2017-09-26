@@ -18,7 +18,6 @@
             <groupId>com.sinotopia</groupId>
             <artifactId>sinotopia-fundamental-database</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.sinotopia.demonstration</groupId>
             <artifactId>sinotopia-demonstration-admin-bean</artifactId>

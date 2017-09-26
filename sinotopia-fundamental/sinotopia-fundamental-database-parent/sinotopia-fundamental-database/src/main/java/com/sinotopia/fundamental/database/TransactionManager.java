@@ -16,7 +16,7 @@ import org.springframework.transaction.support.TransactionCallback;
  */
 @SuppressWarnings("serial")
 public class TransactionManager extends DataSourceTransactionManager implements CallbackPreferringPlatformTransactionManager {
-    
+
     private final Logger logger = LoggerFactory.getLogger(TransactionManager.class);
 
     @SuppressWarnings("unchecked")

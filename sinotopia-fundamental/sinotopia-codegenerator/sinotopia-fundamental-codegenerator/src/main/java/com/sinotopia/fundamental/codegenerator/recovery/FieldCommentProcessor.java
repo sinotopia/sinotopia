@@ -17,10 +17,10 @@ import java.util.regex.Pattern;
 
 /**
  * 基于字段的使用"//"注释的内容获取
- * Created by zhoubing on 2016/5/25.
  */
 public class FieldCommentProcessor implements CommentProcessor {
     private static final String COMMENT_PREFIX = "//";
+
     private Matcher fieldMatcher = Pattern.compile("(private|public|protected)([\\s]+)(.*?)([\\s]+)(.*?)(;)").matcher("");
 
     @Override
@@ -35,11 +35,9 @@ public class FieldCommentProcessor implements CommentProcessor {
             while ((line = br.readLine()) != null) {
                 processLine(commentList, fieldMap, line);
             }
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             IOUtils.close(br);
         }
     }
@@ -50,8 +48,7 @@ public class FieldCommentProcessor implements CommentProcessor {
         if (isCommentLine(line)) {
             line = processCommentLine(line);
             commentList.add(line);
-        }
-        else {
+        } else {
             fieldMatcher.reset(line);
             if (fieldMatcher.find() && commentList.size() > 0) {
                 String type = fieldMatcher.group(3);
@@ -82,11 +79,10 @@ public class FieldCommentProcessor implements CommentProcessor {
         if (fieldMatcher.find()) {
             int c = fieldMatcher.groupCount();
             for (int i = 0; i < c; i++) {
-                System.out.println(i+" "+fieldMatcher.group(i));
+                System.out.println(i + " " + fieldMatcher.group(i));
             }
         }
     }
-
 
 
     private boolean isCommentLine(String line) {
@@ -113,6 +109,6 @@ public class FieldCommentProcessor implements CommentProcessor {
     }
 
     private String processFieldKey(String type, String name) {
-        return (name+"/"+type).toLowerCase();
+        return (name + "/" + type).toLowerCase();
     }
 }

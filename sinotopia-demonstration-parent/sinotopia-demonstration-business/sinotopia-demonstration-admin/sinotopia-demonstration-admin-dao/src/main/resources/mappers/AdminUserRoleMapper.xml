@@ -24,7 +24,7 @@
         </where>
     </sql>
     
-    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" keyProperty="id">
+    <insert id="add" useGeneratedKeys="true" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" keyProperty="id">
         INSERT INTO tb_admin_user_role
         <trim prefix="(" suffix=")" prefixOverrides=",">
             <if test="null!=status">,status</if>
@@ -43,7 +43,7 @@
         </trim>
     </insert>
     
-    <update id="update" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+    <update id="update" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole">
         UPDATE tb_admin_user_role
         <trim prefix="SET" prefixOverrides=",">
             <if test="null!=status">,status = #{status}</if>
@@ -56,7 +56,7 @@
         WHERE id = #{id}
     </update>
     
-    <select id="query" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+    <select id="query" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" resultType="com.sinotopia.demonstration.admin.domain.AdminUserRole">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
@@ -65,23 +65,23 @@
         </if>
     </select>
     
-    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+    <select id="pageQuery" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" resultType="com.sinotopia.demonstration.admin.domain.AdminUserRole">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
         <include refid="whereClause" />
         <include refid="extendedOrderByClause" />
     </select>
     
-    <select id="get" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+    <select id="get" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" resultType="com.sinotopia.demonstration.admin.domain.AdminUserRole">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role
         <include refid="whereClause" />
         LIMIT 1
     </select>
     
-    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.bean.AdminUserRole">
+    <select id="getById" parameterType="long" resultType="com.sinotopia.demonstration.admin.domain.AdminUserRole">
         SELECT <include refid="requestAllFields"/> FROM tb_admin_user_role WHERE id = #{id}
     </select>
     
-    <select id="count" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="int">
+    <select id="count" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" resultType="int">
         SELECT COUNT(1) FROM tb_admin_user_role <include refid="whereClause" />
     </select>
     
@@ -106,7 +106,7 @@
         </if>
     </sql>
 
-    <select id="queryUserRoleList" parameterType="com.sinotopia.demonstration.admin.bean.AdminUserRole" resultType="com.sinotopia.demonstration.admin.result.AdminUserRoleView">
+    <select id="queryUserRoleList" parameterType="com.sinotopia.demonstration.admin.domain.AdminUserRole" resultType="com.sinotopia.demonstration.admin.result.AdminUserRoleView">
         SELECT
             aur.id,
             aur.status,

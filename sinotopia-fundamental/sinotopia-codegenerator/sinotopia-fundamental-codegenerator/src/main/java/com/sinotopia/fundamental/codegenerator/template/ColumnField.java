@@ -2,9 +2,9 @@ package com.sinotopia.fundamental.codegenerator.template;
 
 /**
  * 数据库字段对应java类成员变量
- * Created by zhoubing on 2016/5/3.
  */
 public class ColumnField {
+
     public String columnType;//数据库字段类型
     public String columnName;//数据库字段名称
     public String fieldType;//java对象字段类型

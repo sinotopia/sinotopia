@@ -16,7 +16,7 @@ public class ClientClassDefination {
 		}),
 
 		new Clazz("SharedFile", "界面传递参数", new Field[] {
-			new Field("sharedFileType", "Integer", "文件类型").setRelatedEnum(TypeEnumDefination.sharedFileType),
+			new Field("sharedFileType", "Integer", "文件类型").setRelatedEnum(TypeEnumDefinition.sharedFileType),
 			new Field("name", "String", "名称"),
 			new Field("path", "String", "文件路径"),
 			new Field("size", "Long", "大小"),
@@ -38,8 +38,8 @@ public class ClientClassDefination {
 			new Field("fileDirectory", "String", "存储目录"),
 			new Field("fileName", "String", "文件名"),
 			new Field("innerStorage", "Boolean", "是否内部存储"),
-			new Field("originType", "Integer", "下载来源（网络，快传）").setRelatedEnum(TypeEnumDefination.originType),
-			new Field("sharedFileType", "Integer", "文件类型").setRelatedEnum(TypeEnumDefination.sharedFileType),
+			new Field("originType", "Integer", "下载来源（网络，快传）").setRelatedEnum(TypeEnumDefinition.originType),
+			new Field("sharedFileType", "Integer", "文件类型").setRelatedEnum(TypeEnumDefinition.sharedFileType),
 		}),
 		
 		new Clazz("AppHomeActivityParameter", "ActivityParameter", "应用详情页面参数", new Field[] {

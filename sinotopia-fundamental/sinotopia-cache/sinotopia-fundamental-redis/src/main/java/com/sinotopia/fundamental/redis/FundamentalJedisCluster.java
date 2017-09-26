@@ -7,7 +7,6 @@ import redis.clients.jedis.JedisCluster;
 import java.util.Set;
 
 /**
- * Created by zhoubing on 2016/8/4.
  */
 public class FundamentalJedisCluster extends JedisCluster {
 
@@ -36,7 +35,7 @@ public class FundamentalJedisCluster extends JedisCluster {
     }
 
     public FundamentalJedisCluster(Set<HostAndPort> jedisClusterNode, int timeout, int maxRedirections,
-                        final GenericObjectPoolConfig poolConfig) {
+                                   final GenericObjectPoolConfig poolConfig) {
         super(jedisClusterNode, timeout, timeout, maxRedirections, poolConfig);
     }
 
