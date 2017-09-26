@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 实现ApiService接口
- * Created by shuzheng on 2017/2/19.
+ * Created by sinotopia on 2017/2/19.
  */
 public class ApiServiceImpl implements ApiService {
 

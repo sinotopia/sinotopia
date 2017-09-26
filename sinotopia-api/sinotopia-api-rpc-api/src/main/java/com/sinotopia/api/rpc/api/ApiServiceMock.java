@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 降级实现ApiService接口
- * Created by shuzheng on 2017/2/19.
+ * Created by sinotopia on 2017/2/19.
  */
 public class ApiServiceMock implements ApiService {
 

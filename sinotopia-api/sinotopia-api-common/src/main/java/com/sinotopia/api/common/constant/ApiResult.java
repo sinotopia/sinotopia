@@ -4,7 +4,7 @@ import com.sinotopia.common.base.BaseResult;
 
 /**
  * api系统常量枚举类
- * Created by shuzheng on 2017/2/19.
+ * Created by sinotopia on 2017/2/19.
  */
 public class ApiResult extends BaseResult {
 
